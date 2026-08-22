@@ -241,7 +241,7 @@ select.deck-select{
 .actions .btn{ padding:12px 20px; font-size:14px; }
 
 /* ============================================================
-   EMPTY STATE
+   EMPTY / LOADING / ERROR STATE
    ============================================================ */
 .empty-state{
   max-width:520px; margin: 40px auto; text-align:center; padding: 44px 32px;
@@ -251,6 +251,7 @@ select.deck-select{
 .empty-state .glyph{ font-family:var(--font-brush); font-size:56px; color:var(--accent); }
 .empty-state h2{ font-family:var(--font-display); margin:8px 0 6px; }
 .empty-state p{ color:var(--ink-soft); font-size:14px; line-height:1.6; margin-bottom:20px; }
+.empty-state code{ background:var(--bg-1); padding:1px 6px; border-radius:5px; }
 
 /* ============================================================
    MODAL
@@ -303,7 +304,6 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
   <div class="controls-row">
     <button class="mode-toggle" id="dayNightBtn" title="Ganti siang/malam">🌙</button>
     <div class="theme-dots" id="themeDots"></div>
-    <button class="btn" id="openBtn">📂 Buka Vocab (.json)</button>
     <select class="deck-select" id="deckSelect" style="display:none;"></select>
   </div>
 </header>
@@ -314,16 +314,14 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
   </svg>
 </div>
 
-<!-- EMPTY STATE -->
+<!-- LOADING / EMPTY / ERROR STATE -->
 <div class="empty-state" id="emptyState">
-  <div class="glyph">始</div>
-  <h2>Mulai dari sini</h2>
-  <p>Buka satu atau beberapa file kosakata (<code>hsk1.json</code>, <code>hsk2.json</code>, dst).
-     Format tiap file: daftar objek dengan <code>hanzi</code>, <code>pinyin</code>, <code>arti</code>.</p>
-  <button class="btn btn-accent" id="openBtn2">📂 Buka File Vocab</button>
+  <div class="glyph" id="emptyGlyph">読</div>
+  <h2 id="emptyTitle">Memuat deck…</h2>
+  <p id="emptyText">Mengambil <code>index.json</code> dan file kosakata dari server.</p>
 </div>
 
-<!-- MAIN APP (hidden until a deck is loaded) -->
+<!-- MAIN APP (hidden until decks are loaded) -->
 <div id="app" style="display:none; width:100%; display:flex; flex-direction:column; align-items:center;">
 
   <div class="pill-row">
@@ -364,7 +362,7 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
     <button class="btn btn-danger" id="belumBtn">❌ Belum (←)</button>
     <button class="btn btn-ok" id="tahuBtn">✅ Tahu (→)</button>
     <button class="btn" id="addCardBtn">➕ Tambah Kartu</button>
-    <button class="btn btn-accent" id="saveBtn">💾 Simpan Perubahan</button>
+    <button class="btn btn-accent" id="saveBtn">💾 Unduh Perubahan</button>
   </div>
 
   <footer>
@@ -403,16 +401,20 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
 
 <script>
 /* ============================================================
-   STATE  (in-memory only — no localStorage, per artifact rules;
-   decks live for the lifetime of this browser tab)
+   STATE
+   decks are fetched from the server (index.json + <deck>.json),
+   not uploaded by the user. In-memory only for this tab —
+   "Unduh Perubahan" downloads an updated copy the user can
+   overwrite the server file with.
    ============================================================ */
+const MANIFEST_URL = './index.json';
+
 const STAMP_COLORS = ['var(--stamp-0)','var(--stamp-1)','var(--stamp-2)','var(--stamp-3)',
                        'var(--stamp-4)','var(--stamp-5)','var(--stamp-6)','var(--stamp-7)'];
 
 let decks = {};          // filename -> array of {hanzi,pinyin,arti,box}
-let deckHandles = {};    // filename -> FileSystemFileHandle (if supported)
 let currentDeckName = null;
-let queue = [];          // working queue for this round (references into decks[current])
+let queue = [];           // working queue for this round
 let qIndex = 0;
 let currentCard = null;
 let showingAnswer = false;
@@ -483,60 +485,58 @@ document.getElementById('dayNightBtn').onclick = (e) => {
 };
 
 /* ============================================================
-   FILE OPEN / SAVE  (File System Access API when available,
-   graceful fallback to <input type=file> + download)
+   AUTO-LOAD DECKS FROM SERVER
+   Reads ./index.json (an array of deck filenames living next to
+   this index.html), then fetches each deck file in turn.
    ============================================================ */
-const supportsFSA = 'showOpenFilePicker' in window;
-
-async function openFiles(){
-  if (supportsFSA){
-    try{
-      const handles = await window.showOpenFilePicker({
-        multiple: true,
-        types: [{ description:'Vocab JSON', accept: {'application/json': ['.json']} }]
-      });
-      for (const handle of handles){
-        const file = await handle.getFile();
-        const text = await file.text();
-        deckHandles[handle.name] = handle;
-        storeDeck(handle.name, text);
-      }
-      afterLoad();
-    }catch(err){ /* user cancelled picker */ }
-  } else {
-    document.getElementById('fileInputFallback').click();
-  }
+function showEmptyState(glyph, title, text){
+  document.getElementById('emptyGlyph').textContent = glyph;
+  document.getElementById('emptyTitle').textContent = title;
+  document.getElementById('emptyText').innerHTML = text;
+  document.getElementById('emptyState').style.display = 'block';
+  document.getElementById('app').style.display = 'none';
 }
 
-function handleFallbackFiles(fileList){
-  const files = Array.from(fileList);
-  let remaining = files.length;
-  files.forEach(file=>{
-    const reader = new FileReader();
-    reader.onload = () => {
-      storeDeck(file.name, reader.result);
-      remaining--;
-      if (remaining===0) afterLoad();
-    };
-    reader.readAsText(file);
-  });
-}
-
-function storeDeck(name, text){
+async function loadDecksFromServer(){
+  let manifest;
   try{
-    const parsed = JSON.parse(text);
-    if (!Array.isArray(parsed)) throw new Error('bukan array');
-    decks[name] = parsed.map(c => ({ hanzi:c.hanzi||'', pinyin:c.pinyin||'', arti:c.arti||'', box:1 }));
-  }catch(e){
-    alert(`File "${name}" bukan JSON kosakata yang valid.\n(${e.message})`);
+    const res = await fetch(MANIFEST_URL, { cache: 'no-store' });
+    if (!res.ok) throw new Error(`HTTP ${res.status}`);
+    manifest = await res.json();
+    if (!Array.isArray(manifest) || manifest.length === 0) throw new Error('index.json kosong');
+  }catch(err){
+    showEmptyState('✕', 'Gagal memuat index.json',
+      `Pastikan <code>index.json</code> berada satu folder dengan <code>index.html</code> ini,
+       dan halaman dibuka lewat server (http://…), bukan dibuka langsung sebagai file.<br><br>
+       <span style="color:var(--ink-faint);font-size:12px;">${err.message}</span>`);
+    return;
   }
-}
 
-function afterLoad(){
+  const results = await Promise.allSettled(
+    manifest.map(async name => {
+      const res = await fetch(`./${name}`, { cache: 'no-store' });
+      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      const json = await res.json();
+      if (!Array.isArray(json)) throw new Error('bukan array');
+      decks[name] = json.map(c => ({ hanzi:c.hanzi||'', pinyin:c.pinyin||'', arti:c.arti||'', box:1 }));
+    })
+  );
+
+  const failed = manifest.filter((name,i) => results[i].status === 'rejected');
+  if (failed.length){
+    console.warn('Deck gagal dimuat:', failed);
+  }
+
   const names = Object.keys(decks);
-  if (names.length===0) return;
+  if (names.length === 0){
+    showEmptyState('✕', 'Tidak ada deck yang berhasil dimuat',
+      `Periksa nama file di <code>index.json</code> sesuai dengan file JSON yang ada di folder ini.`);
+    return;
+  }
+
   document.getElementById('emptyState').style.display = 'none';
   document.getElementById('app').style.display = 'flex';
+
   const sel = document.getElementById('deckSelect');
   sel.innerHTML = '';
   names.forEach(n=>{
@@ -544,29 +544,24 @@ function afterLoad(){
     opt.value = n; opt.textContent = n.replace('.json','');
     sel.appendChild(opt);
   });
-  sel.style.display = 'inline-block';
-  if (!currentDeckName || !decks[currentDeckName]) currentDeckName = names[0];
+  sel.style.display = names.length > 1 ? 'inline-block' : 'none';
+  currentDeckName = names[0];
   sel.value = currentDeckName;
   selectDeck(currentDeckName);
 }
 
-async function saveCurrentDeck(){
+document.getElementById('deckSelect').onchange = (e) => selectDeck(e.target.value);
+
+/* ============================================================
+   DOWNLOAD UPDATED DECK
+   The browser can't write back to the server file directly, so
+   this downloads a fresh copy of the current deck — overwrite the
+   file on the server with it if you want the changes to stick.
+   ============================================================ */
+function saveCurrentDeck(){
   if (!currentDeckName) return;
   const data = decks[currentDeckName].map(({hanzi,pinyin,arti}) => ({hanzi,pinyin,arti}));
   const json = JSON.stringify(data, null, 4);
-
-  const handle = deckHandles[currentDeckName];
-  if (handle){
-    try{
-      const writable = await handle.createWritable();
-      await writable.write(json);
-      await writable.close();
-      unsavedChanges = false;
-      flashSaved();
-      return;
-    }catch(e){ /* fall through to download */ }
-  }
-  // fallback: trigger a download the user saves over the original file
   const blob = new Blob([json], {type:'application/json'});
   const a = document.createElement('a');
   a.href = URL.createObjectURL(blob);
@@ -579,21 +574,11 @@ async function saveCurrentDeck(){
 function flashSaved(){
   const btn = document.getElementById('saveBtn');
   const old = btn.textContent;
-  btn.textContent = '✔ Tersimpan';
+  btn.textContent = '✔ Terunduh';
   setTimeout(()=>{ btn.textContent = old; }, 1400);
 }
 
-document.getElementById('openBtn').onclick = openFiles;
-document.getElementById('openBtn2').onclick = openFiles;
-document.getElementById('deckSelect').onchange = (e) => selectDeck(e.target.value);
 document.getElementById('saveBtn').onclick = saveCurrentDeck;
-
-// hidden fallback input, created dynamically so it never blocks the FSA path
-const fallbackInput = document.createElement('input');
-fallbackInput.type = 'file'; fallbackInput.accept = '.json'; fallbackInput.multiple = true;
-fallbackInput.id = 'fileInputFallback'; fallbackInput.style.display = 'none';
-fallbackInput.onchange = (e) => handleFallbackFiles(e.target.files);
-document.body.appendChild(fallbackInput);
 
 /* ============================================================
    DECK / SESSION
@@ -794,6 +779,9 @@ document.addEventListener('keydown', (e)=>{
 window.addEventListener('beforeunload', (e)=>{
   if (unsavedChanges){ e.preventDefault(); e.returnValue=''; }
 });
+
+/* kick off */
+loadDecksFromServer();
 </script>
 </body>
 </html>
