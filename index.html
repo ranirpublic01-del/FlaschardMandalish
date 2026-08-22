@@ -1,0 +1,799 @@
+<!DOCTYPE html>
+<html lang="id" data-mode="day" data-accent="vermilion">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>墨卡 · Flashcard Hanzi</title>
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Ma+Shan+Zheng&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
+<style>
+/* ============================================================
+   TOKENS
+   ============================================================ */
+:root{
+  --radius-lg: 28px;
+  --radius-md: 16px;
+  --radius-sm: 10px;
+  --font-display: 'Noto Serif SC', 'Songti SC', serif;
+  --font-brush: 'Ma Shan Zheng', cursive;
+  --font-ui: 'Manrope', -apple-system, 'Segoe UI', sans-serif;
+}
+
+:root[data-mode="day"]{
+  --bg-0:#e9e1cd;
+  --bg-1:#f3ecdc;
+  --surface:#faf5e8;
+  --ink:#211d1a;
+  --ink-soft:#6b6355;
+  --ink-faint:#9a927f;
+  --hairline:rgba(33,29,26,0.12);
+  --shadow:rgba(60,45,25,0.22);
+  --shadow-soft:rgba(60,45,25,0.10);
+}
+:root[data-mode="night"]{
+  --bg-0:#100f14;
+  --bg-1:#181720;
+  --surface:#1f1e29;
+  --ink:#efe9da;
+  --ink-soft:#a29c8c;
+  --ink-faint:#726c60;
+  --hairline:rgba(239,233,218,0.10);
+  --shadow:rgba(0,0,0,0.55);
+  --shadow-soft:rgba(0,0,0,0.35);
+}
+
+:root[data-accent="vermilion"]{ --accent:#b23a2e; --accent-2:#8c2e24; --accent-tint:#f0d9d3; }
+:root[data-accent="jade"]     { --accent:#3f7a5c; --accent-2:#2e5c45; --accent-tint:#d7e8de; }
+:root[data-accent="indigo"]   { --accent:#3c4a8c; --accent-2:#2c376b; --accent-tint:#dadeef; }
+:root[data-accent="gold"]     { --accent:#a9821f; --accent-2:#846419; --accent-tint:#eee3c4; }
+
+/* stamp colors: deterministic per-deck, independent of global accent */
+:root{
+  --stamp-0:#b23a2e; --stamp-1:#3f7a5c; --stamp-2:#3c4a8c; --stamp-3:#a9821f;
+  --stamp-4:#8b3f72; --stamp-5:#2e7d82; --stamp-6:#a85c2e; --stamp-7:#516175;
+}
+
+* { box-sizing: border-box; }
+html,body{ height:100%; margin:0; }
+body{
+  background: radial-gradient(ellipse at 15% 0%, var(--bg-1), var(--bg-0) 70%);
+  color: var(--ink);
+  font-family: var(--font-ui);
+  min-height:100vh;
+  display:flex;
+  flex-direction:column;
+  align-items:center;
+  overflow-x:hidden;
+  transition: background .4s ease, color .4s ease;
+}
+
+/* faint drifting hanzi in the background, ink-wash ambience */
+.ambient{
+  position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden;
+}
+.ambient span{
+  position:absolute; font-family:var(--font-display); color:var(--ink);
+  opacity:.045; font-weight:700; user-select:none;
+  animation: drift 70s linear infinite;
+}
+@keyframes drift{
+  0%{ transform: translateY(0) rotate(0deg); }
+  100%{ transform: translateY(-140px) rotate(6deg); }
+}
+
+/* ============================================================
+   HEADER
+   ============================================================ */
+header{
+  width:100%; max-width:920px; padding: 34px 24px 10px; position:relative; z-index:1;
+  display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap;
+}
+.brand{ display:flex; align-items:baseline; gap:14px; }
+.brand .glyph{
+  font-family: var(--font-brush); font-size:44px; color:var(--accent); line-height:1;
+}
+.brand h1{
+  font-family: var(--font-display); font-size:26px; margin:0; letter-spacing:.5px;
+}
+.brand-sub{ font-size:12.5px; color:var(--ink-soft); margin-top:2px; }
+
+.brush-divider{ width:100%; max-width:920px; height:14px; margin: 2px 0 18px; position:relative; z-index:1; }
+.brush-divider svg path{
+  stroke:var(--accent); stroke-width:3; fill:none; stroke-linecap:round;
+  stroke-dasharray: 900; stroke-dashoffset:900;
+  animation: draw 1.4s ease forwards .2s;
+}
+@keyframes draw{ to{ stroke-dashoffset:0; } }
+
+.controls-row{
+  display:flex; gap:10px; flex-wrap:wrap; align-items:center;
+}
+.theme-dots{ display:flex; gap:6px; align-items:center; margin-left:4px; }
+.theme-dot{
+  width:20px; height:20px; border-radius:50%; cursor:pointer; border:2px solid transparent;
+  transition: transform .15s ease;
+}
+.theme-dot:hover{ transform: scale(1.15); }
+.theme-dot.active{ border-color: var(--ink); }
+.mode-toggle{
+  width:34px; height:34px; border-radius:50%; border:1px solid var(--hairline); background:var(--surface);
+  color:var(--ink); cursor:pointer; font-size:15px; display:flex; align-items:center; justify-content:center;
+}
+
+button, select{ font-family: var(--font-ui); }
+.btn{
+  border:1px solid var(--hairline); background:var(--surface); color:var(--ink);
+  padding:9px 16px; border-radius:999px; font-size:13.5px; font-weight:600; cursor:pointer;
+  transition: transform .12s ease, box-shadow .12s ease, background .2s ease; white-space:nowrap;
+}
+.btn:hover{ transform: translateY(-1px); box-shadow: 0 4px 14px var(--shadow-soft); }
+.btn:active{ transform: translateY(0); }
+.btn-accent{ background:var(--accent); color:#fdf9f0; border-color:transparent; }
+.btn-accent:hover{ box-shadow: 0 6px 18px var(--shadow); }
+.btn-ghost{ background:transparent; }
+.btn-danger{ background:#c0392b; color:#fdf9f0; border-color:transparent; }
+.btn-ok{ background:#2f7a4d; color:#fdf9f0; border-color:transparent; }
+.btn:disabled{ opacity:.4; cursor:not-allowed; transform:none; box-shadow:none; }
+
+select.deck-select{
+  border:1px solid var(--hairline); background:var(--surface); color:var(--ink);
+  padding:9px 14px; border-radius:999px; font-size:13.5px; font-weight:600; cursor:pointer;
+}
+
+/* ============================================================
+   MODE PILLS
+   ============================================================ */
+.pill-row{ display:flex; gap:8px; margin: 18px 0 6px; position:relative; z-index:1; }
+.pill{
+  padding:9px 20px; border-radius:999px; border:1px solid var(--hairline); background:var(--surface);
+  color:var(--ink-soft); font-weight:700; cursor:pointer; font-size:14px; transition: all .2s ease;
+}
+.pill.active{ background:var(--accent); color:#fdf9f0; border-color:transparent; }
+
+/* ============================================================
+   PROGRESS + STATS
+   ============================================================ */
+.meta-row{
+  width:100%; max-width:640px; margin: 10px 0 4px; position:relative; z-index:1;
+}
+.progress-track{
+  width:100%; height:6px; border-radius:6px; background:var(--hairline); overflow:hidden;
+}
+.progress-fill{ height:100%; background:var(--accent); width:0%; transition: width .3s ease; }
+.stats-line{
+  display:flex; justify-content:space-between; font-size:12px; color:var(--ink-soft); margin-top:6px;
+}
+.stats-line b{ color:var(--ink); }
+
+/* ============================================================
+   CARD
+   ============================================================ */
+.stage{
+  width:100%; max-width:640px; flex:1; display:flex; align-items:center; justify-content:center;
+  padding: 18px 24px 8px; position:relative; z-index:1;
+}
+.card-perspective{
+  width:100%; aspect-ratio: 4 / 3; perspective:1800px; cursor:pointer;
+}
+.card{
+  position:relative; width:100%; height:100%; transform-style:preserve-3d;
+  transition: transform .55s cubic-bezier(.4,.15,.2,1);
+}
+.card.flipped{ transform: rotateY(180deg); }
+.card.shake{ animation: shake .4s ease; }
+@keyframes shake{
+  0%,100%{ transform: translateX(0) rotateY(var(--ry,0)); }
+  25%{ transform: translateX(-8px) rotateY(var(--ry,0)); }
+  75%{ transform: translateX(8px) rotateY(var(--ry,0)); }
+}
+
+.face{
+  position:absolute; inset:0; backface-visibility:hidden; border-radius: var(--radius-lg);
+  background: var(--surface);
+  box-shadow: 0 18px 40px var(--shadow), 0 2px 0 var(--hairline) inset;
+  display:flex; flex-direction:column; align-items:center; justify-content:center;
+  padding: 28px; text-align:center; overflow:hidden;
+}
+.face::before{
+  content:""; position:absolute; inset:0; border-radius: var(--radius-lg);
+  background-image: radial-gradient(circle at 20% 20%, rgba(0,0,0,0.02), transparent 60%);
+  pointer-events:none;
+}
+.face-back{ transform: rotateY(180deg); }
+
+.stamp{
+  position:absolute; top:20px; left:20px; width:58px; height:58px; border-radius:10px;
+  display:flex; align-items:center; justify-content:center; color:#fdf3e6; font-family:var(--font-display);
+  font-weight:800; font-size:13px; transform: rotate(-6deg); letter-spacing:.5px;
+  box-shadow: 0 4px 10px var(--shadow-soft);
+}
+.box-dots{ position:absolute; top:26px; right:24px; display:flex; gap:4px; }
+.box-dots span{ width:7px; height:7px; border-radius:50%; background:var(--hairline); }
+.box-dots span.on{ background:var(--accent); }
+
+.front-text{
+  font-family: var(--font-display); font-weight:700; line-height:1.15; color:var(--ink);
+  word-break: break-word;
+}
+.front-text.hanzi-font{ font-family:'Noto Serif SC', serif; }
+
+.back-answer{ font-size:20px; color:var(--ink); line-height:1.8; }
+.back-answer .lbl{ font-size:11.5px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-faint); display:block; }
+.back-hint{ position:absolute; bottom:18px; font-size:11.5px; color:var(--ink-faint); }
+
+/* correct-answer burst */
+.burst{ position:absolute; inset:0; pointer-events:none; }
+.burst span{
+  position:absolute; top:50%; left:50%; font-size:20px; opacity:0;
+  animation: burst .8s ease forwards;
+}
+@keyframes burst{
+  0%{ opacity:1; transform: translate(-50%,-50%) scale(.4); }
+  100%{ opacity:0; transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1.1); }
+}
+
+/* ============================================================
+   ACTION BUTTONS
+   ============================================================ */
+.actions{
+  display:flex; gap:10px; flex-wrap:wrap; justify-content:center; padding: 16px 24px 34px; position:relative; z-index:1;
+}
+.actions .btn{ padding:12px 20px; font-size:14px; }
+
+/* ============================================================
+   EMPTY STATE
+   ============================================================ */
+.empty-state{
+  max-width:520px; margin: 40px auto; text-align:center; padding: 44px 32px;
+  background:var(--surface); border-radius: var(--radius-lg); box-shadow: 0 14px 34px var(--shadow-soft);
+  position:relative; z-index:1;
+}
+.empty-state .glyph{ font-family:var(--font-brush); font-size:56px; color:var(--accent); }
+.empty-state h2{ font-family:var(--font-display); margin:8px 0 6px; }
+.empty-state p{ color:var(--ink-soft); font-size:14px; line-height:1.6; margin-bottom:20px; }
+
+/* ============================================================
+   MODAL
+   ============================================================ */
+.modal-backdrop{
+  position:fixed; inset:0; background:rgba(10,8,6,0.45); display:flex; align-items:center; justify-content:center;
+  z-index:50; opacity:0; pointer-events:none; transition:opacity .2s ease;
+}
+.modal-backdrop.show{ opacity:1; pointer-events:auto; }
+.modal{
+  background:var(--surface); border-radius: var(--radius-md); padding:28px; width:340px; max-width:90vw;
+  box-shadow: 0 24px 60px rgba(0,0,0,0.35); transform: translateY(10px); transition: transform .2s ease;
+}
+.modal-backdrop.show .modal{ transform: translateY(0); }
+.modal h3{ font-family:var(--font-display); margin:0 0 14px; }
+.modal label{ font-size:12px; color:var(--ink-soft); display:block; margin: 10px 0 4px; }
+.modal input{
+  width:100%; padding:10px 12px; border-radius:var(--radius-sm); border:1px solid var(--hairline);
+  background: var(--bg-1); color:var(--ink); font-size:15px; font-family:var(--font-ui);
+}
+.modal .row{ display:flex; gap:8px; justify-content:flex-end; margin-top:20px; }
+
+footer{ font-size:11.5px; color:var(--ink-faint); padding-bottom:20px; position:relative; z-index:1; }
+kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:10.5px; }
+
+:focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
+
+@media (prefers-reduced-motion: reduce){
+  *{ animation: none !important; transition: none !important; }
+}
+
+@media (max-width: 560px){
+  .brand .glyph{ font-size:34px; } .brand h1{ font-size:20px; }
+  .face{ padding:20px; }
+}
+</style>
+</head>
+<body>
+
+<div class="ambient" id="ambient"></div>
+
+<header>
+  <div class="brand">
+    <span class="glyph">墨</span>
+    <div>
+      <h1>Flashcard Hanzi</h1>
+      <div class="brand-sub">belajar kosakata, satu kartu satu waktu</div>
+    </div>
+  </div>
+  <div class="controls-row">
+    <button class="mode-toggle" id="dayNightBtn" title="Ganti siang/malam">🌙</button>
+    <div class="theme-dots" id="themeDots"></div>
+    <button class="btn" id="openBtn">📂 Buka Vocab (.json)</button>
+    <select class="deck-select" id="deckSelect" style="display:none;"></select>
+  </div>
+</header>
+
+<div class="brush-divider">
+  <svg viewBox="0 0 920 14" preserveAspectRatio="none" width="100%" height="14">
+    <path d="M4 8 Q 230 2, 460 8 T 916 8" />
+  </svg>
+</div>
+
+<!-- EMPTY STATE -->
+<div class="empty-state" id="emptyState">
+  <div class="glyph">始</div>
+  <h2>Mulai dari sini</h2>
+  <p>Buka satu atau beberapa file kosakata (<code>hsk1.json</code>, <code>hsk2.json</code>, dst).
+     Format tiap file: daftar objek dengan <code>hanzi</code>, <code>pinyin</code>, <code>arti</code>.</p>
+  <button class="btn btn-accent" id="openBtn2">📂 Buka File Vocab</button>
+</div>
+
+<!-- MAIN APP (hidden until a deck is loaded) -->
+<div id="app" style="display:none; width:100%; display:flex; flex-direction:column; align-items:center;">
+
+  <div class="pill-row">
+    <button class="pill active" data-mode="hanzi">汉字 Hanzi</button>
+    <button class="pill" data-mode="pinyin">Pinyin</button>
+    <button class="pill" data-mode="arti">Arti</button>
+  </div>
+
+  <div class="meta-row">
+    <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
+    <div class="stats-line">
+      <span id="cardPos">Kartu 0/0</span>
+      <span>✅ <b id="statTahu">0</b>&nbsp;&nbsp;❌ <b id="statBelum">0</b>&nbsp;&nbsp;🔥 <b id="statStreak">0</b> (terbaik <b id="statBest">0</b>)</span>
+    </div>
+  </div>
+
+  <div class="stage">
+    <div class="card-perspective" id="cardPerspective">
+      <div class="card" id="card">
+        <div class="face face-front" id="faceFront">
+          <div class="stamp" id="stampFront">HSK</div>
+          <div class="box-dots" id="boxDotsFront"><span></span><span></span><span></span></div>
+          <div class="front-text hanzi-font" id="frontText" style="font-size:80px;"></div>
+          <div class="back-hint">klik atau tekan Space untuk membalik</div>
+        </div>
+        <div class="face face-back" id="faceBack">
+          <div class="stamp" id="stampBack">HSK</div>
+          <div class="box-dots" id="boxDotsBack"><span></span><span></span><span></span></div>
+          <div class="back-answer" id="backAnswer"></div>
+          <div class="burst" id="burst"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <div class="actions">
+    <button class="btn" id="shuffleBtn">🔀 Acak Ulang</button>
+    <button class="btn btn-danger" id="belumBtn">❌ Belum (←)</button>
+    <button class="btn btn-ok" id="tahuBtn">✅ Tahu (→)</button>
+    <button class="btn" id="addCardBtn">➕ Tambah Kartu</button>
+    <button class="btn btn-accent" id="saveBtn">💾 Simpan Perubahan</button>
+  </div>
+
+  <footer>
+    Pintasan: <kbd>Space</kbd> balik &nbsp; <kbd>←</kbd> belum &nbsp; <kbd>→</kbd> tahu &nbsp;
+    <kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd> ganti mode
+  </footer>
+</div>
+
+<!-- ADD CARD MODAL -->
+<div class="modal-backdrop" id="addModal">
+  <div class="modal">
+    <h3>Tambah Kartu</h3>
+    <label>Hanzi</label>
+    <input id="inHanzi" placeholder="汉字">
+    <label>Pinyin</label>
+    <input id="inPinyin" placeholder="hàn zì">
+    <label>Arti</label>
+    <input id="inArti" placeholder="karakter Han">
+    <div class="row">
+      <button class="btn btn-ghost" id="cancelAdd">Batal</button>
+      <button class="btn btn-accent" id="confirmAdd">Simpan</button>
+    </div>
+  </div>
+</div>
+
+<!-- SESSION SUMMARY MODAL -->
+<div class="modal-backdrop" id="summaryModal">
+  <div class="modal">
+    <h3>Sesi Selesai 🎉</h3>
+    <p id="summaryText" style="font-size:14px; color:var(--ink-soft); line-height:1.7;"></p>
+    <div class="row">
+      <button class="btn btn-accent" id="closeSummary">Lanjut Belajar</button>
+    </div>
+  </div>
+</div>
+
+<script>
+/* ============================================================
+   STATE  (in-memory only — no localStorage, per artifact rules;
+   decks live for the lifetime of this browser tab)
+   ============================================================ */
+const STAMP_COLORS = ['var(--stamp-0)','var(--stamp-1)','var(--stamp-2)','var(--stamp-3)',
+                       'var(--stamp-4)','var(--stamp-5)','var(--stamp-6)','var(--stamp-7)'];
+
+let decks = {};          // filename -> array of {hanzi,pinyin,arti,box}
+let deckHandles = {};    // filename -> FileSystemFileHandle (if supported)
+let currentDeckName = null;
+let queue = [];          // working queue for this round (references into decks[current])
+let qIndex = 0;
+let currentCard = null;
+let showingAnswer = false;
+let mode = 'hanzi';
+let stats = { tahu:0, belum:0, streak:0, best:0 };
+let unsavedChanges = false;
+
+/* ============================================================
+   UTIL
+   ============================================================ */
+function hashStr(s){
+  let h = 0;
+  for (let i=0;i<s.length;i++){ h = (h*31 + s.charCodeAt(i)) >>> 0; }
+  return h;
+}
+function stampColorFor(name){ return STAMP_COLORS[hashStr(name) % STAMP_COLORS.length]; }
+function shuffle(arr){
+  const a = arr.slice();
+  for (let i=a.length-1;i>0;i--){ const j = Math.floor(Math.random()*(i+1)); [a[i],a[j]]=[a[j],a[i]]; }
+  return a;
+}
+function fontSizeFor(text){
+  const len = (text||'').length;
+  if (len<=2) return 92; if (len<=4) return 76; if (len<=8) return 60;
+  if (len<=12) return 46; if (len<=20) return 34; if (len<=30) return 26; return 20;
+}
+
+/* ============================================================
+   AMBIENT BACKGROUND GLYPHS
+   ============================================================ */
+(function ambient(){
+  const chars = ['学','汉','字','词','念','忆','声','读'];
+  const el = document.getElementById('ambient');
+  for (let i=0;i<8;i++){
+    const s = document.createElement('span');
+    s.textContent = chars[i % chars.length];
+    s.style.fontSize = (60+Math.random()*90)+'px';
+    s.style.left = (Math.random()*100)+'%';
+    s.style.top = (Math.random()*100)+'%';
+    s.style.animationDuration = (50+Math.random()*40)+'s';
+    s.style.animationDelay = (-Math.random()*40)+'s';
+    el.appendChild(s);
+  }
+})();
+
+/* ============================================================
+   THEME CONTROLS
+   ============================================================ */
+const ACCENTS = ['vermilion','jade','indigo','gold'];
+const themeDots = document.getElementById('themeDots');
+ACCENTS.forEach(a=>{
+  const d = document.createElement('div');
+  d.className = 'theme-dot' + (a==='vermilion' ? ' active' : '');
+  d.style.background = `var(--stamp-${ACCENTS.indexOf(a)})`;
+  d.title = a;
+  d.onclick = () => {
+    document.documentElement.setAttribute('data-accent', a);
+    [...themeDots.children].forEach(c=>c.classList.remove('active'));
+    d.classList.add('active');
+  };
+  themeDots.appendChild(d);
+});
+document.getElementById('dayNightBtn').onclick = (e) => {
+  const html = document.documentElement;
+  const next = html.getAttribute('data-mode') === 'day' ? 'night' : 'day';
+  html.setAttribute('data-mode', next);
+  e.target.textContent = next === 'day' ? '🌙' : '☀️';
+};
+
+/* ============================================================
+   FILE OPEN / SAVE  (File System Access API when available,
+   graceful fallback to <input type=file> + download)
+   ============================================================ */
+const supportsFSA = 'showOpenFilePicker' in window;
+
+async function openFiles(){
+  if (supportsFSA){
+    try{
+      const handles = await window.showOpenFilePicker({
+        multiple: true,
+        types: [{ description:'Vocab JSON', accept: {'application/json': ['.json']} }]
+      });
+      for (const handle of handles){
+        const file = await handle.getFile();
+        const text = await file.text();
+        deckHandles[handle.name] = handle;
+        storeDeck(handle.name, text);
+      }
+      afterLoad();
+    }catch(err){ /* user cancelled picker */ }
+  } else {
+    document.getElementById('fileInputFallback').click();
+  }
+}
+
+function handleFallbackFiles(fileList){
+  const files = Array.from(fileList);
+  let remaining = files.length;
+  files.forEach(file=>{
+    const reader = new FileReader();
+    reader.onload = () => {
+      storeDeck(file.name, reader.result);
+      remaining--;
+      if (remaining===0) afterLoad();
+    };
+    reader.readAsText(file);
+  });
+}
+
+function storeDeck(name, text){
+  try{
+    const parsed = JSON.parse(text);
+    if (!Array.isArray(parsed)) throw new Error('bukan array');
+    decks[name] = parsed.map(c => ({ hanzi:c.hanzi||'', pinyin:c.pinyin||'', arti:c.arti||'', box:1 }));
+  }catch(e){
+    alert(`File "${name}" bukan JSON kosakata yang valid.\n(${e.message})`);
+  }
+}
+
+function afterLoad(){
+  const names = Object.keys(decks);
+  if (names.length===0) return;
+  document.getElementById('emptyState').style.display = 'none';
+  document.getElementById('app').style.display = 'flex';
+  const sel = document.getElementById('deckSelect');
+  sel.innerHTML = '';
+  names.forEach(n=>{
+    const opt = document.createElement('option');
+    opt.value = n; opt.textContent = n.replace('.json','');
+    sel.appendChild(opt);
+  });
+  sel.style.display = 'inline-block';
+  if (!currentDeckName || !decks[currentDeckName]) currentDeckName = names[0];
+  sel.value = currentDeckName;
+  selectDeck(currentDeckName);
+}
+
+async function saveCurrentDeck(){
+  if (!currentDeckName) return;
+  const data = decks[currentDeckName].map(({hanzi,pinyin,arti}) => ({hanzi,pinyin,arti}));
+  const json = JSON.stringify(data, null, 4);
+
+  const handle = deckHandles[currentDeckName];
+  if (handle){
+    try{
+      const writable = await handle.createWritable();
+      await writable.write(json);
+      await writable.close();
+      unsavedChanges = false;
+      flashSaved();
+      return;
+    }catch(e){ /* fall through to download */ }
+  }
+  // fallback: trigger a download the user saves over the original file
+  const blob = new Blob([json], {type:'application/json'});
+  const a = document.createElement('a');
+  a.href = URL.createObjectURL(blob);
+  a.download = currentDeckName;
+  a.click();
+  unsavedChanges = false;
+  flashSaved();
+}
+
+function flashSaved(){
+  const btn = document.getElementById('saveBtn');
+  const old = btn.textContent;
+  btn.textContent = '✔ Tersimpan';
+  setTimeout(()=>{ btn.textContent = old; }, 1400);
+}
+
+document.getElementById('openBtn').onclick = openFiles;
+document.getElementById('openBtn2').onclick = openFiles;
+document.getElementById('deckSelect').onchange = (e) => selectDeck(e.target.value);
+document.getElementById('saveBtn').onclick = saveCurrentDeck;
+
+// hidden fallback input, created dynamically so it never blocks the FSA path
+const fallbackInput = document.createElement('input');
+fallbackInput.type = 'file'; fallbackInput.accept = '.json'; fallbackInput.multiple = true;
+fallbackInput.id = 'fileInputFallback'; fallbackInput.style.display = 'none';
+fallbackInput.onchange = (e) => handleFallbackFiles(e.target.files);
+document.body.appendChild(fallbackInput);
+
+/* ============================================================
+   DECK / SESSION
+   ============================================================ */
+function selectDeck(name){
+  currentDeckName = name;
+  buildQueue();
+  nextCard();
+}
+
+function buildQueue(){
+  queue = shuffle(decks[currentDeckName]);
+  qIndex = 0;
+  stats = { tahu:0, belum:0, streak: stats.streak, best: stats.best };
+  updateStatsBar();
+}
+
+/* ============================================================
+   RENDERING
+   ============================================================ */
+function currentTexts(card){
+  let front, useHanziFont = false;
+  if (mode === 'hanzi'){ front = card.hanzi; useHanziFont = true; }
+  else if (mode === 'pinyin'){ front = card.pinyin; }
+  else { front = card.arti; }
+
+  let answerHtml;
+  if (mode === 'hanzi'){
+    answerHtml = `<span class="lbl">Pinyin</span>${card.pinyin}<br><span class="lbl" style="margin-top:10px;">Arti</span>${card.arti}`;
+  } else if (mode === 'pinyin'){
+    answerHtml = `<span class="lbl">Hanzi</span>${card.hanzi}<br><span class="lbl" style="margin-top:10px;">Arti</span>${card.arti}`;
+  } else {
+    answerHtml = `<span class="lbl">Hanzi</span>${card.hanzi}<br><span class="lbl" style="margin-top:10px;">Pinyin</span>${card.pinyin}`;
+  }
+  return { front, useHanziFont, answerHtml };
+}
+
+function renderCard(){
+  if (!currentCard) return;
+  const { front, useHanziFont, answerHtml } = currentTexts(currentCard);
+  const stampText = (currentDeckName||'').replace('.json','').toUpperCase().slice(0,5);
+  const color = stampColorFor(currentDeckName||'');
+
+  const frontEl = document.getElementById('frontText');
+  frontEl.textContent = front;
+  frontEl.style.fontSize = fontSizeFor(front) + 'px';
+  frontEl.classList.toggle('hanzi-font', useHanziFont);
+
+  document.getElementById('backAnswer').innerHTML = answerHtml;
+
+  [['stampFront',color],['stampBack',color]].forEach(([id,c])=>{
+    const el = document.getElementById(id);
+    el.textContent = stampText || 'DECK';
+    el.style.background = c;
+  });
+
+  updateBoxDots('boxDotsFront', currentCard.box);
+  updateBoxDots('boxDotsBack', currentCard.box);
+
+  document.getElementById('card').classList.remove('flipped');
+  showingAnswer = false;
+}
+
+function updateBoxDots(id, box){
+  const dots = document.querySelectorAll(`#${id} span`);
+  dots.forEach((d,i)=> d.classList.toggle('on', i < box));
+}
+
+function updateProgress(){
+  const total = Math.max(queue.length,1);
+  document.getElementById('progressFill').style.width = ((qIndex/total)*100)+'%';
+  document.getElementById('cardPos').textContent = `Kartu ${Math.min(qIndex,total)}/${total}`;
+}
+function updateStatsBar(){
+  document.getElementById('statTahu').textContent = stats.tahu;
+  document.getElementById('statBelum').textContent = stats.belum;
+  document.getElementById('statStreak').textContent = stats.streak;
+  document.getElementById('statBest').textContent = stats.best;
+}
+
+/* ============================================================
+   FLOW
+   ============================================================ */
+function nextCard(){
+  if (qIndex >= queue.length){
+    showSummary();
+    return;
+  }
+  currentCard = queue[qIndex];
+  qIndex++;
+  renderCard();
+  updateProgress();
+}
+
+function toggleAnswer(){
+  if (!currentCard) return;
+  showingAnswer = !showingAnswer;
+  document.getElementById('card').classList.toggle('flipped', showingAnswer);
+}
+
+function markTahu(){
+  if (!currentCard) return;
+  currentCard.box = Math.min(3, currentCard.box + 1);
+  stats.tahu++; stats.streak++; stats.best = Math.max(stats.best, stats.streak);
+  updateStatsBar();
+  burstFeedback('✓', getComputedStyle(document.documentElement).getPropertyValue('--accent'));
+  setTimeout(nextCard, 260);
+}
+
+function markBelum(){
+  if (!currentCard) return;
+  currentCard.box = 1;
+  stats.belum++; stats.streak = 0;
+  updateStatsBar();
+  // reinsert 2-4 cards ahead so it comes back soon this same round (spaced repetition-lite)
+  const reinsertAt = Math.min(queue.length, qIndex + 2 + Math.floor(Math.random()*3));
+  queue.splice(reinsertAt, 0, currentCard);
+  document.getElementById('card').classList.add('shake');
+  setTimeout(()=> document.getElementById('card').classList.remove('shake'), 400);
+  setTimeout(nextCard, 260);
+}
+
+function burstFeedback(symbol, color){
+  const el = document.getElementById('burst');
+  el.innerHTML = '';
+  for (let i=0;i<10;i++){
+    const s = document.createElement('span');
+    s.textContent = symbol;
+    s.style.color = color;
+    const angle = (Math.PI*2*i)/10;
+    s.style.setProperty('--dx', (Math.cos(angle)*70)+'px');
+    s.style.setProperty('--dy', (Math.sin(angle)*70)+'px');
+    el.appendChild(s);
+  }
+}
+
+function showSummary(){
+  document.getElementById('summaryText').innerHTML =
+    `✅ Tahu: <b>${stats.tahu}</b> &nbsp; ❌ Belum: <b>${stats.belum}</b><br>🔥 Streak terbaik: <b>${stats.best}</b><br><br>Deck diacak ulang untuk sesi berikutnya.`;
+  document.getElementById('summaryModal').classList.add('show');
+}
+document.getElementById('closeSummary').onclick = () => {
+  document.getElementById('summaryModal').classList.remove('show');
+  buildQueue();
+  nextCard();
+};
+
+/* ============================================================
+   MODE PILLS
+   ============================================================ */
+document.querySelectorAll('.pill').forEach(btn=>{
+  btn.onclick = () => {
+    document.querySelectorAll('.pill').forEach(b=>b.classList.remove('active'));
+    btn.classList.add('active');
+    mode = btn.dataset.mode;
+    renderCard();
+  };
+});
+
+/* ============================================================
+   ADD CARD MODAL
+   ============================================================ */
+const addModal = document.getElementById('addModal');
+document.getElementById('addCardBtn').onclick = () => addModal.classList.add('show');
+document.getElementById('cancelAdd').onclick = () => addModal.classList.remove('show');
+document.getElementById('confirmAdd').onclick = () => {
+  const hanzi = document.getElementById('inHanzi').value.trim();
+  const pinyin = document.getElementById('inPinyin').value.trim();
+  const arti = document.getElementById('inArti').value.trim();
+  if (!hanzi){ alert('Hanzi tidak boleh kosong'); return; }
+  const card = { hanzi, pinyin, arti, box:1 };
+  decks[currentDeckName].push(card);
+  queue.push(card);
+  unsavedChanges = true;
+  ['inHanzi','inPinyin','inArti'].forEach(id=>document.getElementById(id).value='');
+  addModal.classList.remove('show');
+  updateProgress();
+};
+
+/* ============================================================
+   CONTROLS
+   ============================================================ */
+document.getElementById('cardPerspective').onclick = toggleAnswer;
+document.getElementById('tahuBtn').onclick = markTahu;
+document.getElementById('belumBtn').onclick = markBelum;
+document.getElementById('shuffleBtn').onclick = () => { buildQueue(); nextCard(); };
+
+document.addEventListener('keydown', (e)=>{
+  if (document.getElementById('addModal').classList.contains('show')) return;
+  if (e.code === 'Space'){ e.preventDefault(); toggleAnswer(); }
+  else if (e.code === 'ArrowRight'){ markTahu(); }
+  else if (e.code === 'ArrowLeft'){ markBelum(); }
+  else if (e.key === '1'){ document.querySelector('[data-mode="hanzi"]').click(); }
+  else if (e.key === '2'){ document.querySelector('[data-mode="pinyin"]').click(); }
+  else if (e.key === '3'){ document.querySelector('[data-mode="arti"]').click(); }
+});
+
+window.addEventListener('beforeunload', (e)=>{
+  if (unsavedChanges){ e.preventDefault(); e.returnValue=''; }
+});
+</script>
+</body>
+</html>
