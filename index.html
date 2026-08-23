@@ -1,5 +1,5 @@
 <!DOCTYPE html>
-<html lang="id" data-mode="day" data-accent="vermilion">
+<html lang="id" data-mode="night" data-accent="vermilion">
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
@@ -8,9 +8,6 @@
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;700;900&family=Ma+Shan+Zheng&family=Manrope:wght@400;500;600;700;800&display=swap" rel="stylesheet">
 <style>
-/* ============================================================
-   TOKENS
-   ============================================================ */
 :root{
   --radius-lg: 28px;
   --radius-md: 16px;
@@ -48,7 +45,6 @@
 :root[data-accent="indigo"]   { --accent:#3c4a8c; --accent-2:#2c376b; --accent-tint:#dadeef; }
 :root[data-accent="gold"]     { --accent:#a9821f; --accent-2:#846419; --accent-tint:#eee3c4; }
 
-/* stamp colors: deterministic per-deck, independent of global accent */
 :root{
   --stamp-0:#b23a2e; --stamp-1:#3f7a5c; --stamp-2:#3c4a8c; --stamp-3:#a9821f;
   --stamp-4:#8b3f72; --stamp-5:#2e7d82; --stamp-6:#a85c2e; --stamp-7:#516175;
@@ -71,7 +67,6 @@ body{
 }
 button, select, .card-perspective{ touch-action: manipulation; }
 
-/* faint drifting hanzi in the background, ink-wash ambience */
 .ambient{
   position:fixed; inset:0; z-index:0; pointer-events:none; overflow:hidden;
 }
@@ -85,9 +80,6 @@ button, select, .card-perspective{ touch-action: manipulation; }
   100%{ transform: translateY(-140px) rotate(6deg); }
 }
 
-/* ============================================================
-   HEADER
-   ============================================================ */
 header{
   width:100%; max-width:920px; padding: 34px 24px 10px; position:relative; z-index:1;
   display:flex; align-items:flex-end; justify-content:space-between; gap:16px; flex-wrap:wrap;
@@ -160,9 +152,6 @@ select.deck-select{
 .deck-pill.active .deck-pill-name{ color:#fdf9f0; }
 .deck-pill.active .deck-pill-count{ color:rgba(253,249,240,0.8); }
 
-/* ============================================================
-   MODE PILLS
-   ============================================================ */
 .pill-row{ display:flex; gap:8px; margin: 18px 0 6px; position:relative; z-index:1; }
 .pill{
   padding:9px 20px; border-radius:999px; border:1px solid var(--hairline); background:var(--surface);
@@ -174,9 +163,6 @@ select.deck-select{
   display:flex; gap:8px; margin: 2px 0 14px; position:relative; z-index:1; flex-wrap:wrap; justify-content:center;
 }
 
-/* ============================================================
-   PROGRESS + STATS
-   ============================================================ */
 .meta-row{
   width:100%; max-width:640px; margin: 10px 0 4px; padding: 0 24px; position:relative; z-index:1;
 }
@@ -194,9 +180,6 @@ select.deck-select{
 }
 .stats-line b{ color:var(--ink); }
 
-/* ============================================================
-   CARD
-   ============================================================ */
 .stage{
   width:100%; max-width:640px; flex:1; display:flex; align-items:center; justify-content:center;
   padding: 18px 24px 8px; position:relative; z-index:1;
@@ -268,11 +251,10 @@ select.deck-select{
 }
 .front-text.hanzi-font{ font-family:'Noto Serif SC', serif; }
 
-.back-answer{ font-size:20px; color:var(--ink); line-height:1.8; }
-.back-answer .lbl{ font-size:11.5px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-faint); display:block; }
+.back-answer{ font-size:18px; color:var(--ink); line-height:1.6; }
+.back-answer .lbl{ font-size:11px; letter-spacing:1.5px; text-transform:uppercase; color:var(--ink-faint); display:block; margin-top:4px; }
 .back-hint{ position:absolute; bottom:18px; font-size:11.5px; color:var(--ink-faint); }
 
-/* correct-answer burst */
 .burst{ position:absolute; inset:0; pointer-events:none; }
 .burst span{
   position:absolute; top:50%; left:50%; font-size:20px; opacity:0;
@@ -283,17 +265,11 @@ select.deck-select{
   100%{ opacity:0; transform: translate(calc(-50% + var(--dx)), calc(-50% + var(--dy))) scale(1.1); }
 }
 
-/* ============================================================
-   ACTION BUTTONS
-   ============================================================ */
 .actions{
   display:flex; gap:10px; flex-wrap:wrap; justify-content:center; padding: 16px 24px 34px; position:relative; z-index:1;
 }
 .actions .btn{ padding:12px 20px; font-size:14px; }
 
-/* ============================================================
-   EMPTY / LOADING / ERROR STATE
-   ============================================================ */
 .empty-state{
   max-width:520px; margin: 40px auto; text-align:center; padding: 44px 32px;
   background:var(--surface); border-radius: var(--radius-lg); box-shadow: 0 14px 34px var(--shadow-soft);
@@ -304,9 +280,6 @@ select.deck-select{
 .empty-state p{ color:var(--ink-soft); font-size:14px; line-height:1.6; margin-bottom:20px; }
 .empty-state code{ background:var(--bg-1); padding:1px 6px; border-radius:5px; }
 
-/* ============================================================
-   MODAL
-   ============================================================ */
 .modal-backdrop{
   position:fixed; inset:0; background:rgba(10,8,6,0.45); display:flex; align-items:center; justify-content:center;
   z-index:50; opacity:0; pointer-events:none; transition:opacity .2s ease;
@@ -353,7 +326,7 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
     </div>
   </div>
   <div class="controls-row">
-    <button class="mode-toggle" id="dayNightBtn" title="Ganti siang/malam">🌙</button>
+    <button class="mode-toggle" id="dayNightBtn" title="Ganti siang/malam">☀️</button>
     <div class="theme-dots" id="themeDots"></div>
   </div>
 </header>
@@ -364,14 +337,12 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
   </svg>
 </div>
 
-<!-- LOADING / EMPTY / ERROR STATE -->
 <div class="empty-state" id="emptyState">
   <div class="glyph" id="emptyGlyph">読</div>
   <h2 id="emptyTitle">Memuat deck…</h2>
   <p id="emptyText">Mengambil <code>index.json</code> dan file kosakata dari server.</p>
 </div>
 
-<!-- MAIN APP (hidden until decks are loaded) -->
 <div id="app" style="display:none; width:100%; display:flex; flex-direction:column; align-items:center;">
 
   <div class="deck-row" id="deckRow"></div>
@@ -436,7 +407,6 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
   </footer>
 </div>
 
-<!-- ADD CARD MODAL -->
 <div class="modal-backdrop" id="addModal">
   <div class="modal">
     <h3>Tambah Kartu</h3>
@@ -444,8 +414,10 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
     <input id="inHanzi" placeholder="汉字">
     <label>Pinyin</label>
     <input id="inPinyin" placeholder="hàn zì">
-    <label>Arti</label>
-    <input id="inArti" placeholder="karakter Han">
+    <label>Arti Indonesia (ID)</label>
+    <input id="inArtiId" placeholder="karakter Han">
+    <label>Arti Inggris (EN)</label>
+    <input id="inArtiEn" placeholder="Chinese character">
     <div class="row">
       <button class="btn btn-ghost" id="cancelAdd">Batal</button>
       <button class="btn btn-accent" id="confirmAdd">Simpan</button>
@@ -453,7 +425,6 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
   </div>
 </div>
 
-<!-- SESSION SUMMARY MODAL -->
 <div class="modal-backdrop" id="summaryModal">
   <div class="modal">
     <h3>Sesi Selesai 🎉</h3>
@@ -465,23 +436,16 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
 </div>
 
 <script>
-/* ============================================================
-   STATE
-   decks are fetched from the server (index.json + <deck>.json),
-   not uploaded by the user. In-memory only for this tab —
-   "Unduh Perubahan" downloads an updated copy the user can
-   overwrite the server file with.
-   ============================================================ */
 const MANIFEST_URL = './index.json';
 
 const STAMP_COLORS = ['var(--stamp-0)','var(--stamp-1)','var(--stamp-2)','var(--stamp-3)',
-                       'var(--stamp-4)','var(--stamp-5)','var(--stamp-6)','var(--stamp-7)'];
+                      'var(--stamp-4)','var(--stamp-5)','var(--stamp-6)','var(--stamp-7)'];
 
-let decks = {};          // filename -> array of {hanzi,pinyin,arti,box}
+let decks = {};
 let currentDeckName = null;
-let sectionRanges = [{ start:0, end:0, label:'Semua' }]; // computed per deck
+let sectionRanges = [{ start:0, end:0, label:'Semua' }];
 let currentSectionIndex = 0;
-let queue = [];           // working queue for this round
+let queue = [];
 let qIndex = 0;
 let currentCard = null;
 let showingAnswer = false;
@@ -489,9 +453,6 @@ let mode = 'hanzi';
 let stats = { tahu:0, belum:0, streak:0, best:0 };
 let unsavedChanges = false;
 
-/* ============================================================
-   UTIL
-   ============================================================ */
 function hashStr(s){
   let h = 0;
   for (let i=0;i<s.length;i++){ h = (h*31 + s.charCodeAt(i)) >>> 0; }
@@ -509,9 +470,6 @@ function fontSizeFor(text){
   if (len<=12) return 46; if (len<=20) return 34; if (len<=30) return 26; return 20;
 }
 
-/* ============================================================
-   AMBIENT BACKGROUND GLYPHS
-   ============================================================ */
 (function ambient(){
   const chars = ['学','汉','字','词','念','忆','声','读'];
   const el = document.getElementById('ambient');
@@ -527,9 +485,6 @@ function fontSizeFor(text){
   }
 })();
 
-/* ============================================================
-   THEME CONTROLS
-   ============================================================ */
 const ACCENTS = ['vermilion','jade','indigo','gold'];
 const themeDots = document.getElementById('themeDots');
 ACCENTS.forEach(a=>{
@@ -544,6 +499,7 @@ ACCENTS.forEach(a=>{
   };
   themeDots.appendChild(d);
 });
+
 document.getElementById('dayNightBtn').onclick = (e) => {
   const html = document.documentElement;
   const next = html.getAttribute('data-mode') === 'day' ? 'night' : 'day';
@@ -551,11 +507,6 @@ document.getElementById('dayNightBtn').onclick = (e) => {
   e.target.textContent = next === 'day' ? '🌙' : '☀️';
 };
 
-/* ============================================================
-   AUTO-LOAD DECKS FROM SERVER
-   Reads ./index.json (an array of deck filenames living next to
-   this index.html), then fetches each deck file in turn.
-   ============================================================ */
 function showEmptyState(glyph, title, text){
   document.getElementById('emptyGlyph').textContent = glyph;
   document.getElementById('emptyTitle').textContent = title;
@@ -573,8 +524,7 @@ async function loadDecksFromServer(){
     if (!Array.isArray(manifest) || manifest.length === 0) throw new Error('index.json kosong');
   }catch(err){
     showEmptyState('✕', 'Gagal memuat index.json',
-      `Pastikan <code>index.json</code> berada satu folder dengan <code>index.html</code> ini,
-       dan halaman dibuka lewat server (http://…), bukan dibuka langsung sebagai file.<br><br>
+      `Pastikan <code>index.json</code> berada satu folder dengan <code>index.html</code> ini.<br><br>
        <span style="color:var(--ink-faint);font-size:12px;">${err.message}</span>`);
     return;
   }
@@ -585,19 +535,19 @@ async function loadDecksFromServer(){
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const json = await res.json();
       if (!Array.isArray(json)) throw new Error('bukan array');
-      decks[name] = json.map(c => ({ hanzi:c.hanzi||'', pinyin:c.pinyin||'', arti:c.arti||'', box:1 }));
+      decks[name] = json.map(c => ({ 
+        hanzi: c.hanzi||'', 
+        pinyin: c.pinyin||'', 
+        arti_id: c.arti_id || c.arti || '', 
+        arti_en: c.arti_en || '', 
+        box: 1 
+      }));
     })
   );
 
-  const failed = manifest.filter((name,i) => results[i].status === 'rejected');
-  if (failed.length){
-    console.warn('Deck gagal dimuat:', failed);
-  }
-
   const names = Object.keys(decks);
   if (names.length === 0){
-    showEmptyState('✕', 'Tidak ada deck yang berhasil dimuat',
-      `Periksa nama file di <code>index.json</code> sesuai dengan file JSON yang ada di folder ini.`);
+    showEmptyState('✕', 'Tidak ada deck yang berhasil dimuat', 'Periksa nama file di index.json.');
     return;
   }
 
@@ -636,15 +586,9 @@ function buildDeckRow(names){
   });
 }
 
-/* ============================================================
-   DOWNLOAD UPDATED DECK
-   The browser can't write back to the server file directly, so
-   this downloads a fresh copy of the current deck — overwrite the
-   file on the server with it if you want the changes to stick.
-   ============================================================ */
 function saveCurrentDeck(){
   if (!currentDeckName) return;
-  const data = decks[currentDeckName].map(({hanzi,pinyin,arti}) => ({hanzi,pinyin,arti}));
+  const data = decks[currentDeckName].map(({hanzi,pinyin,arti_id,arti_en}) => ({hanzi,pinyin,arti_id,arti_en}));
   const json = JSON.stringify(data, null, 4);
   const blob = new Blob([json], {type:'application/json'});
   const a = document.createElement('a');
@@ -664,9 +608,6 @@ function flashSaved(){
 
 document.getElementById('saveBtn').onclick = saveCurrentDeck;
 
-/* ============================================================
-   DECK / SESSION
-   ============================================================ */
 function selectDeck(name){
   currentDeckName = name;
   refreshSections();
@@ -674,9 +615,6 @@ function selectDeck(name){
   nextCard();
 }
 
-/* ============================================================
-   SECTIONS — split a deck into chunks so learning isn't "all at once"
-   ============================================================ */
 function computeSectionRanges(total, sizeVal){
   if (sizeVal === 'all'){
     return [{ start:0, end:total, label:`Semua (${total} kartu)` }];
@@ -727,22 +665,19 @@ function buildQueue(){
   updateStatsBar();
 }
 
-/* ============================================================
-   RENDERING
-   ============================================================ */
 function currentTexts(card){
   let front, useHanziFont = false;
   if (mode === 'hanzi'){ front = card.hanzi; useHanziFont = true; }
   else if (mode === 'pinyin'){ front = card.pinyin; }
-  else { front = card.arti; }
+  else { front = `${card.arti_id} / ${card.arti_en}`; }
 
   let answerHtml;
   if (mode === 'hanzi'){
-    answerHtml = `<span class="lbl">Pinyin</span>${card.pinyin}<br><span class="lbl" style="margin-top:10px;">Arti</span>${card.arti}`;
+    answerHtml = `<span class="lbl">Pinyin</span>${card.pinyin}<br><span class="lbl">Arti (ID)</span><b>${card.arti_id}</b><br><span class="lbl">Meaning (EN)</span><em>${card.arti_en}</em>`;
   } else if (mode === 'pinyin'){
-    answerHtml = `<span class="lbl">Hanzi</span>${card.hanzi}<br><span class="lbl" style="margin-top:10px;">Arti</span>${card.arti}`;
+    answerHtml = `<span class="lbl">Hanzi</span>${card.hanzi}<br><span class="lbl">Arti (ID)</span><b>${card.arti_id}</b><br><span class="lbl">Meaning (EN)</span><em>${card.arti_en}</em>`;
   } else {
-    answerHtml = `<span class="lbl">Hanzi</span>${card.hanzi}<br><span class="lbl" style="margin-top:10px;">Pinyin</span>${card.pinyin}`;
+    answerHtml = `<span class="lbl">Hanzi</span>${card.hanzi}<br><span class="lbl">Pinyin</span>${card.pinyin}`;
   }
   return { front, useHanziFont, answerHtml };
 }
@@ -797,9 +732,6 @@ function updateStatsBar(){
   document.getElementById('statBest').textContent = stats.best;
 }
 
-/* ============================================================
-   FLOW
-   ============================================================ */
 function nextCard(){
   if (qIndex >= queue.length){
     showSummary();
@@ -814,7 +746,7 @@ function nextCard(){
 function toggleAnswer(){
   if (!currentCard) return;
   const cardEl = document.getElementById('card');
-  cardEl.style.transform = ''; // release any inline transform left from a spring-back drag
+  cardEl.style.transform = '';
   showingAnswer = !showingAnswer;
   cardEl.classList.toggle('flipped', showingAnswer);
 }
@@ -831,7 +763,6 @@ function recordBelum(){
   currentCard.box = 1;
   stats.belum++; stats.streak = 0;
   updateStatsBar();
-  // reinsert 2-4 cards ahead so it comes back soon this same round (spaced repetition-lite)
   const reinsertAt = Math.min(queue.length, qIndex + 2 + Math.floor(Math.random()*3));
   queue.splice(reinsertAt, 0, currentCard);
 }
@@ -876,9 +807,6 @@ document.getElementById('closeSummary').onclick = () => {
   nextCard();
 };
 
-/* ============================================================
-   MODE PILLS
-   ============================================================ */
 document.querySelectorAll('.pill').forEach(btn=>{
   btn.onclick = () => {
     document.querySelectorAll('.pill').forEach(b=>b.classList.remove('active'));
@@ -888,47 +816,41 @@ document.querySelectorAll('.pill').forEach(btn=>{
   };
 });
 
-/* ============================================================
-   ADD CARD MODAL
-   ============================================================ */
 const addModal = document.getElementById('addModal');
 document.getElementById('addCardBtn').onclick = () => addModal.classList.add('show');
 document.getElementById('cancelAdd').onclick = () => addModal.classList.remove('show');
 document.getElementById('confirmAdd').onclick = () => {
   const hanzi = document.getElementById('inHanzi').value.trim();
   const pinyin = document.getElementById('inPinyin').value.trim();
-  const arti = document.getElementById('inArti').value.trim();
+  const arti_id = document.getElementById('inArtiId').value.trim();
+  const arti_en = document.getElementById('inArtiEn').value.trim();
   if (!hanzi){ alert('Hanzi tidak boleh kosong'); return; }
-  const card = { hanzi, pinyin, arti, box:1 };
+  const card = { hanzi, pinyin, arti_id, arti_en, box:1 };
   decks[currentDeckName].push(card);
   queue.push(card);
   unsavedChanges = true;
-  ['inHanzi','inPinyin','inArti'].forEach(id=>document.getElementById(id).value='');
+  ['inHanzi','inPinyin','inArtiId','inArtiEn'].forEach(id=>document.getElementById(id).value='');
   addModal.classList.remove('show');
   updateProgress();
 };
 
-/* ============================================================
-   SWIPE GESTURE (mouse + touch, via Pointer Events)
-   drag right -> Tahu, drag left -> Belum, small movement -> tap = flip
-   ============================================================ */
 const perspectiveEl = document.getElementById('cardPerspective');
 const cardEl = document.getElementById('card');
 const badgeTahu = document.getElementById('badgeTahu');
 const badgeBelum = document.getElementById('badgeBelum');
 
-const SWIPE_THRESHOLD = 90;   // px needed to commit a swipe
-const TAP_TOLERANCE = 8;      // px of movement still considered a tap
-const FLY_OUT_MS = 320;       // must match the transition duration set in flyOutAndMark
-const SPRING_MS = 420;        // must match the transition duration set on spring-back
+const SWIPE_THRESHOLD = 90;
+const TAP_TOLERANCE = 8;
+const FLY_OUT_MS = 320;
+const SPRING_MS = 420;
 
-let dragState = null; // {startX, startY, dx, active, pointerId}
+let dragState = null;
 
 function currentFlipDeg(){ return showingAnswer ? 180 : 0; }
 
 function applyDragTransform(dx){
   const rot = dx / 18;
-  const lift = Math.min(Math.abs(dx) / 10, 10); // small lift while dragging
+  const lift = Math.min(Math.abs(dx) / 10, 10);
   const scale = 1 + Math.min(Math.abs(dx) / 1400, 0.04);
   cardEl.style.transform =
     `translateX(${dx}px) translateY(${-lift}px) rotateZ(${rot}deg) rotateY(${currentFlipDeg()}deg) scale(${scale})`;
@@ -946,17 +868,7 @@ function applyDragTransform(dx){
   }
 }
 
-function resetDragVisual(){
-  cardEl.classList.remove('dragging');
-  cardEl.style.transition = '';
-  cardEl.style.transform = '';
-  cardEl.style.opacity = '';
-  badgeTahu.style.opacity = 0;
-  badgeBelum.style.opacity = 0;
-}
-
 function flyOutAndMark(direction){
-  // direction: 1 = right/tahu, -1 = left/belum
   cardEl.style.transition = `transform ${FLY_OUT_MS}ms cubic-bezier(.3,.6,.4,1), opacity ${FLY_OUT_MS}ms ease`;
   const travel = (perspectiveEl.getBoundingClientRect().width || 400) * 1.4;
   const dx = direction * travel;
@@ -995,7 +907,6 @@ function endDrag(e){
   dragState = null;
 
   if (!active){
-    // treat as a tap
     toggleAnswer();
     return;
   }
@@ -1006,7 +917,6 @@ function endDrag(e){
   } else if (dx < -SWIPE_THRESHOLD){
     flyOutAndMark(-1);
   } else {
-    // bouncy spring back to center
     cardEl.style.transition = `transform ${SPRING_MS}ms cubic-bezier(.34,1.56,.64,1)`;
     cardEl.style.transform = `translateX(0px) translateY(0px) rotateZ(0deg) rotateY(${currentFlipDeg()}deg) scale(1)`;
     badgeTahu.style.opacity = 0; badgeBelum.style.opacity = 0;
@@ -1018,12 +928,8 @@ perspectiveEl.addEventListener('pointerup', endDrag);
 perspectiveEl.addEventListener('pointercancel', (e)=>{
   if (!dragState || dragState.pointerId !== e.pointerId) return;
   dragState = null;
-  resetDragVisual();
 });
 
-/* ============================================================
-   CONTROLS
-   ============================================================ */
 document.getElementById('tahuBtn').onclick = markTahu;
 document.getElementById('belumBtn').onclick = markBelum;
 document.getElementById('shuffleBtn').onclick = () => { buildQueue(); nextCard(); };
@@ -1042,7 +948,6 @@ window.addEventListener('beforeunload', (e)=>{
   if (unsavedChanges){ e.preventDefault(); e.returnValue=''; }
 });
 
-/* kick off */
 loadDecksFromServer();
 </script>
 </body>
