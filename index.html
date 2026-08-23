@@ -197,7 +197,7 @@ button, select{ font-family: var(--font-ui); }
   border-bottom: 1px solid var(--hairline);
 }
 .dropdown-item{
-  padding: 10px 18px 10px 32px; /* Diberi jarak menjorok ke dalam (indent) untuk sub-kategori */
+  padding: 10px 18px 10px 32px;
   display: flex;
   justify-content: space-between;
   align-items: center;
@@ -206,7 +206,7 @@ button, select{ font-family: var(--font-ui); }
   transition: background .15s ease;
 }
 .dropdown-item.is-standalone{
-  padding-left: 18px; /* Jika bukan bagian sub-grup, sejajarkan biasa */
+  padding-left: 18px;
 }
 .dropdown-item:last-child{ border-bottom: none; }
 .dropdown-item:hover{
@@ -617,13 +617,10 @@ function friendlyDeckName(filename){
   const hskMatch = base.match(/^hsk[\s_-]?(\d+)/i);
   if (hskMatch) return `HSK ${hskMatch[1]}`;
   
-  // Format khusus file Mobile Legends (misal: ml_hero.json -> Hero)
-  const mlMatch = base.match(/^ml[\s_-]?(.*)/i);
-  if (mlMatch) {
-    const sub = mlMatch[1].replace(/[_-]+/g, ' ').toUpperCase();
-    return sub ? sub : 'General';
-  }
-  return base.replace(/[_-]+/g, ' ').replace(/\b\w/g, c => c.toUpperCase());
+  // Format pembersih awalan file otomatis (ml_, min_, mining_, dll)
+  const cleanBase = base.replace(/^(ml|min|mining)[\s_-]*/i, '');
+  const sub = cleanBase.replace(/[_-]+/g, ' ').toUpperCase();
+  return sub ? sub : 'General';
 }
 
 // Interaksi Custom Dropdown
@@ -641,32 +638,38 @@ window.onclick = () => {
   dropdownContainer.classList.remove('open');
 };
 
-// Fungsi Mengelompokkan Deck Berdasarkan Kategori Utama (Parent/Sub)
+// Fungsi Deteksi Kategori Otomatis Berdasarkan Awalan Nama File (Prefix)
 function buildNestedDropdown(names){
   dropdownMenu.innerHTML = '';
   if (names.length === 0){ dropdownContainer.style.display = 'none'; return; }
   dropdownContainer.style.display = 'block';
 
-  // Pisahkan file berdasarkan kelompok (misal berawalan 'ml_' masuk grup Mobile Legends)
-  const groups = {
-    "Mobile Legends": [],
-    "Lainnya / Umum": []
-  };
+  // Kamus pemetaan grup otomatis berdasarkan awalan nama file
+  const groups = {};
 
   names.forEach(n => {
     const base = n.toLowerCase();
+    let groupName = "Lainnya / Umum";
+
     if (base.startsWith('ml')) {
-      groups["Mobile Legends"].push(n);
-    } else {
-      groups["Lainnya / Umum"].push(n);
+      groupName = "Mobile Legends";
+    } else if (base.startsWith('min') || base.startsWith('mining')) {
+      groupName = "Pertambangan (Mining)";
+    } else if (base.startsWith('hsk')) {
+      groupName = "HSK Mandarin";
     }
+
+    if (!groups[groupName]) {
+      groups[groupName] = [];
+    }
+    groups[groupName].push(n);
   });
 
   // Render Grup ke dalam dropdown bertingkat
   Object.keys(groups).forEach(groupName => {
     const list = groups[groupName];
     if (list.length > 0) {
-      // Buat header grup kategori utama (misal: MOBILE LEGENDS)
+      // Buat header grup kategori utama
       const groupHeader = document.createElement('div');
       groupHeader.className = 'dropdown-group-header';
       groupHeader.textContent = groupName;
@@ -695,7 +698,12 @@ function buildNestedDropdown(names){
   });
 
   if(names.length > 0){
-    const initialGroup = names[0].toLowerCase().startsWith('ml') ? "Mobile Legends" : "Lainnya / Umum";
+    const firstN = names[0].toLowerCase();
+    let initialGroup = "Lainnya / Umum";
+    if (firstN.startsWith('ml')) initialGroup = "Mobile Legends";
+    else if (firstN.startsWith('min') || firstN.startsWith('mining')) initialGroup = "Pertambangan (Mining)";
+    else if (firstN.startsWith('hsk')) initialGroup = "HSK Mandarin";
+
     currentDeckLabel.textContent = `${initialGroup} › ${friendlyDeckName(names[0])}`;
   }
 }
