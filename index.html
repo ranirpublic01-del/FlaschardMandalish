@@ -130,7 +130,6 @@ button, select{ font-family: var(--font-ui); }
 .btn-danger{ background:#c0392b; color:#fdf9f0; border-color:transparent; }
 .btn-ok{ background:#2f7a4d; color:#fdf9f0; border-color:transparent; }
 
-/* Custom CSS Nested Dropdown Styling */
 .deck-dropdown-container{
   position: relative;
   width: 100%;
@@ -486,11 +485,13 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
 
 <script>
 const MANIFEST_URL = './index.json';
+const SPREADSHEET_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzgJblfeTp-SWv3fFznDmFrMjZ5Tzn4uZXBuSo7mG6eIEgka7Koj8lV7HD10fUy3mYEhw/exec";
 
+let sessionStartTime = Date.now();
 const STAMP_COLORS = ['var(--stamp-0)','var(--stamp-1)','var(--stamp-2)','var(--stamp-3)',
                       'var(--stamp-4)','var(--stamp-5)','var(--stamp-6)','var(--stamp-7)'];
 
-let deckGroups = []; // Menyimpan struktur kategori dari index.json
+let deckGroups = [];
 let decks = {};
 let currentDeckName = null;
 let sectionRanges = [{ start:0, end:0, label:'Semua' }];
@@ -571,7 +572,7 @@ async function loadDecksFromServer(){
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     manifest = await res.json();
     if (!Array.isArray(manifest) || manifest.length === 0) throw new Error('index.json kosong');
-    deckGroups = manifest; // Menerima struktur array objek dari index.json
+    deckGroups = manifest;
   }catch(err){
     showEmptyState('✕', 'Gagal memuat index.json',
       `Pastikan <code>index.json</code> berformat objek kategori yang benar.<br><br>
@@ -579,7 +580,6 @@ async function loadDecksFromServer(){
     return;
   }
 
-  // Kumpulkan semua nama file dari setiap grup kategori
   let allFileNames = [];
   deckGroups.forEach(group => {
     if (group.decks && Array.isArray(group.decks)) {
@@ -626,7 +626,6 @@ function friendlyDeckName(filename){
   return sub ? sub : 'General';
 }
 
-// Interaksi Custom Dropdown
 const dropdownContainer = document.getElementById('deckDropdown');
 const dropdownTrigger = document.getElementById('dropdownTrigger');
 const currentDeckLabel = document.getElementById('currentDeckLabel');
@@ -641,7 +640,6 @@ window.onclick = () => {
   dropdownContainer.classList.remove('open');
 };
 
-// Fungsi Render Kategori Berdasarkan index.json Secara Dinamis
 function buildNestedDropdownFromJSON(){
   dropdownMenu.innerHTML = '';
   dropdownContainer.style.display = 'block';
@@ -652,12 +650,9 @@ function buildNestedDropdownFromJSON(){
   deckGroups.forEach(group => {
     const groupName = group.category || "Kategori Lain";
     const filenames = group.decks || [];
-
-    // Filter file yang benar-benar berhasil dimuat ke dalam memori
     const validFiles = filenames.filter(n => decks[n]);
 
     if (validFiles.length > 0) {
-      // Buat Header Kategori Utama dari index.json
       const groupHeader = document.createElement('div');
       groupHeader.className = 'dropdown-group-header';
       groupHeader.textContent = groupName;
@@ -696,6 +691,7 @@ function buildNestedDropdownFromJSON(){
 
 function selectDeck(name){
   currentDeckName = name;
+  sessionStartTime = Date.now(); // Reset waktu mulai sesi saat ganti deck
   refreshSections();
   buildQueue();
   nextCard();
@@ -884,13 +880,44 @@ function burstFeedback(symbol, color){
   }
 }
 
+// Fungsi Mengirim Data ke Google Spreadsheet
+function sendDataToSpreadsheet() {
+  const durationMs = Date.now() - sessionStartTime;
+  const durationMinutes = (durationMs / 60000).toFixed(1);
+  
+  const payload = {
+    deckName: currentDeckLabel ? currentDeckLabel.textContent : (currentDeckName || 'Tanpa Kategori'),
+    totalCards: queue.length,
+    tahu: stats.tahu,
+    belum: stats.belum,
+    bestStreak: stats.best,
+    durationMinutes: parseFloat(durationMinutes)
+  };
+
+  fetch(SPREADSHEET_WEB_APP_URL, {
+    method: "POST",
+    mode: "no-cors",
+    headers: { "Content-Type": "application/json" },
+    body: JSON.stringify(payload)
+  }).then(() => {
+    console.log("Data sesi berhasil dikirim ke Spreadsheet!");
+  }).catch(err => {
+    console.error("Gagal mengirim data:", err);
+  });
+}
+
 function showSummary(){
+  // Kirim data otomatis saat sesi selesai
+  sendDataToSpreadsheet();
+
   document.getElementById('summaryText').innerHTML =
-    `✅ Tahu: <b>${stats.tahu}</b> &nbsp; ❌ Belum: <b>${stats.belum}</b><br>🔥 Streak terbaik: <b>${stats.best}</b><br><br>Deck diacak ulang untuk sesi berikutnya.`;
+    `✅ Tahu: <b>${stats.tahu}</b> &nbsp; ❌ Belum: <b>${stats.belum}</b><br>🔥 Streak terbaik: <b>${stats.best}</b><br><br>📊 Statistik berhasil dicatat ke Google Spreadsheet!`;
   document.getElementById('summaryModal').classList.add('show');
 }
+
 document.getElementById('closeSummary').onclick = () => {
   document.getElementById('summaryModal').classList.remove('show');
+  sessionStartTime = Date.now(); // Reset durasi untuk sesi baru
   buildQueue();
   nextCard();
 };
@@ -910,7 +937,6 @@ const badgeTahu = document.getElementById('badgeTahu');
 const badgeBelum = document.getElementById('badgeBelum');
 
 const SWIPE_THRESHOLD = 90;
-const TAP_TOLERANCE = 8;
 let dragState = null;
 
 function applyDragTransform(dx){
@@ -984,7 +1010,11 @@ perspectiveEl.addEventListener('pointerup', (e)=>{
 
 document.getElementById('tahuBtn').onclick = markTahu;
 document.getElementById('belumBtn').onclick = markBelum;
-document.getElementById('shuffleBtn').onclick = () => { buildQueue(); nextCard(); };
+document.getElementById('shuffleBtn').onclick = () => { 
+  sessionStartTime = Date.now();
+  buildQueue(); 
+  nextCard(); 
+};
 
 document.addEventListener('keydown', (e)=>{
   if (document.getElementById('summaryModal').classList.contains('show')) return;
