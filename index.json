@@ -17,8 +17,8 @@
     {
     "category": "Mobile Legends",
     "decks": [
-      "ml_hero",
-      "ml_chat",
+      "ml_hero.json",
+      "ml_chat.json",
       "ml_menu.json"
     ]
   }
