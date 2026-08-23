@@ -291,11 +291,7 @@ select.deck-select{
 }
 .modal-backdrop.show .modal{ transform: translateY(0); }
 .modal h3{ font-family:var(--font-display); margin:0 0 14px; }
-.modal label{ font-size:12px; color:var(--ink-soft); display:block; margin: 10px 0 4px; }
-.modal input{
-  width:100%; padding:10px 12px; border-radius:var(--radius-sm); border:1px solid var(--hairline);
-  background: var(--bg-1); color:var(--ink); font-size:15px; font-family:var(--font-ui);
-}
+.modal p{ font-size:14px; color:var(--ink-soft); line-height:1.7; }
 .modal .row{ display:flex; gap:8px; justify-content:flex-end; margin-top:20px; }
 
 footer{ font-size:11.5px; color:var(--ink-faint); padding-bottom:20px; position:relative; z-index:1; }
@@ -367,7 +363,7 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
   <div class="meta-row">
     <div class="progress-track"><div class="progress-fill" id="progressFill"></div></div>
     <div class="stats-line">
-      <span id="cardPos">Kartu 0/0</span>
+      <span id="cardPos">Sisa Kartu: 20</span>
       <span>✅ <b id="statTahu">0</b>&nbsp;&nbsp;❌ <b id="statBelum">0</b>&nbsp;&nbsp;🔥 <b id="statStreak">0</b> (terbaik <b id="statBest">0</b>)</span>
     </div>
   </div>
@@ -397,8 +393,6 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
     <button class="btn" id="shuffleBtn">🔀 Acak Ulang</button>
     <button class="btn btn-danger" id="belumBtn">❌ Belum (←)</button>
     <button class="btn btn-ok" id="tahuBtn">✅ Tahu (→)</button>
-    <button class="btn" id="addCardBtn">➕ Tambah Kartu</button>
-    <button class="btn btn-accent" id="saveBtn">💾 Unduh Perubahan</button>
   </div>
 
   <footer>
@@ -407,28 +401,10 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
   </footer>
 </div>
 
-<div class="modal-backdrop" id="addModal">
-  <div class="modal">
-    <h3>Tambah Kartu</h3>
-    <label>Hanzi</label>
-    <input id="inHanzi" placeholder="汉字">
-    <label>Pinyin</label>
-    <input id="inPinyin" placeholder="hàn zì">
-    <label>Arti Indonesia (ID)</label>
-    <input id="inArtiId" placeholder="karakter Han">
-    <label>Arti Inggris (EN)</label>
-    <input id="inArtiEn" placeholder="Chinese character">
-    <div class="row">
-      <button class="btn btn-ghost" id="cancelAdd">Batal</button>
-      <button class="btn btn-accent" id="confirmAdd">Simpan</button>
-    </div>
-  </div>
-</div>
-
 <div class="modal-backdrop" id="summaryModal">
   <div class="modal">
     <h3>Sesi Selesai 🎉</h3>
-    <p id="summaryText" style="font-size:14px; color:var(--ink-soft); line-height:1.7;"></p>
+    <p id="summaryText"></p>
     <div class="row">
       <button class="btn btn-accent" id="closeSummary">Lanjut Belajar</button>
     </div>
@@ -451,7 +427,6 @@ let currentCard = null;
 let showingAnswer = false;
 let mode = 'hanzi';
 let stats = { tahu:0, belum:0, streak:0, best:0 };
-let unsavedChanges = false;
 
 function hashStr(s){
   let h = 0;
@@ -525,7 +500,7 @@ async function loadDecksFromServer(){
   }catch(err){
     showEmptyState('✕', 'Gagal memuat index.json',
       `Pastikan <code>index.json</code> berada satu folder dengan <code>index.html</code> ini.<br><br>
-       <span style="color:var(--ink-faint);font-size:12px;">${err.message}</span>`);
+        <span style="color:var(--ink-faint);font-size:12px;">${err.message}</span>`);
     return;
   }
 
@@ -585,28 +560,6 @@ function buildDeckRow(names){
     row.appendChild(pill);
   });
 }
-
-function saveCurrentDeck(){
-  if (!currentDeckName) return;
-  const data = decks[currentDeckName].map(({hanzi,pinyin,arti_id,arti_en}) => ({hanzi,pinyin,arti_id,arti_en}));
-  const json = JSON.stringify(data, null, 4);
-  const blob = new Blob([json], {type:'application/json'});
-  const a = document.createElement('a');
-  a.href = URL.createObjectURL(blob);
-  a.download = currentDeckName;
-  a.click();
-  unsavedChanges = false;
-  flashSaved();
-}
-
-function flashSaved(){
-  const btn = document.getElementById('saveBtn');
-  const old = btn.textContent;
-  btn.textContent = '✔ Terunduh';
-  setTimeout(()=>{ btn.textContent = old; }, 1400);
-}
-
-document.getElementById('saveBtn').onclick = saveCurrentDeck;
 
 function selectDeck(name){
   currentDeckName = name;
@@ -721,9 +674,10 @@ function updateBoxDots(id, box){
 }
 
 function updateProgress(){
-  const total = Math.max(queue.length,1);
-  document.getElementById('progressFill').style.width = ((qIndex/total)*100)+'%';
-  document.getElementById('cardPos').textContent = `Kartu ${Math.min(qIndex,total)}/${total}`;
+  const total = Math.max(queue.length, 1);
+  const sisa = Math.max(0, queue.length - qIndex);
+  document.getElementById('progressFill').style.width = ((qIndex / total) * 100) + '%';
+  document.getElementById('cardPos').textContent = `Sisa Kartu: ${sisa}`;
 }
 function updateStatsBar(){
   document.getElementById('statTahu').textContent = stats.tahu;
@@ -765,6 +719,7 @@ function recordBelum(){
   updateStatsBar();
   const reinsertAt = Math.min(queue.length, qIndex + 2 + Math.floor(Math.random()*3));
   queue.splice(reinsertAt, 0, currentCard);
+  updateProgress();
 }
 
 function markTahu(){
@@ -815,24 +770,6 @@ document.querySelectorAll('.pill').forEach(btn=>{
     renderCard();
   };
 });
-
-const addModal = document.getElementById('addModal');
-document.getElementById('addCardBtn').onclick = () => addModal.classList.add('show');
-document.getElementById('cancelAdd').onclick = () => addModal.classList.remove('show');
-document.getElementById('confirmAdd').onclick = () => {
-  const hanzi = document.getElementById('inHanzi').value.trim();
-  const pinyin = document.getElementById('inPinyin').value.trim();
-  const arti_id = document.getElementById('inArtiId').value.trim();
-  const arti_en = document.getElementById('inArtiEn').value.trim();
-  if (!hanzi){ alert('Hanzi tidak boleh kosong'); return; }
-  const card = { hanzi, pinyin, arti_id, arti_en, box:1 };
-  decks[currentDeckName].push(card);
-  queue.push(card);
-  unsavedChanges = true;
-  ['inHanzi','inPinyin','inArtiId','inArtiEn'].forEach(id=>document.getElementById(id).value='');
-  addModal.classList.remove('show');
-  updateProgress();
-};
 
 const perspectiveEl = document.getElementById('cardPerspective');
 const cardEl = document.getElementById('card');
@@ -935,7 +872,7 @@ document.getElementById('belumBtn').onclick = markBelum;
 document.getElementById('shuffleBtn').onclick = () => { buildQueue(); nextCard(); };
 
 document.addEventListener('keydown', (e)=>{
-  if (document.getElementById('addModal').classList.contains('show')) return;
+  if (document.getElementById('summaryModal').classList.contains('show')) return;
   if (e.code === 'Space'){ e.preventDefault(); toggleAnswer(); }
   else if (e.code === 'ArrowRight'){ markTahu(); }
   else if (e.code === 'ArrowLeft'){ markBelum(); }
@@ -944,11 +881,7 @@ document.addEventListener('keydown', (e)=>{
   else if (e.key === '3'){ document.querySelector('[data-mode="arti"]').click(); }
 });
 
-window.addEventListener('beforeunload', (e)=>{
-  if (unsavedChanges){ e.preventDefault(); e.returnValue=''; }
-});
-
 loadDecksFromServer();
 </script>
 </body>
-</html>
+</html>m
