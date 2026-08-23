@@ -1,0 +1,20 @@
+[
+    {"hanzi": "进攻", "pinyin": "jìngōng", "arti_en": "Attack!", "arti_id": "Serang!"},
+    {"hanzi": "撤退", "pinyin": "chètuì", "arti_en": "Retreat!", "arti_id": "Mundur!"},
+    {"hanzi": "集合", "pinyin": "jíhé", "arti_en": "Gather / Group up!", "arti_id": "Berkumpul!"},
+    {"hanzi": "干得漂亮", "pinyin": "gàn de piàoliang", "arti_en": "Well played / Nice job!", "arti_id": "Kerja bagus! / Mantap!"},
+    {"hanzi": "小心草丛", "pinyin": "xiǎoxīn cǎocóng", "arti_en": "Watch out for bushes!", "arti_id": "Hati-hati dengan semak-semak!"},
+    {"hanzi": "请求支援", "pinyin": "qǐngqiú zhīyuán", "arti_en": "Request backup / Help!", "arti_id": "Minta bantuan!"},
+    {"hanzi": " enemy missing ", "pinyin": "díjūn shīzōng", "arti_en": "Enemy missing!", "arti_id": "Musuh hilang dari lane!"},
+    {"hanzi": "推塔", "pinyin": "tuītǎ", "arti_en": "Push the turret!", "arti_id": "Fokus dorong tower!"},
+    {"hanzi": "发育", "pinyin": "fāyù", "arti_en": "Farm / Grow up!", "arti_id": "Fokus farming / cari gold!"},
+    {"hanzi": "偷塔", "pinyin": "tōutǎ", "arti_en": "Split push / Backdoor!", "arti_id": "Curi push tower musuh!"},
+    {"hanzi": "打主宰", "pinyin": "dǎ zhǔzǎi", "arti_en": "Attack the Lord!", "arti_id": "Serang Lord!"},
+    {"hanzi": "打暴君", "pinyin": "dǎ bàojūn", "arti_en": "Attack the Turtle!", "arti_id": "Serang Turtle!"},
+    {"hanzi": "等我", "pinyin": "děng wǒ", "arti_en": "Wait for me!", "arti_id": "Tunggu aku!"},
+    {"hanzi": "小心", "pinyin": "xiǎoxīn", "arti_en": "Be careful!", "arti_id": "Hati-hati!"},
+    {"hanzi": "干得好", "pinyin": "gàn de hǎo", "arti_en": "Good job!", "arti_id": "Kerja bagus!"},
+    {"hanzi": "别送", "pinyin": "bié sòng", "arti_en": "Stop feeding!", "arti_id": "Jangan kasih poin/mati terus ke musuh!"},
+    {"hanzi": "稳住", "pinyin": "wěnzhù", "arti_en": "Steady / Keep calm!", "arti_id": "Tenang / Jangan gegabah!"},
+    {"hanzi": "听我指挥", "pinyin": "tīng wǒ zhǐhuī", "arti_en": "Follow my lead / Listen to me!", "arti_id": "Ikuti aba-abaku!"}
+]
