@@ -185,7 +185,6 @@ button, select{ font-family: var(--font-ui); }
   to{ opacity: 1; transform: translateY(0); }
 }
 
-/* Styling Grup Kategori Bertingkat */
 .dropdown-group-header{
   padding: 10px 18px;
   font-size: 12px;
@@ -204,9 +203,6 @@ button, select{ font-family: var(--font-ui); }
   cursor: pointer;
   border-bottom: 1px solid var(--hairline);
   transition: background .15s ease;
-}
-.dropdown-item.is-standalone{
-  padding-left: 18px;
 }
 .dropdown-item:last-child{ border-bottom: none; }
 .dropdown-item:hover{
@@ -412,7 +408,6 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
 
 <div id="app" style="display:none; width:100%; display:flex; flex-direction:column; align-items:center;">
 
-  <!-- Custom CSS Nested Dropdown Kategori -->
   <div class="deck-dropdown-container" id="deckDropdown">
     <div class="dropdown-trigger" id="dropdownTrigger">
       <span id="currentDeckLabel">Pilih Kategori Deck...</span>
@@ -495,6 +490,7 @@ const MANIFEST_URL = './index.json';
 const STAMP_COLORS = ['var(--stamp-0)','var(--stamp-1)','var(--stamp-2)','var(--stamp-3)',
                       'var(--stamp-4)','var(--stamp-5)','var(--stamp-6)','var(--stamp-7)'];
 
+let deckGroups = []; // Menyimpan struktur kategori dari index.json
 let decks = {};
 let currentDeckName = null;
 let sectionRanges = [{ start:0, end:0, label:'Semua' }];
@@ -575,15 +571,24 @@ async function loadDecksFromServer(){
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     manifest = await res.json();
     if (!Array.isArray(manifest) || manifest.length === 0) throw new Error('index.json kosong');
+    deckGroups = manifest; // Menerima struktur array objek dari index.json
   }catch(err){
     showEmptyState('✕', 'Gagal memuat index.json',
-      `Pastikan <code>index.json</code> berada satu folder dengan <code>index.html</code> ini.<br><br>
+      `Pastikan <code>index.json</code> berformat objek kategori yang benar.<br><br>
         <span style="color:var(--ink-faint);font-size:12px;">${err.message}</span>`);
     return;
   }
 
+  // Kumpulkan semua nama file dari setiap grup kategori
+  let allFileNames = [];
+  deckGroups.forEach(group => {
+    if (group.decks && Array.isArray(group.decks)) {
+      allFileNames.push(...group.decks);
+    }
+  });
+
   const results = await Promise.allSettled(
-    manifest.map(async name => {
+    allFileNames.map(async name => {
       const res = await fetch(`./${name}`, { cache: 'no-store' });
       if (!res.ok) throw new Error(`HTTP ${res.status}`);
       const json = await res.json();
@@ -598,8 +603,7 @@ async function loadDecksFromServer(){
     })
   );
 
-  const names = Object.keys(decks);
-  if (names.length === 0){
+  if (allFileNames.length === 0 || Object.keys(decks).length === 0){
     showEmptyState('✕', 'Tidak ada deck yang berhasil dimuat', 'Periksa nama file di index.json.');
     return;
   }
@@ -607,8 +611,8 @@ async function loadDecksFromServer(){
   document.getElementById('emptyState').style.display = 'none';
   document.getElementById('app').style.display = 'flex';
 
-  buildNestedDropdown(names);
-  currentDeckName = names[0];
+  buildNestedDropdownFromJSON();
+  currentDeckName = allFileNames[0];
   selectDeck(currentDeckName);
 }
 
@@ -617,7 +621,6 @@ function friendlyDeckName(filename){
   const hskMatch = base.match(/^hsk[\s_-]?(\d+)/i);
   if (hskMatch) return `HSK ${hskMatch[1]}`;
   
-  // Format pembersih awalan file otomatis (ml_, min_, mining_, dll)
   const cleanBase = base.replace(/^(ml|min|mining)[\s_-]*/i, '');
   const sub = cleanBase.replace(/[_-]+/g, ' ').toUpperCase();
   return sub ? sub : 'General';
@@ -638,47 +641,36 @@ window.onclick = () => {
   dropdownContainer.classList.remove('open');
 };
 
-// Fungsi Deteksi Kategori Otomatis Berdasarkan Awalan Nama File (Prefix)
-function buildNestedDropdown(names){
+// Fungsi Render Kategori Berdasarkan index.json Secara Dinamis
+function buildNestedDropdownFromJSON(){
   dropdownMenu.innerHTML = '';
-  if (names.length === 0){ dropdownContainer.style.display = 'none'; return; }
   dropdownContainer.style.display = 'block';
 
-  // Kamus pemetaan grup otomatis berdasarkan awalan nama file
-  const groups = {};
+  let firstValidDeck = null;
+  let firstCategoryName = '';
 
-  names.forEach(n => {
-    const base = n.toLowerCase();
-    let groupName = "Lainnya / Umum";
+  deckGroups.forEach(group => {
+    const groupName = group.category || "Kategori Lain";
+    const filenames = group.decks || [];
 
-    if (base.startsWith('ml')) {
-      groupName = "Mobile Legends";
-    } else if (base.startsWith('min') || base.startsWith('mining')) {
-      groupName = "Pertambangan (Mining)";
-    } else if (base.startsWith('hsk')) {
-      groupName = "HSK Mandarin";
-    }
+    // Filter file yang benar-benar berhasil dimuat ke dalam memori
+    const validFiles = filenames.filter(n => decks[n]);
 
-    if (!groups[groupName]) {
-      groups[groupName] = [];
-    }
-    groups[groupName].push(n);
-  });
-
-  // Render Grup ke dalam dropdown bertingkat
-  Object.keys(groups).forEach(groupName => {
-    const list = groups[groupName];
-    if (list.length > 0) {
-      // Buat header grup kategori utama
+    if (validFiles.length > 0) {
+      // Buat Header Kategori Utama dari index.json
       const groupHeader = document.createElement('div');
       groupHeader.className = 'dropdown-group-header';
       groupHeader.textContent = groupName;
       dropdownMenu.appendChild(groupHeader);
 
-      // Buat sub-item di bawahnya
-      list.forEach(n => {
+      validFiles.forEach(n => {
+        if (!firstValidDeck) {
+          firstValidDeck = n;
+          firstCategoryName = groupName;
+        }
+
         const item = document.createElement('div');
-        item.className = 'dropdown-item' + (groupName === "Lainnya / Umum" ? ' is-standalone' : '') + (n === currentDeckName ? ' active' : '');
+        item.className = 'dropdown-item' + (n === currentDeckName ? ' active' : '');
         const count = decks[n] ? decks[n].length : 0;
         item.innerHTML = `
           <span class="item-name">${friendlyDeckName(n)}</span>
@@ -697,14 +689,8 @@ function buildNestedDropdown(names){
     }
   });
 
-  if(names.length > 0){
-    const firstN = names[0].toLowerCase();
-    let initialGroup = "Lainnya / Umum";
-    if (firstN.startsWith('ml')) initialGroup = "Mobile Legends";
-    else if (firstN.startsWith('min') || firstN.startsWith('mining')) initialGroup = "Pertambangan (Mining)";
-    else if (firstN.startsWith('hsk')) initialGroup = "HSK Mandarin";
-
-    currentDeckLabel.textContent = `${initialGroup} › ${friendlyDeckName(names[0])}`;
+  if (firstValidDeck) {
+    currentDeckLabel.textContent = `${firstCategoryName} › ${friendlyDeckName(firstValidDeck)}`;
   }
 }
 
@@ -925,19 +911,14 @@ const badgeBelum = document.getElementById('badgeBelum');
 
 const SWIPE_THRESHOLD = 90;
 const TAP_TOLERANCE = 8;
-const FLY_OUT_MS = 320;
-const SPRING_MS = 420;
-
 let dragState = null;
-
-function currentFlipDeg(){ return showingAnswer ? 180 : 0; }
 
 function applyDragTransform(dx){
   const rot = dx / 18;
   const lift = Math.min(Math.abs(dx) / 10, 10);
   const scale = 1 + Math.min(Math.abs(dx) / 1400, 0.04);
   cardEl.style.transform =
-    `translateX(${dx}px) translateY(${-lift}px) rotateZ(${rot}deg) rotateY(${currentFlipDeg()}deg) scale(${scale})`;
+    `translateX(${dx}px) translateY(${-lift}px) rotateZ(${rot}deg) rotateY(${showingAnswer ? 180 : 0}deg) scale(${scale})`;
   const amt = Math.min(Math.abs(dx) / SWIPE_THRESHOLD, 1);
   if (dx > 0){
     badgeTahu.style.opacity = amt;
@@ -953,17 +934,17 @@ function applyDragTransform(dx){
 }
 
 function flyOutAndMark(direction){
-  cardEl.style.transition = `transform ${FLY_OUT_MS}ms cubic-bezier(.3,.6,.4,1), opacity ${FLY_OUT_MS}ms ease`;
+  cardEl.style.transition = 'transform 320ms cubic-bezier(.3,.6,.4,1), opacity 320ms ease';
   const travel = (perspectiveEl.getBoundingClientRect().width || 400) * 1.4;
   const dx = direction * travel;
-  cardEl.style.transform = `translateX(${dx}px) translateY(-14px) rotateZ(${direction*28}deg) rotateY(${currentFlipDeg()}deg) scale(.96)`;
+  cardEl.style.transform = `translateX(${dx}px) translateY(-14px) rotateZ(${direction*28}deg) rotateY(${showingAnswer ? 180 : 0}deg) scale(.96)`;
   cardEl.style.opacity = '0';
   badgeTahu.style.opacity = direction > 0 ? 1 : 0;
   badgeBelum.style.opacity = direction < 0 ? 1 : 0;
   setTimeout(()=>{
     if (direction > 0) recordTahu(); else recordBelum();
     nextCard();
-  }, FLY_OUT_MS);
+  }, 320);
 }
 
 perspectiveEl.addEventListener('pointerdown', (e)=>{
@@ -978,40 +959,27 @@ perspectiveEl.addEventListener('pointermove', (e)=>{
   const dx = e.clientX - dragState.startX;
   const dy = e.clientY - dragState.startY;
   dragState.dx = dx;
-  if (!dragState.active && Math.abs(dx) > TAP_TOLERANCE && Math.abs(dx) > Math.abs(dy)){
+  if (!dragState.active && Math.abs(dx) > 8 && Math.abs(dx) > Math.abs(dy)){
     dragState.active = true;
     cardEl.classList.add('dragging');
   }
   if (dragState.active){ applyDragTransform(dx); }
 });
 
-function endDrag(e){
+perspectiveEl.addEventListener('pointerup', (e)=>{
   if (!dragState || dragState.pointerId !== e.pointerId) return;
   const { dx, active } = dragState;
   dragState = null;
-
-  if (!active){
-    toggleAnswer();
-    return;
-  }
-
+  if (!active){ toggleAnswer(); return; }
   cardEl.classList.remove('dragging');
-  if (dx > SWIPE_THRESHOLD){
-    flyOutAndMark(1);
-  } else if (dx < -SWIPE_THRESHOLD){
-    flyOutAndMark(-1);
-  } else {
-    cardEl.style.transition = `transform ${SPRING_MS}ms cubic-bezier(.34,1.56,.64,1)`;
-    cardEl.style.transform = `translateX(0px) translateY(0px) rotateZ(0deg) rotateY(${currentFlipDeg()}deg) scale(1)`;
+  if (dx > SWIPE_THRESHOLD) flyOutAndMark(1);
+  else if (dx < -SWIPE_THRESHOLD) flyOutAndMark(-1);
+  else {
+    cardEl.style.transition = 'transform 420ms cubic-bezier(.34,1.56,.64,1)';
+    cardEl.style.transform = `translateX(0px) translateY(0px) rotateZ(0deg) rotateY(${showingAnswer ? 180 : 0}deg) scale(1)`;
     badgeTahu.style.opacity = 0; badgeBelum.style.opacity = 0;
-    setTimeout(()=>{ cardEl.style.transition = ''; }, SPRING_MS);
+    setTimeout(()=>{ cardEl.style.transition = ''; }, 420);
   }
-}
-
-perspectiveEl.addEventListener('pointerup', endDrag);
-perspectiveEl.addEventListener('pointercancel', (e)=>{
-  if (!dragState || dragState.pointerId !== e.pointerId) return;
-  dragState = null;
 });
 
 document.getElementById('tahuBtn').onclick = markTahu;
