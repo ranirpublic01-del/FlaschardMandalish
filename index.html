@@ -360,7 +360,7 @@ select.deck-select{
 .modal p{ font-size:14px; color:var(--ink-soft); line-height:1.7; }
 .modal .row{ display:flex; gap:8px; justify-content:flex-end; margin-top:20px; }
 
-footer{ font-size:11.5px; color:var(--ink-faint); padding-bottom:20px; position:relative; z-index:1; }
+footer{ text-align:center; font-size:11.5px; color:var(--ink-faint); padding-bottom:20px; position:relative; z-index:1; }
 kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:10.5px; }
 
 :focus-visible{ outline:2px solid var(--accent); outline-offset:2px; }
@@ -373,6 +373,63 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
   .brand .glyph{ font-size:34px; } .brand h1{ font-size:20px; }
   .face{ padding:20px; }
 }
+
+/* ===== Halaman Sumber & Unduh ===== */
+.res-btn{ display:inline-flex; align-items:center; gap:6px; text-decoration:none; }
+#resourcesPage{
+  display:none; width:100%; max-width:920px; padding: 6px 24px 40px;
+  flex-direction:column; gap:22px; position:relative; z-index:1;
+}
+body.view-sumber #resourcesPage{ display:flex; }
+body.view-sumber #app,
+body.view-sumber #emptyState{ display:none !important; }
+.res-top{ display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.res-top h2{ font-family:var(--font-display); font-size:22px; margin:0; }
+.res-lead{ color:var(--ink-soft); font-size:14px; line-height:1.7; margin:0; max-width:680px; }
+.res-section-title{
+  font-size:12px; letter-spacing:1.4px; text-transform:uppercase; font-weight:800; color:var(--accent); margin:6px 0 -6px;
+}
+.hsk-grid{ display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:14px; }
+.hsk-card{
+  --c: var(--accent);
+  background:
+    radial-gradient(circle at 15% 10%, color-mix(in srgb, var(--c) 30%, transparent), transparent 60%),
+    linear-gradient(155deg, color-mix(in srgb, var(--c) 16%, var(--surface)) 0%, var(--surface) 65%);
+  border:1px solid color-mix(in srgb, var(--c) 32%, var(--hairline));
+  border-radius: var(--radius-md); padding:20px 18px 18px; display:flex; flex-direction:column; gap:12px;
+  box-shadow: 0 10px 26px var(--shadow-soft); position:relative; overflow:hidden;
+  transition: transform .15s ease, box-shadow .15s ease;
+}
+.hsk-card:hover{ transform: translateY(-2px); box-shadow: 0 14px 30px var(--shadow); }
+.hsk-card::after{ content:""; position:absolute; left:0; right:0; bottom:0; height:5px; background:var(--c); opacity:.7; }
+.hsk-card .lvl-stamp{
+  width:52px; height:52px; border-radius:10px; background:var(--c); color:#fdf3e6;
+  font-family:var(--font-display); font-weight:900; font-size:13px; line-height:1.15;
+  display:flex; flex-direction:column; align-items:center; justify-content:center; transform: rotate(-5deg);
+  box-shadow: 0 4px 10px var(--shadow-soft);
+}
+.hsk-card .lvl-stamp b{ font-size:20px; }
+.hsk-card h3{ font-family:var(--font-display); font-size:18px; margin:0; }
+.hsk-card p{ margin:0; font-size:12.5px; color:var(--ink-soft); line-height:1.55; flex:1; }
+.hsk-card .dl-btn{
+  display:flex; align-items:center; justify-content:center; gap:8px; text-decoration:none;
+  background:var(--c); color:#fdf9f0; border:none; padding:11px 14px; border-radius:999px;
+  font-weight:700; font-size:13.5px; cursor:pointer; transition: transform .12s ease, box-shadow .12s ease;
+}
+.hsk-card .dl-btn:hover{ transform: translateY(-1px); box-shadow: 0 6px 16px var(--shadow); }
+.ref-card{
+  background:var(--surface); border:1px solid var(--hairline); border-radius:var(--radius-md);
+  padding:20px 22px; display:flex; gap:16px; align-items:center; justify-content:space-between; flex-wrap:wrap;
+  box-shadow: 0 8px 22px var(--shadow-soft);
+}
+.ref-card .ref-text{ flex:1; min-width:220px; }
+.ref-card h3{ font-family:var(--font-display); margin:0 0 4px; font-size:17px; }
+.ref-card p{ margin:0; font-size:13px; color:var(--ink-soft); line-height:1.6; }
+.res-note{
+  font-size:12.5px; color:var(--ink-soft); line-height:1.65; padding:12px 16px; border-radius:var(--radius-sm);
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface)); border:1px dashed var(--hairline);
+}
+.footer-link{ color:var(--accent); font-weight:700; cursor:pointer; text-decoration:underline; background:none; border:none; padding:0; font-size:inherit; }
 </style>
 </head>
 <body>
@@ -388,6 +445,7 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
     </div>
   </div>
   <div class="controls-row">
+    <a class="btn btn-accent res-btn" id="openResources" href="#sumber" title="Unduh flashcard HSK 1-4 & referensi">📥 Unduh HSK</a>
     <button class="mode-toggle" id="dayNightBtn" title="Ganti siang/malam">☀️</button>
     <div class="theme-dots" id="themeDots"></div>
   </div>
@@ -470,8 +528,56 @@ kbd{ background:var(--hairline); padding:1px 6px; border-radius:5px; font-size:1
   <footer>
     Pintasan: <kbd>Space</kbd> balik &nbsp; <kbd>←</kbd> belum &nbsp; <kbd>→</kbd> tahu &nbsp;
     <kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd> ganti mode
+    <br>📥 <a class="footer-link" href="#sumber">Unduh flashcard HSK 1–4 &amp; referensi kosakata</a>
   </footer>
 </div>
+
+
+<section id="resourcesPage" aria-label="Unduh flashcard dan referensi">
+  <div class="res-top">
+    <h2>📥 Unduh Flashcard HSK</h2>
+    <a class="btn res-btn" id="backToStudy" href="#">← Kembali belajar</a>
+  </div>
+  <p class="res-lead">Pilih level HSK yang kamu butuhkan. Setiap tombol membuka folder Google Drive berisi file flashcard untuk level tersebut.</p>
+
+  <div class="res-section-title">Flashcard HSK 1 – 4</div>
+  <div class="hsk-grid">
+    <div class="hsk-card" style="--c:var(--stamp-0)">
+      <div class="lvl-stamp">HSK<b>1</b></div>
+      <h3>HSK 1</h3>
+      <p>Kosakata dasar untuk pemula.</p>
+      <a class="dl-btn" href="https://drive.google.com/drive/folders/1dOLYRxvAf6XQybKx9fJoq7wPhPNK_tsH?usp=drive_link" target="_blank" rel="noopener noreferrer">⬇️ Download HSK 1</a>
+    </div>
+    <div class="hsk-card" style="--c:var(--stamp-1)">
+      <div class="lvl-stamp">HSK<b>2</b></div>
+      <h3>HSK 2</h3>
+      <p>Lanjutan dasar untuk percakapan sehari-hari.</p>
+      <a class="dl-btn" href="https://drive.google.com/drive/folders/1sofFlungZIqMnRZoOh0vENmZq8EuN4ci?usp=sharing" target="_blank" rel="noopener noreferrer">⬇️ Download HSK 2</a>
+    </div>
+    <div class="hsk-card" style="--c:var(--stamp-2)">
+      <div class="lvl-stamp">HSK<b>3</b></div>
+      <h3>HSK 3</h3>
+      <p>Tingkat menengah awal.</p>
+      <a class="dl-btn" href="https://drive.google.com/drive/folders/1UqgcK2aZ2sMOQcXRFb1VrF4GmTFnKb-0?usp=drive_link" target="_blank" rel="noopener noreferrer">⬇️ Download HSK 3</a>
+    </div>
+    <div class="hsk-card" style="--c:var(--stamp-3)">
+      <div class="lvl-stamp">HSK<b>4</b></div>
+      <h3>HSK 4</h3>
+      <p>Tingkat menengah untuk topik yang lebih luas.</p>
+      <a class="dl-btn" href="https://drive.google.com/drive/folders/1h3tl_F7lGNb7nfZRJy76tB6fJolnmYr8?usp=drive_link" target="_blank" rel="noopener noreferrer">⬇️ Download HSK 4</a>
+    </div>
+  </div>
+  <div class="res-note">💡 Tombol membuka folder di Google Drive (tab baru). Di sana pilih file yang kamu mau, lalu klik ikon <b>Download</b> (⬇️).</div>
+
+  <div class="res-section-title">Referensi kosakata</div>
+  <div class="ref-card">
+    <div class="ref-text">
+      <h3>Daftar Kosakata New HSK</h3>
+      <p>Referensi daftar kosakata HSK lengkap per level, berguna untuk mengecek atau menambah kosakata di luar flashcard.</p>
+    </div>
+    <a class="btn btn-accent res-btn" href="https://mandarinbean.com/new-hsk-vocabulary/" target="_blank" rel="noopener noreferrer">🔗 Buka mandarinbean.com</a>
+  </div>
+</section>
 
 <div class="modal-backdrop" id="summaryModal">
   <div class="modal">
@@ -1017,6 +1123,7 @@ document.getElementById('shuffleBtn').onclick = () => {
 };
 
 document.addEventListener('keydown', (e)=>{
+  if (document.body.classList.contains('view-sumber')) return;
   if (document.getElementById('summaryModal').classList.contains('show')) return;
   if (e.code === 'Space'){ e.preventDefault(); toggleAnswer(); }
   else if (e.code === 'ArrowRight'){ markTahu(); }
@@ -1025,6 +1132,14 @@ document.addEventListener('keydown', (e)=>{
   else if (e.key === '2'){ document.querySelector('[data-mode="pinyin"]').click(); }
   else if (e.key === '3'){ document.querySelector('[data-mode="arti"]').click(); }
 });
+
+function syncView(){
+  const onRes = location.hash === '#sumber';
+  document.body.classList.toggle('view-sumber', onRes);
+  window.scrollTo(0, 0);
+}
+window.addEventListener('hashchange', syncView);
+syncView();
 
 loadDecksFromServer();
 </script>
