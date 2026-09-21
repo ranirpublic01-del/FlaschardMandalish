@@ -430,6 +430,51 @@ body.view-sumber #emptyState{ display:none !important; }
   background: color-mix(in srgb, var(--accent) 8%, var(--surface)); border:1px dashed var(--hairline);
 }
 .footer-link{ color:var(--accent); font-weight:700; cursor:pointer; text-decoration:underline; background:none; border:none; padding:0; font-size:inherit; }
+
+/* ===== Tombol 3D besar (mencolok) ===== */
+.btn-3d{
+  --b: var(--accent);
+  display:inline-flex; align-items:center; justify-content:center; gap:10px; text-decoration:none; cursor:pointer;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--b) 82%, white) 0%, var(--b) 100%);
+  color:#fffaf0; font-family:var(--font-ui); font-weight:800; letter-spacing:.3px;
+  border:2px solid color-mix(in srgb, var(--b) 60%, black); border-radius:16px;
+  padding:14px 26px; font-size:16px;
+  box-shadow: 0 6px 0 color-mix(in srgb, var(--b) 55%, black), 0 12px 22px var(--shadow), inset 0 1px 0 rgba(255,255,255,.35);
+  text-shadow: 0 1px 2px rgba(0,0,0,.35);
+  transition: transform .08s ease, box-shadow .08s ease, filter .15s ease;
+  position:relative; top:0;
+}
+.btn-3d:hover{ filter:brightness(1.07); }
+.btn-3d:active{
+  transform: translateY(5px);
+  box-shadow: 0 1px 0 color-mix(in srgb, var(--b) 55%, black), 0 4px 8px var(--shadow), inset 0 1px 0 rgba(255,255,255,.25);
+}
+.btn-3d .ico{ font-size:1.35em; line-height:1; }
+
+.header-dl{ padding:11px 20px; font-size:14.5px; border-radius:14px; animation: dlPulse 2.4s ease-in-out infinite; }
+@keyframes dlPulse{
+  0%,100%{ box-shadow: 0 6px 0 color-mix(in srgb, var(--b) 55%, black), 0 12px 22px var(--shadow), 0 0 0 0 color-mix(in srgb, var(--b) 55%, transparent), inset 0 1px 0 rgba(255,255,255,.35); }
+  50%{ box-shadow: 0 6px 0 color-mix(in srgb, var(--b) 55%, black), 0 12px 22px var(--shadow), 0 0 0 9px color-mix(in srgb, var(--b) 0%, transparent), inset 0 1px 0 rgba(255,255,255,.35); }
+}
+
+.dl-banner-wrap{ width:100%; max-width:720px; padding:0 24px; margin:6px 0 14px; position:relative; z-index:2; }
+.dl-banner{
+  width:100%; padding:18px 24px; font-size:19px; border-radius:20px; flex-direction:column; gap:2px; text-align:center;
+}
+.dl-banner .sub{ font-size:12.5px; font-weight:600; opacity:.92; letter-spacing:.2px; text-shadow:none; }
+.dl-banner .main{ display:flex; align-items:center; gap:10px; }
+
+.hsk-card .dl-btn{
+  padding:15px 14px; font-size:15px; font-weight:800; border-radius:14px; margin-top:4px;
+  background: linear-gradient(180deg, color-mix(in srgb, var(--c) 82%, white) 0%, var(--c) 100%);
+  border:2px solid color-mix(in srgb, var(--c) 60%, black);
+  box-shadow: 0 5px 0 color-mix(in srgb, var(--c) 55%, black), 0 9px 16px var(--shadow-soft), inset 0 1px 0 rgba(255,255,255,.35);
+  text-shadow: 0 1px 2px rgba(0,0,0,.35); transition: transform .08s ease, box-shadow .08s ease, filter .15s ease;
+}
+.hsk-card .dl-btn:hover{ transform:none; filter:brightness(1.07); box-shadow: 0 5px 0 color-mix(in srgb, var(--c) 55%, black), 0 9px 16px var(--shadow-soft), inset 0 1px 0 rgba(255,255,255,.35); }
+.hsk-card .dl-btn:active{ transform: translateY(4px); box-shadow: 0 1px 0 color-mix(in srgb, var(--c) 55%, black), inset 0 1px 0 rgba(255,255,255,.25); }
+.hsk-card{ padding-bottom:22px; }
+.ref-card .btn-3d{ padding:12px 20px; font-size:14.5px; }
 </style>
 </head>
 <body>
@@ -445,7 +490,7 @@ body.view-sumber #emptyState{ display:none !important; }
     </div>
   </div>
   <div class="controls-row">
-    <a class="btn btn-accent res-btn" id="openResources" href="#sumber" title="Unduh flashcard HSK 1-4 & referensi">📥 Unduh HSK</a>
+    <a class="btn-3d header-dl" id="openResources" href="#sumber" title="Unduh flashcard HSK 1-4 & referensi"><span class="ico">📥</span> UNDUH FLASHCARD HSK</a>
     <button class="mode-toggle" id="dayNightBtn" title="Ganti siang/malam">☀️</button>
     <div class="theme-dots" id="themeDots"></div>
   </div>
@@ -464,6 +509,13 @@ body.view-sumber #emptyState{ display:none !important; }
 </div>
 
 <div id="app" style="display:none; width:100%; display:flex; flex-direction:column; align-items:center;">
+
+  <div class="dl-banner-wrap">
+    <a class="btn-3d dl-banner" href="#sumber">
+      <span class="main"><span class="ico">📥</span> UNDUH FLASHCARD HSK 1 – 4</span>
+      <span class="sub">Tap di sini · download file flashcard tiap level + referensi kosakata</span>
+    </a>
+  </div>
 
   <div class="deck-dropdown-container" id="deckDropdown">
     <div class="dropdown-trigger" id="dropdownTrigger">
@@ -536,7 +588,7 @@ body.view-sumber #emptyState{ display:none !important; }
 <section id="resourcesPage" aria-label="Unduh flashcard dan referensi">
   <div class="res-top">
     <h2>📥 Unduh Flashcard HSK</h2>
-    <a class="btn res-btn" id="backToStudy" href="#">← Kembali belajar</a>
+    <a class="btn-3d" id="backToStudy" href="#" style="--b:var(--ink-soft); padding:10px 18px; font-size:14px;">← Kembali belajar</a>
   </div>
   <p class="res-lead">Pilih level HSK yang kamu butuhkan. Setiap tombol membuka folder Google Drive berisi file flashcard untuk level tersebut.</p>
 
@@ -546,25 +598,25 @@ body.view-sumber #emptyState{ display:none !important; }
       <div class="lvl-stamp">HSK<b>1</b></div>
       <h3>HSK 1</h3>
       <p>Kosakata dasar untuk pemula.</p>
-      <a class="dl-btn" href="https://drive.google.com/drive/folders/1dOLYRxvAf6XQybKx9fJoq7wPhPNK_tsH?usp=drive_link" target="_blank" rel="noopener noreferrer">⬇️ Download HSK 1</a>
+      <a class="dl-btn" href="https://drive.google.com/drive/folders/1dOLYRxvAf6XQybKx9fJoq7wPhPNK_tsH?usp=drive_link" target="_blank" rel="noopener noreferrer">⬇️ DOWNLOAD HSK 1</a>
     </div>
     <div class="hsk-card" style="--c:var(--stamp-1)">
       <div class="lvl-stamp">HSK<b>2</b></div>
       <h3>HSK 2</h3>
       <p>Lanjutan dasar untuk percakapan sehari-hari.</p>
-      <a class="dl-btn" href="https://drive.google.com/drive/folders/1sofFlungZIqMnRZoOh0vENmZq8EuN4ci?usp=sharing" target="_blank" rel="noopener noreferrer">⬇️ Download HSK 2</a>
+      <a class="dl-btn" href="https://drive.google.com/drive/folders/1sofFlungZIqMnRZoOh0vENmZq8EuN4ci?usp=sharing" target="_blank" rel="noopener noreferrer">⬇️ DOWNLOAD HSK 2</a>
     </div>
     <div class="hsk-card" style="--c:var(--stamp-2)">
       <div class="lvl-stamp">HSK<b>3</b></div>
       <h3>HSK 3</h3>
       <p>Tingkat menengah awal.</p>
-      <a class="dl-btn" href="https://drive.google.com/drive/folders/1UqgcK2aZ2sMOQcXRFb1VrF4GmTFnKb-0?usp=drive_link" target="_blank" rel="noopener noreferrer">⬇️ Download HSK 3</a>
+      <a class="dl-btn" href="https://drive.google.com/drive/folders/1UqgcK2aZ2sMOQcXRFb1VrF4GmTFnKb-0?usp=drive_link" target="_blank" rel="noopener noreferrer">⬇️ DOWNLOAD HSK 3</a>
     </div>
     <div class="hsk-card" style="--c:var(--stamp-3)">
       <div class="lvl-stamp">HSK<b>4</b></div>
       <h3>HSK 4</h3>
       <p>Tingkat menengah untuk topik yang lebih luas.</p>
-      <a class="dl-btn" href="https://drive.google.com/drive/folders/1h3tl_F7lGNb7nfZRJy76tB6fJolnmYr8?usp=drive_link" target="_blank" rel="noopener noreferrer">⬇️ Download HSK 4</a>
+      <a class="dl-btn" href="https://drive.google.com/drive/folders/1h3tl_F7lGNb7nfZRJy76tB6fJolnmYr8?usp=drive_link" target="_blank" rel="noopener noreferrer">⬇️ DOWNLOAD HSK 4</a>
     </div>
   </div>
   <div class="res-note">💡 Tombol membuka folder di Google Drive (tab baru). Di sana pilih file yang kamu mau, lalu klik ikon <b>Download</b> (⬇️).</div>
@@ -575,7 +627,7 @@ body.view-sumber #emptyState{ display:none !important; }
       <h3>Daftar Kosakata New HSK</h3>
       <p>Referensi daftar kosakata HSK lengkap per level, berguna untuk mengecek atau menambah kosakata di luar flashcard.</p>
     </div>
-    <a class="btn btn-accent res-btn" href="https://mandarinbean.com/new-hsk-vocabulary/" target="_blank" rel="noopener noreferrer">🔗 Buka mandarinbean.com</a>
+    <a class="btn-3d" href="https://mandarinbean.com/new-hsk-vocabulary/" target="_blank" rel="noopener noreferrer"><span class="ico">🔗</span> Buka mandarinbean.com</a>
   </div>
 </section>
 
