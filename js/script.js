@@ -1,4 +1,4 @@
-const MANIFEST_URL = './index.json';
+const MANIFEST_URL = 'data/index.json';
 const SPREADSHEET_WEB_APP_URL = "https://script.google.com/macros/s/AKfycbzgJblfeTp-SWv3fFznDmFrMjZ5Tzn4uZXBuSo7mG6eIEgka7Koj8lV7HD10fUy3mYEhw/exec";
 
 let sessionStartTime = Date.now();
