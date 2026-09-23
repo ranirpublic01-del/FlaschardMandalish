@@ -11,7 +11,7 @@ const LAT_MAX_PLAYS = 2;
 async function latLoadQuestions(){
   if (latQuestions.length) return true;
   try{
-    const res = await fetch('./soal-latihan.json', { cache: 'no-store' });
+    const res = await fetch('data/soal-latihan.json', { cache: 'no-store' });
     if (!res.ok) throw new Error(`HTTP ${res.status}`);
     const data = await res.json();
     if (!Array.isArray(data) || data.length === 0) throw new Error('soal-latihan.json kosong');
