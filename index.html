@@ -47,6 +47,12 @@
     </a>
   </div>
 
+  <div class="dl-banner-wrap" style="margin-top:-6px;">
+    <a class="btn-cta dl-banner" href="#latihan" style="--b:var(--accent-2);">
+      <span class="main"><span class="ico">📝</span> LATIHAN UJIAN HSK1</span>
+    </a>
+  </div>
+
   <div class="deck-dropdown-container" id="deckDropdown">
     <div class="dropdown-trigger" id="dropdownTrigger">
       <span id="currentDeckLabel">Pilih Kategori Deck...</span>
@@ -111,6 +117,7 @@
     Pintasan: <kbd>Space</kbd> balik &nbsp; <kbd>←</kbd> belum &nbsp; <kbd>→</kbd> tahu &nbsp;
     <kbd>1</kbd>/<kbd>2</kbd>/<kbd>3</kbd> ganti mode
     <br>📥 <a class="footer-link" href="#sumber">Download flashcard&amp; referensi </a>
+    &nbsp;·&nbsp;📝 <a class="footer-link" href="#latihan">Latihan ujian HSK1</a>
   </footer>
 </div>
 
@@ -170,6 +177,43 @@
   </div>
 </section>
 
+<section id="latihanPage" aria-label="Latihan ujian HSK">
+  <div class="lat-top">
+    <h2>📝 Latihan Ujian HSK 1</h2>
+    <a class="btn-cta" href="#" style="--b:var(--ink-soft); padding:10px 18px; font-size:14px;">← Kembali belajar</a>
+  </div>
+
+  <div id="lat-login-screen" class="lat-login">
+    <h3>HSK 1 Listening &amp; Reading Challenge</h3>
+    <p class="lat-sub">15 Soal Listening · 15 Soal Reading — offline, tanpa simpan data</p>
+    <div class="lat-form-group">
+      <label>Nama Lengkap (tidak disimpan)</label>
+      <input type="text" id="lat-student-name" placeholder="Tulis nama Anda" autocomplete="off">
+    </div>
+    <button type="button" class="btn btn-accent" style="width:100%;" onclick="latStartExam()">Mulai Kuis 🚀</button>
+  </div>
+
+  <div id="lat-header-bar" class="lat-header-bar hidden">
+    <div class="lat-title">HSK 1 Listening &amp; Reading Challenge</div>
+    <div>Peserta: <span id="lat-display-name"></span></div>
+    <div class="lat-timer-box">⏱ <span id="lat-timer">10:00</span></div>
+  </div>
+
+  <div id="lat-exam-container" class="hidden" style="display:flex; flex-direction:column; gap:18px;">
+    <div class="lat-info">
+      <strong>📝 Petunjuk:</strong> Audio bisa diputar maksimal 2x, pakai suara Text-to-Speech browser.
+    </div>
+    <div class="lat-nav-grid" id="lat-nav-grid-container"></div>
+    <form id="lat-exam-form">
+      <div id="lat-questions-wrapper" style="display:flex; flex-direction:column; gap:14px;"></div>
+      <br>
+      <button type="button" class="btn btn-ok" style="width:100%; font-size:16px; padding:14px;" onclick="latSubmitExam()">✅ Kumpulkan Jawaban</button>
+    </form>
+  </div>
+
+  <div id="lat-result-container" class="hidden" style="display:flex; flex-direction:column; gap:14px;"></div>
+</section>
+
 <div class="modal-backdrop" id="summaryModal">
   <div class="modal">
     <h3>Sesi Selesai 🎉</h3>
@@ -181,5 +225,6 @@
 </div>
 
 <script src="script.js"></script>
+<script src="latihan.js"></script>
 </body>
 </html>

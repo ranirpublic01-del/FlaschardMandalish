@@ -455,3 +455,104 @@ body.view-sumber #emptyState{ display:none !important; }
 .hsk-card .dl-btn:active{ transform: scale(.98); }
 .hsk-card{ padding-bottom:22px; }
 .ref-card .btn-cta{ padding:12px 22px; font-size:14.5px; }
+
+/* ===== Halaman Latihan Ujian (Practice Exam) ===== */
+.hidden{ display:none !important; }
+
+#latihanPage{
+  display:none; width:100%; max-width:760px; padding:6px 24px 40px;
+  flex-direction:column; gap:22px; position:relative; z-index:1;
+}
+body.view-latihan #latihanPage{ display:flex; }
+body.view-latihan #app,
+body.view-latihan #emptyState,
+body.view-latihan #resourcesPage{ display:none !important; }
+body.view-sumber #latihanPage{ display:none !important; }
+
+.lat-top{ display:flex; align-items:center; justify-content:space-between; gap:12px; flex-wrap:wrap; }
+.lat-top h2{ font-family:var(--font-display); font-size:22px; margin:0; }
+
+.lat-login{
+  max-width:420px; margin:20px auto; background:var(--surface); padding:36px 30px;
+  border-radius: var(--radius-lg); box-shadow: 0 15px 40px var(--shadow-soft); text-align:center;
+  border-top:4px solid var(--accent);
+}
+.lat-login h3{ font-family:var(--font-display); color:var(--ink); margin:0 0 6px; }
+.lat-login p.lat-sub{ color:var(--ink-soft); margin-bottom:22px; font-size:13px; }
+.lat-form-group{ margin-bottom:18px; text-align:left; }
+.lat-form-group label{ display:block; margin-bottom:8px; font-weight:700; color:var(--ink); font-size:13px; }
+.lat-form-group input{
+  width:100%; padding:12px 14px; border:1.5px solid var(--hairline); border-radius:var(--radius-sm);
+  background:var(--bg-1); color:var(--ink); font-size:15px; font-family:var(--font-ui); box-sizing:border-box;
+}
+.lat-form-group input:focus{ outline:none; border-color:var(--accent); }
+
+.lat-header-bar{
+  display:flex; justify-content:space-between; align-items:center; flex-wrap:wrap; gap:10px;
+  background:var(--surface); border:1px solid var(--hairline); border-radius:var(--radius-md); padding:14px 18px;
+}
+.lat-header-bar .lat-title{ font-weight:800; font-family:var(--font-display); }
+.lat-timer-box{
+  font-weight:800; background: color-mix(in srgb, var(--accent) 16%, var(--surface)); color:var(--accent);
+  padding:6px 16px; border-radius:999px; font-size:15px;
+}
+
+.lat-info{
+  background: color-mix(in srgb, var(--accent) 8%, var(--surface)); padding:14px 16px;
+  border-radius:var(--radius-md); border:1px dashed var(--hairline); font-size:13px; color:var(--ink-soft); line-height:1.6;
+}
+
+.lat-nav-grid{ display:grid; grid-template-columns:repeat(10, 1fr); gap:6px; }
+.lat-nav-item{
+  height:32px; display:flex; align-items:center; justify-content:center; border:1px solid var(--hairline);
+  border-radius:8px; font-size:12px; cursor:pointer; font-weight:700; color:var(--ink-soft); background:var(--surface);
+}
+.lat-nav-item.answered{ background:#2f7a4d !important; color:#fdf9f0 !important; border-color:#2f7a4d !important; }
+.lat-nav-item.flagged{ background:#a9821f !important; color:#fdf9f0 !important; border-color:#a9821f !important; }
+
+.lat-question-block{
+  padding:18px; background:var(--surface); border:1px solid var(--hairline); border-radius:var(--radius-md);
+  box-shadow: 0 2px 10px var(--shadow-soft);
+}
+.lat-question-header{ display:flex; justify-content:space-between; align-items:center; margin-bottom:10px; }
+.lat-question-text{ font-size:16px; font-weight:600; line-height:1.6; color:var(--ink); }
+
+.lat-flag-btn{
+  background:var(--bg-1); border:1px solid var(--hairline); color:var(--ink-soft); padding:6px 14px;
+  border-radius:999px; cursor:pointer; font-size:11.5px; font-weight:700;
+}
+.lat-flag-btn.flagged{ background:#a9821f; color:#fdf9f0; border-color:#a9821f; }
+
+.lat-audio-box{
+  background: color-mix(in srgb, var(--accent) 10%, var(--surface)); border:1.5px dashed var(--accent);
+  border-radius:var(--radius-sm); padding:12px 14px; margin-bottom:12px; display:flex; align-items:center;
+  gap:12px; flex-wrap:wrap;
+}
+.lat-audio-box .lat-note{ font-size:11.5px; color:var(--ink-faint); }
+
+.lat-statement-box{
+  background:var(--bg-1); padding:10px 14px; border-left:4px solid var(--accent-2); border-radius:8px;
+  font-size:14.5px; color:var(--ink-soft);
+}
+
+.lat-options{ display:grid; grid-template-columns:repeat(auto-fit, minmax(190px, 1fr)); gap:10px; margin-top:10px; }
+.lat-options.single{ grid-template-columns:1fr; }
+.lat-option-label{
+  display:flex; align-items:center; padding:11px 12px; border:1.5px solid var(--hairline); border-radius:var(--radius-sm);
+  cursor:pointer; background:var(--bg-1); color:var(--ink); transition:.15s;
+}
+.lat-option-label:hover{ border-color:var(--accent); background: color-mix(in srgb, var(--accent) 8%, var(--bg-1)); }
+.lat-option-label input{ margin-right:10px; transform:scale(1.15); accent-color:var(--accent); }
+
+.lat-result-card{ border-radius:var(--radius-sm); padding:14px 16px; border:1px solid var(--hairline); background:var(--surface); }
+.lat-result-card.correct{ border-color:#2f7a4d; background: color-mix(in srgb, #2f7a4d 12%, var(--surface)); }
+.lat-result-card.wrong{ border-color:#c0392b; background: color-mix(in srgb, #c0392b 12%, var(--surface)); }
+
+.lat-score-box{ display:flex; gap:16px; flex-wrap:wrap; }
+.lat-score-pill{ flex:1; min-width:150px; background:var(--surface); border:1px solid var(--hairline); border-radius:var(--radius-md); padding:18px; text-align:center; }
+.lat-score-pill .lat-num{ font-size:30px; font-weight:900; color:var(--accent); font-family:var(--font-display); }
+
+@media (max-width: 560px){
+  .lat-nav-grid{ grid-template-columns:repeat(5, 1fr); }
+  .lat-options{ grid-template-columns:1fr; }
+}

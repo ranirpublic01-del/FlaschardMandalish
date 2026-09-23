@@ -543,7 +543,9 @@ document.addEventListener('keydown', (e)=>{
 
 function syncView(){
   const onRes = location.hash === '#sumber';
+  const onLat = location.hash === '#latihan';
   document.body.classList.toggle('view-sumber', onRes);
+  document.body.classList.toggle('view-latihan', onLat);
   window.scrollTo(0, 0);
 }
 window.addEventListener('hashchange', syncView);
