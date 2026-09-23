@@ -2,24 +2,24 @@
   {
     "category": "HSK",
     "decks": [
-      "HSK-1.json",
-      "HSK-2.json",
-      "HSK-3.json",
-      "HSK-4.json"
+      "data/HSK-1.json",
+      "data/HSK-2.json",
+      "data/HSK-3.json",
+      "data/HSK-4.json"
     ]
   },
   {
     "category": "Pertambangan (Mining)",
     "decks": [
-      "min_operasional.json"
+      "data/min_operasional.json"
     ]
   },
-    {
+  {
     "category": "Mobile Legends",
     "decks": [
-      "ml_hero.json",
-      "ml_chat.json",
-      "ml_menu.json"
+      "data/ml_hero.json",
+      "data/ml_chat.json",
+      "data/ml_menu.json"
     ]
   }
 ]
