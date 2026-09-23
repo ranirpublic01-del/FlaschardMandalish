@@ -103,10 +103,15 @@ async function loadDecksFromServer(){
 
   const results = await Promise.allSettled(
     allFileNames.map(async name => {
-      const res = await fetch(`./${name}`, { cache: 'no-store' });
-      if (!res.ok) throw new Error(`HTTP ${res.status}`);
+      // Otomatis menambahkan prefix 'data/' dan suffix '.json'
+      const cleanName = name.replace(/\.json$/i, '');
+      const path = `data/${cleanName}.json`;
+
+      const res = await fetch(path, { cache: 'no-store' });
+      if (!res.ok) throw new Error(`HTTP ${res.status} (${path})`);
       const json = await res.json();
       if (!Array.isArray(json)) throw new Error('bukan array');
+      
       decks[name] = json.map(c => ({ 
         hanzi: c.hanzi||'', 
         pinyin: c.pinyin||'', 
@@ -205,7 +210,7 @@ function buildNestedDropdownFromJSON(){
 
 function selectDeck(name){
   currentDeckName = name;
-  sessionStartTime = Date.now(); // Reset waktu mulai sesi saat ganti deck
+  sessionStartTime = Date.now();
   refreshSections();
   buildQueue();
   nextCard();
@@ -394,7 +399,6 @@ function burstFeedback(symbol, color){
   }
 }
 
-// Fungsi Mengirim Data ke Google Spreadsheet
 function sendDataToSpreadsheet() {
   const durationMs = Date.now() - sessionStartTime;
   const durationMinutes = (durationMs / 60000).toFixed(1);
@@ -421,7 +425,6 @@ function sendDataToSpreadsheet() {
 }
 
 function showSummary(){
-  // Kirim data otomatis saat sesi selesai
   sendDataToSpreadsheet();
 
   document.getElementById('summaryText').innerHTML =
@@ -431,7 +434,7 @@ function showSummary(){
 
 document.getElementById('closeSummary').onclick = () => {
   document.getElementById('summaryModal').classList.remove('show');
-  sessionStartTime = Date.now(); // Reset durasi untuk sesi baru
+  sessionStartTime = Date.now();
   buildQueue();
   nextCard();
 };
