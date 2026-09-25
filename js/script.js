@@ -140,7 +140,7 @@ function friendlyDeckName(filename){
   const hskMatch = base.match(/^hsk[\s_-]?(\d+)/i);
   if (hskMatch) return `HSK ${hskMatch[1]}`;
   
-  const cleanBase = base.replace(/^(ml|min|mining)[\s_-]*/i, '');
+  const cleanBase = base.replace(/^(tr|ml|min|mining)[\s_-]*/i, '');
   const sub = cleanBase.replace(/[_-]+/g, ' ').toUpperCase();
   return sub ? sub : 'General';
 }
