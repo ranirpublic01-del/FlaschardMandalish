@@ -34,6 +34,19 @@ function fontSizeFor(text){
   if (len<=12) return 46; if (len<=20) return 34; if (len<=30) return 26; return 20;
 }
 
+// Mengecilkan font sebuah elemen secara bertahap sampai teksnya
+// benar-benar muat di dalam lebar elemen itu sendiri (tidak overflow).
+function fitTextToBox(el, text, maxPx = 20, minPx = 8){
+  el.textContent = text;
+  el.style.whiteSpace = 'nowrap';
+  let size = maxPx;
+  el.style.fontSize = size + 'px';
+  while (el.scrollWidth > el.clientWidth && size > minPx){
+    size -= 1;
+    el.style.fontSize = size + 'px';
+  }
+}
+
 (function ambient(){
   const chars = ['学','汉','字','词','念','忆','声','读'];
   const el = document.getElementById('ambient');
@@ -286,7 +299,7 @@ function currentTexts(card){
 function renderCard(){
   if (!currentCard) return;
   const { front, useHanziFont, answerHtml } = currentTexts(currentCard);
-  const stampText = friendlyDeckName(currentDeckName||'').toUpperCase().slice(0,8);
+  const stampText = friendlyDeckName(currentDeckName||'').toUpperCase().slice(0,14);
   const color = stampColorFor(currentDeckName||'');
 
   const frontEl = document.getElementById('frontText');
@@ -298,7 +311,7 @@ function renderCard(){
 
   [['stampFront',color],['stampBack',color]].forEach(([id,c])=>{
     const el = document.getElementById(id);
-    el.textContent = stampText || 'DECK';
+    fitTextToBox(el, stampText || 'DECK', 20, 8);
     el.style.background = c;
   });
   document.getElementById('card').style.setProperty('--card-color', color);
