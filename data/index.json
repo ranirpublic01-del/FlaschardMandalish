@@ -21,5 +21,25 @@
       "ml_chat.json",
       "ml_menu.json"
     ]
+  },
+  {
+    "category": "Translator",
+    "decks": [
+      "tr_jabatan_dan_sdm.json",
+      "tr_kelistrikan.json",
+      "tr_kendaraan_dan_alat_berat.json",
+      "tr_keselamatan_k3_apd.json",
+      "tr_kosakata_umum.json",
+      "tr_kualitas_dan_produksi.json",
+      "tr_lingkungan_dan_limbah.json",
+      "tr_mesin_dan_suku_cadang.json",
+      "tr_pergudangan_pelabuhan_logistik.json",
+      "tr_sawit_dan_bahan_baku.json",
+      "tr_tungku_peleburan.json",
+      "tr_administrasi_dan_Kantor.json",
+      "tr_air_dan_pendingin.json",
+      "tr_alat_tulis_dan_perlengkapan.json",
+      "tr_fasilitas_dan_area_kerja.json"
+    ]
   }
 ]
