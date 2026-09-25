@@ -237,7 +237,7 @@ function computeSectionRanges(total, sizeVal){
   const ranges = [];
   for (let start=0; start<total; start+=size){
     const end = Math.min(start+size, total);
-    ranges.push({ start, end, label:`Bagian ${ranges.length+1} (${start+1}–${end})` });
+    ranges.push({ start, end, label: `Bagian ${ranges.length + 1}` });
   }
   return ranges.length ? ranges : [{ start:0, end:total, label:`Semua (${total} kartu)` }];
 }
