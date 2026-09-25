@@ -1,0 +1,776 @@
+[
+  {
+    "hanzi": "干燥窑",
+    "pinyin": "(n.) gānzào yáo",
+    "arti_en": "Dryer Kiln",
+    "arti_id": "Dryer kiln"
+  },
+  {
+    "hanzi": "电炉",
+    "pinyin": "(n.) diànlú",
+    "arti_en": "Electric Furnace",
+    "arti_id": "Tungku listrik"
+  },
+  {
+    "hanzi": "干燥窑中控",
+    "pinyin": "(n.) gānzào yáo zhōngkòng",
+    "arti_en": "Dryer Kiln Central Control",
+    "arti_id": "Dryer kiln central control"
+  },
+  {
+    "hanzi": "回转窑中控",
+    "pinyin": "(n.) huízhuǎn yáo zhōngkòng",
+    "arti_en": "Rotary Kiln Central Control",
+    "arti_id": "Rotary kiln central control"
+  },
+  {
+    "hanzi": "卸料装置",
+    "pinyin": "(n.) xièliào zhuāngzhì",
+    "arti_en": "Discharge Equipment",
+    "arti_id": "Peralatan discharge"
+  },
+  {
+    "hanzi": "出渣口",
+    "pinyin": "(n.) chūzhākǒu",
+    "arti_en": "Taphole",
+    "arti_id": "Taphole"
+  },
+  {
+    "hanzi": "下料口",
+    "pinyin": "(n.) xiàliào kǒu",
+    "arti_en": "Material Discharge Door",
+    "arti_id": "Pintu penurunan material"
+  },
+  {
+    "hanzi": "堵眼机",
+    "pinyin": "(n.) dǔyǎn jī",
+    "arti_en": "Taphole plugging machine",
+    "arti_id": "Mesin penutup lubang"
+  },
+  {
+    "hanzi": "燃烧器",
+    "pinyin": "(n.) ránshāo qì",
+    "arti_en": "Burner",
+    "arti_id": "Burner"
+  },
+  {
+    "hanzi": "热风炉",
+    "pinyin": "(n.) rè fēng lú",
+    "arti_en": "Hot blast stove",
+    "arti_id": "Tungku udara panas"
+  },
+  {
+    "hanzi": "负责人",
+    "pinyin": "(n.) fùzérén",
+    "arti_en": "Person in charge",
+    "arti_id": "Penanggung jawab"
+  },
+  {
+    "hanzi": "耙子",
+    "pinyin": "(n.) bǎzi",
+    "arti_en": "Rake / Hoe",
+    "arti_id": "Cangkul"
+  },
+  {
+    "hanzi": "铁样",
+    "pinyin": "(n.) tiě yàng",
+    "arti_en": "Ferronickel Sample",
+    "arti_id": "Sample Ferronickel"
+  },
+  {
+    "hanzi": "渣样",
+    "pinyin": "(n.) zhā yàng",
+    "arti_en": "Slag Sample",
+    "arti_id": "Sample Slag"
+  },
+  {
+    "hanzi": "铁温",
+    "pinyin": "(n.) tiě wēn",
+    "arti_en": "Tapping Temperature",
+    "arti_id": "Suhu Tapping"
+  },
+  {
+    "hanzi": "渣温高",
+    "pinyin": "(n.) zhā wēn gāo",
+    "arti_en": "High Skimming Temperature",
+    "arti_id": "Suhu Skimming Tinggi"
+  },
+  {
+    "hanzi": "渣温",
+    "pinyin": "(n.) zhā wēn",
+    "arti_en": "Skimming Temperature",
+    "arti_id": "Suhu Skimming"
+  },
+  {
+    "hanzi": "镍铁事业部",
+    "pinyin": "(n.) niètiě shìyèbù",
+    "arti_en": "Ferronickel Division",
+    "arti_id": "Divisi feronikel"
+  },
+  {
+    "hanzi": "桩机",
+    "pinyin": "(n.) zhuāngjī",
+    "arti_en": "Piling machine",
+    "arti_id": "Mesin pancang"
+  },
+  {
+    "hanzi": "放灰",
+    "pinyin": "(v.) fàng huī",
+    "arti_en": "Discharge Dust",
+    "arti_id": "Buang Debu"
+  },
+  {
+    "hanzi": "出料",
+    "pinyin": "(n.) chūliào",
+    "arti_en": "Discharge Material",
+    "arti_id": "Pengeluaran material"
+  },
+  {
+    "hanzi": "废渣处理",
+    "pinyin": "(n.) fèizhā chǔlǐ",
+    "arti_en": "Slag Treatment",
+    "arti_id": "pengolahan terak"
+  },
+  {
+    "hanzi": "卸下料口",
+    "pinyin": "(n.) xià liào kǒu",
+    "arti_en": "Material Discharge Gate",
+    "arti_id": "Gate Penurunan Material"
+  },
+  {
+    "hanzi": "炉渣",
+    "pinyin": "(n.) lúzhā",
+    "arti_en": "slag",
+    "arti_id": "slag"
+  },
+  {
+    "hanzi": "粒镍",
+    "pinyin": "(n.) lìniè",
+    "arti_en": "butiran nikel",
+    "arti_id": "butiran nikel"
+  },
+  {
+    "hanzi": "熔炼",
+    "pinyin": "(n.) róngliàn",
+    "arti_en": "proses peleburan",
+    "arti_id": "proses peleburan"
+  },
+  {
+    "hanzi": "冶炼厂",
+    "pinyin": "(n.) yěliàn chǎng",
+    "arti_en": "pabrik peleburan",
+    "arti_id": "pabrik peleburan"
+  },
+  {
+    "hanzi": "还原",
+    "pinyin": "(v.) huángyuán",
+    "arti_en": "reduksi",
+    "arti_id": "reduksi"
+  },
+  {
+    "hanzi": "炉",
+    "pinyin": "(n.) lúzi",
+    "arti_en": "tungku",
+    "arti_id": "tungku"
+  },
+  {
+    "hanzi": "还原炉",
+    "pinyin": "(n.) huángyuán lú",
+    "arti_en": "tungku reduksi",
+    "arti_id": "tungku reduksi"
+  },
+  {
+    "hanzi": "电炉",
+    "pinyin": "(n.) diànlú",
+    "arti_en": "tungku listrik",
+    "arti_id": "tungku listrik"
+  },
+  {
+    "hanzi": "高炉",
+    "pinyin": "(n.) gāolú",
+    "arti_en": "blast furnace",
+    "arti_id": "blast furnace"
+  },
+  {
+    "hanzi": "电极臂",
+    "pinyin": "(n.) diànjí bì",
+    "arti_en": "lengan elektroda",
+    "arti_id": "lengan elektroda"
+  },
+  {
+    "hanzi": "电极",
+    "pinyin": "(n.) diànjí",
+    "arti_en": "elektroda",
+    "arti_id": "elektroda"
+  },
+  {
+    "hanzi": "炉盖风机",
+    "pinyin": "(n.) lú gài fēngjī",
+    "arti_en": "Blower Furnace Roof",
+    "arti_id": "Blower Furnace Roof"
+  },
+  {
+    "hanzi": "炉底温度",
+    "pinyin": "(n.) lú dī wēndù",
+    "arti_en": "Suhu Furnace Bottom",
+    "arti_id": "Suhu Furnace Bottom"
+  },
+  {
+    "hanzi": "炉盖温度",
+    "pinyin": "(n.) lú gài wēndù",
+    "arti_en": "Suhu Furnace Roof",
+    "arti_id": "Suhu Furnace Roof"
+  },
+  {
+    "hanzi": "炉底风机",
+    "pinyin": "(n.) lú dī fēngjī",
+    "arti_en": "Blower Furnace Bottom",
+    "arti_id": "Blower Furnace Bottom"
+  },
+  {
+    "hanzi": "翻渣",
+    "pinyin": "(v.) fān zhā",
+    "arti_en": "Double Slag",
+    "arti_id": "Double Slag"
+  },
+  {
+    "hanzi": "渣样成分",
+    "pinyin": "(n.) zhā yàng chéngfēn",
+    "arti_en": "Komposisi Sample Slag",
+    "arti_id": "Komposisi Sample Slag"
+  },
+  {
+    "hanzi": "铁口",
+    "pinyin": "(n.) tiě kǒu",
+    "arti_en": "Lubang Tapping",
+    "arti_id": "Lubang Tapping"
+  },
+  {
+    "hanzi": "渣口",
+    "pinyin": "(n.) zhā kǒu",
+    "arti_en": "Lubang Skimming",
+    "arti_id": "Lubang Skimming"
+  },
+  {
+    "hanzi": "铁样成分",
+    "pinyin": "(n.) tiě yàng chéngfēn",
+    "arti_en": "Komposisi Sample Ferronickel",
+    "arti_id": "Komposisi Sample Ferronickel"
+  },
+  {
+    "hanzi": "堵铁口",
+    "pinyin": "(v.) dǔ tiě kǒu",
+    "arti_en": "Menutup Lubang Tapping",
+    "arti_id": "Menutup Lubang Tapping"
+  },
+  {
+    "hanzi": "铁口打开",
+    "pinyin": "(v.) tiě kǒu dǎkāi",
+    "arti_en": "Membuka Lubang Tapping",
+    "arti_id": "Membuka Lubang Tapping"
+  },
+  {
+    "hanzi": "渣口打开",
+    "pinyin": "(v.) zhā kǒu dǎkāi",
+    "arti_en": "Membuka Lubang Skimming",
+    "arti_id": "Membuka Lubang Skimming"
+  },
+  {
+    "hanzi": "下料仓",
+    "pinyin": "(n.) xiàliào cāng",
+    "arti_en": "Sus Bin Calcine",
+    "arti_id": "Sus Bin Calcine"
+  },
+  {
+    "hanzi": "未见渣",
+    "pinyin": "(v.) wèi jiàn zhā",
+    "arti_en": "Belum Terlihat Slag",
+    "arti_id": "Belum Terlihat Slag"
+  },
+  {
+    "hanzi": "渣温低",
+    "pinyin": "(n.) zhā wēn dī",
+    "arti_en": "Suhu Skimming Rendah",
+    "arti_id": "Suhu Skimming Rendah"
+  },
+  {
+    "hanzi": "铁温低",
+    "pinyin": "(n.) tiě wēn dī",
+    "arti_en": "Suhu Tapping Rendah",
+    "arti_id": "Suhu Tapping Rendah"
+  },
+  {
+    "hanzi": "堵渣口",
+    "pinyin": "(v.) dǔ zhā kǒu",
+    "arti_en": "Tutup Lubang Skimming",
+    "arti_id": "Tutup Lubang Skimming"
+  },
+  {
+    "hanzi": "回转窑",
+    "pinyin": "(n.) huíhuǎn yáo",
+    "arti_en": "Kiln",
+    "arti_id": "Kiln"
+  },
+  {
+    "hanzi": "镍铁厂",
+    "pinyin": "(n.) niètiě chǎng",
+    "arti_en": "Pabrik Nickel",
+    "arti_id": "Pabrik Nickel"
+  },
+  {
+    "hanzi": "镍铁",
+    "pinyin": "(n.) niètiě",
+    "arti_en": "Nickel",
+    "arti_id": "Nickel"
+  },
+  {
+    "hanzi": "炉前工",
+    "pinyin": "(n.) lúqiánggōng",
+    "arti_en": "Operator Depan Furnace",
+    "arti_id": "Operator Depan Furnace"
+  },
+  {
+    "hanzi": "看火工",
+    "pinyin": "(n.) kànhuǒgōng",
+    "arti_en": "Operator Burner",
+    "arti_id": "Operator Burner"
+  },
+  {
+    "hanzi": "出闸口",
+    "pinyin": "(n.) chū zhá kǒu",
+    "arti_en": "Taphole",
+    "arti_id": "Taphole"
+  },
+  {
+    "hanzi": "电炉车间",
+    "pinyin": "(n.) diànlù chējiān",
+    "arti_en": "Bengkel tungku listrik",
+    "arti_id": "Bengkel tungku listrik"
+  },
+  {
+    "hanzi": "渣仓",
+    "pinyin": "(n.) zhā cāng",
+    "arti_en": "Bin Slag",
+    "arti_id": "Bin Slag"
+  },
+  {
+    "hanzi": "水渣",
+    "pinyin": "(n.) shuǐ zhā",
+    "arti_en": "Slag",
+    "arti_id": "Slag"
+  },
+  {
+    "hanzi": "冲渣水池",
+    "pinyin": "(n.) chōng zhā shuǐ chí",
+    "arti_en": "Kolam Granulasi",
+    "arti_id": "Kolam Granulasi"
+  },
+  {
+    "hanzi": "矿热炉",
+    "pinyin": "(n.) kuàng rè lú",
+    "arti_en": "Terendam Tungku Busur",
+    "arti_id": "Terendam Tungku Busur"
+  },
+  {
+    "hanzi": "浇筑料",
+    "pinyin": "(n.) jiǎozhù liào",
+    "arti_en": "Material Castable",
+    "arti_id": "Material Castable"
+  },
+  {
+    "hanzi": "电ji caozuò bùfen",
+    "pinyin": "(n.) diànjī cāozuò bùfen",
+    "arti_en": "Pengoperasian Elektrode",
+    "arti_id": "Pengoperasian Elektrode"
+  },
+  {
+    "hanzi": "电极",
+    "pinyin": "(n.) diànjí",
+    "arti_en": "Elektrode",
+    "arti_id": "Elektrode"
+  },
+  {
+    "hanzi": "电ji wèizhì",
+    "pinyin": "(n.) diànjí wèizhì",
+    "arti_en": "Posisi Elektrode",
+    "arti_id": "Posisi Elektrode"
+  },
+  {
+    "hanzi": "电ji táisheng",
+    "pinyin": "(v.) diànjí táishēng",
+    "arti_en": "Elektrode Naik",
+    "arti_id": "Elektrode Naik"
+  },
+  {
+    "hanzi": "电ji xià xiànwèi",
+    "pinyin": "(n.) diànjí xià xiànwèi",
+    "arti_en": "Limit Bawah Elektrode",
+    "arti_id": "Limit Bawah Elektrode"
+  },
+  {
+    "hanzi": "电ji shàng xiànwèi",
+    "pinyin": "(n.) diànjí shàng xiànwèi",
+    "arti_en": "Limit Atas Elektrode",
+    "arti_id": "Limit Atas Elektrode"
+  },
+  {
+    "hanzi": "电ji xiàjiàng",
+    "pinyin": "(v.) diànjí xiàjiàng",
+    "arti_en": "Elektrode Turun",
+    "arti_id": "Elektrode Turun"
+  },
+  {
+    "hanzi": "渣眼堵上",
+    "pinyin": "(v.) zhā yǎn dǔ shàng",
+    "arti_en": "Tutup Skimming Hole",
+    "arti_id": "Tutup Skimming Hole"
+  },
+  {
+    "hanzi": "渣眼打开",
+    "pinyin": "(v.) zhā yǎn dǎkāi",
+    "arti_en": "Buka Skimming Hole",
+    "arti_id": "Buka Skimming Hole"
+  },
+  {
+    "hanzi": "关冲渣水",
+    "pinyin": "(v.) guān chóng zhā shuǐ",
+    "arti_en": "Tutup Air Granulasi",
+    "arti_id": "Tutup Air Granulasi"
+  },
+  {
+    "hanzi": "铁眼堵上",
+    "pinyin": "(v.) tiě yǎn dǔ shàng",
+    "arti_en": "Tutup Tap Hole",
+    "arti_id": "Tutup Tap Hole"
+  },
+  {
+    "hanzi": "铁眼打开",
+    "pinyin": "(v.) tiě yǎn dǎkāi",
+    "arti_en": "Buka Tap Hole",
+    "arti_id": "Buka Tap Hole"
+  },
+  {
+    "hanzi": "电极倒拔",
+    "pinyin": "(v.) diànjí dàobá",
+    "arti_en": "Cabut Elektrode",
+    "arti_id": "Cabut Elektrode"
+  },
+  {
+    "hanzi": "窑尾",
+    "pinyin": "(n.) yáo wěi",
+    "arti_en": "Ekor Kiln",
+    "arti_id": "Ekor Kiln"
+  },
+  {
+    "hanzi": "窑头",
+    "pinyin": "(n.) yáo tóu",
+    "arti_en": "Kepala Kiln",
+    "arti_id": "Kepala Kiln"
+  },
+  {
+    "hanzi": "点火",
+    "pinyin": "(v.) diǎn huǒ",
+    "arti_en": "Nyalakan Burner",
+    "arti_id": "Nyalakan Burner"
+  },
+  {
+    "hanzi": "燃烧器推进",
+    "pinyin": "(v.) ránshāoqì tuijìn",
+    "arti_en": "Majukan Burner",
+    "arti_id": "Majukan Burner"
+  },
+  {
+    "hanzi": "焙烧温度",
+    "pinyin": "(n.) bèishāo wēndù",
+    "arti_en": "Suhu Calcine",
+    "arti_id": "Suhu Calcine"
+  },
+  {
+    "hanzi": "铲窑皮",
+    "pinyin": "(v.) chǎn yáo pí",
+    "arti_en": "Ambil Cang",
+    "arti_id": "Ambil Cang"
+  },
+  {
+    "hanzi": "窑皮",
+    "pinyin": "(n.) yáo pí",
+    "arti_en": "Chunk / Kiln Crust",
+    "arti_id": "Chunk / Kiln Crust"
+  },
+  {
+    "hanzi": "塌料",
+    "pinyin": "(v.) tǎ liào",
+    "arti_en": "Calcine Runtuh",
+    "arti_id": "Calcine Runtuh"
+  },
+  {
+    "hanzi": "炉体",
+    "pinyin": "(n.) lú tí",
+    "arti_en": "Dinding Furnace",
+    "arti_id": "Dinding Furnace"
+  },
+  {
+    "hanzi": "流槽",
+    "pinyin": "(n.) liú cáo",
+    "arti_en": "Runner",
+    "arti_id": "Runner"
+  },
+  {
+    "hanzi": "渣流槽",
+    "pinyin": "(n.) zhā liú cáo",
+    "arti_en": "Runner Tapping",
+    "arti_id": "Runner Tapping"
+  },
+  {
+    "hanzi": "铁流槽",
+    "pinyin": "(n.) tiě liú cáo",
+    "arti_en": "Runner Tapping",
+    "arti_id": "Runner Tapping"
+  },
+  {
+    "hanzi": "清理流槽",
+    "pinyin": "(v.) qīnglǐ liú cáo",
+    "arti_en": "Bersihkan Runner",
+    "arti_id": "Bersihkan Runner"
+  },
+  {
+    "hanzi": "放渣",
+    "pinyin": "(v.) fàng zhā",
+    "arti_en": "Buang Slag",
+    "arti_id": "Buang Slag"
+  },
+  {
+    "hanzi": "下料",
+    "pinyin": "(v.) xiàliào",
+    "arti_en": "Isi Calcine",
+    "arti_id": "Isi Calcine"
+  },
+  {
+    "hanzi": "炉料",
+    "pinyin": "(n.) lúliào",
+    "arti_en": "Calcine",
+    "arti_id": "Calcine"
+  },
+  {
+    "hanzi": "炉内料面",
+    "pinyin": "(n.) lú nèi liào miàn",
+    "arti_en": "Permukaan Calcine",
+    "arti_id": "Permukaan Calcine"
+  },
+  {
+    "hanzi": "加料",
+    "pinyin": "(v.) jiāliào",
+    "arti_en": "Tambah Calcine",
+    "arti_id": "Tambah Calcine"
+  },
+  {
+    "hanzi": "卸料工",
+    "pinyin": "(n.) xièliào gōng",
+    "arti_en": "Operator Discharge End",
+    "arti_id": "Operator Discharge End"
+  },
+  {
+    "hanzi": "充电器",
+    "pinyin": "(n.) chōngdiànqì",
+    "arti_en": "Charger",
+    "arti_id": "Charger"
+  },
+  {
+    "hanzi": "开炉",
+    "pinyin": "(v.) kāi lú",
+    "arti_en": "start-up tungku",
+    "arti_id": "start-up tungku"
+  },
+  {
+    "hanzi": "炉况",
+    "pinyin": "(n.) lúkuàng",
+    "arti_en": "kondisi tungku",
+    "arti_id": "kondisi tungku"
+  },
+  {
+    "hanzi": "停炉",
+    "pinyin": "(v.) tíng lú",
+    "arti_en": "shutdown tungku",
+    "arti_id": "shutdown tungku"
+  },
+  {
+    "hanzi": "镍铁",
+    "pinyin": "(n.) niètiě",
+    "arti_en": "feronikel",
+    "arti_id": "feronikel"
+  },
+  {
+    "hanzi": "精炼镍",
+    "pinyin": "(n.) jīngliàn niè",
+    "arti_en": "nikel refined",
+    "arti_id": "nikel refined"
+  },
+  {
+    "hanzi": "粗镍",
+    "pinyin": "(n.) cūniè",
+    "arti_en": "nikel kasar",
+    "arti_id": "nikel kasar"
+  },
+  {
+    "hanzi": "镍",
+    "pinyin": "(n.) niè",
+    "arti_en": "Nikel",
+    "arti_id": "Nikel"
+  },
+  {
+    "hanzi": "出渣口",
+    "pinyin": "(n.) chūzhākǒu",
+    "arti_en": "slag hole",
+    "arti_id": "slag hole"
+  },
+  {
+    "hanzi": "出铁口",
+    "pinyin": "(n.) chūtiěkǒu",
+    "arti_en": "tap hole",
+    "arti_id": "tap hole"
+  },
+  {
+    "hanzi": "回转窑",
+    "pinyin": "(n.) huíhuǎn yáo",
+    "arti_en": "rotary kiln",
+    "arti_id": "rotary kiln"
+  },
+  {
+    "hanzi": "炉渣",
+    "pinyin": "(n.) lúzhā",
+    "arti_en": "slag",
+    "arti_id": "slag"
+  },
+  {
+    "hanzi": "炉气",
+    "pinyin": "(n.) lúqì",
+    "arti_en": "gas tungku",
+    "arti_id": "gas tungku"
+  },
+  {
+    "hanzi": "炉膛压力",
+    "pinyin": "(n.) lútáng yālì",
+    "arti_en": "tekanan tungku",
+    "arti_id": "tekanan tungku"
+  },
+  {
+    "hanzi": "镍铁事业部",
+    "pinyin": "(n.) niètiě shíyèbù",
+    "arti_en": "Divisi Feronikel",
+    "arti_id": "Divisi Feronikel"
+  },
+  {
+    "hanzi": "回转窑车间",
+    "pinyin": "(n.) huíhuǎn yáo chējiān",
+    "arti_en": "Divisi Rotary Kiln",
+    "arti_id": "Divisi Rotary Kiln"
+  },
+  {
+    "hanzi": "电炉车间",
+    "pinyin": "(n.) diànlú chējiān",
+    "arti_en": "Divisi Furnace",
+    "arti_id": "Divisi Furnace"
+  },
+  {
+    "hanzi": "卸料装置",
+    "pinyin": "(n.) xièliào zhuāngzhì",
+    "arti_en": "Peralatan Discharge",
+    "arti_id": "Peralatan Discharge"
+  },
+  {
+    "hanzi": "炉底",
+    "pinyin": "(n.) lú dǐ",
+    "arti_en": "Bottom Furnace",
+    "arti_id": "Bottom Furnace"
+  },
+  {
+    "hanzi": "炉盖",
+    "pinyin": "(n.) lú gài",
+    "arti_en": "Roof Furnace",
+    "arti_id": "Roof Furnace"
+  },
+  {
+    "hanzi": "铁样成分",
+    "pinyin": "(n.) tiě yàng chéngfēn",
+    "arti_en": "Kandungan Saferronickel",
+    "arti_id": "Kandungan Saferronickel"
+  },
+  {
+    "hanzi": "渣样成分",
+    "pinyin": "(n.) zhā yàng chéngfēn",
+    "arti_en": "Kandungan Sample Slag",
+    "arti_id": "Kandungan Sample Slag"
+  },
+  {
+    "hanzi": "出渣",
+    "pinyin": "(v.) chūzhā",
+    "arti_en": "Skimming",
+    "arti_id": "Skimming"
+  },
+  {
+    "hanzi": "开冲渣水",
+    "pinyin": "(v.) kāi chōng zhā shuǐ",
+    "arti_en": "Buka Air Granulasi",
+    "arti_id": "Buka Air Granulasi"
+  },
+  {
+    "hanzi": "冲渣水泵房",
+    "pinyin": "(n.) chōng zhā shuǐbèng fáng",
+    "arti_en": "Pompa Air Granulasi",
+    "arti_id": "Pompa Air Granulasi"
+  },
+  {
+    "hanzi": "出铁",
+    "pinyin": "(v.) chuìtiě",
+    "arti_en": "Tapping",
+    "arti_id": "Tapping"
+  },
+  {
+    "hanzi": "干燥窑",
+    "pinyin": "(n.) gānzào yáo",
+    "arti_en": "Dryer Kiln",
+    "arti_id": "Dryer Kiln"
+  },
+  {
+    "hanzi": "电炉",
+    "pinyin": "(n.) diànlú",
+    "arti_en": "Tungku Listrik",
+    "arti_id": "Tungku Listrik"
+  },
+  {
+    "hanzi": "干燥窑中控",
+    "pinyin": "(n.) gānzào yáo zhōngkòng",
+    "arti_en": "Dryer Kiln Central Control",
+    "arti_id": "Dryer Kiln Central Control"
+  },
+  {
+    "hanzi": "回转窑中控",
+    "pinyin": "(n.) huíhuǎn yáo zhōngkòng",
+    "arti_en": "Rotary Kiln Central Control",
+    "arti_id": "Rotary Kiln Central Control"
+  },
+  {
+    "hanzi": "冶炼",
+    "pinyin": "(n.) yěliàn",
+    "arti_en": "peleburan",
+    "arti_id": "peleburan"
+  },
+  {
+    "hanzi": "打弧",
+    "pinyin": "(v.) dǎ hú",
+    "arti_en": "Arcing",
+    "arti_id": "Arcing"
+  },
+  {
+    "hanzi": "测渣孔",
+    "pinyin": "(n.) cè zhā kǒng",
+    "arti_en": "Lubang Ukur Slag",
+    "arti_id": "Lubang Ukur Slag"
+  },
+  {
+    "hanzi": "卸料",
+    "pinyin": "(v.) xièliào",
+    "arti_en": "Discharge End",
+    "arti_id": "Discharge End"
+  }
+]

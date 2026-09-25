@@ -1,0 +1,1982 @@
+[
+  {
+    "hanzi": "制动片",
+    "pinyin": "(n.) zhìdòng piàn",
+    "arti_en": "Brake pad",
+    "arti_id": "Kampas rem"
+  },
+  {
+    "hanzi": "制动轮",
+    "pinyin": "(n.) zhìdòng lún",
+    "arti_en": "Brake wheel",
+    "arti_id": "Roda rem"
+  },
+  {
+    "hanzi": "制动器",
+    "pinyin": "(n.) zhìdòng qì",
+    "arti_en": "Brake",
+    "arti_id": "Rem"
+  },
+  {
+    "hanzi": "吊钩",
+    "pinyin": "(n.) diàogōu",
+    "arti_en": "Hook",
+    "arti_id": "Kait"
+  },
+  {
+    "hanzi": "钢丝绳",
+    "pinyin": "(n.) gāngsī shéng",
+    "arti_en": "Steel wire rope",
+    "arti_id": "Tali baja"
+  },
+  {
+    "hanzi": "卷筒",
+    "pinyin": "(n.) juàntǒng",
+    "arti_en": "Drum",
+    "arti_id": "Drum penggulung"
+  },
+  {
+    "hanzi": "吊运",
+    "pinyin": "(n.) diàoyùn",
+    "arti_en": "Lifting / Hoisting",
+    "arti_id": "Pengangkatan"
+  },
+  {
+    "hanzi": "副钩",
+    "pinyin": "(n.) fù gōu",
+    "arti_en": "Auxiliary hook",
+    "arti_id": "Kait cadangan"
+  },
+  {
+    "hanzi": "主钩",
+    "pinyin": "(n.) zhǔ gōu",
+    "arti_en": "Main hook",
+    "arti_id": "Kait utama"
+  },
+  {
+    "hanzi": "遥控手柄",
+    "pinyin": "(n.) yáokòng shǒubǐng",
+    "arti_en": "Remote control handle",
+    "arti_id": "Pegangan kendali jarak jauh"
+  },
+  {
+    "hanzi": "龙门钩",
+    "pinyin": "(n.) lóngmén gōu",
+    "arti_en": "Gantry hook",
+    "arti_id": "Kait gantry"
+  },
+  {
+    "hanzi": "吊钩",
+    "pinyin": "(n.) diàogōu",
+    "arti_en": "Hook",
+    "arti_id": "Kait"
+  },
+  {
+    "hanzi": "保护罩",
+    "pinyin": "(n.) bǎohù zhào",
+    "arti_en": "Protective cover",
+    "arti_id": "Pelindung"
+  },
+  {
+    "hanzi": "滑轮组",
+    "pinyin": "(n.) huálún zǔ",
+    "arti_en": "Pulley block",
+    "arti_id": "Blok katrol"
+  },
+  {
+    "hanzi": "滑轮片",
+    "pinyin": "(n.) huálún piàn",
+    "arti_en": "Pulley disc",
+    "arti_id": "Piringan katrol"
+  },
+  {
+    "hanzi": "分流电机",
+    "pinyin": "(n.) fēnliú diànjī",
+    "arti_en": "Split motor",
+    "arti_id": "Mesin pemisah"
+  },
+  {
+    "hanzi": "螺母",
+    "pinyin": "(n.) luómǔ",
+    "arti_en": "Nut",
+    "arti_id": "Mur"
+  },
+  {
+    "hanzi": "螺丝",
+    "pinyin": "(n.) luósī",
+    "arti_en": "Screw / Bolt",
+    "arti_id": "Baut"
+  },
+  {
+    "hanzi": "磨辊液压油站",
+    "pinyin": "(n.) mó gǔn yèyā yóu zhàn",
+    "arti_en": "Roller Hydraulic Oil Station",
+    "arti_id": "Stasiun Minyak Hidrolik Roller"
+  },
+  {
+    "hanzi": "高速联轴机",
+    "pinyin": "(n.) gāosù liánzhóu qì",
+    "arti_en": "High Speed Coupling",
+    "arti_id": "Kopling Kecepatan Tinggi"
+  },
+  {
+    "hanzi": "分流器电机",
+    "pinyin": "(n.) fēnliúqì diànjī",
+    "arti_en": "Separator Motor",
+    "arti_id": "Motor Pemisah"
+  },
+  {
+    "hanzi": "低压油泵",
+    "pinyin": "(n.) dīyā yóubèng",
+    "arti_en": "Low Pressure Oil Pump",
+    "arti_id": "Pompa Minyak Tekanan Rendah"
+  },
+  {
+    "hanzi": "高压油泵",
+    "pinyin": "(n.) gāoyā yóubèng",
+    "arti_en": "High Pressure Oil Pump",
+    "arti_id": "Pompa Minyak Tekanan Tinggi"
+  },
+  {
+    "hanzi": "磨辊润滑油站",
+    "pinyin": "(n.) mó gǔn rùnhuá yóu zhàn",
+    "arti_en": "Roller Lubricating Oil Station",
+    "arti_id": "Stasiun Minyak Pelumas Roller"
+  },
+  {
+    "hanzi": "清洗油泵",
+    "pinyin": "(v.) qīngxǐ yóubèng",
+    "arti_en": "Clean Oil Pump",
+    "arti_id": "Bersihkan Pompa Minyak"
+  },
+  {
+    "hanzi": "加压油泵",
+    "pinyin": "(n.) jiā yā yóubèng",
+    "arti_en": "Pressurizing Oil Pump",
+    "arti_id": "Tekanan Pompa Minyak"
+  },
+  {
+    "hanzi": "清扫器",
+    "pinyin": "(n.) qīngsǎo qì",
+    "arti_en": "Cleaner",
+    "arti_id": "Mesin Pembersih"
+  },
+  {
+    "hanzi": "滚筒",
+    "pinyin": "(n.) gǔntǒng",
+    "arti_en": "Roller / Drum",
+    "arti_id": "Gulungan"
+  },
+  {
+    "hanzi": "张紧螺栓",
+    "pinyin": "(n.) zhǎng jǐn luóshuān",
+    "arti_en": "Tensioner Bolt",
+    "arti_id": "Baut Tensioner"
+  },
+  {
+    "hanzi": "进料口",
+    "pinyin": "(n.) jìn liào kǒu",
+    "arti_en": "Feeding Gate",
+    "arti_id": "Gate Pemasukan Material"
+  },
+  {
+    "hanzi": "观察口",
+    "pinyin": "(n.) guānchá kǒu",
+    "arti_en": "Inspection Gate",
+    "arti_id": "Gate Pemeriksaan Material"
+  },
+  {
+    "hanzi": "刮料板",
+    "pinyin": "(n.) guǎ liào bǎn",
+    "arti_en": "Scraper Board",
+    "arti_id": "P papan Pengikis"
+  },
+  {
+    "hanzi": "盖板",
+    "pinyin": "(n.) gàibǎn",
+    "arti_en": "Cover Plate",
+    "arti_id": "Penutup"
+  },
+  {
+    "hanzi": "滤袋",
+    "pinyin": "(n.) lǜ dài",
+    "arti_en": "Filter Bag",
+    "arti_id": "Filter"
+  },
+  {
+    "hanzi": "提升阀",
+    "pinyin": "(n.) tíshēng fá",
+    "arti_en": "Temperature Raise Valve",
+    "arti_id": "Katup Penaikkan Suhu"
+  },
+  {
+    "hanzi": "防爆板",
+    "pinyin": "(n.) fángbào bǎn",
+    "arti_en": "Explosion-proof Board",
+    "arti_id": "Papan Anti Ledak"
+  },
+  {
+    "hanzi": "检修",
+    "pinyin": "(n.) jiǎnxiū",
+    "arti_en": "Machine Repair",
+    "arti_id": "Perbaikan Mesin"
+  },
+  {
+    "hanzi": "工头",
+    "pinyin": "(n.) gōngtóu",
+    "arti_en": "Foreman",
+    "arti_id": "Mandor"
+  },
+  {
+    "hanzi": "设备",
+    "pinyin": "(n.) shèbèi",
+    "arti_en": "Equipment",
+    "arti_id": "Peralatan"
+  },
+  {
+    "hanzi": "原料",
+    "pinyin": "(n.) yuánliào",
+    "arti_en": "Raw Material",
+    "arti_id": "Bahan Baku"
+  },
+  {
+    "hanzi": "材料",
+    "pinyin": "(n.) cáiliào",
+    "arti_en": "Material",
+    "arti_id": "Bahan"
+  },
+  {
+    "hanzi": "机器",
+    "pinyin": "(n.) jīqì",
+    "arti_en": "Machine",
+    "arti_id": "Mesin"
+  },
+  {
+    "hanzi": "修理",
+    "pinyin": "(n.) xiūlǐ",
+    "arti_en": "Repair",
+    "arti_id": "Perbaikan"
+  },
+  {
+    "hanzi": "维护",
+    "pinyin": "(n.) wéihù",
+    "arti_en": "Maintenance",
+    "arti_id": "Pemeliharaan"
+  },
+  {
+    "hanzi": "母管压力",
+    "pinyin": "(n.) mǔguǎn yālì",
+    "arti_en": "Header Pressure",
+    "arti_id": "Pipa tekanan"
+  },
+  {
+    "hanzi": "排污阀",
+    "pinyin": "(n.) páiwù fá",
+    "arti_en": "Blowdown Valve",
+    "arti_id": "Katup pembuangan kotoran"
+  },
+  {
+    "hanzi": "气动阀门",
+    "pinyin": "(n.) qìdòng fámén",
+    "arti_en": "Pneumatic Valve",
+    "arti_id": "Pneumatic valve"
+  },
+  {
+    "hanzi": "灰管压力",
+    "pinyin": "(n.) huīguǎn yālì",
+    "arti_en": "Ash Pipe Pressure",
+    "arti_id": "Tekanan pipa gray"
+  },
+  {
+    "hanzi": "停机",
+    "pinyin": "(v.) tíngjī",
+    "arti_en": "Machine Stop",
+    "arti_id": "Mesin berhenti"
+  },
+  {
+    "hanzi": "开机",
+    "pinyin": "(v.) kāijī",
+    "arti_en": "Start Machine",
+    "arti_id": "Jalankan mesin"
+  },
+  {
+    "hanzi": "机修",
+    "pinyin": "(n.) jīxiū",
+    "arti_en": "Machine Repair",
+    "arti_id": "Perbaikan mesin"
+  },
+  {
+    "hanzi": "磨辊",
+    "pinyin": "(n.) mó gǔn",
+    "arti_en": "Roller",
+    "arti_id": "Roller"
+  },
+  {
+    "hanzi": "输送带",
+    "pinyin": "(n.) shūsòngdài",
+    "arti_en": "Conveyor",
+    "arti_id": "Conveyor"
+  },
+  {
+    "hanzi": "分流器",
+    "pinyin": "(n.) fēnliúqì",
+    "arti_en": "Separator",
+    "arti_id": "Separator"
+  },
+  {
+    "hanzi": "振动值",
+    "pinyin": "(n.) zhèndòng zhí",
+    "arti_en": "Vibration Value",
+    "arti_id": "Vibration value"
+  },
+  {
+    "hanzi": "仓式泵",
+    "pinyin": "(n.) cāngshì bèng",
+    "arti_en": "Cone Pump",
+    "arti_id": "Cone pump"
+  },
+  {
+    "hanzi": "洗油润滑站",
+    "pinyin": "(n.) xǐyóu rùnhuá zhàn",
+    "arti_en": "Lubricating Oil Station",
+    "arti_id": "Stasiun oli pelumas"
+  },
+  {
+    "hanzi": "液压站",
+    "pinyin": "(n.) yèyā zhàn",
+    "arti_en": "Hydraulic Oil Station",
+    "arti_id": "Stasiun oli hidrolik"
+  },
+  {
+    "hanzi": "螺旋输送机",
+    "pinyin": "(n.) luóxuán shūsòngjī",
+    "arti_en": "Screw Conveyor",
+    "arti_id": "Sekrup conveyor"
+  },
+  {
+    "hanzi": "锥形仓",
+    "pinyin": "(n.) zhuīxíng cāng",
+    "arti_en": "Cone Bin",
+    "arti_id": "Bin kerucut"
+  },
+  {
+    "hanzi": "高速轴",
+    "pinyin": "(n.) gāosù zhóu",
+    "arti_en": "High Speed Axle",
+    "arti_id": "High speed axle"
+  },
+  {
+    "hanzi": "尾排主电机",
+    "pinyin": "(n.) wěipái zhǔ diànjī",
+    "arti_en": "Main Engine Exhaust End",
+    "arti_id": "Baris akhir mesin utama"
+  },
+  {
+    "hanzi": "尾排烟囱",
+    "pinyin": "(n.) wěipái yāncong",
+    "arti_en": "Exhaust Chimney",
+    "arti_id": "Ekor cerobong asap"
+  },
+  {
+    "hanzi": "风格轮",
+    "pinyin": "(n.) fēngélún",
+    "arti_en": "Sub-grid Wheel",
+    "arti_id": "Roda sub-grid"
+  },
+  {
+    "hanzi": "风机联轴器",
+    "pinyin": "(n.) fēngjī liánzhóu qì",
+    "arti_en": "Fan Coupling",
+    "arti_id": "Kopling kipas"
+  },
+  {
+    "hanzi": "皮带右跑偏",
+    "pinyin": "(v.) pídài yòu pǎopiān",
+    "arti_en": "Conveyor Run to Right",
+    "arti_id": "Conveyor lari ke kanan"
+  },
+  {
+    "hanzi": "皮带左跑偏",
+    "pinyin": "(v.) pídài zuǒ pǎopiān",
+    "arti_en": "Conveyor Run to Left",
+    "arti_id": "Conveyor lari ke kiri"
+  },
+  {
+    "hanzi": "除铁器",
+    "pinyin": "(n.) chútiěqì",
+    "arti_en": "Magnetic Interceptor",
+    "arti_id": "Magnetic interceptor"
+  },
+  {
+    "hanzi": "下料斗",
+    "pinyin": "(n.) xiàliào dǒu",
+    "arti_en": "Hopper",
+    "arti_id": "Hopper"
+  },
+  {
+    "hanzi": "加润滑油",
+    "pinyin": "(v.) jiā rùnhuá yóu",
+    "arti_en": "Add Lubricant",
+    "arti_id": "Tambah pelumas"
+  },
+  {
+    "hanzi": "高压油管",
+    "pinyin": "(n.) gāoyā yóuguǎn",
+    "arti_en": "High Pressure Oil Pipe",
+    "arti_id": "Pipa tekanan tinggi"
+  },
+  {
+    "hanzi": "给煤机",
+    "pinyin": "(n.) gěi méi jī",
+    "arti_en": "Coal Feeder",
+    "arti_id": "Coal feeder"
+  },
+  {
+    "hanzi": "煤粉管道",
+    "pinyin": "(n.) méifěn guǎndào",
+    "arti_en": "Coal Powder Pipe",
+    "arti_id": "Pipa batubara"
+  },
+  {
+    "hanzi": "球阀",
+    "pinyin": "(n.) qiúfá",
+    "arti_en": "Ball Valve",
+    "arti_id": "Ball valve"
+  },
+  {
+    "hanzi": "电磁阀",
+    "pinyin": "(n.) diàncí fá",
+    "arti_en": "Solenoid Valve",
+    "arti_id": "Solenoid valve"
+  },
+  {
+    "hanzi": "给煤机皮带",
+    "pinyin": "(n.) gěi méi jī pídài",
+    "arti_en": "Coal Conveyor Belt",
+    "arti_id": "Sabuk konveyor batubara"
+  },
+  {
+    "hanzi": "手推车",
+    "pinyin": "(n.) shǒutuīchē",
+    "arti_en": "Pushcart",
+    "arti_id": "Kereta dorong"
+  },
+  {
+    "hanzi": "螺丝刀",
+    "pinyin": "(n.) luósīdāo",
+    "arti_en": "Screwdriver",
+    "arti_id": "Obeng"
+  },
+  {
+    "hanzi": "楼梯",
+    "pinyin": "(n.) lóutī",
+    "arti_en": "Stairs",
+    "arti_id": "Tangga"
+  },
+  {
+    "hanzi": "铲车",
+    "pinyin": "(n.) chǎnchē",
+    "arti_en": "Wheel Loader",
+    "arti_id": "Wheel-loader"
+  },
+  {
+    "hanzi": "调试",
+    "pinyin": "(v.) tiáoshì",
+    "arti_en": "Trial / Commissioning",
+    "arti_id": "Percobaan"
+  },
+  {
+    "hanzi": "检查设备",
+    "pinyin": "(v.) jiǎnchá shèbèi",
+    "arti_en": "Equipment Inspection",
+    "arti_id": "Pemeriksaan peralatan"
+  },
+  {
+    "hanzi": "磨辊润滑油站",
+    "pinyin": "(n.) mó gǔn rùnhuá yóu zhàn",
+    "arti_en": "Roller Lubricating Oil Station",
+    "arti_id": "Stasiun oli pelumas roller"
+  },
+  {
+    "hanzi": "磨辊液压油站",
+    "pinyin": "(n.) mó gǔn yèyā yóu zhàn",
+    "arti_en": "Roller Hydraulic Oil Station",
+    "arti_id": "Stasiun oli hidrolik roller"
+  },
+  {
+    "hanzi": "高速联轴器",
+    "pinyin": "(n.) gāosù liánzhóu qì",
+    "arti_en": "High Speed Coupling",
+    "arti_id": "Kopling kecepatan tinggi"
+  },
+  {
+    "hanzi": "加压油泵",
+    "pinyin": "(n.) jiāyā yóubèng",
+    "arti_en": "Pressurizing Oil Pump",
+    "arti_id": "Pompa minyak bertekanan"
+  },
+  {
+    "hanzi": "低压油泵",
+    "pinyin": "(n.) dīyā yóubèng",
+    "arti_en": "Low Pressure Oil Pump",
+    "arti_id": "Pompa minyak tekanan rendah"
+  },
+  {
+    "hanzi": "高压油泵",
+    "pinyin": "(n.) gāoyā yóubèng",
+    "arti_en": "High Pressure Oil Pump",
+    "arti_id": "Pompa minyak tekanan tinggi"
+  },
+  {
+    "hanzi": "张紧螺栓",
+    "pinyin": "(n.) zhǎngjǐn luóshuān",
+    "arti_en": "Tensioner Bolt",
+    "arti_id": "Baut tensioner"
+  },
+  {
+    "hanzi": "清洗油泵",
+    "pinyin": "(v.) qīngxǐ yóubèng",
+    "arti_en": "Clean Oil Pump",
+    "arti_id": "Bersihkan pompa minyak"
+  },
+  {
+    "hanzi": "刮料板",
+    "pinyin": "(n.) guǎliào bǎn",
+    "arti_en": "Scraper Board",
+    "arti_id": "Papan pengikis"
+  },
+  {
+    "hanzi": "清扫器",
+    "pinyin": "(n.) qīngsǎo qì",
+    "arti_en": "Cleaner",
+    "arti_id": "Mesin pembersih"
+  },
+  {
+    "hanzi": "滚筒",
+    "pinyin": "(n.) gǔntǒng",
+    "arti_en": "Roller / Drum",
+    "arti_id": "Gulungan"
+  },
+  {
+    "hanzi": "提升阀",
+    "pinyin": "(n.) tíshēng fá",
+    "arti_en": "Raise Valve",
+    "arti_id": "Katup penaikkan suhu"
+  },
+  {
+    "hanzi": "进料口",
+    "pinyin": "(n.) jìnliào kǒu",
+    "arti_en": "Feeding Gate",
+    "arti_id": "Pintu pemasukan"
+  },
+  {
+    "hanzi": "观察口",
+    "pinyin": "(n.) guānchá kǒu",
+    "arti_en": "Inspection Gate",
+    "arti_id": "Pintu pemeriksaan"
+  },
+  {
+    "hanzi": "防爆板",
+    "pinyin": "(n.) fángbào bǎn",
+    "arti_en": "Explosion-proof Board",
+    "arti_id": "Papan anti ledak"
+  },
+  {
+    "hanzi": "盖板",
+    "pinyin": "(n.) gàibǎn",
+    "arti_en": "Cover Plate",
+    "arti_id": "Penutup"
+  },
+  {
+    "hanzi": "滤袋",
+    "pinyin": "(n.) lǜdài",
+    "arti_en": "Filter Bag",
+    "arti_id": "Filter"
+  },
+  {
+    "hanzi": "进料阀",
+    "pinyin": "(n.) jìnliào fá",
+    "arti_en": "Feeding Valve",
+    "arti_id": "Katup pemasukan"
+  },
+  {
+    "hanzi": "液压管",
+    "pinyin": "(n.) yèyā guǎn",
+    "arti_en": "Hydraulic pipe",
+    "arti_id": "Pipa hidrolik"
+  },
+  {
+    "hanzi": "浇铸行车",
+    "pinyin": "(n.) jiāozhù xíngchē",
+    "arti_en": "Moulding hoist crane",
+    "arti_id": "Hoist crane moulding"
+  },
+  {
+    "hanzi": "加料行车",
+    "pinyin": "(n.) jiāliào xíngchē",
+    "arti_en": "Feeding hoist crane",
+    "arti_id": "Hoist crane feeding"
+  },
+  {
+    "hanzi": "阀门",
+    "pinyin": "(n.) fámén",
+    "arti_en": "Valve",
+    "arti_id": "Katup"
+  },
+  {
+    "hanzi": "行车驾驶室",
+    "pinyin": "(n.) xíngchē jiàshìshì",
+    "arti_en": "Crane cabin",
+    "arti_id": "Kabina crane"
+  },
+  {
+    "hanzi": "单梁行车",
+    "pinyin": "(n.) dānliáng xíngchē",
+    "arti_en": "Monorail hoist crane",
+    "arti_id": "Monorail hoist crane"
+  },
+  {
+    "hanzi": "大车轨道",
+    "pinyin": "(n.) dàchē guǐdào",
+    "arti_en": "Crane travel rail",
+    "arti_id": "Rel perjalanan crane"
+  },
+  {
+    "hanzi": "大车",
+    "pinyin": "(n.) dàchē",
+    "arti_en": "Big crane",
+    "arti_id": "Crane besar"
+  },
+  {
+    "hanzi": "大车梁",
+    "pinyin": "(n.) dàchē liáng",
+    "arti_en": "Crane main beam",
+    "arti_id": "Balok utama crane"
+  },
+  {
+    "hanzi": "制动架",
+    "pinyin": "(n.) zhìdòng jià",
+    "arti_en": "Brake frame",
+    "arti_id": "Rangka rem"
+  },
+  {
+    "hanzi": "减速机",
+    "pinyin": "(n.) jiǎnsùjī",
+    "arti_en": "Gearbox",
+    "arti_id": "Gearbox"
+  },
+  {
+    "hanzi": "填料",
+    "pinyin": "(n.) tiánliào",
+    "arti_en": "Packing / Filler",
+    "arti_id": "Bahan pengisi"
+  },
+  {
+    "hanzi": "轴套",
+    "pinyin": "(n.) zhóutào",
+    "arti_en": "Shaft sleeve",
+    "arti_id": "Selongsong poros"
+  },
+  {
+    "hanzi": "泵轴",
+    "pinyin": "(n.) bèng zhóu",
+    "arti_en": "Pump shaft",
+    "arti_id": "Poros pompa"
+  },
+  {
+    "hanzi": "联轴机",
+    "pinyin": "(n.) liánzhóu qì",
+    "arti_en": "Coupling",
+    "arti_id": "Kopling"
+  },
+  {
+    "hanzi": "填料盒",
+    "pinyin": "(n.) tiánliào hé",
+    "arti_en": "Packing box",
+    "arti_id": "Kotak pengisi"
+  },
+  {
+    "hanzi": "进油管",
+    "pinyin": "(n.) jìn yóu guǎn",
+    "arti_en": "Oil inlet pipe",
+    "arti_id": "Pipa oli masuk"
+  },
+  {
+    "hanzi": "油泵",
+    "pinyin": "(n.) yóubèng",
+    "arti_en": "Oil pump",
+    "arti_id": "Pompa oli"
+  },
+  {
+    "hanzi": "出油管",
+    "pinyin": "(n.) chū yóu guǎn",
+    "arti_en": "Oil outlet pipe",
+    "arti_id": "Pipa oli keluar"
+  },
+  {
+    "hanzi": "油封",
+    "pinyin": "(n.) yóufēng",
+    "arti_en": "Oil seal",
+    "arti_id": "Seal oli"
+  },
+  {
+    "hanzi": "油缸",
+    "pinyin": "(n.) yóugāng",
+    "arti_en": "Hydraulic cylinder",
+    "arti_id": "Silinder hidrolik"
+  },
+  {
+    "hanzi": "维护",
+    "pinyin": "(n.) wéihù",
+    "arti_en": "Maintenance",
+    "arti_id": "Pemeliharaan"
+  },
+  {
+    "hanzi": "离心泵",
+    "pinyin": "(n.) líxīn bèng",
+    "arti_en": "Centrifugal pump",
+    "arti_id": "Pompa sentrifugal"
+  },
+  {
+    "hanzi": "水过滤器",
+    "pinyin": "(n.) shuǐ guòlǜ qì",
+    "arti_en": "Water filter",
+    "arti_id": "Filter air"
+  },
+  {
+    "hanzi": "管道泵",
+    "pinyin": "(n.) guǎndào bèng",
+    "arti_en": "Pipeline pump",
+    "arti_id": "Pompa pipa"
+  },
+  {
+    "hanzi": "加压泵",
+    "pinyin": "(n.) jiāyā bèng",
+    "arti_en": "Booster pump",
+    "arti_id": "Pompa penambah tekanan"
+  },
+  {
+    "hanzi": "高压泵",
+    "pinyin": "(n.) gāoyā bèng",
+    "arti_en": "High pressure pump",
+    "arti_id": "Pompa tekanan tinggi"
+  },
+  {
+    "hanzi": "关阀门",
+    "pinyin": "(v.) guān fámén",
+    "arti_en": "Close valve",
+    "arti_id": "Tutup katup"
+  },
+  {
+    "hanzi": "开阀门",
+    "pinyin": "(v.) kāi fámén",
+    "arti_en": "Open valve",
+    "arti_id": "Buka katup"
+  },
+  {
+    "hanzi": "潜水泵",
+    "pinyin": "(n.) qiánshuǐ bèng",
+    "arti_en": "Submersible pump",
+    "arti_id": "Pompa submersible"
+  },
+  {
+    "hanzi": "泵壳",
+    "pinyin": "(n.) bèng ké",
+    "arti_en": "Pump casing",
+    "arti_id": "Rumah pompa"
+  },
+  {
+    "hanzi": "石棉板",
+    "pinyin": "(n.) shímian bǎn",
+    "arti_en": "Asbestos board",
+    "arti_id": "Papan asbes"
+  },
+  {
+    "hanzi": "泵盖",
+    "pinyin": "(n.) bèng gài",
+    "arti_en": "Pump cover",
+    "arti_id": "Penutup pompa"
+  },
+  {
+    "hanzi": "泵体",
+    "pinyin": "(n.) bèng tǐ",
+    "arti_en": "Pump body",
+    "arti_id": "Badan pompa"
+  },
+  {
+    "hanzi": "泵座",
+    "pinyin": "(n.) bèng zuò",
+    "arti_en": "Pump base",
+    "arti_id": "Dudukan pompa"
+  },
+  {
+    "hanzi": "排风管",
+    "pinyin": "(n.) páifēng guǎn",
+    "arti_en": "Exhaust pipe",
+    "arti_id": "Pipa buang udara"
+  },
+  {
+    "hanzi": "料仓",
+    "pinyin": "(n.) liàocāng",
+    "arti_en": "Silo",
+    "arti_id": "Silo bahan"
+  },
+  {
+    "hanzi": "进料口",
+    "pinyin": "(n.) jìnliào kǒu",
+    "arti_en": "Material inlet",
+    "arti_id": "Pintu masuk material"
+  },
+  {
+    "hanzi": "联轴器",
+    "pinyin": "(n.) liánzhóu qì",
+    "arti_en": "Coupling",
+    "arti_id": "Kopling"
+  },
+  {
+    "hanzi": "减速机",
+    "pinyin": "(n.) jiǎnsùjī",
+    "arti_en": "Gearbox",
+    "arti_id": "Gearbox"
+  },
+  {
+    "hanzi": "出料含水率",
+    "pinyin": "(n.) chūliào hánshuǐlǜ",
+    "arti_en": "Outlet moisture content",
+    "arti_id": "Kadar air pada bahan keluar"
+  },
+  {
+    "hanzi": "物料流动",
+    "pinyin": "(n.) wùliào liúdòng",
+    "arti_en": "Material flow",
+    "arti_id": "Aliran material"
+  },
+  {
+    "hanzi": "进料含水率",
+    "pinyin": "(n.) jìnliào hánshuǐlǜ",
+    "arti_en": "Inlet moisture content",
+    "arti_id": "Kadar air pada bahan masuk"
+  },
+  {
+    "hanzi": "皮带跑偏",
+    "pinyin": "(v.) pídài pǎopiān",
+    "arti_en": "Conveyor misalignment",
+    "arti_id": "Conveyor miring"
+  },
+  {
+    "hanzi": "料湿",
+    "pinyin": "(adj.) liào shī",
+    "arti_en": "Wet material",
+    "arti_id": "Bahan basah"
+  },
+  {
+    "hanzi": "料少",
+    "pinyin": "(adj.) liào shǎo",
+    "arti_en": "Little material",
+    "arti_id": "Bahan sedikit"
+  },
+  {
+    "hanzi": "料多",
+    "pinyin": "(adj.) liào duō",
+    "arti_en": "Much material",
+    "arti_id": "Bahan banyak"
+  },
+  {
+    "hanzi": "料干",
+    "pinyin": "(adj.) liào gān",
+    "arti_en": "Dry material",
+    "arti_id": "Bahan kering"
+  },
+  {
+    "hanzi": "传送带",
+    "pinyin": "(n.) chuánsòngdài",
+    "arti_en": "Conveyor belt",
+    "arti_id": "Conveyor belt"
+  },
+  {
+    "hanzi": "干燥机",
+    "pinyin": "(n.) gānzào jī",
+    "arti_en": "Dryer machine",
+    "arti_id": "Mesin pengering"
+  },
+  {
+    "hanzi": "滚筒",
+    "pinyin": "(n.) gǔntǒng",
+    "arti_en": "Drum",
+    "arti_id": "Drum"
+  },
+  {
+    "hanzi": "出料口",
+    "pinyin": "(n.) chūliào kǒu",
+    "arti_en": "Material outlet",
+    "arti_id": "Pintu keluar material"
+  },
+  {
+    "hanzi": "舱盖",
+    "pinyin": "(n.) cānggài",
+    "arti_en": "Hatch cover",
+    "arti_id": "Penutup palka"
+  },
+  {
+    "hanzi": "装载机",
+    "pinyin": "(n.) zhuāngzài jī",
+    "arti_en": "Loader",
+    "arti_id": "Loader"
+  },
+  {
+    "hanzi": "分料阀",
+    "pinyin": "(n.) fēn liào fá",
+    "arti_en": "Material distribution valve",
+    "arti_id": "Katup pembagi bahan"
+  },
+  {
+    "hanzi": "配料站",
+    "pinyin": "(n.) pèiliào zhàn",
+    "arti_en": "Batching station",
+    "arti_id": "Stasiun pencampuran bahan"
+  },
+  {
+    "hanzi": "板式给料机",
+    "pinyin": "(n.) bǎnshì gěiliào jī",
+    "arti_en": "Apron feeder",
+    "arti_id": "Mesin pengumpan pelat"
+  },
+  {
+    "hanzi": "反击破碎",
+    "pinyin": "(n.) fǎnjī pòsuì",
+    "arti_en": "Impact crusher",
+    "arti_id": "Mesin pemecah benturan"
+  },
+  {
+    "hanzi": "皮带工",
+    "pinyin": "(n.) pídài gōng",
+    "arti_en": "Conveyor operator",
+    "arti_id": "Operator konveyor"
+  },
+  {
+    "hanzi": "打润滑油",
+    "pinyin": "(v.) dǎ rùnhuá yóu",
+    "arti_en": "Apply lubricant",
+    "arti_id": "Memberi pelumas"
+  },
+  {
+    "hanzi": "托轮",
+    "pinyin": "(n.) tuōlún",
+    "arti_en": "Support roller",
+    "arti_id": "Roda penyangga"
+  },
+  {
+    "hanzi": "皮带跳停",
+    "pinyin": "(v.) pídài tiàotíng",
+    "arti_en": "Conveyor emergency stop",
+    "arti_id": "Konveyor berhenti mendadak"
+  },
+  {
+    "hanzi": "检查皮带",
+    "pinyin": "(v.) jiǎnchá pídài",
+    "arti_en": "Inspect conveyor belt",
+    "arti_id": "Periksa sabuk konveyor"
+  },
+  {
+    "hanzi": "入职培训",
+    "pinyin": "(n.) rùzhí péixùn",
+    "arti_en": "Onboarding",
+    "arti_id": "Onboarding"
+  },
+  {
+    "hanzi": "调速控制器",
+    "pinyin": "(n.) tiáosù kòngzhìqì",
+    "arti_en": "Speed Controller",
+    "arti_id": "Speed controller"
+  },
+  {
+    "hanzi": "电机速度控制器",
+    "pinyin": "(n.) diànjī sùdù kòngzhìqì",
+    "arti_en": "Motor Speed Controller",
+    "arti_id": "Motor speed controller"
+  },
+  {
+    "hanzi": "速度控制器",
+    "pinyin": "(n.) sùdù kòngzhìqì",
+    "arti_en": "Speed Controller",
+    "arti_id": "speed controller"
+  },
+  {
+    "hanzi": "维修",
+    "pinyin": "(n.) wéixiū",
+    "arti_en": "Repair",
+    "arti_id": "perbaikan"
+  },
+  {
+    "hanzi": "维修设备",
+    "pinyin": "(v.) wéixiū shèbèi",
+    "arti_en": "Repair Equipment",
+    "arti_id": "memperbaiki peralatan"
+  },
+  {
+    "hanzi": "测试设备",
+    "pinyin": "(v.) cèshì shèbèi",
+    "arti_en": "Test Equipment",
+    "arti_id": "mengetes peralatan"
+  },
+  {
+    "hanzi": "进行保养",
+    "pinyin": "(v.) bàoyǎng shèbèi",
+    "arti_en": "Perform Routine Maintenance",
+    "arti_id": "melakukan perawatan rutin"
+  },
+  {
+    "hanzi": "停电检修",
+    "pinyin": "(v.) tíngdiàn jiǎnxiū",
+    "arti_en": "Power Outage Repair",
+    "arti_id": "perbaikan dengan pemadaman"
+  },
+  {
+    "hanzi": "会议记录",
+    "pinyin": "(n.) huìyì jìlù",
+    "arti_en": "Meeting Minutes",
+    "arti_id": "Catatan meeting"
+  },
+  {
+    "hanzi": "铁钩料",
+    "pinyin": "(n.) tiě gōu liào",
+    "arti_en": "Remin Mix",
+    "arti_id": "Remin Mix"
+  },
+  {
+    "hanzi": "吹氧管",
+    "pinyin": "(n.) chuīyǎng guǎn",
+    "arti_en": "Lancing Pipe",
+    "arti_id": "Lencing"
+  },
+  {
+    "hanzi": "气管",
+    "pinyin": "(n.) qìguǎn",
+    "arti_en": "Gas Pipe",
+    "arti_id": "Pipa Gas"
+  },
+  {
+    "hanzi": "挡板",
+    "pinyin": "(n.) dǎngbǎn",
+    "arti_en": "Baffle / Plate",
+    "arti_id": "Papan Penahan"
+  },
+  {
+    "hanzi": "风管",
+    "pinyin": "(n.) fēngguǎn",
+    "arti_en": "Air Duct",
+    "arti_id": "Pipa Angin"
+  },
+  {
+    "hanzi": "油管",
+    "pinyin": "(n.) yóuguǎn",
+    "arti_en": "Oil Pipe",
+    "arti_id": "Pipa Oil"
+  },
+  {
+    "hanzi": "材料",
+    "pinyin": "(n.) cáiliào",
+    "arti_en": "Material / Ingredients",
+    "arti_id": "Bahan"
+  },
+  {
+    "hanzi": "履带吊",
+    "pinyin": "(n.) lǔdài diào",
+    "arti_en": "Crawler crane",
+    "arti_id": "Crane rantai"
+  },
+  {
+    "hanzi": "堵下料口",
+    "pinyin": "(v.) dǔ xiàliào kǒu",
+    "arti_en": "Block Material Inlet",
+    "arti_id": "Sumbat Material Inlet"
+  },
+  {
+    "hanzi": "闸板位置",
+    "pinyin": "(n.) zhábǎn wèizhì",
+    "arti_en": "Gate Position",
+    "arti_id": "Posisi Gate"
+  },
+  {
+    "hanzi": "闸板",
+    "pinyin": "(n.) zhábǎn",
+    "arti_en": "Gate",
+    "arti_id": "Gate"
+  },
+  {
+    "hanzi": "打开下料口",
+    "pinyin": "(v.) dǎkāi xiàliào kǒu",
+    "arti_en": "Open Material Inlet",
+    "arti_id": "Buka Material Inlet"
+  },
+  {
+    "hanzi": "远离下料口",
+    "pinyin": "(v.) yuǎnlí xiàliào kǒu",
+    "arti_en": "Stay Away from Material Inlet",
+    "arti_id": "Jauh dari Material Inlet"
+  },
+  {
+    "hanzi": "设备",
+    "pinyin": "(n.) shèbèi",
+    "arti_en": "Equipment",
+    "arti_id": "Peralatan"
+  },
+  {
+    "hanzi": "托轮",
+    "pinyin": "(n.) tuōlún",
+    "arti_en": "Roller",
+    "arti_id": "Roller"
+  },
+  {
+    "hanzi": "中间仓",
+    "pinyin": "(n.) zhōngjiān cāng",
+    "arti_en": "Surge Bin",
+    "arti_id": "Surge Bin"
+  },
+  {
+    "hanzi": "原料",
+    "pinyin": "(n.) yuánliào",
+    "arti_en": "Raw Material",
+    "arti_id": "Bahan baku"
+  },
+  {
+    "hanzi": "投料",
+    "pinyin": "(v.) tóuliào",
+    "arti_en": "Feed Material",
+    "arti_id": "Memasukkan bahan"
+  },
+  {
+    "hanzi": "危险品",
+    "pinyin": "(n.) wēixiǎn pǐn",
+    "arti_en": "Dangerous Goods",
+    "arti_id": "bahan berbahaya"
+  },
+  {
+    "hanzi": "驾驶铲车",
+    "pinyin": "(v.) jiàshǐ chǎnchē",
+    "arti_en": "Operate Loader",
+    "arti_id": "Operasikan loader"
+  },
+  {
+    "hanzi": "刹车",
+    "pinyin": "(v.) shāchē",
+    "arti_en": "Brake",
+    "arti_id": "Rem"
+  },
+  {
+    "hanzi": "球阀",
+    "pinyin": "(n.) qiú fá",
+    "arti_en": "Ball Valve",
+    "arti_id": "Ball Valve"
+  },
+  {
+    "hanzi": "电磁阀",
+    "pinyin": "(n.) diàncí fá",
+    "arti_en": "Solenoid Valve",
+    "arti_id": "Solenoid Valve"
+  },
+  {
+    "hanzi": "进料阀",
+    "pinyin": "(n.) jìn liào fá",
+    "arti_en": "Valve Material Inlet",
+    "arti_id": "Valve Material Masuk"
+  },
+  {
+    "hanzi": "煤粉管道",
+    "pinyin": "(n.) méi fěn guǎndào",
+    "arti_en": "Coal Dust Pipe",
+    "arti_id": "Pipa Coal"
+  },
+  {
+    "hanzi": "给煤机皮带",
+    "pinyin": "(n.) gěi méi jī pídài",
+    "arti_en": "Coal Feeder Conveyor",
+    "arti_id": "Conveyor Batubara"
+  },
+  {
+    "hanzi": "手推车",
+    "pinyin": "(n.) shǒutuī chē",
+    "arti_en": "Push Cart",
+    "arti_id": "Kereta Dorong"
+  },
+  {
+    "hanzi": "螺丝刀",
+    "pinyin": "(n.) luósīdāo",
+    "arti_en": "Screwdriver",
+    "arti_id": "Obeng"
+  },
+  {
+    "hanzi": "铲车",
+    "pinyin": "(n.) chǎnchē",
+    "arti_en": "Wheel Loader",
+    "arti_id": "Wheel-Loader"
+  },
+  {
+    "hanzi": "试验",
+    "pinyin": "(v.) shìyàn",
+    "arti_en": "Test / Trial",
+    "arti_id": "Percobaan"
+  },
+  {
+    "hanzi": "楼梯",
+    "pinyin": "(n.) lóutī",
+    "arti_en": "Stairs",
+    "arti_id": "Tangga"
+  },
+  {
+    "hanzi": "打扫卫生",
+    "pinyin": "(v.) dǎsǎo wèishēng",
+    "arti_en": "Cleaning",
+    "arti_id": "Pembersihan"
+  },
+  {
+    "hanzi": "除尘",
+    "pinyin": "(n.) chúchén",
+    "arti_en": "Dust Removal",
+    "arti_id": "penghilangan debu"
+  },
+  {
+    "hanzi": "配料",
+    "pinyin": "(n.) pèiliào",
+    "arti_en": "Batching Material",
+    "arti_id": "bahan campuran"
+  },
+  {
+    "hanzi": "原料场",
+    "pinyin": "(n.) yuánliào chǎng",
+    "arti_en": "Raw Material Yard",
+    "arti_id": "area bahan baku"
+  },
+  {
+    "hanzi": "安全设备",
+    "pinyin": "(n.) ānquán shèbèi",
+    "arti_en": "Safety Equipment",
+    "arti_id": "Peralatan Keselamatan"
+  },
+  {
+    "hanzi": "要求",
+    "pinyin": "(n.) yāoqiú",
+    "arti_en": "Request / Requirement",
+    "arti_id": "Permintaan"
+  },
+  {
+    "hanzi": "物质",
+    "pinyin": "(n.) wùzhì",
+    "arti_en": "Substance / Material",
+    "arti_id": "Zat"
+  },
+  {
+    "hanzi": "堆垛机",
+    "pinyin": "(n.) duīduǒjī",
+    "arti_en": "Stacker Crane",
+    "arti_id": "Mesin penumpuk otomatis"
+  },
+  {
+    "hanzi": "码头维护",
+    "pinyin": "(n.) mǎtóu wéihù",
+    "arti_en": "Wharf Maintenance",
+    "arti_id": "Pemeliharaan dermaga"
+  },
+  {
+    "hanzi": "紧急响应",
+    "pinyin": "(n.) jǐnjí xiǎngyìng",
+    "arti_en": "Emergency Response",
+    "arti_id": "Tanggap darurat"
+  },
+  {
+    "hanzi": "维修作业",
+    "pinyin": "(n.) wéixiū zuòyè",
+    "arti_en": "Maintenance Work",
+    "arti_id": "Pekerjaan pemeliharaan"
+  },
+  {
+    "hanzi": "清洁海域",
+    "pinyin": "(n.) qīngjié hǎiyù",
+    "arti_en": "Clean Sea Area",
+    "arti_id": "Pembersihan wilayah laut"
+  },
+  {
+    "hanzi": "船舶燃料",
+    "pinyin": "(n.) chuánbó ránliào",
+    "arti_en": "Ship Fuel",
+    "arti_id": "Bahan bakar kapal"
+  },
+  {
+    "hanzi": "停工检修",
+    "pinyin": "(n.) tínggōng jiǎnxiū",
+    "arti_en": "Shutdown Maintenance",
+    "arti_id": "Pemeliharaan saat penghentian kerja"
+  },
+  {
+    "hanzi": "设备定期检修",
+    "pinyin": "(n.) shèbèi dìngqí jiǎnxiū",
+    "arti_en": "Regular Equipment Maintenance",
+    "arti_id": "Pemeliharaan rutin peralatan"
+  },
+  {
+    "hanzi": "砂轮机",
+    "pinyin": "(n.) shālúnjī",
+    "arti_en": "Grinder",
+    "arti_id": "Mesin gerinda"
+  },
+  {
+    "hanzi": "车床",
+    "pinyin": "(n.) chēchuáng",
+    "arti_en": "Lathe Machine",
+    "arti_id": "Mesin bubut"
+  },
+  {
+    "hanzi": "机器",
+    "pinyin": "(n.) jīqì",
+    "arti_en": "Machine",
+    "arti_id": "Mesin"
+  },
+  {
+    "hanzi": "输送设备",
+    "pinyin": "(n.) shūsòng shèbèi",
+    "arti_en": "Peralatan pengangkutan",
+    "arti_id": "Peralatan pengangkutan"
+  },
+  {
+    "hanzi": "输送带",
+    "pinyin": "(n.) shūsòngdài",
+    "arti_en": "Conveyor belt",
+    "arti_id": "Conveyor belt"
+  },
+  {
+    "hanzi": "起重机",
+    "pinyin": "(n.) qǐzhòngjī",
+    "arti_en": "Crane",
+    "arti_id": "Crane"
+  },
+  {
+    "hanzi": "平台",
+    "pinyin": "(n.) píngtái",
+    "arti_en": "Platform",
+    "arti_id": "Platform"
+  },
+  {
+    "hanzi": "码头设备",
+    "pinyin": "(n.) mǎtóu shèbèi",
+    "arti_en": "Peralatan dermaga",
+    "arti_id": "Peralatan dermaga"
+  },
+  {
+    "hanzi": "纯度",
+    "pinyin": "(n.) chúndù",
+    "arti_en": "kemurnian",
+    "arti_id": "kemurnian"
+  },
+  {
+    "hanzi": "燃料",
+    "pinyin": "(n.) ránliào",
+    "arti_en": "bahan bakar",
+    "arti_id": "bahan bakar"
+  },
+  {
+    "hanzi": "密封圈",
+    "pinyin": "(n.) mìfēng guān",
+    "arti_en": "Sealing Ring",
+    "arti_id": "Sealing Ring"
+  },
+  {
+    "hanzi": "打料",
+    "pinyin": "(v.) dǎ liào",
+    "arti_en": "Masukan Material",
+    "arti_id": "Masukan Material"
+  },
+  {
+    "hanzi": "停油泵",
+    "pinyin": "(v.) tíng yóubèng",
+    "arti_en": "Menghentikan Pompa Oli",
+    "arti_id": "Menghentikan Pompa Oli"
+  },
+  {
+    "hanzi": "保温料",
+    "pinyin": "(n.) bǎowēn liào",
+    "arti_en": "Bahan Mempertahankan Suhu",
+    "arti_id": "Bahan Mempertahankan Suhu"
+  },
+  {
+    "hanzi": "串联",
+    "pinyin": "(v.) chuàn lián",
+    "arti_en": "Rangkaian Seri",
+    "arti_id": "Rangkaian Seri"
+  },
+  {
+    "hanzi": "皮带",
+    "pinyin": "(n.) pídài",
+    "arti_en": "Conveyor",
+    "arti_id": "Conveyor"
+  },
+  {
+    "hanzi": "磨机",
+    "pinyin": "(n.) mó jī",
+    "arti_en": "Mesin Penggiling",
+    "arti_id": "Mesin Penggiling"
+  },
+  {
+    "hanzi": "捅下料口",
+    "pinyin": "(v.) tǒng xià liào kǒu",
+    "arti_en": "Tusuk Material Inlet",
+    "arti_id": "Tusuk Material Inlet"
+  },
+  {
+    "hanzi": "轴承",
+    "pinyin": "(n.) zhóuchéng",
+    "arti_en": "Bearing",
+    "arti_id": "Bearing"
+  },
+  {
+    "hanzi": "液压gang",
+    "pinyin": "(n.) yèyā gāng",
+    "arti_en": "Silinder hidrolik",
+    "arti_id": "Silinder hidrolik"
+  },
+  {
+    "hanzi": "发动机",
+    "pinyin": "(n.) fādòngjī",
+    "arti_en": "Mesin",
+    "arti_id": "Mesin"
+  },
+  {
+    "hanzi": "履dàiqìdiào",
+    "pinyin": "(n.) lǔdài diào",
+    "arti_en": "Crawler crane",
+    "arti_id": "Crawler crane"
+  },
+  {
+    "hanzi": "行车",
+    "pinyin": "(n.) xíngchē",
+    "arti_en": "Hoist Crane",
+    "arti_id": "Hoist Crane"
+  },
+  {
+    "hanzi": "副班长",
+    "pinyin": "(n.) fù bānzhǎng",
+    "arti_en": "Wakil Foreman",
+    "arti_id": "Wakil Foreman"
+  },
+  {
+    "hanzi": "行车工",
+    "pinyin": "(n.) xīngchēgōng",
+    "arti_en": "Operator Hoist Crane",
+    "arti_id": "Operator Hoist Crane"
+  },
+  {
+    "hanzi": "检查设备",
+    "pinyin": "(v.) jiǎnchá shèbèi",
+    "arti_en": "Pemeriksaan Peralatan",
+    "arti_id": "Pemeriksaan Peralatan"
+  },
+  {
+    "hanzi": "皮带左跑偏",
+    "pinyin": "(v.) pídài zuǒ pǎo piān",
+    "arti_en": "Conveyor Lari ke Kiri",
+    "arti_id": "Conveyor Lari ke Kiri"
+  },
+  {
+    "hanzi": "下料斗",
+    "pinyin": "(n.) xià liào dǒu",
+    "arti_en": "Hopper",
+    "arti_id": "Hopper"
+  },
+  {
+    "hanzi": "加润滑油",
+    "pinyin": "(v.) jiā rùnhuá yóu",
+    "arti_en": "Tambah Pelumas",
+    "arti_id": "Tambah Pelumas"
+  },
+  {
+    "hanzi": "皮带右跑偏",
+    "pinyin": "(v.) pídài yòu pǎo piān",
+    "arti_en": "Conveyor Lari ke Kanan",
+    "arti_id": "Conveyor Lari ke Kanan"
+  },
+  {
+    "hanzi": "除铁器",
+    "pinyin": "(n.) chú tiě qì",
+    "arti_en": "Magnetic Interceptor",
+    "arti_id": "Magnetic Interceptor"
+  },
+  {
+    "hanzi": "高压油管",
+    "pinyin": "(n.) gāoyā yóuguǎn",
+    "arti_en": "Pipa Tekanan Tinggi",
+    "arti_id": "Pipa Tekanan Tinggi"
+  },
+  {
+    "hanzi": "机修车间",
+    "pinyin": "(n.) jīxiū chējiān",
+    "arti_en": "Bengkel perbaikan",
+    "arti_id": "Bengkel perbaikan"
+  },
+  {
+    "hanzi": "原料",
+    "pinyin": "(n.) yuánliào",
+    "arti_en": "Bahan baku",
+    "arti_id": "Bahan baku"
+  },
+  {
+    "hanzi": "电动葫芦",
+    "pinyin": "(n.) diàndòng húlu",
+    "arti_en": "Lifting Hoist",
+    "arti_id": "Lifting Hoist"
+  },
+  {
+    "hanzi": "水泵",
+    "pinyin": "(n.) shuǐbèng",
+    "arti_en": "Pompa Air",
+    "arti_id": "Pompa Air"
+  },
+  {
+    "hanzi": "遥控器",
+    "pinyin": "(n.) yáokòngqì",
+    "arti_en": "Remote Kontrol",
+    "arti_id": "Remote Kontrol"
+  },
+  {
+    "hanzi": "管道",
+    "pinyin": "(n.) guǎndào",
+    "arti_en": "Pipa",
+    "arti_id": "Pipa"
+  },
+  {
+    "hanzi": "楼栋",
+    "pinyin": "(n.) lóudòng",
+    "arti_en": "GEDUNG",
+    "arti_id": "GEDUNG"
+  },
+  {
+    "hanzi": "地泵",
+    "pinyin": "(n.) dìbèng",
+    "arti_en": "Pompa kodok",
+    "arti_id": "Pompa kodok"
+  },
+  {
+    "hanzi": "天泵",
+    "pinyin": "(n.) tiānbèng",
+    "arti_en": "Mobil pompa",
+    "arti_id": "Mobil pompa"
+  },
+  {
+    "hanzi": "卸料平台",
+    "pinyin": "(n.) xièliào píngtái",
+    "arti_en": "Platform bongkar",
+    "arti_id": "Platform bongkar"
+  },
+  {
+    "hanzi": "施工楼梯",
+    "pinyin": "(n.) shīgōng lóutī",
+    "arti_en": "Tangga kerja",
+    "arti_id": "Tangga kerja"
+  },
+  {
+    "hanzi": "调试",
+    "pinyin": "(n.) tiàoshì",
+    "arti_en": "testing & commissioning",
+    "arti_id": "testing & commissioning"
+  },
+  {
+    "hanzi": "警示牌",
+    "pinyin": "(n.) jǐngshípái",
+    "arti_en": "papan peringatan",
+    "arti_id": "papan peringatan"
+  },
+  {
+    "hanzi": "插板",
+    "pinyin": "(n.) chābǎn",
+    "arti_en": "Papan colokan",
+    "arti_id": "Papan colokan"
+  },
+  {
+    "hanzi": "装卸机械",
+    "pinyin": "(n.) zhuāngxiè jīxiè",
+    "arti_en": "Mesin bongkar muat",
+    "arti_id": "Mesin bongkar muat"
+  },
+  {
+    "hanzi": "堆场设备",
+    "pinyin": "(n.) duīchǎng shèbèi",
+    "arti_en": "Peralatan tumpukan",
+    "arti_id": "Peralatan tumpukan"
+  },
+  {
+    "hanzi": "工厂设备",
+    "pinyin": "(n.) gōngchǎng shèbèi",
+    "arti_en": "Peralatan pabrik",
+    "arti_id": "Peralatan pabrik"
+  },
+  {
+    "hanzi": "备注",
+    "pinyin": "(n.) bèizhú",
+    "arti_en": "Catatan tambahan",
+    "arti_id": "Catatan tambahan"
+  },
+  {
+    "hanzi": "破碎机",
+    "pinyin": "(n.) pòsuì jī",
+    "arti_en": "Crusher",
+    "arti_id": "Crusher"
+  },
+  {
+    "hanzi": "堵眼",
+    "pinyin": "(v.) dǔ yǎn",
+    "arti_en": "Menutup Lubang",
+    "arti_id": "Menutup Lubang"
+  },
+  {
+    "hanzi": "冷却水管",
+    "pinyin": "(n.) lěngquè shuǐ guǎn",
+    "arti_en": "Pipa Air Pendingin",
+    "arti_id": "Pipa Air Pendingin"
+  },
+  {
+    "hanzi": "放水套",
+    "pinyin": "(n.) fàng shuǐ tào",
+    "arti_en": "Cover Block",
+    "arti_id": "Cover Block"
+  },
+  {
+    "hanzi": "接氧管",
+    "pinyin": "(v.) jiē yǎng guǎn",
+    "arti_en": "Sambung Pipa Oksi",
+    "arti_id": "Sambung Pipa Oksi"
+  },
+  {
+    "hanzi": "停机",
+    "pinyin": "(v.) tíngjī",
+    "arti_en": "Mesin berhenti",
+    "arti_id": "Mesin berhenti"
+  },
+  {
+    "hanzi": "下料行车",
+    "pinyin": "(n.) xiàliào xíngchē",
+    "arti_en": "Feeder Crane",
+    "arti_id": "Feeder Crane"
+  },
+  {
+    "hanzi": "班长",
+    "pinyin": "(n.) bānzhǎng",
+    "arti_en": "Foreman",
+    "arti_id": "Foreman"
+  },
+  {
+    "hanzi": "检修",
+    "pinyin": "(n.) jiǎnxiū",
+    "arti_en": "perbaikan",
+    "arti_id": "perbaikan"
+  },
+  {
+    "hanzi": "开机",
+    "pinyin": "(v.) kāijī",
+    "arti_en": "mesin menyala",
+    "arti_id": "mesin menyala"
+  },
+  {
+    "hanzi": "停机",
+    "pinyin": "(v.) tíngjī",
+    "arti_en": "mesin berhenti",
+    "arti_id": "mesin berhenti"
+  },
+  {
+    "hanzi": "维护",
+    "pinyin": "(n.) wéihù",
+    "arti_en": "pemeliharaan",
+    "arti_id": "pemeliharaan"
+  },
+  {
+    "hanzi": "维修",
+    "pinyin": "(n.) wéixiū",
+    "arti_en": "Perbaikan",
+    "arti_id": "Perbaikan"
+  },
+  {
+    "hanzi": "设备",
+    "pinyin": "(n.) shèbèi",
+    "arti_en": "Peralatan",
+    "arti_id": "Peralatan"
+  },
+  {
+    "hanzi": "耐火材料",
+    "pinyin": "(n.) nàihuǒ cáiliào",
+    "arti_en": "bahan tahan api",
+    "arti_id": "bahan tahan api"
+  },
+  {
+    "hanzi": "项目闭环",
+    "pinyin": "(n.) xiàngmù jiéshù",
+    "arti_en": "Penutupan Proyek",
+    "arti_id": "Penutupan Proyek"
+  },
+  {
+    "hanzi": "项目变更",
+    "pinyin": "(n.) xiàngmù biàngēng",
+    "arti_en": "Perubahan Proyek",
+    "arti_id": "Perubahan Proyek"
+  },
+  {
+    "hanzi": "远程监控",
+    "pinyin": "(n.) yuǎnchéng jiānkòng",
+    "arti_en": "remote monitoring",
+    "arti_id": "remote monitoring"
+  },
+  {
+    "hanzi": "设备部",
+    "pinyin": "(n.) shèbèi bù",
+    "arti_en": "Departemen Peralatan",
+    "arti_id": "Departemen Peralatan"
+  },
+  {
+    "hanzi": "黄油",
+    "pinyin": "(n.) huángyóu",
+    "arti_en": "Grease",
+    "arti_id": "Grease"
+  },
+  {
+    "hanzi": "维修单",
+    "pinyin": "(n.) wéixiūdān",
+    "arti_en": "Form perbaikan",
+    "arti_id": "Form perbaikan"
+  },
+  {
+    "hanzi": "维修",
+    "pinyin": "(v.) wéixiū",
+    "arti_en": "Perbaikan",
+    "arti_id": "Perbaikan"
+  },
+  {
+    "hanzi": "加油",
+    "pinyin": "(v.) jiāyóu",
+    "arti_en": "Isi bahan bakar",
+    "arti_id": "Isi bahan bakar"
+  },
+  {
+    "hanzi": "燃油",
+    "pinyin": "(n.) rányóu",
+    "arti_en": "Bahan bakar",
+    "arti_id": "Bahan bakar"
+  },
+  {
+    "hanzi": "磨辊",
+    "pinyin": "(n.) mó gǔn",
+    "arti_en": "Roller",
+    "arti_id": "Roller"
+  },
+  {
+    "hanzi": "输送带",
+    "pinyin": "(n.) shùsòngdài",
+    "arti_en": "Conveyor",
+    "arti_id": "Conveyor"
+  },
+  {
+    "hanzi": "给煤机",
+    "pinyin": "(n.) gěi méi jī",
+    "arti_en": "Coal Feeder",
+    "arti_id": "Coal Feeder"
+  },
+  {
+    "hanzi": "振动值",
+    "pinyin": "(n.) zhèndòng zhí",
+    "arti_en": "Vibration Value",
+    "arti_id": "Vibration Value"
+  },
+  {
+    "hanzi": "分离器",
+    "pinyin": "(n.) fēnlíqì",
+    "arti_en": "Separator",
+    "arti_id": "Separator"
+  },
+  {
+    "hanzi": "稀油润滑站",
+    "pinyin": "(n.) xī yóu rùnhuá zhàn",
+    "arti_en": "Station Oli Pelumas",
+    "arti_id": "Station Oli Pelumas"
+  },
+  {
+    "hanzi": "液压站",
+    "pinyin": "(n.) yèyā zhàn",
+    "arti_en": "Station Oli Hidrolik",
+    "arti_id": "Station Oli Hidrolik"
+  },
+  {
+    "hanzi": "锥形仓",
+    "pinyin": "(n.) zhuīxíng cāng",
+    "arti_en": "Bin Kerucut",
+    "arti_id": "Bin Kerucut"
+  },
+  {
+    "hanzi": "高速轴",
+    "pinyin": "(n.) gāosù zhóu",
+    "arti_en": "High Speed Axle",
+    "arti_id": "High Speed Axle"
+  },
+  {
+    "hanzi": "仓式泵",
+    "pinyin": "(n.) cāng shì bèng",
+    "arti_en": "Cone Pump",
+    "arti_id": "Cone Pump"
+  },
+  {
+    "hanzi": "尾排烟囱",
+    "pinyin": "(n.) wěi pái yān cōng",
+    "arti_en": "Ekor Cerobong Asap",
+    "arti_id": "Ekor Cerobong Asap"
+  },
+  {
+    "hanzi": "螺旋输送机",
+    "pinyin": "(n.) luóxuán shùsòng jī",
+    "arti_en": "Sekrup Conveyor",
+    "arti_id": "Sekrup Conveyor"
+  },
+  {
+    "hanzi": "风机联轴器",
+    "pinyin": "(n.) fēngjī liánzhóu qì",
+    "arti_en": "Kopling Kipas",
+    "arti_id": "Kopling Kipas"
+  },
+  {
+    "hanzi": "尾排主电机",
+    "pinyin": "(n.) wěi pái zhǔ diànjī",
+    "arti_en": "Baris Akhir Mesin Utama",
+    "arti_id": "Baris Akhir Mesin Utama"
+  },
+  {
+    "hanzi": "排污阀",
+    "pinyin": "(n.) pái wù fá",
+    "arti_en": "Katup Pembuangan Kotoran",
+    "arti_id": "Katup Pembuangan Kotoran"
+  },
+  {
+    "hanzi": "气动阀门",
+    "pinyin": "(n.) qìdòng fámén",
+    "arti_en": "Pneumatic Valve",
+    "arti_id": "Pneumatic Valve"
+  },
+  {
+    "hanzi": "灰管压力",
+    "pinyin": "(n.) huí guǎn yālì",
+    "arti_en": "Tekanan Pipa Gray",
+    "arti_id": "Tekanan Pipa Gray"
+  },
+  {
+    "hanzi": "停机",
+    "pinyin": "(v.) tíngjī",
+    "arti_en": "Mesin Berhenti",
+    "arti_id": "Mesin Berhenti"
+  },
+  {
+    "hanzi": "开机",
+    "pinyin": "(v.) kāijī",
+    "arti_en": "Jalan Mesin",
+    "arti_id": "Jalan Mesin"
+  },
+  {
+    "hanzi": "急修",
+    "pinyin": "(n.) jíxiū",
+    "arti_en": "Perbaikan Mesin",
+    "arti_id": "Perbaikan Mesin"
+  },
+  {
+    "hanzi": "出港",
+    "pinyin": "(v.) chūgǎng",
+    "arti_en": "Berangkat dari pelabuhan",
+    "arti_id": "Berangkat dari pelabuhan"
+  },
+  {
+    "hanzi": "键盘",
+    "pinyin": "(n.) jiànpán",
+    "arti_en": "Keyboard",
+    "arti_id": "Keyboard"
+  },
+  {
+    "hanzi": "复印机",
+    "pinyin": "(n.) fùyìnjī",
+    "arti_en": "Mesin fotokopi",
+    "arti_id": "Mesin fotokopi"
+  },
+  {
+    "hanzi": "出料阀",
+    "pinyin": "(n.) chūliào fá",
+    "arti_en": "Katup pengeluaran bahan",
+    "arti_id": "Katup pengeluaran bahan"
+  },
+  {
+    "hanzi": "排气阀",
+    "pinyin": "(n.) páiqì fá",
+    "arti_en": "Katup buang udara",
+    "arti_id": "Katup buang udara"
+  },
+  {
+    "hanzi": "进气阀",
+    "pinyin": "(n.) jìnqì fá",
+    "arti_en": "Katup masuk udara",
+    "arti_id": "Katup masuk udara"
+  },
+  {
+    "hanzi": "卸灰阀",
+    "pinyin": "(n.) xièhuī fá",
+    "arti_en": "Katup pembuangan abu",
+    "arti_id": "Katup pembuangan abu"
+  },
+  {
+    "hanzi": "排堵阀",
+    "pinyin": "(n.) páidǔ fá",
+    "arti_en": "Katup pembuangan sumbatan",
+    "arti_id": "Katup pembuangan sumbatan"
+  },
+  {
+    "hanzi": "助吹阀",
+    "pinyin": "(n.) zhùchū fá",
+    "arti_en": "Katup bantuan peniup",
+    "arti_id": "Katup bantuan peniup"
+  },
+  {
+    "hanzi": "链条",
+    "pinyin": "(n.) liàntiáo",
+    "arti_en": "Rantai",
+    "arti_id": "Rantai"
+  },
+  {
+    "hanzi": "提升机",
+    "pinyin": "(n.) tíshēng jī",
+    "arti_en": "Mesin pengangkat",
+    "arti_id": "Mesin pengangkat"
+  },
+  {
+    "hanzi": "刮板机",
+    "pinyin": "(n.) guǎbǎn jī",
+    "arti_en": "Mesin pengikis rantai",
+    "arti_id": "Mesin pengikis rantai"
+  },
+  {
+    "hanzi": "平台",
+    "pinyin": "(n.) píngtái",
+    "arti_en": "Platform",
+    "arti_id": "Platform"
+  },
+  {
+    "hanzi": "液压油",
+    "pinyin": "(n.) yèyā yóu",
+    "arti_en": "Oli Hidrolik",
+    "arti_id": "Oli Hidrolik"
+  },
+  {
+    "hanzi": "液压管接头",
+    "pinyin": "(n.) yèyā guǎn jiétóu",
+    "arti_en": "Hubungan Hose Hidrolik",
+    "arti_id": "Hubungan Hose Hidrolik"
+  },
+  {
+    "hanzi": "热风管",
+    "pinyin": "(n.) rè fēng guǎn",
+    "arti_en": "Pipa Udara Panas",
+    "arti_id": "Pipa Udara Panas"
+  },
+  {
+    "hanzi": "烟囱",
+    "pinyin": "(n.) yǎncōng",
+    "arti_en": "Cerobong",
+    "arti_id": "Cerobong"
+  }
+]

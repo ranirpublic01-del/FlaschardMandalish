@@ -1,0 +1,548 @@
+[
+  {
+    "hanzi": "报告",
+    "pinyin": "(n.) bàogào",
+    "arti_en": "Report",
+    "arti_id": "Laporan"
+  },
+  {
+    "hanzi": "记录表",
+    "pinyin": "(n.) jìlùbiǎo",
+    "arti_en": "Report",
+    "arti_id": "Laporan"
+  },
+  {
+    "hanzi": "电脑",
+    "pinyin": "(n.) diànnǎo",
+    "arti_en": "Computer",
+    "arti_id": "Komputer"
+  },
+  {
+    "hanzi": "调度员",
+    "pinyin": "(n.) diàodù yuán",
+    "arti_en": "Dispatcher",
+    "arti_id": "Petugas penjadwal"
+  },
+  {
+    "hanzi": "审批表",
+    "pinyin": "(n.) shěnpī biǎo",
+    "arti_en": "Approval form",
+    "arti_id": "Formulir persetujuan"
+  },
+  {
+    "hanzi": "审批流程",
+    "pinyin": "(n.) shěnpī liúchéng",
+    "arti_en": "Approval process",
+    "arti_id": "Proses persetujuan"
+  },
+  {
+    "hanzi": "年报",
+    "pinyin": "(n.) niánbào",
+    "arti_en": "Annual report",
+    "arti_id": "Laporan tahunan"
+  },
+  {
+    "hanzi": "工作安排",
+    "pinyin": "(n.) gōngzuò ānpái",
+    "arti_en": "Work schedule",
+    "arti_id": "Jadwal kerja"
+  },
+  {
+    "hanzi": "日报",
+    "pinyin": "(n.) rìbào",
+    "arti_en": "Daily report",
+    "arti_id": "Laporan harian"
+  },
+  {
+    "hanzi": "月报",
+    "pinyin": "(n.) yuèbào",
+    "arti_en": "Monthly report",
+    "arti_id": "Laporan bulanan"
+  },
+  {
+    "hanzi": "请假条",
+    "pinyin": "(n.) qǐngjiàtiáo",
+    "arti_en": "Leave request letter",
+    "arti_id": "Surat izin"
+  },
+  {
+    "hanzi": "文档管理",
+    "pinyin": "(n.) wéndàng guǎnlǐ",
+    "arti_en": "Document management",
+    "arti_id": "Manajemen dokumen"
+  },
+  {
+    "hanzi": "文件",
+    "pinyin": "(n.) wénjiàn",
+    "arti_en": "Document",
+    "arti_id": "Dokumentasi"
+  },
+  {
+    "hanzi": "财务报告",
+    "pinyin": "(n.) cáiwù bàogào",
+    "arti_en": "Financial report",
+    "arti_id": "Laporan Keuangan"
+  },
+  {
+    "hanzi": "预算",
+    "pinyin": "(n.) yùsuàn",
+    "arti_en": "Budget",
+    "arti_id": "Anggaran"
+  },
+  {
+    "hanzi": "记录数据",
+    "pinyin": "(v.) jìlù shùjù",
+    "arti_en": "Record Data",
+    "arti_id": "mencatat data"
+  },
+  {
+    "hanzi": "开会",
+    "pinyin": "(v.) kāihuì",
+    "arti_en": "Meeting",
+    "arti_id": "Rapat"
+  },
+  {
+    "hanzi": "请假条",
+    "pinyin": "(n.) qǐngjiàtiáo",
+    "arti_en": "Leave Form",
+    "arti_id": "Formulir izin"
+  },
+  {
+    "hanzi": "文件袋",
+    "pinyin": "(n.) wénjiàndài",
+    "arti_en": "Plastic File Bag",
+    "arti_id": "Map plastik"
+  },
+  {
+    "hanzi": "档案盒",
+    "pinyin": "(n.) dàng'ànhé",
+    "arti_en": "Archival Box",
+    "arti_id": "Boks arsip"
+  },
+  {
+    "hanzi": "资料夹",
+    "pinyin": "(n.) zīliàojiǎ",
+    "arti_en": "Document Rack",
+    "arti_id": "Rak dokumen"
+  },
+  {
+    "hanzi": "表格纸",
+    "pinyin": "(n.) biǎogézhǐ",
+    "arti_en": "Form Paper",
+    "arti_id": "Kertas formulir"
+  },
+  {
+    "hanzi": "打印纸",
+    "pinyin": "(n.) dǎyìnzhǐ",
+    "arti_en": "Printer Paper",
+    "arti_id": "Kertas printer"
+  },
+  {
+    "hanzi": "复印纸",
+    "pinyin": "(n.) fùyìnzhǐ",
+    "arti_en": "Photocopy Paper",
+    "arti_id": "Kertas fotokopi"
+  },
+  {
+    "hanzi": "巡视记录",
+    "pinyin": "(n.) xúnshì jìlù",
+    "arti_en": "Patrol Record",
+    "arti_id": "Catatan pemeriksaan"
+  },
+  {
+    "hanzi": "记录本",
+    "pinyin": "(n.) jìlùběn",
+    "arti_en": "Logbook",
+    "arti_id": "Laporan catatan"
+  },
+  {
+    "hanzi": "表格",
+    "pinyin": "(n.) biǎogé",
+    "arti_en": "Form",
+    "arti_id": "Formulir"
+  },
+  {
+    "hanzi": "日程",
+    "pinyin": "(n.) rìchéng",
+    "arti_en": "Schedule",
+    "arti_id": "Jadwal"
+  },
+  {
+    "hanzi": "数据来源",
+    "pinyin": "(n.) shùjù láiyuán",
+    "arti_en": "Data Source",
+    "arti_id": "Sumber data"
+  },
+  {
+    "hanzi": "统计口径",
+    "pinyin": "(n.) tǒngjì kǒujìng",
+    "arti_en": "Statistical Method",
+    "arti_id": "Metode statistik"
+  },
+  {
+    "hanzi": "历史数据",
+    "pinyin": "(n.) lìshǐ shùjù",
+    "arti_en": "Historical Data",
+    "arti_id": "Data historis"
+  },
+  {
+    "hanzi": "电脑",
+    "pinyin": "(n.) diànnǎo",
+    "arti_en": "Computer",
+    "arti_id": "Komputer"
+  },
+  {
+    "hanzi": "签字",
+    "pinyin": "(v.) qiānzì",
+    "arti_en": "Signature",
+    "arti_id": "Tanda tangan"
+  },
+  {
+    "hanzi": "车辆调度",
+    "pinyin": "(n.) chēliàng diàodù",
+    "arti_en": "Vehicle Dispatch",
+    "arti_id": "Penjadwalan kendaraan"
+  },
+  {
+    "hanzi": "参会",
+    "pinyin": "(v.) cànhuì",
+    "arti_en": "Menghadiri rapat",
+    "arti_id": "Menghadiri rapat"
+  },
+  {
+    "hanzi": "报告",
+    "pinyin": "(n.) bàogào",
+    "arti_en": "Laporan",
+    "arti_id": "Laporan"
+  },
+  {
+    "hanzi": "询价单",
+    "pinyin": "(n.) xúnjià dān",
+    "arti_en": "Surat permohonan harga",
+    "arti_id": "Surat permohonan harga"
+  },
+  {
+    "hanzi": "模具",
+    "pinyin": "(n.) mújù",
+    "arti_en": "Alat cetakan",
+    "arti_id": "Alat cetakan"
+  },
+  {
+    "hanzi": "模具费",
+    "pinyin": "(n.) mújù fèi",
+    "arti_en": "Biaya alat cetakan",
+    "arti_id": "Biaya alat cetakan"
+  },
+  {
+    "hanzi": "统计员",
+    "pinyin": "(n.) tǒngjìyuán",
+    "arti_en": "Petugas Statistik",
+    "arti_id": "Petugas Statistik"
+  },
+  {
+    "hanzi": "记录表",
+    "pinyin": "(n.) jìlù biǎo",
+    "arti_en": "Laporan",
+    "arti_id": "Laporan"
+  },
+  {
+    "hanzi": "笔记本",
+    "pinyin": "(n.) bǐjìběn",
+    "arti_en": "Buku Catatan",
+    "arti_id": "Buku Catatan"
+  },
+  {
+    "hanzi": "数据",
+    "pinyin": "(n.) shùjù",
+    "arti_en": "Data",
+    "arti_id": "Data"
+  },
+  {
+    "hanzi": "统计员",
+    "pinyin": "(n.) tǒngjìyuán",
+    "arti_en": "Petugas statistik",
+    "arti_id": "Petugas statistik"
+  },
+  {
+    "hanzi": "报表",
+    "pinyin": "(n.) bàobiǎo",
+    "arti_en": "Laporan",
+    "arti_id": "Laporan"
+  },
+  {
+    "hanzi": "日报",
+    "pinyin": "(n.) rìbào",
+    "arti_en": "Laporan harian",
+    "arti_id": "Laporan harian"
+  },
+  {
+    "hanzi": "统计",
+    "pinyin": "(n.) tǒngjì",
+    "arti_en": "Statistik",
+    "arti_id": "Statistik"
+  },
+  {
+    "hanzi": "月报",
+    "pinyin": "(n.) yuèbào",
+    "arti_en": "Laporan bulanan",
+    "arti_id": "Laporan bulanan"
+  },
+  {
+    "hanzi": "统计表",
+    "pinyin": "(n.) tǒngjìbiǎo",
+    "arti_en": "Tabel statistik",
+    "arti_id": "Tabel statistik"
+  },
+  {
+    "hanzi": "周报",
+    "pinyin": "(n.) zhōubào",
+    "arti_en": "Laporan mingguan",
+    "arti_id": "Laporan mingguan"
+  },
+  {
+    "hanzi": "电子邮件",
+    "pinyin": "(n.) diànzǐ yóujiàn",
+    "arti_en": "Email",
+    "arti_id": "Email"
+  },
+  {
+    "hanzi": "会议室",
+    "pinyin": "(n.) huìyìshì",
+    "arti_en": "Ruang rapat",
+    "arti_id": "Ruang rapat"
+  },
+  {
+    "hanzi": "数据统计",
+    "pinyin": "(n.) shùjù tǒngjì",
+    "arti_en": "Statistik data",
+    "arti_id": "Statistik data"
+  },
+  {
+    "hanzi": "资料库",
+    "pinyin": "(n.) zīliàokù",
+    "arti_en": "Basis data",
+    "arti_id": "Basis data"
+  },
+  {
+    "hanzi": "正式文件",
+    "pinyin": "(n.) zhèngshì wénjiàn",
+    "arti_en": "Dokumen resmi",
+    "arti_id": "Dokumen resmi"
+  },
+  {
+    "hanzi": "流程审批",
+    "pinyin": "(n.) liúchéng shěnpī",
+    "arti_en": "Persetujuan proses",
+    "arti_id": "Persetujuan proses"
+  },
+  {
+    "hanzi": "审批结果",
+    "pinyin": "(n.) shěnpī jiéguǒ",
+    "arti_en": "Hasil persetujuan",
+    "arti_id": "Hasil persetujuan"
+  },
+  {
+    "hanzi": "值班记录",
+    "pinyin": "(n.) zhíbān jìlù",
+    "arti_en": "Catatan piket",
+    "arti_id": "Catatan piket"
+  },
+  {
+    "hanzi": "扫描件",
+    "pinyin": "(n.) sǎomiáojiàn",
+    "arti_en": "Dokumen hasil scan",
+    "arti_id": "Dokumen hasil scan"
+  },
+  {
+    "hanzi": "负责人签字",
+    "pinyin": "(n.) fùzérén qiānzì",
+    "arti_en": "Tanda tangan penanggung jawab",
+    "arti_id": "Tanda tangan penanggung jawab"
+  },
+  {
+    "hanzi": "报销单",
+    "pinyin": "(n.) bàoxiǎodān",
+    "arti_en": "Formulir penggantian",
+    "arti_id": "Formulir penggantian"
+  },
+  {
+    "hanzi": "复印纸",
+    "pinyin": "(n.) fùyìnzhǐ",
+    "arti_en": "Kertas fotokopi",
+    "arti_id": "Kertas fotokopi"
+  },
+  {
+    "hanzi": "归档",
+    "pinyin": "(v.) guǐdàng",
+    "arti_en": "Mengarsipkan",
+    "arti_id": "Mengarsipkan"
+  },
+  {
+    "hanzi": "表格",
+    "pinyin": "(n.) biǎogé",
+    "arti_en": "Formulir",
+    "arti_id": "Formulir"
+  },
+  {
+    "hanzi": "签字",
+    "pinyin": "(v.) qiānzì",
+    "arti_en": "Tanda tangan",
+    "arti_id": "Tanda tangan"
+  },
+  {
+    "hanzi": "存档",
+    "pinyin": "(v.) cúdàng",
+    "arti_en": "Mengarsipkan",
+    "arti_id": "Mengarsipkan"
+  },
+  {
+    "hanzi": "复印",
+    "pinyin": "(v.) fùyìn",
+    "arti_en": "Fotokopi",
+    "arti_id": "Fotokopi"
+  },
+  {
+    "hanzi": "计划数据",
+    "pinyin": "(n.) jìhuà shùjù",
+    "arti_en": "Data rencana",
+    "arti_id": "Data rencana"
+  },
+  {
+    "hanzi": "实际数据",
+    "pinyin": "(n.) shíjì shùjù",
+    "arti_en": "Data aktual",
+    "arti_id": "Data aktual"
+  },
+  {
+    "hanzi": "项目预算",
+    "pinyin": "(n.) xiàngmù yùsuàn",
+    "arti_en": "Budget Proyek",
+    "arti_id": "Budget Proyek"
+  },
+  {
+    "hanzi": "项目报告",
+    "pinyin": "(n.) xiàngmù bàogào",
+    "arti_en": "Laporan Proyek",
+    "arti_id": "Laporan Proyek"
+  },
+  {
+    "hanzi": "项目进度",
+    "pinyin": "(n.) xiàngmù jìndù",
+    "arti_en": "Jadwal Proyek",
+    "arti_id": "Jadwal Proyek"
+  },
+  {
+    "hanzi": "项目文件",
+    "pinyin": "(n.) xiàngmù wénjiàn",
+    "arti_en": "Dokumentasi Proyek",
+    "arti_id": "Dokumentasi Proyek"
+  },
+  {
+    "hanzi": "数据采集",
+    "pinyin": "(n.) shùjù cǎijí",
+    "arti_en": "data acquisition",
+    "arti_id": "data acquisition"
+  },
+  {
+    "hanzi": "上传",
+    "pinyin": "(v.) shàngchuán",
+    "arti_en": "Unggah",
+    "arti_id": "Unggah"
+  },
+  {
+    "hanzi": "登录",
+    "pinyin": "(v.) dēnglù",
+    "arti_en": "Login",
+    "arti_id": "Login"
+  },
+  {
+    "hanzi": "打印",
+    "pinyin": "(v.) dǎyìn",
+    "arti_en": "Cetak",
+    "arti_id": "Cetak"
+  },
+  {
+    "hanzi": "下载",
+    "pinyin": "(v.) xiàzài",
+    "arti_en": "Unduh",
+    "arti_id": "Unduh"
+  },
+  {
+    "hanzi": "批准",
+    "pinyin": "(n.) pīzhǔn",
+    "arti_en": "Persetujuan",
+    "arti_id": "Persetujuan"
+  },
+  {
+    "hanzi": "发票",
+    "pinyin": "(n.) fāpiào",
+    "arti_en": "Faktur",
+    "arti_id": "Faktur"
+  },
+  {
+    "hanzi": "预算",
+    "pinyin": "(n.) yùsuàn",
+    "arti_en": "Anggaran",
+    "arti_id": "Anggaran"
+  },
+  {
+    "hanzi": "船期",
+    "pinyin": "(n.) chuánqī",
+    "arti_en": "Jadwal kapal",
+    "arti_id": "Jadwal kapal"
+  },
+  {
+    "hanzi": "作业调度",
+    "pinyin": "(n.) zuòyè diàodù",
+    "arti_en": "Penjadwalan operasi",
+    "arti_id": "Penjadwalan operasi"
+  },
+  {
+    "hanzi": "批复",
+    "pinyin": "(n.) pīfù",
+    "arti_en": "Persetujuan",
+    "arti_id": "Persetujuan"
+  },
+  {
+    "hanzi": "备案",
+    "pinyin": "(n.) bèi'àn",
+    "arti_en": "Pencatatan",
+    "arti_id": "Pencatatan"
+  },
+  {
+    "hanzi": "电脑",
+    "pinyin": "(n.) diànnǎo",
+    "arti_en": "Komputer",
+    "arti_id": "Komputer"
+  },
+  {
+    "hanzi": "笔记本电脑",
+    "pinyin": "(n.) bǐjìběn diànnǎo",
+    "arti_en": "Laptop",
+    "arti_id": "Laptop"
+  },
+  {
+    "hanzi": "打印机",
+    "pinyin": "(n.) dàyìnjī",
+    "arti_en": "Printer",
+    "arti_id": "Printer"
+  },
+  {
+    "hanzi": "扫描仪",
+    "pinyin": "(n.) sǎomiáoyí",
+    "arti_en": "Scanner",
+    "arti_id": "Scanner"
+  },
+  {
+    "hanzi": "提单",
+    "pinyin": "(n.) tídān",
+    "arti_en": "Surat muatan",
+    "arti_id": "Surat muatan"
+  },
+  {
+    "hanzi": "船只调度",
+    "pinyin": "(n.) chuánzhī diàodù",
+    "arti_en": "Penjadwalan kapal",
+    "arti_id": "Penjadwalan kapal"
+  }
+]

@@ -1,0 +1,488 @@
+[
+  {
+    "hanzi": "吊具",
+    "pinyin": "(n.) diàojù",
+    "arti_en": "Lifting tool",
+    "arti_id": "Alat pengangkat"
+  },
+  {
+    "hanzi": "更换零件",
+    "pinyin": "(v.) gènghuàn língjiàn",
+    "arti_en": "Spare Part Replacement",
+    "arti_id": "Penggantian Suku Cadang"
+  },
+  {
+    "hanzi": "测试",
+    "pinyin": "(n.) cèshì",
+    "arti_en": "Testing",
+    "arti_id": "Pengujian"
+  },
+  {
+    "hanzi": "原煤仓",
+    "pinyin": "(n.) yuánméi cāng",
+    "arti_en": "Raw Coal Storage",
+    "arti_id": "Penyimpanan batubara mentah"
+  },
+  {
+    "hanzi": "打开收尘器",
+    "pinyin": "(v.) dǎkāi shōuchén qì",
+    "arti_en": "Open Dust Collector System",
+    "arti_id": "Buka sistem pengumpul debu"
+  },
+  {
+    "hanzi": "测温仪",
+    "pinyin": "(n.) cèwēnyí",
+    "arti_en": "Temperature Meter",
+    "arti_id": "Pengukur suhu"
+  },
+  {
+    "hanzi": "剪刀",
+    "pinyin": "(n.) jiǎndāo",
+    "arti_en": "Scissors",
+    "arti_id": "Gunting"
+  },
+  {
+    "hanzi": "照明灯",
+    "pinyin": "(n.) zhàomíng dēng",
+    "arti_en": "Lighting Lamp",
+    "arti_id": "Lampu penerang"
+  },
+  {
+    "hanzi": "扫轨器",
+    "pinyin": "(n.) sǎoguǐ qì",
+    "arti_en": "Rail guard",
+    "arti_id": "Pengaman rel"
+  },
+  {
+    "hanzi": "温控系统",
+    "pinyin": "(n.) wēnkòng xìtǒng",
+    "arti_en": "Temperature control system",
+    "arti_id": "Sistem pengatur suhu"
+  },
+  {
+    "hanzi": "干燥时间",
+    "pinyin": "(n.) gānzào shíjiān",
+    "arti_en": "Drying time",
+    "arti_id": "Waktu pengeringan"
+  },
+  {
+    "hanzi": "干燥温度",
+    "pinyin": "(n.) gānzào wēndù",
+    "arti_en": "Drying temperature",
+    "arti_id": "Suhu pengeringan"
+  },
+  {
+    "hanzi": "热交换器",
+    "pinyin": "(n.) rè jiāohuàn qì",
+    "arti_en": "Heat exchanger",
+    "arti_id": "Penukar panas"
+  },
+  {
+    "hanzi": "文件夹",
+    "pinyin": "(n.) wénjiànjiā",
+    "arti_en": "Folder / Map",
+    "arti_id": "Map"
+  },
+  {
+    "hanzi": "通知单",
+    "pinyin": "(n.) tōngzhīdān",
+    "arti_en": "Notice / Notification",
+    "arti_id": "Lembar pemberitahuan"
+  },
+  {
+    "hanzi": "发展",
+    "pinyin": "(v.) fǎzhǎn",
+    "arti_en": "Development",
+    "arti_id": "Pengembangan"
+  },
+  {
+    "hanzi": "销售",
+    "pinyin": "(n.) xiàoshòu",
+    "arti_en": "Sales",
+    "arti_id": "Penjualan"
+  },
+  {
+    "hanzi": "项目实施",
+    "pinyin": "(n.) xiàngmù shíshī",
+    "arti_en": "Project implementation",
+    "arti_id": "Implementasi Proyek"
+  },
+  {
+    "hanzi": "职业发展",
+    "pinyin": "(n.) zhíyè fāzhǎn",
+    "arti_en": "Career Development",
+    "arti_id": "Pengembangan Karir"
+  },
+  {
+    "hanzi": "薪酬",
+    "pinyin": "(n.) xīnchou",
+    "arti_en": "Compensation",
+    "arti_id": "Kompensasi"
+  },
+  {
+    "hanzi": "教育",
+    "pinyin": "(n.) jiàoyù",
+    "arti_en": "Education",
+    "arti_id": "Pendidikan"
+  },
+  {
+    "hanzi": "考核",
+    "pinyin": "(n.) kǎohé",
+    "arti_en": "Assessment",
+    "arti_id": "Penilaian"
+  },
+  {
+    "hanzi": "纸",
+    "pinyin": "(n.) zhǐ",
+    "arti_en": "Paper",
+    "arti_id": "Kertas"
+  },
+  {
+    "hanzi": "A4纸",
+    "pinyin": "(n.) A4 zhǐ",
+    "arti_en": "A4 Paper",
+    "arti_id": "Kertas A4"
+  },
+  {
+    "hanzi": "报价",
+    "pinyin": "(n.) bàojià",
+    "arti_en": "Quotation",
+    "arti_id": "Penawaran"
+  },
+  {
+    "hanzi": "加班",
+    "pinyin": "(v.) jiābān",
+    "arti_en": "Overtime",
+    "arti_id": "Kerja lembur"
+  },
+  {
+    "hanzi": "转动电机",
+    "pinyin": "(n.) zhuǎndòng diànjī",
+    "arti_en": "Driving Motor",
+    "arti_id": "Motor Penggerak"
+  },
+  {
+    "hanzi": "偏差",
+    "pinyin": "(n.) piānchā",
+    "arti_en": "Deviation",
+    "arti_id": "Penyimpangan"
+  },
+  {
+    "hanzi": "剪刀",
+    "pinyin": "(n.) jiǎndāo",
+    "arti_en": "Scissors",
+    "arti_id": "Gunting"
+  },
+  {
+    "hanzi": "照明灯",
+    "pinyin": "(n.) zhàomíng dēng",
+    "arti_en": "Lighting Lamp",
+    "arti_id": "Lampu Penerang"
+  },
+  {
+    "hanzi": "干燥塔",
+    "pinyin": "(n.) gānzào tǎ",
+    "arti_en": "Drying Tower",
+    "arti_id": "menara pengering"
+  },
+  {
+    "hanzi": "导线",
+    "pinyin": "(n.) dǎoxiàn",
+    "arti_en": "Conductor",
+    "arti_id": "penghantar"
+  },
+  {
+    "hanzi": "元素",
+    "pinyin": "(n.) yuánsù",
+    "arti_en": "Element",
+    "arti_id": "Unsur"
+  },
+  {
+    "hanzi": "现场监督",
+    "pinyin": "(n.) xiànchǎng jiāndū",
+    "arti_en": "On-site Supervision",
+    "arti_id": "Pengawasan lapangan"
+  },
+  {
+    "hanzi": "干燥",
+    "pinyin": "(v.) gānzào",
+    "arti_en": "pengeringan",
+    "arti_id": "pengeringan"
+  },
+  {
+    "hanzi": "安排",
+    "pinyin": "(n.) ānpái",
+    "arti_en": "Pengaturan",
+    "arti_id": "Pengaturan"
+  },
+  {
+    "hanzi": "报价",
+    "pinyin": "(n.) bàojià",
+    "arti_en": "Penawaran harga",
+    "arti_id": "Penawaran harga"
+  },
+  {
+    "hanzi": "报价单",
+    "pinyin": "(n.) bàojià dān",
+    "arti_en": "Daftar penawaran",
+    "arti_id": "Daftar penawaran"
+  },
+  {
+    "hanzi": "磨盘",
+    "pinyin": "(n.) mó pán",
+    "arti_en": "Piring Penggiling",
+    "arti_id": "Piring Penggiling"
+  },
+  {
+    "hanzi": "测wen qiang",
+    "pinyin": "(n.) cè wēn qiáng",
+    "arti_en": "Alat Pengukur Suhu",
+    "arti_id": "Alat Pengukur Suhu"
+  },
+  {
+    "hanzi": "测温仪",
+    "pinyin": "(n.) cè wén yí",
+    "arti_en": "Pengukur Suhu",
+    "arti_id": "Pengukur Suhu"
+  },
+  {
+    "hanzi": "外观",
+    "pinyin": "(n.) wàiguān",
+    "arti_en": "Penampilan",
+    "arti_id": "Penampilan"
+  },
+  {
+    "hanzi": "收烟尘罩",
+    "pinyin": "(n.) shōu yǎnchén zhào",
+    "arti_en": "Penangkap Debu",
+    "arti_id": "Penangkap Debu"
+  },
+  {
+    "hanzi": "饮水机",
+    "pinyin": "(n.) yǐnshuǐjī",
+    "arti_en": "Dispenser",
+    "arti_id": "Dispenser"
+  },
+  {
+    "hanzi": "堆场",
+    "pinyin": "(n.) duīchǎng",
+    "arti_en": "Area penumpukan",
+    "arti_id": "Area penumpukan"
+  },
+  {
+    "hanzi": "机旁箱操作",
+    "pinyin": "(n.) jì páng xiāng cāozuò",
+    "arti_en": "Pengoperasian Manual Lapangan",
+    "arti_id": "Pengoperasian Manual Lapangan"
+  },
+  {
+    "hanzi": "关键",
+    "pinyin": "(adj.) guānjiàn",
+    "arti_en": "Penting",
+    "arti_id": "Penting"
+  },
+  {
+    "hanzi": "剪刀",
+    "pinyin": "(n.) jiǎndāo",
+    "arti_en": "Gunting",
+    "arti_id": "Gunting"
+  },
+  {
+    "hanzi": "电子表格",
+    "pinyin": "(n.) diànzǐ biǎogé",
+    "arti_en": "Lembar kerja elektronik",
+    "arti_id": "Lembar kerja elektronik"
+  },
+  {
+    "hanzi": "操作",
+    "pinyin": "(v.) cāozuò",
+    "arti_en": "Pengoperasian",
+    "arti_id": "Pengoperasian"
+  },
+  {
+    "hanzi": "操作台",
+    "pinyin": "(n.) cāozuò tái",
+    "arti_en": "Tempat Pengoperasian",
+    "arti_id": "Tempat Pengoperasian"
+  },
+  {
+    "hanzi": "钩子",
+    "pinyin": "(n.) gōuzi",
+    "arti_en": "Pengait",
+    "arti_id": "Pengait"
+  },
+  {
+    "hanzi": "节能",
+    "pinyin": "(n.) jiénéng",
+    "arti_en": "penghematan energi",
+    "arti_id": "penghematan energi"
+  },
+  {
+    "hanzi": "采购",
+    "pinyin": "(n.) cǎigòu",
+    "arti_en": "Pengadaan",
+    "arti_id": "Pengadaan"
+  },
+  {
+    "hanzi": "收货",
+    "pinyin": "(n.) shōuhuò",
+    "arti_en": "Penerimaan",
+    "arti_id": "Penerimaan"
+  },
+  {
+    "hanzi": "供应商 pínggū",
+    "pinyin": "(n.) gōngyìng shāng pínggū",
+    "arti_en": "Penilaian Supplier",
+    "arti_id": "Penilaian Supplier"
+  },
+  {
+    "hanzi": "存储",
+    "pinyin": "(n.) cúnchú",
+    "arti_en": "Penyimpanan",
+    "arti_id": "Penyimpanan"
+  },
+  {
+    "hanzi": "取样",
+    "pinyin": "(v.) qǔyàng",
+    "arti_en": "Pengambilan sampel",
+    "arti_id": "Pengambilan sampel"
+  },
+  {
+    "hanzi": "延期",
+    "pinyin": "(v.) yánqī",
+    "arti_en": "Penundaan",
+    "arti_id": "Penundaan"
+  },
+  {
+    "hanzi": "调整",
+    "pinyin": "(v.) tiáozhěng",
+    "arti_en": "Penyesuaian",
+    "arti_id": "Penyesuaian"
+  },
+  {
+    "hanzi": "申请",
+    "pinyin": "(v.) shēnqǐng",
+    "arti_en": "Pengajuan",
+    "arti_id": "Pengajuan"
+  },
+  {
+    "hanzi": "结算",
+    "pinyin": "(v.) jiésuàn",
+    "arti_en": "Penyelesaian",
+    "arti_id": "Penyelesaian"
+  },
+  {
+    "hanzi": "原煤仓",
+    "pinyin": "(n.) yuán méi cāng",
+    "arti_en": "Penyimpanan Batubara Mentah",
+    "arti_id": "Penyimpanan Batubara Mentah"
+  },
+  {
+    "hanzi": "打开收尘器",
+    "pinyin": "(v.) dǎkāi shōuchén qì",
+    "arti_en": "Buka Sistem Pengumpul Debu",
+    "arti_id": "Buka Sistem Pengumpul Debu"
+  },
+  {
+    "hanzi": "拖运作业",
+    "pinyin": "(n.) tuōyùn zuòyè",
+    "arti_en": "Operasi pengangkutan darat",
+    "arti_id": "Operasi pengangkutan darat"
+  },
+  {
+    "hanzi": "吊装计划",
+    "pinyin": "(n.) diàozhuāng jìhuà",
+    "arti_en": "Rencana pengangkatan",
+    "arti_id": "Rencana pengangkatan"
+  },
+  {
+    "hanzi": "高脚堆场",
+    "pinyin": "(n.) gāojiǎo duīchǎng",
+    "arti_en": "Tempat penumpukan tinggi",
+    "arti_id": "Tempat penumpukan tinggi"
+  },
+  {
+    "hanzi": "倾斜仪",
+    "pinyin": "(n.) qīngxié yí",
+    "arti_en": "Alat pengukur kemiringan",
+    "arti_id": "Alat pengukur kemiringan"
+  },
+  {
+    "hanzi": "笔",
+    "pinyin": "(n.) bǐ",
+    "arti_en": "Pulpen",
+    "arti_id": "Pulpen"
+  },
+  {
+    "hanzi": "铅笔",
+    "pinyin": "(n.) qiānbǐ",
+    "arti_en": "Pensil",
+    "arti_id": "Pensil"
+  },
+  {
+    "hanzi": "记号笔",
+    "pinyin": "(n.) jìhàobǐ",
+    "arti_en": "Spidol",
+    "arti_id": "Spidol"
+  },
+  {
+    "hanzi": "橡皮",
+    "pinyin": "(n.) xiàngpí",
+    "arti_en": "Penghapus",
+    "arti_id": "Penghapus"
+  },
+  {
+    "hanzi": "尺子",
+    "pinyin": "(n.) chǐzi",
+    "arti_en": "Penggaris",
+    "arti_id": "Penggaris"
+  },
+  {
+    "hanzi": "订书机",
+    "pinyin": "(n.) dìngshūjī",
+    "arti_en": "Stapler",
+    "arti_id": "Stapler"
+  },
+  {
+    "hanzi": "剪刀",
+    "pinyin": "(n.) jiǎndāo",
+    "arti_en": "Gunting",
+    "arti_id": "Gunting"
+  },
+  {
+    "hanzi": "胶水",
+    "pinyin": "(n.) jiāoshuǐ",
+    "arti_en": "Lem",
+    "arti_id": "Lem"
+  },
+  {
+    "hanzi": "文件夹",
+    "pinyin": "(n.) wénjiànjiā",
+    "arti_en": "Map",
+    "arti_id": "Map"
+  },
+  {
+    "hanzi": "防护面罩",
+    "pinyin": "(n.) fánghù miànzhào",
+    "arti_en": "Topeng pelindung",
+    "arti_id": "Topeng pelindung"
+  },
+  {
+    "hanzi": "电除尘",
+    "pinyin": "(n.) diàn chúchén",
+    "arti_en": "Penyaring debu elektrostatis",
+    "arti_id": "Penyaring debu elektrostatis"
+  },
+  {
+    "hanzi": "运输",
+    "pinyin": "(n.) yùnshū",
+    "arti_en": "Pengangkutan",
+    "arti_id": "Pengangkutan"
+  },
+  {
+    "hanzi": "吊装",
+    "pinyin": "(n.) diàozhuāng",
+    "arti_en": "Pengangkatan",
+    "arti_id": "Pengangkatan"
+  }
+]

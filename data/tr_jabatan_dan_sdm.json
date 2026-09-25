@@ -1,0 +1,422 @@
+[
+  {
+    "hanzi": "检修主管",
+    "pinyin": "(n.) jiǎnxiū zhǔguǎn",
+    "arti_en": "Assistant Workshop",
+    "arti_id": "Assistant Workshop"
+  },
+  {
+    "hanzi": "操作工",
+    "pinyin": "(n.) cāozuò gōng",
+    "arti_en": "Operator",
+    "arti_id": "Operator"
+  },
+  {
+    "hanzi": "分析员",
+    "pinyin": "(n.) fēnxī yuán",
+    "arti_en": "Analyst",
+    "arti_id": "Analis"
+  },
+  {
+    "hanzi": "园丁",
+    "pinyin": "(n.) yuándīng",
+    "arti_en": "Gardener",
+    "arti_id": "Tukang Kebun"
+  },
+  {
+    "hanzi": "检修工",
+    "pinyin": "(n.) jiǎnxiū gōng",
+    "arti_en": "Mechanic",
+    "arti_id": "Montir"
+  },
+  {
+    "hanzi": "生产主管",
+    "pinyin": "(n.) shēngchǎn zhǔguǎn",
+    "arti_en": "Production Assistant",
+    "arti_id": "Assistant Produksi"
+  },
+  {
+    "hanzi": "助理",
+    "pinyin": "(n.) zhùlǐ",
+    "arti_en": "Assistant",
+    "arti_id": "Assistant"
+  },
+  {
+    "hanzi": "人力资源部",
+    "pinyin": "(n.) rénlì zīyuán bù",
+    "arti_en": "HRD",
+    "arti_id": "HRD"
+  },
+  {
+    "hanzi": "人力主管",
+    "pinyin": "(n.) rénlì zhǔguǎn",
+    "arti_en": "Assistant HRD",
+    "arti_id": "Assistant HRD"
+  },
+  {
+    "hanzi": "品控主管",
+    "pinyin": "(n.) pǐn kòng zhǔguǎn",
+    "arti_en": "Laboratory/QC Assistant",
+    "arti_id": "Assistant Laboratorium/QC"
+  },
+  {
+    "hanzi": "厂长助理",
+    "pinyin": "(n.) chǎngzhǎng zhùlǐ",
+    "arti_en": "Assistant Mill Manager",
+    "arti_id": "Asisten Mill Manager"
+  },
+  {
+    "hanzi": "厂长",
+    "pinyin": "(n.) chǎngzhǎng",
+    "arti_en": "Plant Manager",
+    "arti_id": "Kepala Pabrik"
+  },
+  {
+    "hanzi": "仓库主管",
+    "pinyin": "(n.) cāngkù zhǔguǎn",
+    "arti_en": "Assistant Warehouse",
+    "arti_id": "Assistant Gudang"
+  },
+  {
+    "hanzi": "司机",
+    "pinyin": "(n.) sījī",
+    "arti_en": "Driver",
+    "arti_id": "Supir"
+  },
+  {
+    "hanzi": "总经理",
+    "pinyin": "(n.) zǒng jīnglǐ",
+    "arti_en": "General Manager",
+    "arti_id": "General Manager"
+  },
+  {
+    "hanzi": "经理",
+    "pinyin": "(n.) jīnglǐ",
+    "arti_en": "Manager",
+    "arti_id": "Manager"
+  },
+  {
+    "hanzi": "职员",
+    "pinyin": "(n.) zhíyuán",
+    "arti_en": "Staff",
+    "arti_id": "Staff"
+  },
+  {
+    "hanzi": "休假",
+    "pinyin": "(v.) xiūjià",
+    "arti_en": "Leave/Vacation",
+    "arti_id": "Cuti"
+  },
+  {
+    "hanzi": "主任",
+    "pinyin": "(n.) zhǔrèn",
+    "arti_en": "Supervisor",
+    "arti_id": "Supervisor"
+  },
+  {
+    "hanzi": "中控工",
+    "pinyin": "(n.) zhōngkòng gōng",
+    "arti_en": "Control Room Operator",
+    "arti_id": "Operator ruang kontrol"
+  },
+  {
+    "hanzi": "出勤率",
+    "pinyin": "(n.) chūqínlǜ",
+    "arti_en": "Attendance rate",
+    "arti_id": "Tingkat kehadiran"
+  },
+  {
+    "hanzi": "培训",
+    "pinyin": "(n.) péixùn",
+    "arti_en": "Training",
+    "arti_id": "Pelatihan"
+  },
+  {
+    "hanzi": "绩效",
+    "pinyin": "(n.) jìxiào",
+    "arti_en": "Performance",
+    "arti_id": "Kinerja"
+  },
+  {
+    "hanzi": "SWOT分析",
+    "pinyin": "(n.) SWOT fēnxī",
+    "arti_en": "SWOT analysis",
+    "arti_id": "Analisis SWOT"
+  },
+  {
+    "hanzi": "员工福利",
+    "pinyin": "(n.) yuángōng fúlì",
+    "arti_en": "Employee Welfare",
+    "arti_id": "Kesejahteraan Karyawan"
+  },
+  {
+    "hanzi": "员工培训",
+    "pinyin": "(n.) yuángōng péixùn",
+    "arti_en": "Employee Training",
+    "arti_id": "Pelatihan Karyawan"
+  },
+  {
+    "hanzi": "招聘",
+    "pinyin": "(n.) zhāopìn",
+    "arti_en": "Recruitment",
+    "arti_id": "Rekrutmen"
+  },
+  {
+    "hanzi": "绩效评估",
+    "pinyin": "(n.) jìxiào pínggǔ",
+    "arti_en": "Performance Evaluation",
+    "arti_id": "Penilaian Kinerja"
+  },
+  {
+    "hanzi": "主管",
+    "pinyin": "(n.) zhǔguǎn",
+    "arti_en": "Director",
+    "arti_id": "Direktur"
+  },
+  {
+    "hanzi": "训练",
+    "pinyin": "(n.) xùnliàn",
+    "arti_en": "Training",
+    "arti_id": "Latihan"
+  },
+  {
+    "hanzi": "理发师",
+    "pinyin": "(n.) lǐfǎshī",
+    "arti_en": "Barber",
+    "arti_id": "Tukang Cukur"
+  },
+  {
+    "hanzi": "长白班",
+    "pinyin": "(n.) cháng báibān",
+    "arti_en": "Non-Shift",
+    "arti_id": "Non Shift"
+  },
+  {
+    "hanzi": "员工",
+    "pinyin": "(n.) yuángōng",
+    "arti_en": "Employee",
+    "arti_id": "Karyawan"
+  },
+  {
+    "hanzi": "晚班",
+    "pinyin": "(n.) wǎnbān",
+    "arti_en": "Night Shift",
+    "arti_id": "Shift Malam"
+  },
+  {
+    "hanzi": "中班",
+    "pinyin": "(n.) zhōngbān",
+    "arti_en": "Evening Shift",
+    "arti_id": "Shift Sore"
+  },
+  {
+    "hanzi": "早班",
+    "pinyin": "(n.) zǎobān",
+    "arti_en": "Morning Shift",
+    "arti_id": "Shift Pagi"
+  },
+  {
+    "hanzi": "交接班",
+    "pinyin": "(n.) jiāojiébān",
+    "arti_en": "Shift Handover",
+    "arti_id": "Pergantian Shift"
+  },
+  {
+    "hanzi": "倒班",
+    "pinyin": "(v.) dǎobān",
+    "arti_en": "Shift Work",
+    "arti_id": "Kerja Shift"
+  },
+  {
+    "hanzi": "考勤表",
+    "pinyin": "(n.) kǎoqín biǎo",
+    "arti_en": "Attendance List",
+    "arti_id": "Daftar absensi"
+  },
+  {
+    "hanzi": "考勤",
+    "pinyin": "(n.) kǎoqín",
+    "arti_en": "Attendance",
+    "arti_id": "Absensi"
+  },
+  {
+    "hanzi": "驾驶员",
+    "pinyin": "(n.) jiàshǐyuán",
+    "arti_en": "Operator",
+    "arti_id": "Operator"
+  },
+  {
+    "hanzi": "主任",
+    "pinyin": "(n.) zhǔrèn",
+    "arti_en": "Supervisor",
+    "arti_id": "Supervisor"
+  },
+  {
+    "hanzi": "港区安全",
+    "pinyin": "(n.) gǎngqū ānquán",
+    "arti_en": "Port Area Security",
+    "arti_id": "Keamanan area pelabuhan"
+  },
+  {
+    "hanzi": "技术员",
+    "pinyin": "(n.) jìshùyuán",
+    "arti_en": "Technician",
+    "arti_id": "Teknisi"
+  },
+  {
+    "hanzi": "员工名单",
+    "pinyin": "(n.) yuángōng míngdān",
+    "arti_en": "Daftar karyawan",
+    "arti_id": "Daftar karyawan"
+  },
+  {
+    "hanzi": "维修gōng",
+    "pinyin": "(n.) wéixiū gōng",
+    "arti_en": "Mekanik",
+    "arti_id": "Mekanik"
+  },
+  {
+    "hanzi": "标chǐ",
+    "pinyin": "(n.) biǎochǐ",
+    "arti_en": "Staffgauge",
+    "arti_id": "Staffgauge"
+  },
+  {
+    "hanzi": "值班主任",
+    "pinyin": "(n.) zhíbān zhǔrèn",
+    "arti_en": "Supervisor yang bertugas",
+    "arti_id": "Supervisor yang bertugas"
+  },
+  {
+    "hanzi": "经理",
+    "pinyin": "(n.) jīnglǐ",
+    "arti_en": "Manager",
+    "arti_id": "Manager"
+  },
+  {
+    "hanzi": "技术员",
+    "pinyin": "(n.) jìshùyuán",
+    "arti_en": "Teknisi",
+    "arti_id": "Teknisi"
+  },
+  {
+    "hanzi": "操作工",
+    "pinyin": "(n.) cāozuògōng",
+    "arti_en": "Operator",
+    "arti_id": "Operator"
+  },
+  {
+    "hanzi": "翻译",
+    "pinyin": "(n.) fānyì",
+    "arti_en": "Penerjemah",
+    "arti_id": "Penerjemah"
+  },
+  {
+    "hanzi": "布料工",
+    "pinyin": "(n.) bùliàogōng",
+    "arti_en": "Operator Feeding",
+    "arti_id": "Operator Feeding"
+  },
+  {
+    "hanzi": "机修工",
+    "pinyin": "(n.) jīxiūgōng",
+    "arti_en": "Tukang Mekanik",
+    "arti_id": "Tukang Mekanik"
+  },
+  {
+    "hanzi": "人事部",
+    "pinyin": "(n.) rénshìbù",
+    "arti_en": "HRD",
+    "arti_id": "HRD"
+  },
+  {
+    "hanzi": "班次",
+    "pinyin": "(n.) bāncì",
+    "arti_en": "Shift",
+    "arti_id": "Shift"
+  },
+  {
+    "hanzi": "白班",
+    "pinyin": "(n.) báibān",
+    "arti_en": "Shift pagi",
+    "arti_id": "Shift pagi"
+  },
+  {
+    "hanzi": "工费",
+    "pinyin": "(n.) gōngfèi",
+    "arti_en": "Gaji buruh",
+    "arti_id": "Gaji buruh"
+  },
+  {
+    "hanzi": "秘书",
+    "pinyin": "(n.) mìshū",
+    "arti_en": "Sekretaris",
+    "arti_id": "Sekretaris"
+  },
+  {
+    "hanzi": "锯子",
+    "pinyin": "(n.) jùzi",
+    "arti_en": "Gergaji",
+    "arti_id": "Gergaji"
+  },
+  {
+    "hanzi": "员工名单",
+    "pinyin": "(n.) yuángōng míngdān",
+    "arti_en": "Daftar karyawan",
+    "arti_id": "Daftar karyawan"
+  },
+  {
+    "hanzi": "出勤",
+    "pinyin": "(n.) chuqín",
+    "arti_en": "Kehadiran",
+    "arti_id": "Kehadiran"
+  },
+  {
+    "hanzi": "班表",
+    "pinyin": "(n.) bānbiǎo",
+    "arti_en": "Jadwal shift",
+    "arti_id": "Jadwal shift"
+  },
+  {
+    "hanzi": "绩效",
+    "pinyin": "(n.) jīxiào",
+    "arti_en": "Kinerja",
+    "arti_id": "Kinerja"
+  },
+  {
+    "hanzi": "夜班",
+    "pinyin": "(n.) yèbān",
+    "arti_en": "Shift malam",
+    "arti_id": "Shift malam"
+  },
+  {
+    "hanzi": "口语",
+    "pinyin": "(n.) kǒuyǔ",
+    "arti_en": "Penerjemahan lisan",
+    "arti_id": "Penerjemahan lisan"
+  },
+  {
+    "hanzi": "笔译",
+    "pinyin": "(n.) bǐyì",
+    "arti_en": "Penerjemahan tulisan",
+    "arti_id": "Penerjemahan tulisan"
+  },
+  {
+    "hanzi": "液压工",
+    "pinyin": "(n.) yèyā gōng",
+    "arti_en": "Teknisi Hydrologic",
+    "arti_id": "Teknisi Hydrologic"
+  },
+  {
+    "hanzi": "本班电度",
+    "pinyin": "(n.) běn bān diàndù",
+    "arti_en": "Pemakaian Listrik Shift Ini",
+    "arti_id": "Pemakaian Listrik Shift Ini"
+  },
+  {
+    "hanzi": "休假",
+    "pinyin": "(v.) xiūjià",
+    "arti_en": "Cuti",
+    "arti_id": "Cuti"
+  }
+]

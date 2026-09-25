@@ -1,0 +1,536 @@
+[
+  {
+    "hanzi": "安全生产",
+    "pinyin": "(n.) ānquán shēngchǎn",
+    "arti_en": "Safety/K3",
+    "arti_id": "K3"
+  },
+  {
+    "hanzi": "佩戴劳保用品",
+    "pinyin": "(v.) pèidài láobǎo yòngpǐn",
+    "arti_en": "Wear PPE",
+    "arti_id": "Memakai APD"
+  },
+  {
+    "hanzi": "危险",
+    "pinyin": "(n.) wēixiǎn",
+    "arti_en": "Danger",
+    "arti_id": "Bahaya"
+  },
+  {
+    "hanzi": "注意安全",
+    "pinyin": "(phr.) zhùyì ānquán",
+    "arti_en": "Watch for Safety",
+    "arti_id": "Perhatikan keselamatan"
+  },
+  {
+    "hanzi": "安全员",
+    "pinyin": "(n.) ānquán yuán",
+    "arti_en": "Safety Officer",
+    "arti_id": "Petugas safety"
+  },
+  {
+    "hanzi": "灭火器",
+    "pinyin": "(n.) mièhuǒqì",
+    "arti_en": "Fire Extinguisher (APAR)",
+    "arti_id": "APAR"
+  },
+  {
+    "hanzi": "温度报警",
+    "pinyin": "(n.) wēndù bàojǐng",
+    "arti_en": "Temperature alarm",
+    "arti_id": "Alarm suhu"
+  },
+  {
+    "hanzi": "危险货物",
+    "pinyin": "(n.) wēixiǎn huòwù",
+    "arti_en": "Dangerous cargo",
+    "arti_id": "Kargo berbahaya"
+  },
+  {
+    "hanzi": "危险品",
+    "pinyin": "(n.) wēixiǎnpǐn",
+    "arti_en": "Dangerous goods",
+    "arti_id": "Barang berbahaya"
+  },
+  {
+    "hanzi": "风险管理",
+    "pinyin": "(n.) fēngxiǎn guǎnlǐ",
+    "arti_en": "Risk management",
+    "arti_id": "Manajemen Risiko"
+  },
+  {
+    "hanzi": "工作事故",
+    "pinyin": "(n.) gōngzuò shìgù",
+    "arti_en": "Work Accident",
+    "arti_id": "Insiden Kerja"
+  },
+  {
+    "hanzi": "职业健康安全",
+    "pinyin": "(n.) zhíyè jiànkāng ānquán",
+    "arti_en": "Occupational Health and Safety",
+    "arti_id": "Kesehatan dan Keselamatan Kerja"
+  },
+  {
+    "hanzi": "事故报告",
+    "pinyin": "(n.) shìgù bàogào",
+    "arti_en": "Accident Report",
+    "arti_id": "Pelaporan Insiden"
+  },
+  {
+    "hanzi": "预防事故",
+    "pinyin": "(n.) yùfáng shìgù",
+    "arti_en": "Accident Prevention",
+    "arti_id": "Pencegahan Kecelakaan"
+  },
+  {
+    "hanzi": "急救",
+    "pinyin": "(n.) jíjiù",
+    "arti_en": "First Aid",
+    "arti_id": "P3K"
+  },
+  {
+    "hanzi": "绝缘电阻表",
+    "pinyin": "(n.) juéyuán diànzǔ biǎo",
+    "arti_en": "Insulation Tester",
+    "arti_id": "insulation tester"
+  },
+  {
+    "hanzi": "安全帽",
+    "pinyin": "(n.) ānquán mào",
+    "arti_en": "Safety Helmet",
+    "arti_id": "helm keselamatan"
+  },
+  {
+    "hanzi": "警告标志",
+    "pinyin": "(n.) jǐnggào biāozhì",
+    "arti_en": "Warning Sign",
+    "arti_id": "rambu peringatan"
+  },
+  {
+    "hanzi": "安全围栏",
+    "pinyin": "(n.) ānquán wéilán",
+    "arti_en": "Safety Fence",
+    "arti_id": "pagar pengaman"
+  },
+  {
+    "hanzi": "戴安全帽",
+    "pinyin": "(v.) dài ānquán mào",
+    "arti_en": "Wear Helmet",
+    "arti_id": "memakai helm"
+  },
+  {
+    "hanzi": "戴绝缘手套",
+    "pinyin": "(v.) dài juéyuán shǒutào",
+    "arti_en": "Wear Insulating Gloves",
+    "arti_id": "memakai sarung tangan isolasi"
+  },
+  {
+    "hanzi": "警告",
+    "pinyin": "(n.) jǐnggào",
+    "arti_en": "Warning",
+    "arti_id": "Peringatan"
+  },
+  {
+    "hanzi": "安全环保部",
+    "pinyin": "(n.) ānquán huánbǎo bù",
+    "arti_en": "Safety and Environmental Department",
+    "arti_id": "Departemen keselamatan"
+  },
+  {
+    "hanzi": "隐患",
+    "pinyin": "(n.) yǐnhuàn",
+    "arti_en": "Hidden Hazard",
+    "arti_id": "potensi bahaya"
+  },
+  {
+    "hanzi": "事故",
+    "pinyin": "(n.) shìgù",
+    "arti_en": "Accident",
+    "arti_id": "kecelakaan"
+  },
+  {
+    "hanzi": "消防系统",
+    "pinyin": "(n.) xiāofáng xìtǒng",
+    "arti_en": "Fire Suppression System",
+    "arti_id": "sistem pemadam"
+  },
+  {
+    "hanzi": "应急预案",
+    "pinyin": "(n.) yìngjí yù'àn",
+    "arti_en": "Emergency Plan",
+    "arti_id": "rencana darurat"
+  },
+  {
+    "hanzi": "安全员",
+    "pinyin": "(n.) ānquán yuán",
+    "arti_en": "Safety Officer",
+    "arti_id": "Petugas Safety"
+  },
+  {
+    "hanzi": "灭火器",
+    "pinyin": "(n.) mièhuǒqì",
+    "arti_en": "Fire Extinguisher",
+    "arti_id": "APAR"
+  },
+  {
+    "hanzi": "安全标准",
+    "pinyin": "(n.) ānquán biāozhǔn",
+    "arti_en": "Safety Standard",
+    "arti_id": "Standar Keselamatan"
+  },
+  {
+    "hanzi": "安全政策",
+    "pinyin": "(n.) ānquán zhèngcè",
+    "arti_en": "Safety Policy",
+    "arti_id": "Kebijakan Keselamatan"
+  },
+  {
+    "hanzi": "事故分析",
+    "pinyin": "(n.) shìgù fēnxī",
+    "arti_en": "Accident Analysis",
+    "arti_id": "Analisis Kecelakaan"
+  },
+  {
+    "hanzi": "安全管理",
+    "pinyin": "(n.) ānquán guǎnlǐ",
+    "arti_en": "Safety Management",
+    "arti_id": "Manajemen Keselamatan"
+  },
+  {
+    "hanzi": "安全审计",
+    "pinyin": "(n.) ānquán shěnjì",
+    "arti_en": "Safety Audit",
+    "arti_id": "Audit Keselamatan"
+  },
+  {
+    "hanzi": "安全培训",
+    "pinyin": "(n.) ānquán péixùn",
+    "arti_en": "Safety Training",
+    "arti_id": "Pelatihan Keselamatan"
+  },
+  {
+    "hanzi": "安全标志",
+    "pinyin": "(n.) ānquán biāozhì",
+    "arti_en": "Safety Sign",
+    "arti_id": "Tanda Keselamatan"
+  },
+  {
+    "hanzi": "安全文化",
+    "pinyin": "(n.) ānquán wénhuà",
+    "arti_en": "Safety Culture",
+    "arti_id": "Budaya Keselamatan"
+  },
+  {
+    "hanzi": "应急计划",
+    "pinyin": "(n.) yìngjí jìhuà",
+    "arti_en": "Emergency Plan",
+    "arti_id": "Rencana Darurat"
+  },
+  {
+    "hanzi": "应急疏散",
+    "pinyin": "(n.) yìngjí shùsàn",
+    "arti_en": "Emergency Evacuation",
+    "arti_id": "Evakuasi Darurat"
+  },
+  {
+    "hanzi": "灭火器",
+    "pinyin": "(n.) mièhuǒqì",
+    "arti_en": "Fire Extinguisher",
+    "arti_id": "Pemadam Kebakaran"
+  },
+  {
+    "hanzi": "绝缘层",
+    "pinyin": "(n.) juéyuán céng",
+    "arti_en": "Insulation Layer",
+    "arti_id": "lapisan isolasi"
+  },
+  {
+    "hanzi": "事故报告",
+    "pinyin": "(n.) shìgù bàogào",
+    "arti_en": "Accident Report",
+    "arti_id": "Laporan kecelakaan"
+  },
+  {
+    "hanzi": "口罩",
+    "pinyin": "(n.) kǒuzhào",
+    "arti_en": "Mask",
+    "arti_id": "Masker"
+  },
+  {
+    "hanzi": "手套",
+    "pinyin": "(n.) shǒutào",
+    "arti_en": "Gloves",
+    "arti_id": "Sarung tangan"
+  },
+  {
+    "hanzi": "安全帽",
+    "pinyin": "(n.) ānquán mào",
+    "arti_en": "helm keselamatan",
+    "arti_id": "helm keselamatan"
+  },
+  {
+    "hanzi": "安全",
+    "pinyin": "(n.) ānquán",
+    "arti_en": "keselamatan",
+    "arti_id": "keselamatan"
+  },
+  {
+    "hanzi": "手套",
+    "pinyin": "(n.) shǒutào",
+    "arti_en": "sarung tangan",
+    "arti_id": "sarung tangan"
+  },
+  {
+    "hanzi": "安全鞋",
+    "pinyin": "(n.) ānquán xié",
+    "arti_en": "sepatu safety",
+    "arti_id": "sepatu safety"
+  },
+  {
+    "hanzi": "防尘口罩",
+    "pinyin": "(n.) fángchén kǒuzhào",
+    "arti_en": "masker debu",
+    "arti_id": "masker debu"
+  },
+  {
+    "hanzi": "灭火器",
+    "pinyin": "(n.) mièhuǒqì",
+    "arti_en": "alat pemadam",
+    "arti_id": "alat pemadam"
+  },
+  {
+    "hanzi": "急救箱",
+    "pinyin": "(n.) jíjiùxiāng",
+    "arti_en": "kotak P3K",
+    "arti_id": "kotak P3K"
+  },
+  {
+    "hanzi": "手套",
+    "pinyin": "(n.) shǒutào",
+    "arti_en": "Sarung Tangan",
+    "arti_id": "Sarung Tangan"
+  },
+  {
+    "hanzi": "消防车",
+    "pinyin": "(n.) xiāofángchē",
+    "arti_en": "Mobil pemadam",
+    "arti_id": "Mobil pemadam"
+  },
+  {
+    "hanzi": "安环室",
+    "pinyin": "(n.) ānhuán shì",
+    "arti_en": "Ruang Safety",
+    "arti_id": "Ruang Safety"
+  },
+  {
+    "hanzi": "危险",
+    "pinyin": "(n.) wēixiǎn",
+    "arti_en": "Bahaya",
+    "arti_id": "Bahaya"
+  },
+  {
+    "hanzi": "注意安全",
+    "pinyin": "(phr.) zhùyì ānquán",
+    "arti_en": "Perhatikan Keselamatan",
+    "arti_id": "Perhatikan Keselamatan"
+  },
+  {
+    "hanzi": "佩戴劳保用品",
+    "pinyin": "(v.) pèidài láobǎo yòngpǐn",
+    "arti_en": "Memakai APD",
+    "arti_id": "Memakai APD"
+  },
+  {
+    "hanzi": "一日安全员",
+    "pinyin": "(n.) yī rì ānquán yuán",
+    "arti_en": "Sehari Petugas Safety",
+    "arti_id": "Sehari Petugas Safety"
+  },
+  {
+    "hanzi": "劳保鞋",
+    "pinyin": "(n.) láobǎo xié",
+    "arti_en": "Sepatu Safety",
+    "arti_id": "Sepatu Safety"
+  },
+  {
+    "hanzi": "帽带",
+    "pinyin": "(n.) mào dài",
+    "arti_en": "Tali Helm",
+    "arti_id": "Tali Helm"
+  },
+  {
+    "hanzi": "安全帽",
+    "pinyin": "(n.) ānquán mào",
+    "arti_en": "Helm",
+    "arti_id": "Helm"
+  },
+  {
+    "hanzi": "应急池",
+    "pinyin": "(n.) yīngjí chí",
+    "arti_en": "Kolam Emergency",
+    "arti_id": "Kolam Emergency"
+  },
+  {
+    "hanzi": "安全网",
+    "pinyin": "(n.) ānquán wǎng",
+    "arti_en": "Jaring pengaman",
+    "arti_id": "Jaring pengaman"
+  },
+  {
+    "hanzi": "消防车",
+    "pinyin": "(n.) xiāofáng chē",
+    "arti_en": "Mobil pemadam",
+    "arti_id": "Mobil pemadam"
+  },
+  {
+    "hanzi": "消防器",
+    "pinyin": "(n.) xiāofáng qi",
+    "arti_en": "Alat pemadam",
+    "arti_id": "Alat pemadam"
+  },
+  {
+    "hanzi": "消火栓",
+    "pinyin": "(n.) xiāohuǒshuān",
+    "arti_en": "Hydrant",
+    "arti_id": "Hydrant"
+  },
+  {
+    "hanzi": "绝缘手套",
+    "pinyin": "(n.) juéyuán shǒutào",
+    "arti_en": "sarung tangan isolasi",
+    "arti_id": "sarung tangan isolasi"
+  },
+  {
+    "hanzi": "绝缘靴",
+    "pinyin": "(n.) juéyuán xuē",
+    "arti_en": "sepatu isolasi",
+    "arti_id": "sepatu isolasi"
+  },
+  {
+    "hanzi": "绝缘鞋",
+    "pinyin": "(n.) juéyuán xié",
+    "arti_en": "sepatu isolasi",
+    "arti_id": "sepatu isolasi"
+  },
+  {
+    "hanzi": "绝缘杆",
+    "pinyin": "(n.) juéyuán gān",
+    "arti_en": "tongkat isolasi",
+    "arti_id": "tongkat isolasi"
+  },
+  {
+    "hanzi": "安全带",
+    "pinyin": "(n.) ānquán dài",
+    "arti_en": "sabuk pengaman",
+    "arti_id": "sabuk pengaman"
+  },
+  {
+    "hanzi": "警告灯",
+    "pinyin": "(n.) jǐnggào dēng",
+    "arti_en": "lampu peringatan",
+    "arti_id": "lampu peringatan"
+  },
+  {
+    "hanzi": "急停按钮",
+    "pinyin": "(n.) jítíng ànniǔ",
+    "arti_en": "tombol emergency stop",
+    "arti_id": "tombol emergency stop"
+  },
+  {
+    "hanzi": "报警",
+    "pinyin": "(v.) bàojīng",
+    "arti_en": "Alarm",
+    "arti_id": "Alarm"
+  },
+  {
+    "hanzi": "安全带",
+    "pinyin": "(n.) ānquándài",
+    "arti_en": "Sabuk pengaman",
+    "arti_id": "Sabuk pengaman"
+  },
+  {
+    "hanzi": "劳保穿戴",
+    "pinyin": "(n.) láobǎo chuāndài",
+    "arti_en": "Pemakaian APD",
+    "arti_id": "Pemakaian APD"
+  },
+  {
+    "hanzi": "劳保服",
+    "pinyin": "(n.) láobǎofú",
+    "arti_en": "Baju safety",
+    "arti_id": "Baju safety"
+  },
+  {
+    "hanzi": "项目风险",
+    "pinyin": "(n.) xiàngmù fēngxiǎn",
+    "arti_en": "Risiko Proyek",
+    "arti_id": "Risiko Proyek"
+  },
+  {
+    "hanzi": "仓库 ānquán",
+    "pinyin": "(n.) cāngkù ānquán",
+    "arti_en": "Keselamatan Gudang",
+    "arti_id": "Keselamatan Gudang"
+  },
+  {
+    "hanzi": "安全环保部",
+    "pinyin": "(n.) ānquán huánbǎo bù",
+    "arti_en": "HSE",
+    "arti_id": "HSE"
+  },
+  {
+    "hanzi": "紧急开关",
+    "pinyin": "(n.) jīnjí kāiguān",
+    "arti_en": "Tombol Darurat",
+    "arti_id": "Tombol Darurat"
+  },
+  {
+    "hanzi": "安全",
+    "pinyin": "(n.) ānquán",
+    "arti_en": "Keselamatan",
+    "arti_id": "Keselamatan"
+  },
+  {
+    "hanzi": "防护用品",
+    "pinyin": "(n.) fánghù yòngpǐn",
+    "arti_en": "APD",
+    "arti_id": "APD"
+  },
+  {
+    "hanzi": "风险",
+    "pinyin": "(n.) fēngxiǎn",
+    "arti_en": "Risiko",
+    "arti_id": "Risiko"
+  },
+  {
+    "hanzi": "事故",
+    "pinyin": "(n.) shìgù",
+    "arti_en": "Kecelakaan",
+    "arti_id": "Kecelakaan"
+  },
+  {
+    "hanzi": "口罩",
+    "pinyin": "(n.) kǒuzhào",
+    "arti_en": "Masker",
+    "arti_id": "Masker"
+  },
+  {
+    "hanzi": "高帮劳保鞋",
+    "pinyin": "(n.) gāobāng láobǎo xié",
+    "arti_en": "Sepatu safety tinggi",
+    "arti_id": "Sepatu safety tinggi"
+  },
+  {
+    "hanzi": "安全检查",
+    "pinyin": "(n.) ānquán jiǎnchá",
+    "arti_en": "Pemeriksaan keselamatan",
+    "arti_id": "Pemeriksaan keselamatan"
+  },
+  {
+    "hanzi": "安全管理",
+    "pinyin": "(n.) ānquán guǎnlǐ",
+    "arti_en": "Manajemen keselamatan",
+    "arti_id": "Manajemen keselamatan"
+  }
+]

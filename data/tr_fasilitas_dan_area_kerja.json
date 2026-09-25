@@ -1,0 +1,302 @@
+[
+  {
+    "hanzi": "车间",
+    "pinyin": "(n.) chējiān",
+    "arti_en": "Workshop",
+    "arti_id": "Workshop"
+  },
+  {
+    "hanzi": "办公室",
+    "pinyin": "(n.) bàngōngshì",
+    "arti_en": "Office",
+    "arti_id": "Kantor"
+  },
+  {
+    "hanzi": "工厂",
+    "pinyin": "(n.) gōngchǎng",
+    "arti_en": "Factory",
+    "arti_id": "Pabrik"
+  },
+  {
+    "hanzi": "生产部",
+    "pinyin": "(n.) shēngchǎn bù",
+    "arti_en": "Production Department",
+    "arti_id": "Departemen Produksi"
+  },
+  {
+    "hanzi": "压榨厂结构",
+    "pinyin": "(n.) yāzhà chǎng jiégòu",
+    "arti_en": "Plant Organizational Structure",
+    "arti_id": "Struktur Organisasi Pabrik"
+  },
+  {
+    "hanzi": "通廊",
+    "pinyin": "(n.) tōngláng",
+    "arti_en": "Corridor",
+    "arti_id": "Koridor"
+  },
+  {
+    "hanzi": "办公室",
+    "pinyin": "(n.) bàngōngshì",
+    "arti_en": "Office",
+    "arti_id": "Kantor"
+  },
+  {
+    "hanzi": "绿色建筑",
+    "pinyin": "(n.) lǜsè jiànzhù",
+    "arti_en": "Green Building",
+    "arti_id": "Green Building"
+  },
+  {
+    "hanzi": "公寓",
+    "pinyin": "(n.) gōngyù",
+    "arti_en": "Apartment",
+    "arti_id": "Apartemen"
+  },
+  {
+    "hanzi": "休息室",
+    "pinyin": "(n.) xiūxíshì",
+    "arti_en": "Breakroom",
+    "arti_id": "Ruang istirahat"
+  },
+  {
+    "hanzi": "部门",
+    "pinyin": "(n.) bùmén",
+    "arti_en": "Department",
+    "arti_id": "Departemen"
+  },
+  {
+    "hanzi": "综合管理部",
+    "pinyin": "(n.) zōnghé guǎnlǐ bù",
+    "arti_en": "General Management Department",
+    "arti_id": "Departemen manajemen umum"
+  },
+  {
+    "hanzi": "工程部",
+    "pinyin": "(n.) gōngchéng bù",
+    "arti_en": "Engineering Department",
+    "arti_id": "Departemen teknik"
+  },
+  {
+    "hanzi": "配套厂",
+    "pinyin": "(n.) pèitào chǎng",
+    "arti_en": "OEM Factory",
+    "arti_id": "Pabrik OEM"
+  },
+  {
+    "hanzi": "研发部门",
+    "pinyin": "(n.) yánfā bùmén",
+    "arti_en": "R&D Department",
+    "arti_id": "Departemen R&D"
+  },
+  {
+    "hanzi": "行销部门",
+    "pinyin": "(n.) xíngxiāo bùmén",
+    "arti_en": "Marketing Department",
+    "arti_id": "Departemen pemasaran"
+  },
+  {
+    "hanzi": "人事部门",
+    "pinyin": "(n.) rénshì bùmén",
+    "arti_en": "HR Department",
+    "arti_id": "Departemen personalia"
+  },
+  {
+    "hanzi": "驾驶室",
+    "pinyin": "(n.) jiàshǐshì",
+    "arti_en": "Cabin",
+    "arti_id": "Ruang kemudi"
+  },
+  {
+    "hanzi": "中控岗位",
+    "pinyin": "(n.) zhōngkòng gǎng",
+    "arti_en": "Control Room Worker",
+    "arti_id": "Pekerja Ruang Kontrol"
+  },
+  {
+    "hanzi": "厂房",
+    "pinyin": "(n.) chǎngjiá",
+    "arti_en": "Factory / Plant",
+    "arti_id": "Pabrik"
+  },
+  {
+    "hanzi": "订舱",
+    "pinyin": "(n.) dìngcāng",
+    "arti_en": "Pemesanan ruang muat",
+    "arti_id": "Pemesanan ruang muat"
+  },
+  {
+    "hanzi": "控制室",
+    "pinyin": "(n.) kòngzhìshì",
+    "arti_en": "ruang kontrol",
+    "arti_id": "ruang kontrol"
+  },
+  {
+    "hanzi": "生产部门",
+    "pinyin": "(n.) shēngchǎn bùmén",
+    "arti_en": "Departemen produksi",
+    "arti_id": "Departemen produksi"
+  },
+  {
+    "hanzi": "会计部门",
+    "pinyin": "(n.) kuàijì bùmén",
+    "arti_en": "Departemen akuntansi",
+    "arti_id": "Departemen akuntansi"
+  },
+  {
+    "hanzi": "采购部门",
+    "pinyin": "(n.) cǎigòu bùmén",
+    "arti_en": "Departemen pembelian",
+    "arti_id": "Departemen pembelian"
+  },
+  {
+    "hanzi": "值班室",
+    "pinyin": "(n.) zhíbān shì",
+    "arti_en": "Ruang Petugas",
+    "arti_id": "Ruang Petugas"
+  },
+  {
+    "hanzi": "沉降室",
+    "pinyin": "(n.) chénjiàng shì",
+    "arti_en": "Ruang Pengendap Gravitasi",
+    "arti_id": "Ruang Pengendap Gravitasi"
+  },
+  {
+    "hanzi": "红楼",
+    "pinyin": "(n.) hóng lóu",
+    "arti_en": "Apartemen",
+    "arti_id": "Apartemen"
+  },
+  {
+    "hanzi": "化验室",
+    "pinyin": "(n.) huàyàn shì",
+    "arti_en": "Ruang Laboratorium",
+    "arti_id": "Ruang Laboratorium"
+  },
+  {
+    "hanzi": "中控室",
+    "pinyin": "(n.) zhōngkòng shì",
+    "arti_en": "Ruang Laboratorium",
+    "arti_id": "Ruang Laboratorium"
+  },
+  {
+    "hanzi": "公寓",
+    "pinyin": "(n.) gōngyù",
+    "arti_en": "Ruang Kontrol",
+    "arti_id": "Ruang Kontrol"
+  },
+  {
+    "hanzi": "工作区域",
+    "pinyin": "(n.) gōngzuò qūyù",
+    "arti_en": "Area kerja",
+    "arti_id": "Area kerja"
+  },
+  {
+    "hanzi": "出厂价",
+    "pinyin": "(n.) chūchǎng jià",
+    "arti_en": "Harga pabrik",
+    "arti_id": "Harga pabrik"
+  },
+  {
+    "hanzi": "中控室操作",
+    "pinyin": "(n.) zhōngkòng shì cāozuò",
+    "arti_en": "Pengoperasian Control Room",
+    "arti_id": "Pengoperasian Control Room"
+  },
+  {
+    "hanzi": "办公用品",
+    "pinyin": "(n.) bàngōng yòngpǐn",
+    "arti_en": "Alat tulis kantor",
+    "arti_id": "Alat tulis kantor"
+  },
+  {
+    "hanzi": "部门",
+    "pinyin": "(n.) bùmén",
+    "arti_en": "Departemen",
+    "arti_id": "Departemen"
+  },
+  {
+    "hanzi": "车间",
+    "pinyin": "(n.) chējiān",
+    "arti_en": "Bengkel",
+    "arti_id": "Bengkel"
+  },
+  {
+    "hanzi": "炉膛",
+    "pinyin": "(n.) lútáng",
+    "arti_en": "ruang",
+    "arti_id": "ruang"
+  },
+  {
+    "hanzi": "部门",
+    "pinyin": "(n.) bùmén",
+    "arti_en": "Departemen",
+    "arti_id": "Departemen"
+  },
+  {
+    "hanzi": "电气部",
+    "pinyin": "(n.) diànqì bù",
+    "arti_en": "Departemen Listrik",
+    "arti_id": "Departemen Listrik"
+  },
+  {
+    "hanzi": "车间",
+    "pinyin": "(n.) chējiān",
+    "arti_en": "Divisi / Workshop",
+    "arti_id": "Divisi / Workshop"
+  },
+  {
+    "hanzi": "配料车间",
+    "pinyin": "(n.) pèiliào chējiān",
+    "arti_en": "Divisi Blending",
+    "arti_id": "Divisi Blending"
+  },
+  {
+    "hanzi": "干燥窑车间",
+    "pinyin": "(n.) gānzào yáo chējiān",
+    "arti_en": "Divisi Dryer",
+    "arti_id": "Divisi Dryer"
+  },
+  {
+    "hanzi": "浇筑车间",
+    "pinyin": "(n.) jiǎozhù chējiān",
+    "arti_en": "Divisi Molding",
+    "arti_id": "Divisi Molding"
+  },
+  {
+    "hanzi": "立磨车间",
+    "pinyin": "(n.) lìmó chējiān",
+    "arti_en": "Divisi Grinding",
+    "arti_id": "Divisi Grinding"
+  },
+  {
+    "hanzi": "工作区域",
+    "pinyin": "(n.) gōngzuò qūyú",
+    "arti_en": "Area Kerja",
+    "arti_id": "Area Kerja"
+  },
+  {
+    "hanzi": "机修车间",
+    "pinyin": "(n.) jīxiū chējiān",
+    "arti_en": "Divisi Teknis",
+    "arti_id": "Divisi Teknis"
+  },
+  {
+    "hanzi": "修理厂",
+    "pinyin": "(n.) xiūlǐchǎng",
+    "arti_en": "Bengkel",
+    "arti_id": "Bengkel"
+  },
+  {
+    "hanzi": "筒廊",
+    "pinyin": "(n.) tǒng láng",
+    "arti_en": "Koridor",
+    "arti_id": "Koridor"
+  },
+  {
+    "hanzi": "沉降室",
+    "pinyin": "(n.) chénjiàng shì",
+    "arti_en": "Ruang Pengumpul Debu",
+    "arti_id": "Ruang Pengumpul Debu"
+  }
+]

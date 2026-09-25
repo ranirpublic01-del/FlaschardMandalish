@@ -1,0 +1,662 @@
+[
+  {
+    "hanzi": "电气",
+    "pinyin": "(n.) diànqì",
+    "arti_en": "Electrical",
+    "arti_id": "Elektrik"
+  },
+  {
+    "hanzi": "电工",
+    "pinyin": "(n.) diàngōng",
+    "arti_en": "Electrician",
+    "arti_id": "Operator Elektrik"
+  },
+  {
+    "hanzi": "机电主管",
+    "pinyin": "(n.) jīdiàn zhǔguǎn",
+    "arti_en": "Electrical Assistant",
+    "arti_id": "Assistant Elektrik"
+  },
+  {
+    "hanzi": "电力",
+    "pinyin": "(n.) diànlì",
+    "arti_en": "Electricity",
+    "arti_id": "Listrik"
+  },
+  {
+    "hanzi": "电气",
+    "pinyin": "(n.) diànqì",
+    "arti_en": "Electrical",
+    "arti_id": "Electrical"
+  },
+  {
+    "hanzi": "紧急开关",
+    "pinyin": "(n.) jǐnjí kāiguān",
+    "arti_en": "Emergency Switch",
+    "arti_id": "Tombol darurat"
+  },
+  {
+    "hanzi": "电风扇",
+    "pinyin": "(n.) diànfēngshàn",
+    "arti_en": "Electric Fan",
+    "arti_id": "Kipas angin"
+  },
+  {
+    "hanzi": "开关",
+    "pinyin": "(n.) kāiguān",
+    "arti_en": "Switch",
+    "arti_id": "Sakelar"
+  },
+  {
+    "hanzi": "电铃",
+    "pinyin": "(n.) diànlíng",
+    "arti_en": "Electric bell",
+    "arti_id": "Bel listrik"
+  },
+  {
+    "hanzi": "滑线",
+    "pinyin": "(n.) huáxiàn",
+    "arti_en": "Conductor rail",
+    "arti_id": "Rel arus"
+  },
+  {
+    "hanzi": "电控箱",
+    "pinyin": "(n.) diànkòng xiāng",
+    "arti_en": "Electrical control box",
+    "arti_id": "Kotak kontrol listrik"
+  },
+  {
+    "hanzi": "电缆",
+    "pinyin": "(n.) diànlǎn",
+    "arti_en": "Cable",
+    "arti_id": "Kabel"
+  },
+  {
+    "hanzi": "急停开关",
+    "pinyin": "(n.) jítíng kāiguān",
+    "arti_en": "Emergency stop switch",
+    "arti_id": "Sakelar darurat"
+  },
+  {
+    "hanzi": "拉绳开关",
+    "pinyin": "(n.) lāshéng kāiguān",
+    "arti_en": "Pull rope switch",
+    "arti_id": "Sakelar tali tarik"
+  },
+  {
+    "hanzi": "电机",
+    "pinyin": "(n.) diànjī",
+    "arti_en": "Electric motor",
+    "arti_id": "Motor listrik"
+  },
+  {
+    "hanzi": "现金流",
+    "pinyin": "(n.) xiànjīn liú",
+    "arti_en": "Cash flow",
+    "arti_id": "Arus Kas"
+  },
+  {
+    "hanzi": "短路保护",
+    "pinyin": "(n.) duǎnlù bǎohù",
+    "arti_en": "Short Circuit Protection",
+    "arti_id": "Proteksi short"
+  },
+  {
+    "hanzi": "发电机",
+    "pinyin": "(n.) fādiànjī",
+    "arti_en": "Genset",
+    "arti_id": "Genset"
+  },
+  {
+    "hanzi": "变压器",
+    "pinyin": "(n.) biànyāqì",
+    "arti_en": "Transformer",
+    "arti_id": "trafo"
+  },
+  {
+    "hanzi": "电压控制器",
+    "pinyin": "(n.) diànyā kòngzhìqì",
+    "arti_en": "Voltage Controller",
+    "arti_id": "Voltage controller"
+  },
+  {
+    "hanzi": "检查电路",
+    "pinyin": "(v.) jiǎnchá diànlù",
+    "arti_en": "Check Circuit",
+    "arti_id": "memeriksa rangkaian"
+  },
+  {
+    "hanzi": "测量电流",
+    "pinyin": "(v.) cèliáng diànliú",
+    "arti_en": "Measure Current",
+    "arti_id": "mengukur arus"
+  },
+  {
+    "hanzi": "危险高压",
+    "pinyin": "(n.) wēixiǎn gāoyā",
+    "arti_en": "High Voltage Danger",
+    "arti_id": "bahaya tegangan tinggi"
+  },
+  {
+    "hanzi": "测量电压",
+    "pinyin": "(v.) cèliáng diànyā",
+    "arti_en": "Measure Voltage",
+    "arti_id": "mengukur tegangan"
+  },
+  {
+    "hanzi": "操作开关柜",
+    "pinyin": "(v.) cāozuò kāiguāngui",
+    "arti_en": "Operate Switchgear",
+    "arti_id": "mengoperasikan switchgear"
+  },
+  {
+    "hanzi": "检查接地",
+    "pinyin": "(v.) jiǎnchá jiēdì",
+    "arti_en": "Check Grounding",
+    "arti_id": "mengecek grounding"
+  },
+  {
+    "hanzi": "线鼻子",
+    "pinyin": "(n.) xiàn bízi",
+    "arti_en": "Cable Lug",
+    "arti_id": "kabel lug"
+  },
+  {
+    "hanzi": "电缆接头",
+    "pinyin": "(n.) diànlǎn jiētóu",
+    "arti_en": "Cable Skun",
+    "arti_id": "skun kabel"
+  },
+  {
+    "hanzi": "开关操作",
+    "pinyin": "(n.) kāiguān cāozuò",
+    "arti_en": "Switching Operation",
+    "arti_id": "saklar switching"
+  },
+  {
+    "hanzi": "安装开关",
+    "pinyin": "(v.) ānzhuāng kāiguān",
+    "arti_en": "Install Switch",
+    "arti_id": "memasang saklar"
+  },
+  {
+    "hanzi": "安装插座",
+    "pinyin": "(v.) ānzhuāng chāzuò",
+    "arti_en": "Install Socket",
+    "arti_id": "memasang stop kontak"
+  },
+  {
+    "hanzi": "插头",
+    "pinyin": "(n.) chātóu",
+    "arti_en": "Plug",
+    "arti_id": "Steker"
+  },
+  {
+    "hanzi": "电源线",
+    "pinyin": "(n.) diànyuánxiàn",
+    "arti_en": "Power Cable",
+    "arti_id": "Kabel listrik"
+  },
+  {
+    "hanzi": "USB线",
+    "pinyin": "(n.) USB xiàn",
+    "arti_en": "USB Cable",
+    "arti_id": "Kabel USB"
+  },
+  {
+    "hanzi": "电气部",
+    "pinyin": "(n.) diànqì bù",
+    "arti_en": "Electrical Department",
+    "arti_id": "Departemen listrik"
+  },
+  {
+    "hanzi": "电工",
+    "pinyin": "(n.) diàngōng",
+    "arti_en": "Electrician",
+    "arti_id": "Tukang Listrik"
+  },
+  {
+    "hanzi": "开关",
+    "pinyin": "(n.) kāiguān",
+    "arti_en": "Switch",
+    "arti_id": "Sakelar"
+  },
+  {
+    "hanzi": "大电缆",
+    "pinyin": "(n.) dà diànlǎn",
+    "arti_en": "Large Cable",
+    "arti_id": "kabel besar"
+  },
+  {
+    "hanzi": "中性线",
+    "pinyin": "(n.) zhōngxìng xiàn",
+    "arti_en": "Neutral Wire",
+    "arti_id": "kabel netral"
+  },
+  {
+    "hanzi": "电线",
+    "pinyin": "(n.) diànxiàn",
+    "arti_en": "Electric Wire",
+    "arti_id": "kabel listrik"
+  },
+  {
+    "hanzi": "电缆桥架",
+    "pinyin": "(n.) diànlǎn qiáojià",
+    "arti_en": "Cable Tray",
+    "arti_id": "cable tray"
+  },
+  {
+    "hanzi": "地线",
+    "pinyin": "(n.) dìxiàn",
+    "arti_en": "Ground Wire",
+    "arti_id": "kabel tanah / grounding"
+  },
+  {
+    "hanzi": "铝线",
+    "pinyin": "(n.) lǚxiàn",
+    "arti_en": "Aluminum Wire",
+    "arti_id": "kabel aluminium"
+  },
+  {
+    "hanzi": "铜线",
+    "pinyin": "(n.) tóngxiàn",
+    "arti_en": "Copper Wire",
+    "arti_id": "kabel tembaga"
+  },
+  {
+    "hanzi": "触电",
+    "pinyin": "(v.) chùdiàn",
+    "arti_en": "Electric Shock",
+    "arti_id": "Kesetrum"
+  },
+  {
+    "hanzi": "电流",
+    "pinyin": "(n.) diànliú",
+    "arti_en": "Electric Current",
+    "arti_id": "Arus listrik"
+  },
+  {
+    "hanzi": "试电笔",
+    "pinyin": "(n.) shìdiàn bǐ",
+    "arti_en": "Test Pen",
+    "arti_id": "Tespen"
+  },
+  {
+    "hanzi": "短路",
+    "pinyin": "(n.) duǎnlù",
+    "arti_en": "Short Circuit",
+    "arti_id": "Korsleting"
+  },
+  {
+    "hanzi": "电线",
+    "pinyin": "(n.) diànxiàn",
+    "arti_en": "Wire / Cable",
+    "arti_id": "Kabel"
+  },
+  {
+    "hanzi": "低压电",
+    "pinyin": "(n.) dīyā diàn",
+    "arti_en": "listrik tegangan rendah",
+    "arti_id": "listrik tegangan rendah"
+  },
+  {
+    "hanzi": "高压电",
+    "pinyin": "(n.) gāoyā diàn",
+    "arti_en": "listrik tegangan tinggi",
+    "arti_id": "listrik tegangan tinggi"
+  },
+  {
+    "hanzi": "电流",
+    "pinyin": "(n.) diànliú",
+    "arti_en": "Arus Listrik",
+    "arti_id": "Arus Listrik"
+  },
+  {
+    "hanzi": "插座",
+    "pinyin": "(n.) chāzuò",
+    "arti_en": "stop kontak",
+    "arti_id": "stop kontak"
+  },
+  {
+    "hanzi": "漏电",
+    "pinyin": "(n.) lòudiàn",
+    "arti_en": "kebocoran arus",
+    "arti_id": "kebocoran arus"
+  },
+  {
+    "hanzi": "变频器",
+    "pinyin": "(n.) biànpínqì",
+    "arti_en": "VFD",
+    "arti_id": "VFD"
+  },
+  {
+    "hanzi": "控制回路",
+    "pinyin": "(n.) kòngzhì huìlù",
+    "arti_en": "control circuit",
+    "arti_id": "control circuit"
+  },
+  {
+    "hanzi": "保护继电器",
+    "pinyin": "(n.) bǎohù jìdiànqì",
+    "arti_en": "relay proteksi",
+    "arti_id": "relay proteksi"
+  },
+  {
+    "hanzi": "伺服电机",
+    "pinyin": "(n.) sīfú diànjī",
+    "arti_en": "motor servo",
+    "arti_id": "motor servo"
+  },
+  {
+    "hanzi": "启动器",
+    "pinyin": "(n.) qǐdòngqì",
+    "arti_en": "starter",
+    "arti_id": "starter"
+  },
+  {
+    "hanzi": "插座",
+    "pinyin": "(n.) chāzuò",
+    "arti_en": "Steker",
+    "arti_id": "Steker"
+  },
+  {
+    "hanzi": "开关",
+    "pinyin": "(n.) kāiguān",
+    "arti_en": "Saklar",
+    "arti_id": "Saklar"
+  },
+  {
+    "hanzi": "转换插头",
+    "pinyin": "(n.) zhuǎnhuàn chātóu",
+    "arti_en": "Steker konversi",
+    "arti_id": "Steker konversi"
+  },
+  {
+    "hanzi": "变压器容量",
+    "pinyin": "(n.) biànyāqì róngliàng",
+    "arti_en": "Kapasitas Trafo",
+    "arti_id": "Kapasitas Trafo"
+  },
+  {
+    "hanzi": "变压器",
+    "pinyin": "(n.) biànyāqì",
+    "arti_en": "Trafo",
+    "arti_id": "Trafo"
+  },
+  {
+    "hanzi": "二次电流",
+    "pinyin": "(n.) èrcì diànliú",
+    "arti_en": "Arus Secondary",
+    "arti_id": "Arus Secondary"
+  },
+  {
+    "hanzi": "无功功率",
+    "pinyin": "(n.) wúgōng gōnglǜ",
+    "arti_en": "Power Reactive",
+    "arti_id": "Power Reactive"
+  },
+  {
+    "hanzi": "有功功率",
+    "pinyin": "(n.) yǒugōng gōnglǜ",
+    "arti_en": "Power Active",
+    "arti_id": "Power Active"
+  },
+  {
+    "hanzi": "功率因数",
+    "pinyin": "(n.) gōnglǜ yǐnshú",
+    "arti_en": "Power Factor",
+    "arti_id": "Power Factor"
+  },
+  {
+    "hanzi": "无功电度",
+    "pinyin": "(n.) wúgōng diàndù",
+    "arti_en": "Reactive Power Meter",
+    "arti_id": "Reactive Power Meter"
+  },
+  {
+    "hanzi": "有功电度",
+    "pinyin": "(n.) yǒugōng diàndù",
+    "arti_en": "Active Power Meter",
+    "arti_id": "Active Power Meter"
+  },
+  {
+    "hanzi": "火线",
+    "pinyin": "(n.) huǒxiàn",
+    "arti_en": "kabel fase",
+    "arti_id": "kabel fase"
+  },
+  {
+    "hanzi": "相线",
+    "pinyin": "(n.) xiàngxiàn",
+    "arti_en": "kabel fase",
+    "arti_id": "kabel fase"
+  },
+  {
+    "hanzi": "配电箱",
+    "pinyin": "(n.) pèidiànxiāng",
+    "arti_en": "panel distribusi",
+    "arti_id": "panel distribusi"
+  },
+  {
+    "hanzi": "开关",
+    "pinyin": "(n.) kāiguān",
+    "arti_en": "saklar",
+    "arti_id": "saklar"
+  },
+  {
+    "hanzi": "接线端子",
+    "pinyin": "(n.) jiēxiàn duānzi",
+    "arti_en": "terminal kabel",
+    "arti_id": "terminal kabel"
+  },
+  {
+    "hanzi": "空气开关",
+    "pinyin": "(n.) kōngqì kāiguān",
+    "arti_en": "air circuit breaker",
+    "arti_id": "air circuit breaker"
+  },
+  {
+    "hanzi": "接线盒",
+    "pinyin": "(n.) jiēxiànhé",
+    "arti_en": "junction box",
+    "arti_id": "junction box"
+  },
+  {
+    "hanzi": "短路器",
+    "pinyin": "(n.) duǎnlùqì",
+    "arti_en": "circuit breaker",
+    "arti_id": "circuit breaker"
+  },
+  {
+    "hanzi": "保险丝",
+    "pinyin": "(n.) bǎoxiǎnsī",
+    "arti_en": "fuse",
+    "arti_id": "fuse"
+  },
+  {
+    "hanzi": "熔断器",
+    "pinyin": "(n.) róngduànqì",
+    "arti_en": "sekring",
+    "arti_id": "sekring"
+  },
+  {
+    "hanzi": "控制柜",
+    "pinyin": "(n.) kòngzhìgui",
+    "arti_en": "panel kontrol",
+    "arti_id": "panel kontrol"
+  },
+  {
+    "hanzi": "漏电保护器",
+    "pinyin": "(n.) lòudiàn bǎohùqì",
+    "arti_en": "RCD",
+    "arti_id": "RCD"
+  },
+  {
+    "hanzi": "电表",
+    "pinyin": "(n.) diànbiǎo",
+    "arti_en": "meter listrik",
+    "arti_id": "meter listrik"
+  },
+  {
+    "hanzi": "电动机",
+    "pinyin": "(n.) diàndòngjī",
+    "arti_en": "motor listrik",
+    "arti_id": "motor listrik"
+  },
+  {
+    "hanzi": "继电器",
+    "pinyin": "(n.) jìdiànqì",
+    "arti_en": "relay",
+    "arti_id": "relay"
+  },
+  {
+    "hanzi": "接触器",
+    "pinyin": "(n.) jiēchùqì",
+    "arti_en": "contactor",
+    "arti_id": "contactor"
+  },
+  {
+    "hanzi": "开关柜",
+    "pinyin": "(n.) kāiguāngui",
+    "arti_en": "switchgear",
+    "arti_id": "switchgear"
+  },
+  {
+    "hanzi": "时间继电器",
+    "pinyin": "(n.) shíjiān jìdiànqì",
+    "arti_en": "time relay",
+    "arti_id": "time relay"
+  },
+  {
+    "hanzi": "监控系统",
+    "pinyin": "(n.) jiānkòng xìtǒng",
+    "arti_en": "SCADA system",
+    "arti_id": "SCADA system"
+  },
+  {
+    "hanzi": "应急发电机",
+    "pinyin": "(n.) yìngjí fādiànjī",
+    "arti_en": "genset darurat",
+    "arti_id": "genset darurat"
+  },
+  {
+    "hanzi": "剥线钳",
+    "pinyin": "(n.) bōxiàn qián",
+    "arti_en": "tang kupas kabel",
+    "arti_id": "tang kupas kabel"
+  },
+  {
+    "hanzi": "电烙铁",
+    "pinyin": "(n.) diàn làotiě",
+    "arti_en": "solder listrik",
+    "arti_id": "solder listrik"
+  },
+  {
+    "hanzi": "压线钳",
+    "pinyin": "(n.) yāxiàn qián",
+    "arti_en": "tang crimping",
+    "arti_id": "tang crimping"
+  },
+  {
+    "hanzi": "人机界面",
+    "pinyin": "(n.) rénjī jièmiàn",
+    "arti_en": "HMI",
+    "arti_id": "HMI"
+  },
+  {
+    "hanzi": "绝缘胶带",
+    "pinyin": "(n.) juéyuán jiāodài",
+    "arti_en": "isolasi listrik",
+    "arti_id": "isolasi listrik"
+  },
+  {
+    "hanzi": "测电笔",
+    "pinyin": "(n.) cèdiànbǐ",
+    "arti_en": "tespen",
+    "arti_id": "tespen"
+  },
+  {
+    "hanzi": "安装电缆",
+    "pinyin": "(v.) ānzhuāng diànlǎn",
+    "arti_en": "memasang kabel",
+    "arti_id": "memasang kabel"
+  },
+  {
+    "hanzi": "拉电缆",
+    "pinyin": "(v.) lā diànlǎn",
+    "arti_en": "Menarik kabel",
+    "arti_id": "Menarik kabel"
+  },
+  {
+    "hanzi": "高压测试仪",
+    "pinyin": "(n.) gāoyā cèshì yí",
+    "arti_en": "tester tegangan tinggi",
+    "arti_id": "tester tegangan tinggi"
+  },
+  {
+    "hanzi": "接线",
+    "pinyin": "(v.) jiēxiàn",
+    "arti_en": "menyambung kabel",
+    "arti_id": "menyambung kabel"
+  },
+  {
+    "hanzi": "电气车间",
+    "pinyin": "(n.) diànqì chējiān",
+    "arti_en": "Divisi Electric",
+    "arti_id": "Divisi Electric"
+  },
+  {
+    "hanzi": "变压器油冷却器",
+    "pinyin": "(n.) biànyāqì yóu lěngquè qì",
+    "arti_en": "Pendingin Oli Trafo",
+    "arti_id": "Pendingin Oli Trafo"
+  },
+  {
+    "hanzi": "变压器油温度",
+    "pinyin": "(n.) biànyāqì yóu wēndù",
+    "arti_en": "Suhu Oli Trafo",
+    "arti_id": "Suhu Oli Trafo"
+  },
+  {
+    "hanzi": "变压器水冷却器",
+    "pinyin": "(n.) biànyāqì shuǐ lěngquè qì",
+    "arti_en": "Pendingin Air Trafo",
+    "arti_id": "Pendingin Air Trafo"
+  },
+  {
+    "hanzi": "合闸",
+    "pinyin": "(v.) hézhá",
+    "arti_en": "Switch On",
+    "arti_id": "Switch On"
+  },
+  {
+    "hanzi": "分闸",
+    "pinyin": "(v.) fēnzhá",
+    "arti_en": "Switch Off",
+    "arti_id": "Switch Off"
+  },
+  {
+    "hanzi": "电气",
+    "pinyin": "(n.) diànqì",
+    "arti_en": "Electrical",
+    "arti_id": "Electrical"
+  },
+  {
+    "hanzi": "输出电流",
+    "pinyin": "(n.) shūchū diànliú",
+    "arti_en": "Arus keluaran",
+    "arti_id": "Arus keluaran"
+  },
+  {
+    "hanzi": "一次电流",
+    "pinyin": "(n.) yīcì diànliú",
+    "arti_en": "Arus primer",
+    "arti_id": "Arus primer"
+  },
+  {
+    "hanzi": "输出电压",
+    "pinyin": "(n.) shūchū diànyā",
+    "arti_en": "Tegangan keluaran",
+    "arti_id": "Tegangan keluaran"
+  }
+]

@@ -1,0 +1,530 @@
+[
+  {
+    "hanzi": "定量给煤机",
+    "pinyin": "(n.) dìngliàng gěi méi jī",
+    "arti_en": "Quantitative Stoker",
+    "arti_id": "Stoker Kuantitatif"
+  },
+  {
+    "hanzi": "仓库",
+    "pinyin": "(n.) cāngkù",
+    "arti_en": "Warehouse",
+    "arti_id": "Gudang"
+  },
+  {
+    "hanzi": "给你们送煤粉",
+    "pinyin": "(v.) gěi nǐmen sòng méifěn",
+    "arti_en": "Distribute Coal Powder",
+    "arti_id": "Mendistribusikan bubuk batubara"
+  },
+  {
+    "hanzi": "定量给煤机",
+    "pinyin": "(n.) dìngliàng gěi méi jī",
+    "arti_en": "Quantitative Stoker",
+    "arti_id": "Stoker kuantitatif"
+  },
+  {
+    "hanzi": "支架",
+    "pinyin": "(n.) zhījià",
+    "arti_en": "Support / Bracket",
+    "arti_id": "Penopang"
+  },
+  {
+    "hanzi": "货舱",
+    "pinyin": "(n.) huòcāng",
+    "arti_en": "Cargo hold",
+    "arti_id": "Palka barang"
+  },
+  {
+    "hanzi": "集卡",
+    "pinyin": "(n.) jíkǎ",
+    "arti_en": "Container truck",
+    "arti_id": "Truk kontainer"
+  },
+  {
+    "hanzi": "装卸露",
+    "pinyin": "(n.) zhuāngxiè lù",
+    "arti_en": "Loading/unloading speed",
+    "arti_id": "Kecepatan bongkar muat"
+  },
+  {
+    "hanzi": "靠泊费",
+    "pinyin": "(n.) kàobó fèi",
+    "arti_en": "Berthing fee",
+    "arti_id": "Biaya sandar"
+  },
+  {
+    "hanzi": "舱位",
+    "pinyin": "(n.) cāngwèi",
+    "arti_en": "Cargo space / Berth",
+    "arti_id": "Tempat muat kapal"
+  },
+  {
+    "hanzi": "装卸点",
+    "pinyin": "(n.) zhuāngxiè diǎn",
+    "arti_en": "Loading/unloading point",
+    "arti_id": "Titik bongkar muat"
+  },
+  {
+    "hanzi": "滚装船",
+    "pinyin": "(n.) gǔnzhuāng chuán",
+    "arti_en": "Ro-Ro vessel",
+    "arti_id": "Kapal Ro-Ro"
+  },
+  {
+    "hanzi": "船舶吨位",
+    "pinyin": "(n.) chuánbó dūnwèi",
+    "arti_en": "Ship tonnage",
+    "arti_id": "Tonase kapal"
+  },
+  {
+    "hanzi": "码头收费",
+    "pinyin": "(n.) mǎtóu shōufèi",
+    "arti_en": "Wharf fee",
+    "arti_id": "Biaya dermaga"
+  },
+  {
+    "hanzi": "装载系数",
+    "pinyin": "(n.) zhuāngzǎi xìshù",
+    "arti_en": "Load factor",
+    "arti_id": "Koefisien muatan"
+  },
+  {
+    "hanzi": "运输通道",
+    "pinyin": "(n.) yùnshū tōngdào",
+    "arti_en": "Transportation route",
+    "arti_id": "Jalur transportasi"
+  },
+  {
+    "hanzi": "航运公司",
+    "pinyin": "(n.) hángyùn gōngsī",
+    "arti_en": "Shipping company",
+    "arti_id": "Perusahaan pelayaran"
+  },
+  {
+    "hanzi": "港务局",
+    "pinyin": "(n.) gǎngwù jú",
+    "arti_en": "Port authority",
+    "arti_id": "Otoritas pelabuhan"
+  },
+  {
+    "hanzi": "装货清单",
+    "pinyin": "(n.) zhuānghuò qīngdān",
+    "arti_en": "Cargo manifest",
+    "arti_id": "Daftar muatan"
+  },
+  {
+    "hanzi": "船代",
+    "pinyin": "(n.) chuándài",
+    "arti_en": "Shipping agency",
+    "arti_id": "Agen kapal"
+  },
+  {
+    "hanzi": "分销",
+    "pinyin": "(n.) fēnxiāo",
+    "arti_en": "Distribution",
+    "arti_id": "Distribusi"
+  },
+  {
+    "hanzi": "社区合作",
+    "pinyin": "(n.) shèqū hézuò",
+    "arti_en": "Community Partnership",
+    "arti_id": "Kemitraan Komunitas"
+  },
+  {
+    "hanzi": "体育",
+    "pinyin": "(n.) tǐyù",
+    "arti_en": "Sports",
+    "arti_id": "Olahraga"
+  },
+  {
+    "hanzi": "集装箱",
+    "pinyin": "(n.) jíhuāngxiāng",
+    "arti_en": "Container",
+    "arti_id": "Kontainer"
+  },
+  {
+    "hanzi": "现货",
+    "pinyin": "(n.) xiànhuò",
+    "arti_en": "In Stock",
+    "arti_id": "Barang tersedia"
+  },
+  {
+    "hanzi": "接灰",
+    "pinyin": "(v.) jiē huī",
+    "arti_en": "Collect Dust",
+    "arti_id": "Bongkar Debu"
+  },
+  {
+    "hanzi": "比例",
+    "pinyin": "(n.) bǐlì",
+    "arti_en": "Percentage / Proportion",
+    "arti_id": "Persentase"
+  },
+  {
+    "hanzi": "寄货物",
+    "pinyin": "(v.) jì huòwù",
+    "arti_en": "Send Goods",
+    "arti_id": "Mengirim barang"
+  },
+  {
+    "hanzi": "倒运",
+    "pinyin": "(n.) dǎoyùn",
+    "arti_en": "Transshipment",
+    "arti_id": "Pemindahan muatan"
+  },
+  {
+    "hanzi": "岸电",
+    "pinyin": "(n.) àndiàn",
+    "arti_en": "Shore Power",
+    "arti_id": "Listrik darat untuk kapal"
+  },
+  {
+    "hanzi": "超限运输",
+    "pinyin": "(n.) chāoxiàn yùnshū",
+    "arti_en": "Oversized Transport",
+    "arti_id": "Transportasi kelebihan muatan"
+  },
+  {
+    "hanzi": "码头租赁",
+    "pinyin": "(n.) mǎtóu zūlìn",
+    "arti_en": "Wharf Lease",
+    "arti_id": "Penyewaan dermaga"
+  },
+  {
+    "hanzi": "泊船",
+    "pinyin": "(v.) bóchuán",
+    "arti_en": "Berthing",
+    "arti_id": "Berlabuh kapal"
+  },
+  {
+    "hanzi": "岸壁",
+    "pinyin": "(n.) ànbì",
+    "arti_en": "Quay Wall",
+    "arti_id": "Dinding dermaga"
+  },
+  {
+    "hanzi": "泊车位",
+    "pinyin": "(n.) bóchēwèi",
+    "arti_en": "Tempat parkir kapal",
+    "arti_id": "Tempat parkir kapal"
+  },
+  {
+    "hanzi": "货场",
+    "pinyin": "(n.) huòchǎng",
+    "arti_en": "Lapangan barang",
+    "arti_id": "Lapangan barang"
+  },
+  {
+    "hanzi": "码头工ren",
+    "pinyin": "(n.) mǎtóu gōngrén",
+    "arti_en": "Pekerja dermaga",
+    "arti_id": "Pekerja dermaga"
+  },
+  {
+    "hanzi": "装卸责任",
+    "pinyin": "(n.) zhuāngxiè zérén",
+    "arti_en": "Tanggung jawab bongkar muat",
+    "arti_id": "Tanggung jawab bongkar muat"
+  },
+  {
+    "hanzi": "货代",
+    "pinyin": "(n.) huòdài",
+    "arti_en": "Agen barang",
+    "arti_id": "Agen barang"
+  },
+  {
+    "hanzi": "船员",
+    "pinyin": "(n.) chuányuán",
+    "arti_en": "Kru kapal",
+    "arti_id": "Kru kapal"
+  },
+  {
+    "hanzi": "集装箱码头",
+    "pinyin": "(n.) jízhuāngxiāng mǎtóu",
+    "arti_en": "Terminal kontainer",
+    "arti_id": "Terminal kontainer"
+  },
+  {
+    "hanzi": "项",
+    "pinyin": "(m.) xiàng",
+    "arti_en": "Satuan untuk barang",
+    "arti_id": "Satuan untuk barang"
+  },
+  {
+    "hanzi": "煤péng",
+    "pinyin": "(n.) méi péng",
+    "arti_en": "Gudang Batubara",
+    "arti_id": "Gudang Batubara"
+  },
+  {
+    "hanzi": "交通工具",
+    "pinyin": "(n.) jiāotōng gōngjù",
+    "arti_en": "Alat transportasi",
+    "arti_id": "Alat transportasi"
+  },
+  {
+    "hanzi": "货车",
+    "pinyin": "(n.) huòchē",
+    "arti_en": "Truk trailer",
+    "arti_id": "Truk trailer"
+  },
+  {
+    "hanzi": "库房",
+    "pinyin": "(n.) kùfáng",
+    "arti_en": "Gudang",
+    "arti_id": "Gudang"
+  },
+  {
+    "hanzi": "码头",
+    "pinyin": "(n.) mǎtóu",
+    "arti_en": "Pelabuhan",
+    "arti_id": "Pelabuhan"
+  },
+  {
+    "hanzi": "进口",
+    "pinyin": "(v.) jìnkǒu",
+    "arti_en": "Impor",
+    "arti_id": "Impor"
+  },
+  {
+    "hanzi": "出口",
+    "pinyin": "(n.) chūkǒu",
+    "arti_en": "Ekspor",
+    "arti_id": "Ekspor"
+  },
+  {
+    "hanzi": "施工电梯",
+    "pinyin": "(n.) shīgōng diàntī",
+    "arti_en": "Lift barang",
+    "arti_id": "Lift barang"
+  },
+  {
+    "hanzi": "码头",
+    "pinyin": "(n.) mǎtóu",
+    "arti_en": "Dermaga",
+    "arti_id": "Dermaga"
+  },
+  {
+    "hanzi": "船舶",
+    "pinyin": "(n.) chuánbó",
+    "arti_en": "Kapal",
+    "arti_id": "Kapal"
+  },
+  {
+    "hanzi": "港口",
+    "pinyin": "(n.) gǎngkǒu",
+    "arti_en": "Pelabuhan",
+    "arti_id": "Pelabuhan"
+  },
+  {
+    "hanzi": "装卸作业",
+    "pinyin": "(n.) zhuāngxiè zuòyè",
+    "arti_en": "Operasi bongkar muat",
+    "arti_id": "Operasi bongkar muat"
+  },
+  {
+    "hanzi": "装卸",
+    "pinyin": "(n.) zhuāngxiè",
+    "arti_en": "Bongkar muat",
+    "arti_id": "Bongkar muat"
+  },
+  {
+    "hanzi": "船舶靠泊",
+    "pinyin": "(v.) chuánbó kàobó",
+    "arti_en": "Kapal berlabuh",
+    "arti_id": "Kapal berlabuh"
+  },
+  {
+    "hanzi": "集装箱",
+    "pinyin": "(n.) jízhuāngxiāng",
+    "arti_en": "Kontainer",
+    "arti_id": "Kontainer"
+  },
+  {
+    "hanzi": "岸桥",
+    "pinyin": "(n.) ànqiáo",
+    "arti_en": "Kren dermaga",
+    "arti_id": "Kren dermaga"
+  },
+  {
+    "hanzi": "集装箱堆场",
+    "pinyin": "(n.) jízhuāngxiāng duīchǎng",
+    "arti_en": "Area tumpukan kontainer",
+    "arti_id": "Area tumpukan kontainer"
+  },
+  {
+    "hanzi": "配电柜",
+    "pinyin": "(n.) pèidiàngui",
+    "arti_en": "lemari distribusi",
+    "arti_id": "lemari distribusi"
+  },
+  {
+    "hanzi": "煤粉仓",
+    "pinyin": "(n.) méi fěn cāng",
+    "arti_en": "Gudang Batu Bara",
+    "arti_id": "Gudang Batu Bara"
+  },
+  {
+    "hanzi": "炉料",
+    "pinyin": "(n.) lúliào",
+    "arti_en": "muatan",
+    "arti_id": "muatan"
+  },
+  {
+    "hanzi": "发货",
+    "pinyin": "(n.) fāhuò",
+    "arti_en": "Pengiriman",
+    "arti_id": "Pengiriman"
+  },
+  {
+    "hanzi": "物流",
+    "pinyin": "(n.) wùliú",
+    "arti_en": "Logistik",
+    "arti_id": "Logistik"
+  },
+  {
+    "hanzi": "仓库管理",
+    "pinyin": "(n.) cāngkù guǎnlǐ",
+    "arti_en": "Manajemen Gudang",
+    "arti_id": "Manajemen Gudang"
+  },
+  {
+    "hanzi": "物流部",
+    "pinyin": "(n.) wùliú bù",
+    "arti_en": "Logistik",
+    "arti_id": "Logistik"
+  },
+  {
+    "hanzi": "装车",
+    "pinyin": "(v.) zhuāngchē",
+    "arti_en": "Muat",
+    "arti_id": "Muat"
+  },
+  {
+    "hanzi": "拆卸",
+    "pinyin": "(v.) chāixiè",
+    "arti_en": "Bongkar",
+    "arti_id": "Bongkar"
+  },
+  {
+    "hanzi": "给你们送煤粉",
+    "pinyin": "(v.) gěi nǐmen sòng méifěn",
+    "arti_en": "Mendistribusikan Bubuk Batubara",
+    "arti_id": "Mendistribusikan Bubuk Batubara"
+  },
+  {
+    "hanzi": "货物装卸顺序",
+    "pinyin": "(n.) huòwù zhuāngxiè shùnxù",
+    "arti_en": "Urutan bongkar-muat",
+    "arti_id": "Urutan bongkar-muat"
+  },
+  {
+    "hanzi": "码头效率",
+    "pinyin": "(n.) mǎtóu xiàolǜ",
+    "arti_en": "Efisiensi dermaga",
+    "arti_id": "Efisiensi dermaga"
+  },
+  {
+    "hanzi": "货物追踪",
+    "pinyin": "(n.) huòwù zhuīzōng",
+    "arti_en": "Pelacakan barang",
+    "arti_id": "Pelacakan barang"
+  },
+  {
+    "hanzi": "拖车",
+    "pinyin": "(n.) tuōchē",
+    "arti_en": "Trailer",
+    "arti_id": "Trailer"
+  },
+  {
+    "hanzi": "入港",
+    "pinyin": "(v.) rùgǎng",
+    "arti_en": "Masuk pelabuhan",
+    "arti_id": "Masuk pelabuhan"
+  },
+  {
+    "hanzi": "船名",
+    "pinyin": "(n.) chuánmíng",
+    "arti_en": "Nama kapal",
+    "arti_id": "Nama kapal"
+  },
+  {
+    "hanzi": "泊位占用",
+    "pinyin": "(n.) bówèi zhānyòng",
+    "arti_en": "Keterpakaian tempat sandar",
+    "arti_id": "Keterpakaian tempat sandar"
+  },
+  {
+    "hanzi": "装卸损耗",
+    "pinyin": "(n.) zhuāngxiè sūnhào",
+    "arti_en": "Kehilangan selama bongkar-muat",
+    "arti_id": "Kehilangan selama bongkar-muat"
+  },
+  {
+    "hanzi": "货物",
+    "pinyin": "(n.) huòwù",
+    "arti_en": "Barang",
+    "arti_id": "Barang"
+  },
+  {
+    "hanzi": "进出口货物",
+    "pinyin": "(n.) jìn chūkǒu huòwù",
+    "arti_en": "Barang ekspor impor",
+    "arti_id": "Barang ekspor impor"
+  },
+  {
+    "hanzi": "清关",
+    "pinyin": "(n.) qīngguān",
+    "arti_en": "Proses bea cukai",
+    "arti_id": "Proses bea cukai"
+  },
+  {
+    "hanzi": "海关",
+    "pinyin": "(n.) hǎiguān",
+    "arti_en": "Bea cukai",
+    "arti_id": "Bea cukai"
+  },
+  {
+    "hanzi": "码头管理",
+    "pinyin": "(n.) mǎtóu guǎnlǐ",
+    "arti_en": "Manajemen dermaga",
+    "arti_id": "Manajemen dermaga"
+  },
+  {
+    "hanzi": "码头区",
+    "pinyin": "(n.) mǎtóu qū",
+    "arti_en": "Kawasan dermaga",
+    "arti_id": "Kawasan dermaga"
+  },
+  {
+    "hanzi": "港区",
+    "pinyin": "(n.) gǎngqū",
+    "arti_en": "Kawasan pelabuhan",
+    "arti_id": "Kawasan pelabuhan"
+  },
+  {
+    "hanzi": "靠泊时间",
+    "pinyin": "(n.) kàobó shíjiān",
+    "arti_en": "Waktu sandar",
+    "arti_id": "Waktu sandar"
+  },
+  {
+    "hanzi": "航道",
+    "pinyin": "(n.) hángdào",
+    "arti_en": "Jalur kapal",
+    "arti_id": "Jalur kapal"
+  },
+  {
+    "hanzi": "装货",
+    "pinyin": "(v.) zhuānghuò",
+    "arti_en": "Memuat barang",
+    "arti_id": "Memuat barang"
+  },
+  {
+    "hanzi": "卸货",
+    "pinyin": "(v.) xièhuò",
+    "arti_en": "Membongkar barang",
+    "arti_id": "Membongkar barang"
+  }
+]

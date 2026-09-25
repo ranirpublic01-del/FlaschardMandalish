@@ -1,0 +1,4262 @@
+[
+  {
+    "hanzi": "控制手柄",
+    "pinyin": "(n.) kòngzhì shǒubǐng",
+    "arti_en": "Control handle",
+    "arti_id": "Pegangan kontrol"
+  },
+  {
+    "hanzi": "滑线滑块",
+    "pinyin": "(n.) huáxiàn huákuài",
+    "arti_en": "Sliding contact line slider",
+    "arti_id": "Rel listrik geser"
+  },
+  {
+    "hanzi": "手电筒",
+    "pinyin": "(n.) shǒudiàntǒng",
+    "arti_en": "Flashlight",
+    "arti_id": "Senter"
+  },
+  {
+    "hanzi": "袋笼",
+    "pinyin": "(n.) dàilóng",
+    "arti_en": "Bag Cage",
+    "arti_id": "Kantong Tas"
+  },
+  {
+    "hanzi": "综合办主任",
+    "pinyin": "(n.) zōnghé bàn zhǔrèn",
+    "arti_en": "Head of General Administration",
+    "arti_id": "KTU"
+  },
+  {
+    "hanzi": "开始生产",
+    "pinyin": "(v.) kāishǐ shēngchǎn",
+    "arti_en": "Start Process",
+    "arti_id": "Mulai Proses"
+  },
+  {
+    "hanzi": "停止生产",
+    "pinyin": "(v.) tíngzhǐ shēngchǎn",
+    "arti_en": "Stop Process",
+    "arti_id": "Berhenti Proses"
+  },
+  {
+    "hanzi": "检查",
+    "pinyin": "(n.) jiǎnchá",
+    "arti_en": "Inspection",
+    "arti_id": "Pemeriksaan"
+  },
+  {
+    "hanzi": "零",
+    "pinyin": "(num.) líng",
+    "arti_en": "Zero",
+    "arti_id": "Nol"
+  },
+  {
+    "hanzi": "百",
+    "pinyin": "(num.) bǎi",
+    "arti_en": "Hundred",
+    "arti_id": "Seratus"
+  },
+  {
+    "hanzi": "立磨",
+    "pinyin": "(n.) lìmó",
+    "arti_en": "Grinding Mill",
+    "arti_id": "Grinding"
+  },
+  {
+    "hanzi": "温度",
+    "pinyin": "(n.) wēndù",
+    "arti_en": "Temperature",
+    "arti_id": "Suhu"
+  },
+  {
+    "hanzi": "风机电机",
+    "pinyin": "(n.) fēngjī diànjī",
+    "arti_en": "Fan Motor",
+    "arti_id": "Fan motor"
+  },
+  {
+    "hanzi": "禁止吸烟",
+    "pinyin": "(phr.) jìnzhǐ xīyān",
+    "arti_en": "No Smoking",
+    "arti_id": "Dilarang merokok"
+  },
+  {
+    "hanzi": "漏油",
+    "pinyin": "(v.) lòuyóu",
+    "arti_en": "Oil Leak",
+    "arti_id": "Oli bocor"
+  },
+  {
+    "hanzi": "出气罐",
+    "pinyin": "(n.) chūqìguàn",
+    "arti_en": "Accumulator",
+    "arti_id": "Akumulator"
+  },
+  {
+    "hanzi": "对讲机",
+    "pinyin": "(n.) duìjiǎngjī",
+    "arti_en": "Handy Talky (HT)",
+    "arti_id": "HT"
+  },
+  {
+    "hanzi": "请假",
+    "pinyin": "(v.) qǐngjià",
+    "arti_en": "Request Leave",
+    "arti_id": "Izin"
+  },
+  {
+    "hanzi": "布袋吊笼",
+    "pinyin": "(n.) bùdài diàolóng",
+    "arti_en": "Bag Hanger",
+    "arti_id": "Gantungan kantong"
+  },
+  {
+    "hanzi": "收尘布袋",
+    "pinyin": "(n.) shōuchén bùdài",
+    "arti_en": "Dust Bag",
+    "arti_id": "Kantong debu"
+  },
+  {
+    "hanzi": "巡检",
+    "pinyin": "(n.) xúnjiǎn",
+    "arti_en": "Inspection",
+    "arti_id": "Inspeksi"
+  },
+  {
+    "hanzi": "打扫卫生",
+    "pinyin": "(v.) dǎsǎo wèishēng",
+    "arti_en": "Cleaning",
+    "arti_id": "Pemberbersihan"
+  },
+  {
+    "hanzi": "手电筒",
+    "pinyin": "(n.) shǒudiàntǒng",
+    "arti_en": "Flashlight",
+    "arti_id": "Senter"
+  },
+  {
+    "hanzi": "袋笼",
+    "pinyin": "(n.) dàilóng",
+    "arti_en": "Bag Cage",
+    "arti_id": "Kantong"
+  },
+  {
+    "hanzi": "压力环",
+    "pinyin": "(n.) yālì huán",
+    "arti_en": "Pressure ring",
+    "arti_id": "Cincin tekanan"
+  },
+  {
+    "hanzi": "泥炮",
+    "pinyin": "(n.) nípào",
+    "arti_en": "Mud gun",
+    "arti_id": "Mud gun"
+  },
+  {
+    "hanzi": "轨道大梁",
+    "pinyin": "(n.) guǐdào dàliáng",
+    "arti_en": "Main rail beam",
+    "arti_id": "Balok rel utama"
+  },
+  {
+    "hanzi": "小车",
+    "pinyin": "(n.) xiǎochē",
+    "arti_en": "Trolley",
+    "arti_id": "Trolley"
+  },
+  {
+    "hanzi": "缓冲器",
+    "pinyin": "(n.) huǎnxōng qì",
+    "arti_en": "Bumper",
+    "arti_id": "Bumper"
+  },
+  {
+    "hanzi": "吸程",
+    "pinyin": "(n.) xīchéng",
+    "arti_en": "Suction head",
+    "arti_id": "Ketinggian hisap"
+  },
+  {
+    "hanzi": "双吸",
+    "pinyin": "(n.) shuāng xī",
+    "arti_en": "Double suction",
+    "arti_id": "Isapan ganda"
+  },
+  {
+    "hanzi": "单吸",
+    "pinyin": "(n.) dān xī",
+    "arti_en": "Single suction",
+    "arti_id": "Isapan tunggal"
+  },
+  {
+    "hanzi": "扬程",
+    "pinyin": "(n.) yángchéng",
+    "arti_en": "Delivery head",
+    "arti_id": "Ketinggian dorong"
+  },
+  {
+    "hanzi": "并联",
+    "pinyin": "(v.) bìnglián",
+    "arti_en": "Parallel",
+    "arti_id": "Paralel"
+  },
+  {
+    "hanzi": "塑料软管",
+    "pinyin": "(n.) sùliào ruǎn guǎn",
+    "arti_en": "Plastic hose",
+    "arti_id": "Selang plastik"
+  },
+  {
+    "hanzi": "金属软管",
+    "pinyin": "(n.) jīnshǔ ruǎn guǎn",
+    "arti_en": "Flexible metal hose",
+    "arti_id": "Selang logam fleksibel"
+  },
+  {
+    "hanzi": "油温",
+    "pinyin": "(n.) yóuwēn",
+    "arti_en": "Oil temperature",
+    "arti_id": "Suhu minyak"
+  },
+  {
+    "hanzi": "油位标仪",
+    "pinyin": "(n.) yóuwèi biāojī",
+    "arti_en": "Oil level gauge",
+    "arti_id": "Tanda level oli"
+  },
+  {
+    "hanzi": "压力表",
+    "pinyin": "(n.) yālìbiǎo",
+    "arti_en": "Manometer",
+    "arti_id": "Manometer"
+  },
+  {
+    "hanzi": "运行正常",
+    "pinyin": "(v.) yùnxíng zhèngcháng",
+    "arti_en": "Normal operation",
+    "arti_id": "Beroperasi normal"
+  },
+  {
+    "hanzi": "故障",
+    "pinyin": "(n.) gùzhàng",
+    "arti_en": "Fault / Breakdown",
+    "arti_id": "Kerusakan"
+  },
+  {
+    "hanzi": "启动",
+    "pinyin": "(v.) qǐdòng",
+    "arti_en": "Start",
+    "arti_id": "Menyalakan"
+  },
+  {
+    "hanzi": "检查",
+    "pinyin": "(n.) jiǎnxiū",
+    "arti_en": "Inspection",
+    "arti_id": "Pemeriksaan"
+  },
+  {
+    "hanzi": "降温",
+    "pinyin": "(v.) jiàngwēn",
+    "arti_en": "Lower temperature",
+    "arti_id": "Menurunkan suhu"
+  },
+  {
+    "hanzi": "升温",
+    "pinyin": "(v.) shēngwēn",
+    "arti_en": "Increase temperature",
+    "arti_id": "Meningkatkan suhu"
+  },
+  {
+    "hanzi": "烘干",
+    "pinyin": "(v.) hōnggān",
+    "arti_en": "Dry",
+    "arti_id": "Mengeringkan"
+  },
+  {
+    "hanzi": "自动控制",
+    "pinyin": "(n.) zìdòng kòngzhì",
+    "arti_en": "Automatic control",
+    "arti_id": "Kontrol otomatis"
+  },
+  {
+    "hanzi": "停机",
+    "pinyin": "(v.) tíngjī",
+    "arti_en": "Stop operation",
+    "arti_id": "Berhenti operasi"
+  },
+  {
+    "hanzi": "超温",
+    "pinyin": "(v.) chāowēn",
+    "arti_en": "Overtemperature",
+    "arti_id": "Suhu berlebih"
+  },
+  {
+    "hanzi": "正常",
+    "pinyin": "(adj.) zhèngcháng",
+    "arti_en": "Normal",
+    "arti_id": "Normal"
+  },
+  {
+    "hanzi": "回转干燥机",
+    "pinyin": "(n.) huízhuǎn gānzào jī",
+    "arti_en": "Rotary dryer",
+    "arti_id": "Rotary dryer"
+  },
+  {
+    "hanzi": "温度传感器",
+    "pinyin": "(n.) wēndù chuángǎn qì",
+    "arti_en": "Temperature sensor",
+    "arti_id": "Sensor suhu"
+  },
+  {
+    "hanzi": "引风机",
+    "pinyin": "(n.) yǐnfēngjī",
+    "arti_en": "Exhaust fan",
+    "arti_id": "Exhaust fan"
+  },
+  {
+    "hanzi": "鼓风机",
+    "pinyin": "(n.) gǔfēngjī",
+    "arti_en": "Blower",
+    "arti_id": "Blower"
+  },
+  {
+    "hanzi": "除尘器",
+    "pinyin": "(n.) chúchén qì",
+    "arti_en": "Dust collector",
+    "arti_id": "Dust collector"
+  },
+  {
+    "hanzi": "压力传感器",
+    "pinyin": "(n.) yālì chuángǎn qì",
+    "arti_en": "Pressure sensor",
+    "arti_id": "Sensor tekanan"
+  },
+  {
+    "hanzi": "舱口",
+    "pinyin": "(n.) cāngkǒu",
+    "arti_en": "Hatchway",
+    "arti_id": "Mulut palka"
+  },
+  {
+    "hanzi": "托盘",
+    "pinyin": "(n.) tuōpán",
+    "arti_en": "Pallet",
+    "arti_id": "Pallet"
+  },
+  {
+    "hanzi": "舱内作业",
+    "pinyin": "(n.) cāngnèi zuòyè",
+    "arti_en": "Hold operation",
+    "arti_id": "Operasi di dalam palka"
+  },
+  {
+    "hanzi": "加湿机",
+    "pinyin": "(n.) jiāshī jī",
+    "arti_en": "Humidifier",
+    "arti_id": "Humidifier"
+  },
+  {
+    "hanzi": "振动筛",
+    "pinyin": "(n.) zhèndòng shāi",
+    "arti_en": "Vibrating screen",
+    "arti_id": "Saringan getar"
+  },
+  {
+    "hanzi": "延误",
+    "pinyin": "(v.) yánwù",
+    "arti_en": "Delayed",
+    "arti_id": "Tertunda"
+  },
+  {
+    "hanzi": "繁忙",
+    "pinyin": "(adj.) fánmáng",
+    "arti_en": "Busy",
+    "arti_id": "Sibuk"
+  },
+  {
+    "hanzi": "检验检疫",
+    "pinyin": "(n.) jiǎnyàn jiǎnyì",
+    "arti_en": "Inspection and quarantine",
+    "arti_id": "Inspeksi dan karantina"
+  },
+  {
+    "hanzi": "起重吨位",
+    "pinyin": "(n.) qǐzhòng dūnwèi",
+    "arti_en": "Lifting capacity",
+    "arti_id": "Kapasitas angkat"
+  },
+  {
+    "hanzi": "托盘",
+    "pinyin": "(n.) tuōpán",
+    "arti_en": "Pallet",
+    "arti_id": "Pallet"
+  },
+  {
+    "hanzi": "塑料",
+    "pinyin": "(n.) sùliào",
+    "arti_en": "Plastic",
+    "arti_id": "Plastik"
+  },
+  {
+    "hanzi": "流程图",
+    "pinyin": "(n.) liúchéngtú",
+    "arti_en": "Flowchart",
+    "arti_id": "Diagram alur"
+  },
+  {
+    "hanzi": "复印件",
+    "pinyin": "(n.) fùyìnjiàn",
+    "arti_en": "Copy / Photocopy",
+    "arti_id": "Salinan"
+  },
+  {
+    "hanzi": "收据",
+    "pinyin": "(n.) shōujù",
+    "arti_en": "Receipt",
+    "arti_id": "Kwitansi"
+  },
+  {
+    "hanzi": "系统更新",
+    "pinyin": "(n.) xìtǒng gēngxīn",
+    "arti_en": "System update",
+    "arti_id": "Pembaruan sistem"
+  },
+  {
+    "hanzi": "任务表",
+    "pinyin": "(n.) rènwùbiǎo",
+    "arti_en": "Task list",
+    "arti_id": "Daftar tugas"
+  },
+  {
+    "hanzi": "操作规程",
+    "pinyin": "(n.) cāozuò guīchéng",
+    "arti_en": "Operating procedure",
+    "arti_id": "Prosedur operasi"
+  },
+  {
+    "hanzi": "标准",
+    "pinyin": "(n.) biāozhǔn",
+    "arti_en": "Standard",
+    "arti_id": "Standar"
+  },
+  {
+    "hanzi": "审计",
+    "pinyin": "(n.) shěnjì",
+    "arti_en": "Audit",
+    "arti_id": "Audit"
+  },
+  {
+    "hanzi": "规则",
+    "pinyin": "(n.) guīzé",
+    "arti_en": "Rule",
+    "arti_id": "Peraturan"
+  },
+  {
+    "hanzi": "政策",
+    "pinyin": "(n.) zhèngcè",
+    "arti_en": "Policy",
+    "arti_id": "Kebijakan"
+  },
+  {
+    "hanzi": "程序",
+    "pinyin": "(n.) chéngxù",
+    "arti_en": "Procedure",
+    "arti_id": "Prosedur"
+  },
+  {
+    "hanzi": "评估",
+    "pinyin": "(n.) pínggǔ",
+    "arti_en": "Evaluation",
+    "arti_id": "Evaluasi"
+  },
+  {
+    "hanzi": "生产力",
+    "pinyin": "(n.) shēngchǎnlì",
+    "arti_en": "Productivity",
+    "arti_id": "Produktivitas"
+  },
+  {
+    "hanzi": "效率",
+    "pinyin": "(n.) xiàolǜ",
+    "arti_en": "Efficiency",
+    "arti_id": "Efisiensi"
+  },
+  {
+    "hanzi": "研究",
+    "pinyin": "(n.) yánjiū",
+    "arti_en": "Research",
+    "arti_id": "Riset"
+  },
+  {
+    "hanzi": "创新",
+    "pinyin": "(n.) chuàngxīn",
+    "arti_en": "Innovation",
+    "arti_id": "Inovasi"
+  },
+  {
+    "hanzi": "营销",
+    "pinyin": "(n.) yíngxiāo",
+    "arti_en": "Marketing",
+    "arti_id": "Pemasaran"
+  },
+  {
+    "hanzi": "策略",
+    "pinyin": "(n.) cèlüè",
+    "arti_en": "Strategy",
+    "arti_id": "Strategi"
+  },
+  {
+    "hanzi": "技术",
+    "pinyin": "(n.) jìshù",
+    "arti_en": "Technology",
+    "arti_id": "Teknologi"
+  },
+  {
+    "hanzi": "市场",
+    "pinyin": "(n.) shìchǎng",
+    "arti_en": "Market",
+    "arti_id": "Pasar"
+  },
+  {
+    "hanzi": "竞争对手",
+    "pinyin": "(n.) jìngzhēng duìshǒu",
+    "arti_en": "Competitor",
+    "arti_id": "Pesaing"
+  },
+  {
+    "hanzi": "客户",
+    "pinyin": "(n.) kèhù",
+    "arti_en": "Customer",
+    "arti_id": "Pelanggan"
+  },
+  {
+    "hanzi": "商业计划",
+    "pinyin": "(n.) shāngyè jìhuà",
+    "arti_en": "Business plan",
+    "arti_id": "Rencana Bisnis"
+  },
+  {
+    "hanzi": "资产",
+    "pinyin": "(n.) zīchǎn",
+    "arti_en": "Asset",
+    "arti_id": "Aset"
+  },
+  {
+    "hanzi": "亏损",
+    "pinyin": "(n.) kuīsǔn",
+    "arti_en": "Loss",
+    "arti_id": "Rugi"
+  },
+  {
+    "hanzi": "利润",
+    "pinyin": "(n.) lìrùn",
+    "arti_en": "Profit",
+    "arti_id": "Laba"
+  },
+  {
+    "hanzi": "股本",
+    "pinyin": "(n.) gǔběn",
+    "arti_en": "Equity",
+    "arti_id": "Ekuitas"
+  },
+  {
+    "hanzi": "负债",
+    "pinyin": "(n.) fùzhài",
+    "arti_en": "Liabilities",
+    "arti_id": "Liabilitas"
+  },
+  {
+    "hanzi": "内部审计",
+    "pinyin": "(n.) nèibù shěnjì",
+    "arti_en": "Internal audit",
+    "arti_id": "Audit Internal"
+  },
+  {
+    "hanzi": "税",
+    "pinyin": "(n.) shuì",
+    "arti_en": "Tax",
+    "arti_id": "Pajak"
+  },
+  {
+    "hanzi": "投资",
+    "pinyin": "(n.) tóuzī",
+    "arti_en": "Investment",
+    "arti_id": "Investasi"
+  },
+  {
+    "hanzi": "合规",
+    "pinyin": "(n.) héguī",
+    "arti_en": "Compliance",
+    "arti_id": "Compliance"
+  },
+  {
+    "hanzi": "外部审计",
+    "pinyin": "(n.) wàibù shěnjì",
+    "arti_en": "External audit",
+    "arti_id": "Audit Eksternal"
+  },
+  {
+    "hanzi": "项目计划",
+    "pinyin": "(n.) xiàngmù jìhuà",
+    "arti_en": "Project plan",
+    "arti_id": "Rencana Proyek"
+  },
+  {
+    "hanzi": "项目管理",
+    "pinyin": "(n.) xiàngmù guǎnlǐ",
+    "arti_en": "Project management",
+    "arti_id": "Manajemen Proyek"
+  },
+  {
+    "hanzi": "工作生活平衡",
+    "pinyin": "(n.) gōngzuò shēnghuó pínghéng",
+    "arti_en": "Work-Life Balance",
+    "arti_id": "Keseimbangan Kerja-Hidup"
+  },
+  {
+    "hanzi": "社会关怀",
+    "pinyin": "(n.) shèhuì guānhuái",
+    "arti_en": "Social Care",
+    "arti_id": "Kepedulian Sosial"
+  },
+  {
+    "hanzi": "人才管理",
+    "pinyin": "(n.) réncái guǎnlǐ",
+    "arti_en": "Talent Management",
+    "arti_id": "Manajemen Bakat"
+  },
+  {
+    "hanzi": "选拔",
+    "pinyin": "(n.) xuǎnbá",
+    "arti_en": "Selection",
+    "arti_id": "Seleksi"
+  },
+  {
+    "hanzi": "降职",
+    "pinyin": "(n.) jiàngzhí",
+    "arti_en": "Demotion",
+    "arti_id": "Demosi"
+  },
+  {
+    "hanzi": "晋升",
+    "pinyin": "(n.) jìnshēng",
+    "arti_en": "Promotion",
+    "arti_id": "Promosi"
+  },
+  {
+    "hanzi": "福利",
+    "pinyin": "(n.) fúlì",
+    "arti_en": "Benefit",
+    "arti_id": "Manfaat"
+  },
+  {
+    "hanzi": "解雇",
+    "pinyin": "(n.) jiěgù",
+    "arti_en": "Layoff / Dismissal",
+    "arti_id": "PHK"
+  },
+  {
+    "hanzi": "人体工程学",
+    "pinyin": "(n.) réntǐ gōngchéngxué",
+    "arti_en": "Ergonomics",
+    "arti_id": "Ergonomi"
+  },
+  {
+    "hanzi": "不间断电源",
+    "pinyin": "(n.) bùjiànduàn diànyuán",
+    "arti_en": "UPS",
+    "arti_id": "UPS"
+  },
+  {
+    "hanzi": "稳压器",
+    "pinyin": "(n.) wěnyāqì",
+    "arti_en": "Stabilizer",
+    "arti_id": "Stabilizer"
+  },
+  {
+    "hanzi": "可编程控制器",
+    "pinyin": "(n.) kě biānchéng kòngzhìqì",
+    "arti_en": "PLC",
+    "arti_id": "PLC"
+  },
+  {
+    "hanzi": "电流表",
+    "pinyin": "(n.) diànliúbiǎo",
+    "arti_en": "Ammeter",
+    "arti_id": "ammeter"
+  },
+  {
+    "hanzi": "功率表",
+    "pinyin": "(n.) gōnglǜbiǎo",
+    "arti_en": "Wattmeter",
+    "arti_id": "wattmeter"
+  },
+  {
+    "hanzi": "变频器",
+    "pinyin": "(n.) biànpínqì",
+    "arti_en": "Inverter",
+    "arti_id": "inverter"
+  },
+  {
+    "hanzi": "钳形表",
+    "pinyin": "(n.) qiánxīngbiǎo",
+    "arti_en": "Clamp Meter",
+    "arti_id": "clamp meter"
+  },
+  {
+    "hanzi": "电压表",
+    "pinyin": "(n.) diànyǎbiǎo",
+    "arti_en": "Voltmeter",
+    "arti_id": "voltmeter"
+  },
+  {
+    "hanzi": "安装",
+    "pinyin": "(n.) ānzhuāng",
+    "arti_en": "Installation",
+    "arti_id": "pemasangan"
+  },
+  {
+    "hanzi": "检修",
+    "pinyin": "(n.) jiǎnxiū",
+    "arti_en": "Inspection",
+    "arti_id": "inspeksi"
+  },
+  {
+    "hanzi": "上锁挂牌",
+    "pinyin": "(n.) shàngsuǒ guàpái",
+    "arti_en": "Lockout-Tagout",
+    "arti_id": "lockout-tagout"
+  },
+  {
+    "hanzi": "能源效率",
+    "pinyin": "(n.) néngyuán xiàolǜ",
+    "arti_en": "Energy Efficiency",
+    "arti_id": "Efisiensi Energi"
+  },
+  {
+    "hanzi": "能源管理",
+    "pinyin": "(n.) néngyuán guǎnlǐ",
+    "arti_en": "Energy Management",
+    "arti_id": "Manajemen Energi"
+  },
+  {
+    "hanzi": "碳足迹",
+    "pinyin": "(n.) tàn zújì",
+    "arti_en": "Carbon Footprint",
+    "arti_id": "Jejak Karbon"
+  },
+  {
+    "hanzi": "可再生能源",
+    "pinyin": "(n.) kě zàishēng néngyuán",
+    "arti_en": "Renewable Energy",
+    "arti_id": "Energi Terbarukan"
+  },
+  {
+    "hanzi": "能源审计",
+    "pinyin": "(n.) néngyuán shěnjì",
+    "arti_en": "Energy Audit",
+    "arti_id": "Audit Energi"
+  },
+  {
+    "hanzi": "节能",
+    "pinyin": "(n.) jié néng",
+    "arti_en": "Energy Conservation",
+    "arti_id": "Konservasi Energi"
+  },
+  {
+    "hanzi": "社会活动",
+    "pinyin": "(n.) shèhuì huódòng",
+    "arti_en": "Social Activity",
+    "arti_id": "Kegiatan Sosial"
+  },
+  {
+    "hanzi": "企业社会责任",
+    "pinyin": "(n.) qǐyè shèhuì zérèn",
+    "arti_en": "CSR",
+    "arti_id": "CSR"
+  },
+  {
+    "hanzi": "可持续",
+    "pinyin": "(n.) kě chíxù",
+    "arti_en": "Sustainability",
+    "arti_id": "Sustainability"
+  },
+  {
+    "hanzi": "捐赠",
+    "pinyin": "(n.) juānzèng",
+    "arti_en": "Donation",
+    "arti_id": "Donasi"
+  },
+  {
+    "hanzi": "文化",
+    "pinyin": "(n.) wénhuà",
+    "arti_en": "Culture",
+    "arti_id": "Kebudayaan"
+  },
+  {
+    "hanzi": "健康",
+    "pinyin": "(n.) jiànkāng",
+    "arti_en": "Health",
+    "arti_id": "Kesehatan"
+  },
+  {
+    "hanzi": "志愿者服务",
+    "pinyin": "(n.) zhìyuàn fúwù",
+    "arti_en": "Volunteering",
+    "arti_id": "Voluntarisme"
+  },
+  {
+    "hanzi": "艺术",
+    "pinyin": "(n.) yìshù",
+    "arti_en": "Art",
+    "arti_id": "Seni"
+  },
+  {
+    "hanzi": "集合",
+    "pinyin": "(v.) jíhé",
+    "arti_en": "Gather",
+    "arti_id": "Kumpul"
+  },
+  {
+    "hanzi": "病假",
+    "pinyin": "(n.) bìngjià",
+    "arti_en": "Sick Leave",
+    "arti_id": "Izin sakit"
+  },
+  {
+    "hanzi": "领取",
+    "pinyin": "(v.) lǐngqǔ",
+    "arti_en": "Collect / Pick up",
+    "arti_id": "Mengambil"
+  },
+  {
+    "hanzi": "迟到",
+    "pinyin": "(v.) chídào",
+    "arti_en": "Late",
+    "arti_id": "Terlambat"
+  },
+  {
+    "hanzi": "纪律",
+    "pinyin": "(n.) jìlǜ",
+    "arti_en": "Discipline",
+    "arti_id": "Kedisiplinan"
+  },
+  {
+    "hanzi": "看病",
+    "pinyin": "(v.) kànbìng",
+    "arti_en": "See a Doctor",
+    "arti_id": "Berobat"
+  },
+  {
+    "hanzi": "旷工",
+    "pinyin": "(v.) kuànggōng",
+    "arti_en": "Absent without Leave",
+    "arti_id": "Mangkir"
+  },
+  {
+    "hanzi": "早退",
+    "pinyin": "(v.) zǎotuì",
+    "arti_en": "Leave Early",
+    "arti_id": "Pulang lebih awal"
+  },
+  {
+    "hanzi": "工伤",
+    "pinyin": "(n.) gōngshāng",
+    "arti_en": "Work Injury",
+    "arti_id": "Cedera kerja"
+  },
+  {
+    "hanzi": "受伤",
+    "pinyin": "(v.) shòushāng",
+    "arti_en": "Injured",
+    "arti_id": "Luka"
+  },
+  {
+    "hanzi": "宿舍",
+    "pinyin": "(n.) sùshè",
+    "arti_en": "Mess / Dormitory",
+    "arti_id": "Mess"
+  },
+  {
+    "hanzi": "锁",
+    "pinyin": "(n.) suǒ",
+    "arti_en": "Lock",
+    "arti_id": "Gembok"
+  },
+  {
+    "hanzi": "休息",
+    "pinyin": "(v.) xiūxí",
+    "arti_en": "Rest",
+    "arti_id": "Istirahat"
+  },
+  {
+    "hanzi": "圆钢",
+    "pinyin": "(n.) yuángāng",
+    "arti_en": "Round Steel",
+    "arti_id": "Besi Perojok"
+  },
+  {
+    "hanzi": "枪工",
+    "pinyin": "(n.) qiánggōng",
+    "arti_en": "Fitter",
+    "arti_id": "Fitter"
+  },
+  {
+    "hanzi": "油水泡泥",
+    "pinyin": "(n.) yóu shuǐ pāo ní",
+    "arti_en": "Tarmag",
+    "arti_id": "Tarmag"
+  },
+  {
+    "hanzi": "黑砂",
+    "pinyin": "(n.) hēishā",
+    "arti_en": "Black Sand",
+    "arti_id": "Pasir Hitam"
+  },
+  {
+    "hanzi": "绿泥",
+    "pinyin": "(n.) lùní",
+    "arti_en": "Green Clay",
+    "arti_id": "Clay Hijau"
+  },
+  {
+    "hanzi": "石棉布",
+    "pinyin": "(n.) shímian bù",
+    "arti_en": "Asbestos Cloth",
+    "arti_id": "Kain Asbes"
+  },
+  {
+    "hanzi": "容剂量",
+    "pinyin": "(n.) róngliàng",
+    "arti_en": "Capacity",
+    "arti_id": "Kapasitas"
+  },
+  {
+    "hanzi": "钻子",
+    "pinyin": "(n.) zuānzi",
+    "arti_en": "Drill",
+    "arti_id": "Drill"
+  },
+  {
+    "hanzi": "标签",
+    "pinyin": "(n.) biāoqiān",
+    "arti_en": "Label",
+    "arti_id": "Label"
+  },
+  {
+    "hanzi": "插座",
+    "pinyin": "(n.) chāzuò",
+    "arti_en": "Socket",
+    "arti_id": "Stopkontak"
+  },
+  {
+    "hanzi": "U盘",
+    "pinyin": "(n.) U pán",
+    "arti_en": "Flashdisk",
+    "arti_id": "Flashdisk"
+  },
+  {
+    "hanzi": "移动硬盘",
+    "pinyin": "(n.) yídòng yìngpán",
+    "arti_en": "Hard Disk",
+    "arti_id": "Hard disk"
+  },
+  {
+    "hanzi": "功能",
+    "pinyin": "(n.) gōngnéng",
+    "arti_en": "Feature",
+    "arti_id": "Fitur"
+  },
+  {
+    "hanzi": "精确",
+    "pinyin": "(adj.) jīngmì",
+    "arti_en": "Accurate",
+    "arti_id": "Akurat"
+  },
+  {
+    "hanzi": "订单",
+    "pinyin": "(n.) dìngdān",
+    "arti_en": "Order",
+    "arti_id": "Pesanan"
+  },
+  {
+    "hanzi": "解释",
+    "pinyin": "(v.) jiǎodài",
+    "arti_en": "Explain",
+    "arti_id": "Menjelaskan"
+  },
+  {
+    "hanzi": "沮丧",
+    "pinyin": "(adj.) jǔsàng",
+    "arti_en": "Frustration",
+    "arti_id": "Frustrasi"
+  },
+  {
+    "hanzi": "糟糕",
+    "pinyin": "(adj.) zāogāo",
+    "arti_en": "Oops / Bad",
+    "arti_id": "Ups"
+  },
+  {
+    "hanzi": "规格",
+    "pinyin": "(n.) guīgé",
+    "arti_en": "Standard",
+    "arti_id": "Standar"
+  },
+  {
+    "hanzi": "休假",
+    "pinyin": "(v.) xiūjià",
+    "arti_en": "Vacation",
+    "arti_id": "Berlibur"
+  },
+  {
+    "hanzi": "申请",
+    "pinyin": "(v.) shēnqǐng",
+    "arti_en": "Apply",
+    "arti_id": "Mengajukan"
+  },
+  {
+    "hanzi": "适当",
+    "pinyin": "(adj.) shìdàng",
+    "arti_en": "Appropriate",
+    "arti_id": "Sesuai"
+  },
+  {
+    "hanzi": "沟通",
+    "pinyin": "(n.) gōutōng",
+    "arti_en": "Communication",
+    "arti_id": "Komunikasi"
+  },
+  {
+    "hanzi": "暂时",
+    "pinyin": "(adv.) zànshí",
+    "arti_en": "Temporarily",
+    "arti_id": "Sementara"
+  },
+  {
+    "hanzi": "岗位",
+    "pinyin": "(n.) gǎngwèi",
+    "arti_en": "Position",
+    "arti_id": "Pos"
+  },
+  {
+    "hanzi": "繁忙",
+    "pinyin": "(adj.) fánmáng",
+    "arti_en": "Busy",
+    "arti_id": "Sibuk"
+  },
+  {
+    "hanzi": "托付",
+    "pinyin": "(v.) jiǎotuo",
+    "arti_en": "Entrust",
+    "arti_id": "Mempercayakan"
+  },
+  {
+    "hanzi": "缺席",
+    "pinyin": "(v.) quèxí",
+    "arti_en": "Absent",
+    "arti_id": "Absen"
+  },
+  {
+    "hanzi": "厨师",
+    "pinyin": "(n.) chúshī",
+    "arti_en": "Chef / Cook",
+    "arti_id": "Koki"
+  },
+  {
+    "hanzi": "班组",
+    "pinyin": "(n.) bānzǔ",
+    "arti_en": "Group",
+    "arti_id": "Grup"
+  },
+  {
+    "hanzi": "值班",
+    "pinyin": "(v.) zhíbān",
+    "arti_en": "On Duty",
+    "arti_id": "Dalam Tugas"
+  },
+  {
+    "hanzi": "下班列队",
+    "pinyin": "(v.) xiàbān lièduì",
+    "arti_en": "Line up off work",
+    "arti_id": "Pulang kerja berbaris"
+  },
+  {
+    "hanzi": "上班",
+    "pinyin": "(v.) shàngbān",
+    "arti_en": "Go to Work",
+    "arti_id": "Masuk kerja"
+  },
+  {
+    "hanzi": "排队",
+    "pinyin": "(v.) páiduì",
+    "arti_en": "Queue / Line up",
+    "arti_id": "Baris"
+  },
+  {
+    "hanzi": "旅馆",
+    "pinyin": "(n.) lǚguǎn",
+    "arti_en": "Hotel",
+    "arti_id": "Hotel"
+  },
+  {
+    "hanzi": "酒店",
+    "pinyin": "(n.) jiǔdiàn",
+    "arti_en": "Hotel",
+    "arti_id": "Hotel"
+  },
+  {
+    "hanzi": "麻烦",
+    "pinyin": "(adj.) máfan",
+    "arti_en": "Troublesome",
+    "arti_id": "Ribet"
+  },
+  {
+    "hanzi": "宿辉",
+    "pinyin": "(n.) sùhuī",
+    "arti_en": "Surabaya",
+    "arti_id": "Surabaya"
+  },
+  {
+    "hanzi": "宾馆",
+    "pinyin": "(n.) bīnguǎn",
+    "arti_en": "Hotel",
+    "arti_id": "Hotel"
+  },
+  {
+    "hanzi": "饭店",
+    "pinyin": "(n.) fàndiàn",
+    "arti_en": "Hotel",
+    "arti_id": "Hotel"
+  },
+  {
+    "hanzi": "直接",
+    "pinyin": "(adv.) zhíjiē",
+    "arti_en": "Directly",
+    "arti_id": "Langsung"
+  },
+  {
+    "hanzi": "办事",
+    "pinyin": "(v.) bànshì",
+    "arti_en": "Handle Affairs",
+    "arti_id": "Mengurus"
+  },
+  {
+    "hanzi": "出差",
+    "pinyin": "(v.) chūchāi",
+    "arti_en": "Business Trip",
+    "arti_id": "Perjalanan bisnis"
+  },
+  {
+    "hanzi": "安排",
+    "pinyin": "(v.) ānpái",
+    "arti_en": "Arrange",
+    "arti_id": "Mengatur"
+  },
+  {
+    "hanzi": "尺寸",
+    "pinyin": "(n.) chicùn",
+    "arti_en": "Size",
+    "arti_id": "Ukuran"
+  },
+  {
+    "hanzi": "审查",
+    "pinyin": "(n.) shěnchá",
+    "arti_en": "Review / Inspection",
+    "arti_id": "Tinjauan"
+  },
+  {
+    "hanzi": "技术",
+    "pinyin": "(n.) jìshù",
+    "arti_en": "Technology / Technical",
+    "arti_id": "Teknis"
+  },
+  {
+    "hanzi": "限制",
+    "pinyin": "(n.) xiànzhì",
+    "arti_en": "Limitation",
+    "arti_id": "Keterbatasan"
+  },
+  {
+    "hanzi": "结果",
+    "pinyin": "(n.) jiéguǒ",
+    "arti_en": "Result",
+    "arti_id": "Hasil"
+  },
+  {
+    "hanzi": "达到",
+    "pinyin": "(v.) dádào",
+    "arti_en": "Achieve",
+    "arti_id": "Mencapai"
+  },
+  {
+    "hanzi": "客户",
+    "pinyin": "(n.) kèhù",
+    "arti_en": "Customer",
+    "arti_id": "Pelanggan"
+  },
+  {
+    "hanzi": "图纸",
+    "pinyin": "(n.) túzhǐ",
+    "arti_en": "Drawing / Blueprint",
+    "arti_id": "Gambar"
+  },
+  {
+    "hanzi": "水平仪",
+    "pinyin": "(n.) shuǐpíng yíqì",
+    "arti_en": "Auto level",
+    "arti_id": "Auto level"
+  },
+  {
+    "hanzi": "测量尺",
+    "pinyin": "(n.) cèliáng chǐ",
+    "arti_en": "Caliper / Measuring tape",
+    "arti_id": "Jangka sorong"
+  },
+  {
+    "hanzi": "测量仪器",
+    "pinyin": "(n.) cèliáng yíqì",
+    "arti_en": "Measuring instrument",
+    "arti_id": "Alat ukur"
+  },
+  {
+    "hanzi": "激光笔",
+    "pinyin": "(n.) jīguāng bǐ",
+    "arti_en": "Laser pointer",
+    "arti_id": "Pointer laser"
+  },
+  {
+    "hanzi": "激光仪",
+    "pinyin": "(n.) jīguāng yí",
+    "arti_en": "Laser level",
+    "arti_id": "Laser level"
+  },
+  {
+    "hanzi": "米gun尺",
+    "pinyin": "(n.) mǐ gǔn chǐ",
+    "arti_en": "Measuring tape",
+    "arti_id": "Meteran gulung"
+  },
+  {
+    "hanzi": "卷尺",
+    "pinyin": "(n.) juǎnchǐ",
+    "arti_en": "Tape measure",
+    "arti_id": "Meteran"
+  },
+  {
+    "hanzi": "畅销",
+    "pinyin": "(adj.) chàngxiāo",
+    "arti_en": "Best-selling",
+    "arti_id": "laris"
+  },
+  {
+    "hanzi": "研究",
+    "pinyin": "(n.) yánjiū",
+    "arti_en": "Research",
+    "arti_id": "Riset"
+  },
+  {
+    "hanzi": "管理",
+    "pinyin": "(v.) guǎn lǐ",
+    "arti_en": "Manage",
+    "arti_id": "Mengatur"
+  },
+  {
+    "hanzi": "事务",
+    "pinyin": "(n.) shìwù",
+    "arti_en": "Affairs / Business",
+    "arti_id": "Urusan"
+  },
+  {
+    "hanzi": "产品",
+    "pinyin": "(n.) chǎnpǐn",
+    "arti_en": "Product",
+    "arti_id": "Produk"
+  },
+  {
+    "hanzi": "账",
+    "pinyin": "(n.) zhàng",
+    "arti_en": "Account / Cash",
+    "arti_id": "Kas"
+  },
+  {
+    "hanzi": "税",
+    "pinyin": "(n.) shuì",
+    "arti_en": "Tax",
+    "arti_id": "Pajak"
+  },
+  {
+    "hanzi": "冒烟",
+    "pinyin": "(v.) màoyān",
+    "arti_en": "Smoke",
+    "arti_id": "Berasap"
+  },
+  {
+    "hanzi": "副电机",
+    "pinyin": "(n.) fù diànjī",
+    "arti_en": "Secondary Motor",
+    "arti_id": "Motor Kedua"
+  },
+  {
+    "hanzi": "主电机",
+    "pinyin": "(n.) zhǔ diànjī",
+    "arti_en": "Main Motor",
+    "arti_id": "Motor Utama"
+  },
+  {
+    "hanzi": "护板风机",
+    "pinyin": "(n.) hùbǎn fēngjī",
+    "arti_en": "Guard Fan",
+    "arti_id": "Pelindung Kipas"
+  },
+  {
+    "hanzi": "挑选风机",
+    "pinyin": "(n.) tiǎoshuài fēngjī",
+    "arti_en": "Classifier Fan",
+    "arti_id": "Kipas Layar"
+  },
+  {
+    "hanzi": "立磨",
+    "pinyin": "(n.) límó",
+    "arti_en": "Vertical Mill",
+    "arti_id": "Vertical Mill"
+  },
+  {
+    "hanzi": "道闸口",
+    "pinyin": "(n.) dào zhá kǒu",
+    "arti_en": "Oversize Chute",
+    "arti_id": "Oversize Chute"
+  },
+  {
+    "hanzi": "开灯",
+    "pinyin": "(v.) kāi dēng",
+    "arti_en": "Turn on Light",
+    "arti_id": "Buka Lampu"
+  },
+  {
+    "hanzi": "尾排风机",
+    "pinyin": "(n.) wěi pái fēngjī",
+    "arti_en": "Exhaust Fan",
+    "arti_id": "Kipas Exhaust"
+  },
+  {
+    "hanzi": "罗茨风机",
+    "pinyin": "(n.) luócí fēngjī",
+    "arti_en": "Roots Fan",
+    "arti_id": "Roots Fan"
+  },
+  {
+    "hanzi": "产品",
+    "pinyin": "(n.) chǎnpǐn",
+    "arti_en": "Product",
+    "arti_id": "Produk"
+  },
+  {
+    "hanzi": "中间产品",
+    "pinyin": "(n.) zhōngjiān chǎnpǐn",
+    "arti_en": "Intermediate Product",
+    "arti_id": "Produk antara"
+  },
+  {
+    "hanzi": "发酸进",
+    "pinyin": "(n.) fāsuān jìn",
+    "arti_en": "Acid Pelleting",
+    "arti_id": "Pelindian asam"
+  },
+  {
+    "hanzi": "更新",
+    "pinyin": "(v.) gēngxīn",
+    "arti_en": "Update",
+    "arti_id": "Pembaruan"
+  },
+  {
+    "hanzi": "明细",
+    "pinyin": "(n.) míngxì",
+    "arti_en": "Details",
+    "arti_id": "Rincian"
+  },
+  {
+    "hanzi": "校正",
+    "pinyin": "(v.) jiǎozhèng",
+    "arti_en": "Correction",
+    "arti_id": "Koreksi"
+  },
+  {
+    "hanzi": "停车",
+    "pinyin": "(v.) tíngchē",
+    "arti_en": "Shutdown",
+    "arti_id": "Shutdown"
+  },
+  {
+    "hanzi": "连续运行",
+    "pinyin": "(v.) liánxù yùnxíng",
+    "arti_en": "Continuous Operation",
+    "arti_id": "Beroperasi terus"
+  },
+  {
+    "hanzi": "目标值",
+    "pinyin": "(n.) mùbiāo zhí",
+    "arti_en": "Target Value",
+    "arti_id": "Nilai target"
+  },
+  {
+    "hanzi": "产能",
+    "pinyin": "(n.) channéng",
+    "arti_en": "Capacity",
+    "arti_id": "Kapasitas"
+  },
+  {
+    "hanzi": "达产",
+    "pinyin": "(v.) dáchǎn",
+    "arti_en": "Reach Capacity",
+    "arti_id": "Mencapai kapasitas"
+  },
+  {
+    "hanzi": "开车",
+    "pinyin": "(v.) kāichē",
+    "arti_en": "Start Up",
+    "arti_id": "Start up"
+  },
+  {
+    "hanzi": "监测系统",
+    "pinyin": "(n.) jiāncè xìtǒng",
+    "arti_en": "Monitoring System",
+    "arti_id": "sistem monitoring"
+  },
+  {
+    "hanzi": "鸣笛",
+    "pinyin": "(v.) míngdí",
+    "arti_en": "Horn / Honk",
+    "arti_id": "Klakson"
+  },
+  {
+    "hanzi": "倒车",
+    "pinyin": "(v.) dàochē",
+    "arti_en": "Reverse",
+    "arti_id": "Mundur"
+  },
+  {
+    "hanzi": "下车",
+    "pinyin": "(v.) xiàchē",
+    "arti_en": "Get Off",
+    "arti_id": "Turun"
+  },
+  {
+    "hanzi": "熄火",
+    "pinyin": "(v.) xīhuǒ",
+    "arti_en": "Turn Off Engine",
+    "arti_id": "Matikan"
+  },
+  {
+    "hanzi": "巡检",
+    "pinyin": "(n.) xúnjiǎn",
+    "arti_en": "Inspection",
+    "arti_id": "Inspeksi"
+  },
+  {
+    "hanzi": "烟气",
+    "pinyin": "(n.) yānqì",
+    "arti_en": "Flue Gas",
+    "arti_id": "gas asap"
+  },
+  {
+    "hanzi": "冷风",
+    "pinyin": "(n.) lěngfēng",
+    "arti_en": "Cold Air",
+    "arti_id": "udara dingin"
+  },
+  {
+    "hanzi": "渗碳",
+    "pinyin": "(n.) shèntàn",
+    "arti_en": "Carburizing",
+    "arti_id": "carburizing"
+  },
+  {
+    "hanzi": "除尘系统",
+    "pinyin": "(n.) chúchén xìtǒng",
+    "arti_en": "Dust Collection System",
+    "arti_id": "sistem dust collector"
+  },
+  {
+    "hanzi": "硫化物",
+    "pinyin": "(n.) liúhuàwù",
+    "arti_en": "Sulfide",
+    "arti_id": "sulfida"
+  },
+  {
+    "hanzi": "效率",
+    "pinyin": "(n.) xiàolǜ",
+    "arti_en": "Efficiency",
+    "arti_id": "efisiensi"
+  },
+  {
+    "hanzi": "气氛控制",
+    "pinyin": "(n.) qìfēn kòngzhì",
+    "arti_en": "Atmosphere Control",
+    "arti_id": "kontrol atmosfer"
+  },
+  {
+    "hanzi": "排风口",
+    "pinyin": "(n.) páifēng kǒu",
+    "arti_en": "Exhaust Outlet",
+    "arti_id": "outlet pembuangan"
+  },
+  {
+    "hanzi": "氧气站",
+    "pinyin": "(n.) yǎngqì zhàn",
+    "arti_en": "Oxygen Station",
+    "arti_id": "oxygen station"
+  },
+  {
+    "hanzi": "过目",
+    "pinyin": "(v.) guòmù",
+    "arti_en": "Review",
+    "arti_id": "Meninjau"
+  },
+  {
+    "hanzi": "踏行",
+    "pinyin": "(v.) tà háng",
+    "arti_en": "Step on",
+    "arti_id": "Menginjak"
+  },
+  {
+    "hanzi": "期限",
+    "pinyin": "(n.) qíxiàn",
+    "arti_en": "Deadline / Time limit",
+    "arti_id": "Batas waktu"
+  },
+  {
+    "hanzi": "草案",
+    "pinyin": "(n.) cǎo'àn",
+    "arti_en": "Draft",
+    "arti_id": "Draf"
+  },
+  {
+    "hanzi": "对方",
+    "pinyin": "(n.) duìfāng",
+    "arti_en": "Other Party",
+    "arti_id": "Pihak lain"
+  },
+  {
+    "hanzi": "答复",
+    "pinyin": "(n.) dáfù",
+    "arti_en": "Reply",
+    "arti_id": "Balasan"
+  },
+  {
+    "hanzi": "敏感",
+    "pinyin": "(adj.) mǐngǎn",
+    "arti_en": "Sensitive",
+    "arti_id": "Sensitif"
+  },
+  {
+    "hanzi": "造成",
+    "pinyin": "(v.) zàochéng",
+    "arti_en": "Cause",
+    "arti_id": "Menyebabkan"
+  },
+  {
+    "hanzi": "损坏",
+    "pinyin": "(n.) sǔnhuài",
+    "arti_en": "Damage",
+    "arti_id": "Kerusakan"
+  },
+  {
+    "hanzi": "平衡",
+    "pinyin": "(n.) pínghéng",
+    "arti_en": "Balance",
+    "arti_id": "Keseimbangan"
+  },
+  {
+    "hanzi": "产生",
+    "pinyin": "(v.) chǎnshēng",
+    "arti_en": "Produce / Generate",
+    "arti_id": "Menghasilkan"
+  },
+  {
+    "hanzi": "改善",
+    "pinyin": "(v.) gǎishàn",
+    "arti_en": "Improve",
+    "arti_id": "Memperbaiki"
+  },
+  {
+    "hanzi": "作业流程",
+    "pinyin": "(n.) zuòyè liúchéng",
+    "arti_en": "Operational Process",
+    "arti_id": "Prosedur kerja"
+  },
+  {
+    "hanzi": "阻燃服",
+    "pinyin": "(n.) zǔránfú",
+    "arti_en": "Flame-Retardant Clothing",
+    "arti_id": "Baju tahan api"
+  },
+  {
+    "hanzi": "钻头",
+    "pinyin": "(n.) zuǎntóu",
+    "arti_en": "Drill Bit",
+    "arti_id": "Mata bor"
+  },
+  {
+    "hanzi": "手电筒",
+    "pinyin": "(n.) shǒudiàntǒng",
+    "arti_en": "Flashlight",
+    "arti_id": "Senter"
+  },
+  {
+    "hanzi": "工作服",
+    "pinyin": "(n.) gōngzuòfú",
+    "arti_en": "Work Uniform",
+    "arti_id": "Seragam kerja"
+  },
+  {
+    "hanzi": "无法",
+    "pinyin": "(v.) wúfǎ",
+    "arti_en": "Unable",
+    "arti_id": "Tidak bisa"
+  },
+  {
+    "hanzi": "停电",
+    "pinyin": "(v.) tíngdiàn",
+    "arti_en": "Power Failure",
+    "arti_id": "Mati listrik"
+  },
+  {
+    "hanzi": "烧焦",
+    "pinyin": "(v.) shāojiāo",
+    "arti_en": "Burned",
+    "arti_id": "Terbakar"
+  },
+  {
+    "hanzi": "碰",
+    "pinyin": "(v.) pèng",
+    "arti_en": "Touch",
+    "arti_id": "Menyentuh"
+  },
+  {
+    "hanzi": "处理",
+    "pinyin": "(v.) chǔlǐ",
+    "arti_en": "Handle / Deal with",
+    "arti_id": "Menangani"
+  },
+  {
+    "hanzi": "合同",
+    "pinyin": "(n.) hétóng",
+    "arti_en": "Contract",
+    "arti_id": "Kontrak"
+  },
+  {
+    "hanzi": "起重吊具",
+    "pinyin": "(n.) qǐzhòng diàojù",
+    "arti_en": "Rigging angkat",
+    "arti_id": "Rigging angkat"
+  },
+  {
+    "hanzi": "岸上作业",
+    "pinyin": "(n.) ànshàng zuòyè",
+    "arti_en": "Operasi di darat",
+    "arti_id": "Operasi di darat"
+  },
+  {
+    "hanzi": "装箱单",
+    "pinyin": "(n.) zhuāngxiāng dān",
+    "arti_en": "Daftar kemasan",
+    "arti_id": "Daftar kemasan"
+  },
+  {
+    "hanzi": "清卸",
+    "pinyin": "(v.) qīngxiè",
+    "arti_en": "Mengosongkan",
+    "arti_id": "Mengosongkan"
+  },
+  {
+    "hanzi": "散货码头",
+    "pinyin": "(n.) sànhuò mǎtóu",
+    "arti_en": "Terminal kargo curah",
+    "arti_id": "Terminal kargo curah"
+  },
+  {
+    "hanzi": "散货",
+    "pinyin": "(n.) sànhuò",
+    "arti_en": "Kargo curah",
+    "arti_id": "Kargo curah"
+  },
+  {
+    "hanzi": "生铁",
+    "pinyin": "(n.) shēngtiě",
+    "arti_en": "besi mentah",
+    "arti_id": "besi mentah"
+  },
+  {
+    "hanzi": "粗铁",
+    "pinyin": "(n.) cūtiě",
+    "arti_en": "pig iron",
+    "arti_id": "pig iron"
+  },
+  {
+    "hanzi": "合金钢",
+    "pinyin": "(n.) héjīn gāng",
+    "arti_en": "baja paduan",
+    "arti_id": "baja paduan"
+  },
+  {
+    "hanzi": "废钢",
+    "pinyin": "(n.) fèigāng",
+    "arti_en": "baja bekas",
+    "arti_id": "baja bekas"
+  },
+  {
+    "hanzi": "钢锭",
+    "pinyin": "(n.) gāngdīng",
+    "arti_en": "baja batangan",
+    "arti_id": "baja batangan"
+  },
+  {
+    "hanzi": "金属粉",
+    "pinyin": "(n.) jīnshǔ fěn",
+    "arti_en": "serbuk logam",
+    "arti_id": "serbuk logam"
+  },
+  {
+    "hanzi": "副产品",
+    "pinyin": "(n.) fùchǎnpǐn",
+    "arti_en": "produk sampingan",
+    "arti_id": "produk sampingan"
+  },
+  {
+    "hanzi": "防护服",
+    "pinyin": "(n.) fánghù fú",
+    "arti_en": "baju pelindung",
+    "arti_id": "baju pelindung"
+  },
+  {
+    "hanzi": "耳塞",
+    "pinyin": "(n.) ěrsāi",
+    "arti_en": "earplug",
+    "arti_id": "earplug"
+  },
+  {
+    "hanzi": "护目镜",
+    "pinyin": "(n.) hùmùjìng",
+    "arti_en": "kacamata pelindung",
+    "arti_id": "kacamata pelindung"
+  },
+  {
+    "hanzi": "防护用品",
+    "pinyin": "(n.) fánghù yòngpǐn",
+    "arti_en": "alat pelindung diri",
+    "arti_id": "alat pelindung diri"
+  },
+  {
+    "hanzi": "金属",
+    "pinyin": "(n.) jīnshǔ",
+    "arti_en": "logam",
+    "arti_id": "logam"
+  },
+  {
+    "hanzi": "合金",
+    "pinyin": "(n.) héjīn",
+    "arti_en": "paduan",
+    "arti_id": "paduan"
+  },
+  {
+    "hanzi": "精炼",
+    "pinyin": "(n.) jīngliàn",
+    "arti_en": "refining",
+    "arti_id": "refining"
+  },
+  {
+    "hanzi": "废气",
+    "pinyin": "(n.) fèiqì",
+    "arti_en": "gas buang",
+    "arti_id": "gas buang"
+  },
+  {
+    "hanzi": "烧结",
+    "pinyin": "(v.) shāojié",
+    "arti_en": "sintering",
+    "arti_id": "sintering"
+  },
+  {
+    "hanzi": "抄送",
+    "pinyin": "(v.) chāosòng",
+    "arti_en": "Tembusan",
+    "arti_id": "Tembusan"
+  },
+  {
+    "hanzi": "删除",
+    "pinyin": "(v.) shānchú",
+    "arti_en": "Hapus",
+    "arti_id": "Hapus"
+  },
+  {
+    "hanzi": "标题",
+    "pinyin": "(n.) biāotí",
+    "arti_en": "Judul",
+    "arti_id": "Judul"
+  },
+  {
+    "hanzi": "内容",
+    "pinyin": "(n.) nèiróng",
+    "arti_en": "Isi",
+    "arti_id": "Isi"
+  },
+  {
+    "hanzi": " координаси / 协调 / 联络",
+    "pinyin": "(v.) xiétiáo",
+    "arti_en": "Koordinasi",
+    "arti_id": "Koordinasi"
+  },
+  {
+    "hanzi": "转发",
+    "pinyin": "(v.) zhuǎnfā",
+    "arti_en": "Teruskan",
+    "arti_id": "Teruskan"
+  },
+  {
+    "hanzi": "已读",
+    "pinyin": "(adj.) yǐdú",
+    "arti_en": "Sudah dibaca",
+    "arti_id": "Sudah dibaca"
+  },
+  {
+    "hanzi": "附件",
+    "pinyin": "(n.) fùjiàn",
+    "arti_en": "Lampiran",
+    "arti_id": "Lampiran"
+  },
+  {
+    "hanzi": "催",
+    "pinyin": "(v.) cuī",
+    "arti_en": "Mengingatkan",
+    "arti_id": "Mengingatkan"
+  },
+  {
+    "hanzi": "会议记录",
+    "pinyin": "(n.) huìyì jìlù",
+    "arti_en": "Notulen",
+    "arti_id": "Notulen"
+  },
+  {
+    "hanzi": "回复",
+    "pinyin": "(v.) huífù",
+    "arti_en": "Balasan",
+    "arti_id": "Balasan"
+  },
+  {
+    "hanzi": "请假",
+    "pinyin": "(v.) qǐngjià",
+    "arti_en": "Izin",
+    "arti_id": "Izin"
+  },
+  {
+    "hanzi": "讨论",
+    "pinyin": "(n.) tǎolùn",
+    "arti_en": "Diskusi",
+    "arti_id": "Diskusi"
+  },
+  {
+    "hanzi": "未读",
+    "pinyin": "(adj.) wèidú",
+    "arti_en": "Belum dibaca",
+    "arti_id": "Belum dibaca"
+  },
+  {
+    "hanzi": "跟进",
+    "pinyin": "(v.) gēnjìn",
+    "arti_en": "Tindak lanjut",
+    "arti_id": "Tindak lanjut"
+  },
+  {
+    "hanzi": "项目",
+    "pinyin": "(n.) xiàngmù",
+    "arti_en": "Proyek",
+    "arti_id": "Proyek"
+  },
+  {
+    "hanzi": "进度",
+    "pinyin": "(n.) jìndù",
+    "arti_en": "Progres",
+    "arti_id": "Progres"
+  },
+  {
+    "hanzi": "决定",
+    "pinyin": "(n.) juédìng",
+    "arti_en": "Keputusan",
+    "arti_id": "Keputusan"
+  },
+  {
+    "hanzi": "仪器",
+    "pinyin": "(n.) yíbiǎo",
+    "arti_en": "instrumentasi",
+    "arti_id": "instrumentasi"
+  },
+  {
+    "hanzi": "中控",
+    "pinyin": "(n.) zhōngkòng",
+    "arti_en": "central control",
+    "arti_id": "central control"
+  },
+  {
+    "hanzi": "自动化",
+    "pinyin": "(n.) zìdònghuà",
+    "arti_en": "otomatisasi",
+    "arti_id": "otomatisasi"
+  },
+  {
+    "hanzi": "电力",
+    "pinyin": "(n.) diànlì",
+    "arti_en": "tenaga listrik",
+    "arti_id": "tenaga listrik"
+  },
+  {
+    "hanzi": "压缩空气",
+    "pinyin": "(n.) yāsuō kòngqì",
+    "arti_en": "udara terkompresi",
+    "arti_id": "udara terkompresi"
+  },
+  {
+    "hanzi": "蒸汽",
+    "pinyin": "(n.) zhēngqì",
+    "arti_en": "uap",
+    "arti_id": "uap"
+  },
+  {
+    "hanzi": "天然气",
+    "pinyin": "(n.) tiānránqì",
+    "arti_en": "gas alam",
+    "arti_id": "gas alam"
+  },
+  {
+    "hanzi": "煤气",
+    "pinyin": "(n.) méiqì",
+    "arti_en": "gas batubara",
+    "arti_id": "gas batubara"
+  },
+  {
+    "hanzi": "供电系统",
+    "pinyin": "(n.) gòngdiàn xìtǒng",
+    "arti_en": "sistem suplai listrik",
+    "arti_id": "sistem suplai listrik"
+  },
+  {
+    "hanzi": "电网",
+    "pinyin": "(n.) diànwǎng",
+    "arti_en": "jaringan listrik",
+    "arti_id": "jaringan listrik"
+  },
+  {
+    "hanzi": "确保",
+    "pinyin": "(v.) quèbǎo",
+    "arti_en": "Memastikan",
+    "arti_id": "Memastikan"
+  },
+  {
+    "hanzi": "传真",
+    "pinyin": "(n.) chuánzhēn",
+    "arti_en": "Fax",
+    "arti_id": "Fax"
+  },
+  {
+    "hanzi": "供应",
+    "pinyin": "(v.) gōngyìng",
+    "arti_en": "Memasok",
+    "arti_id": "Memasok"
+  },
+  {
+    "hanzi": "寻找",
+    "pinyin": "(v.) xúnzhǎo",
+    "arti_en": "Mencari",
+    "arti_id": "Mencari"
+  },
+  {
+    "hanzi": "订货量",
+    "pinyin": "(n.) dìnghuò liàng",
+    "arti_en": "Jumlah pemesanan",
+    "arti_id": "Jumlah pemesanan"
+  },
+  {
+    "hanzi": "准确",
+    "pinyin": "(adj.) zhǔnquè",
+    "arti_en": "Tepat",
+    "arti_id": "Tepat"
+  },
+  {
+    "hanzi": "尽量",
+    "pinyin": "(adv.) jǐnliàng",
+    "arti_en": "Mengusahakan",
+    "arti_id": "Mengusahakan"
+  },
+  {
+    "hanzi": "方面",
+    "pinyin": "(n.) fāngmiàn",
+    "arti_en": "Aspek",
+    "arti_id": "Aspek"
+  },
+  {
+    "hanzi": "确认",
+    "pinyin": "(v.) quèrèn",
+    "arti_en": "Konfirmasi",
+    "arti_id": "Konfirmasi"
+  },
+  {
+    "hanzi": "下降",
+    "pinyin": "(v.) xiàjiàng",
+    "arti_en": "Turun",
+    "arti_id": "Turun"
+  },
+  {
+    "hanzi": "上抬",
+    "pinyin": "(v.) shàngtái",
+    "arti_en": "Naik",
+    "arti_id": "Naik"
+  },
+  {
+    "hanzi": "焙烧",
+    "pinyin": "(v.) bèishāo",
+    "arti_en": "Panggang",
+    "arti_id": "Panggang"
+  },
+  {
+    "hanzi": "窜火",
+    "pinyin": "(v.) cuàn huǒ",
+    "arti_en": "Api Kebesaran",
+    "arti_id": "Api Kebesaran"
+  },
+  {
+    "hanzi": "0米",
+    "pinyin": "(n.) 0 mǐ",
+    "arti_en": "0 Meter",
+    "arti_id": "0 Meter"
+  },
+  {
+    "hanzi": "电池",
+    "pinyin": "(n.) diànchí",
+    "arti_en": "Baterai",
+    "arti_id": "Baterai"
+  },
+  {
+    "hanzi": "作废",
+    "pinyin": "(v.) zuòfèi",
+    "arti_en": "Tidak Berguna",
+    "arti_id": "Tidak Berguna"
+  },
+  {
+    "hanzi": "下班",
+    "pinyin": "(v.) xiàbān",
+    "arti_en": "Pulang Kerja",
+    "arti_id": "Pulang Kerja"
+  },
+  {
+    "hanzi": "面罩",
+    "pinyin": "(n.) miànzhào",
+    "arti_en": "Full Face Shield",
+    "arti_id": "Full Face Shield"
+  },
+  {
+    "hanzi": "严禁玩手机",
+    "pinyin": "(phr.) yánjìn wán shǒujī",
+    "arti_en": "Dilarang Main HP",
+    "arti_id": "Dilarang Main HP"
+  },
+  {
+    "hanzi": "脱岗",
+    "pinyin": "(v.) tuō gǎng",
+    "arti_en": "Meninggalkan Tempat Kerja",
+    "arti_id": "Meninggalkan Tempat Kerja"
+  },
+  {
+    "hanzi": "睡岗",
+    "pinyin": "(v.) shuì gǎng",
+    "arti_en": "Tidur Waktu Kerja",
+    "arti_id": "Tidur Waktu Kerja"
+  },
+  {
+    "hanzi": "关风机",
+    "pinyin": "(v.) guān fēngjī",
+    "arti_en": "Mematikan Blower",
+    "arti_id": "Mematikan Blower"
+  },
+  {
+    "hanzi": "关灯",
+    "pinyin": "(v.) guān dēng",
+    "arti_en": "Mematikan Lampu",
+    "arti_id": "Mematikan Lampu"
+  },
+  {
+    "hanzi": "兰碳",
+    "pinyin": "(n.) lán tàn",
+    "arti_en": "Semi-Coke",
+    "arti_id": "Semi-Coke"
+  },
+  {
+    "hanzi": "碳",
+    "pinyin": "(n.) tàn",
+    "arti_en": "Karbon",
+    "arti_id": "Karbon"
+  },
+  {
+    "hanzi": "煤",
+    "pinyin": "(n.) méi",
+    "arti_en": "Batu Bara",
+    "arti_id": "Batu Bara"
+  },
+  {
+    "hanzi": "打眼",
+    "pinyin": "(v.) dǎ yǎn",
+    "arti_en": "Melubangkan Hole",
+    "arti_id": "Melubangkan Hole"
+  },
+  {
+    "hanzi": "流流量",
+    "pinyin": "(n.) liúliàng",
+    "arti_en": "Jumlah Aliran",
+    "arti_id": "Jumlah Aliran"
+  },
+  {
+    "hanzi": "吹氧",
+    "pinyin": "(v.) chuīyǎng",
+    "arti_en": "Meniu p Oksigen",
+    "arti_id": "Meniu p Oksigen"
+  },
+  {
+    "hanzi": "卷尺",
+    "pinyin": "(n.) juǎnchǐ",
+    "arti_en": "Meteran",
+    "arti_id": "Meteran"
+  },
+  {
+    "hanzi": "麻绳",
+    "pinyin": "(n.) má shéng",
+    "arti_en": "Tali",
+    "arti_id": "Tali"
+  },
+  {
+    "hanzi": "除尘器",
+    "pinyin": "(n.) chúchén qì",
+    "arti_en": "Dust Collector",
+    "arti_id": "Dust Collector"
+  },
+  {
+    "hanzi": "原煤",
+    "pinyin": "(n.) yuán méi",
+    "arti_en": "Raw Batubara",
+    "arti_id": "Raw Batubara"
+  },
+  {
+    "hanzi": "关闭",
+    "pinyin": "(v.) guānbì",
+    "arti_en": "Tutup",
+    "arti_id": "Tutup"
+  },
+  {
+    "hanzi": "调皮带",
+    "pinyin": "(v.) tiáo pídài",
+    "arti_en": "Atur Pita",
+    "arti_id": "Atur Pita"
+  },
+  {
+    "hanzi": "上煤",
+    "pinyin": "(v.) shàng méi",
+    "arti_en": "Isi Batu Bara",
+    "arti_id": "Isi Batu Bara"
+  },
+  {
+    "hanzi": "立磨",
+    "pinyin": "(n.) lìmó",
+    "arti_en": "Vertical Mill",
+    "arti_id": "Vertical Mill"
+  },
+  {
+    "hanzi": "清锘煤dou",
+    "pinyin": "(v.) qīng xià méi dōu",
+    "arti_en": "Bersihkan Hod Coal",
+    "arti_id": "Bersihkan Hod Coal"
+  },
+  {
+    "hanzi": "停",
+    "pinyin": "(v.) tíng",
+    "arti_en": "Stop",
+    "arti_id": "Stop"
+  },
+  {
+    "hanzi": "线位",
+    "pinyin": "(n.) xiànwèi",
+    "arti_en": "Limit",
+    "arti_id": "Limit"
+  },
+  {
+    "hanzi": "清gli méizha",
+    "pinyin": "(v.) qīnglǐ méizhā",
+    "arti_en": "Bersihkan Sisa Coal",
+    "arti_id": "Bersihkan Sisa Coal"
+  },
+  {
+    "hanzi": "排光",
+    "pinyin": "(v.) pái guāng",
+    "arti_en": "Exhaust",
+    "arti_id": "Exhaust"
+  },
+  {
+    "hanzi": "开",
+    "pinyin": "(v.) kāi",
+    "arti_en": "Buka",
+    "arti_id": "Buka"
+  },
+  {
+    "hanzi": "磨机主电机",
+    "pinyin": "(n.) mó jī zhǔ diànjī",
+    "arti_en": "Motor Utama Mill",
+    "arti_id": "Motor Utama Mill"
+  },
+  {
+    "hanzi": "铁qiao",
+    "pinyin": "(n.) tiě qiáo",
+    "arti_en": "Sekop",
+    "arti_id": "Sekop"
+  },
+  {
+    "hanzi": "油xiang",
+    "pinyin": "(n.) yóuxiāng",
+    "arti_en": "Tangki minyak",
+    "arti_id": "Tangki minyak"
+  },
+  {
+    "hanzi": "活塞",
+    "pinyin": "(n.) huósāi",
+    "arti_en": "Piston",
+    "arti_id": "Piston"
+  },
+  {
+    "hanzi": "油wei",
+    "pinyin": "(n.) yóuwèi",
+    "arti_en": "Tingkat minyak",
+    "arti_id": "Tingkat minyak"
+  },
+  {
+    "hanzi": "救护车",
+    "pinyin": "(n.) jiùhùchē",
+    "arti_en": "Ambulans",
+    "arti_id": "Ambulans"
+  },
+  {
+    "hanzi": "公共qìche",
+    "pinyin": "(n.) gōnggòng qìchē",
+    "arti_en": "Bis",
+    "arti_id": "Bis"
+  },
+  {
+    "hanzi": "压lùjī",
+    "pinyin": "(n.) yālùjī",
+    "arti_en": "Compactor",
+    "arti_id": "Compactor"
+  },
+  {
+    "hanzi": "电厂",
+    "pinyin": "(n.) diànchǎng",
+    "arti_en": "PLTU",
+    "arti_id": "PLTU"
+  },
+  {
+    "hanzi": "导拨",
+    "pinyin": "(v.) dǎobá",
+    "arti_en": "Buling",
+    "arti_id": "Buling"
+  },
+  {
+    "hanzi": "滑防",
+    "pinyin": "(v.) yáfáng",
+    "arti_en": "Slipping",
+    "arti_id": "Slipping"
+  },
+  {
+    "hanzi": "多少",
+    "pinyin": "(pron.) duōshǎo",
+    "arti_en": "Berapa",
+    "arti_id": "Berapa"
+  },
+  {
+    "hanzi": "升一ji",
+    "pinyin": "(v.) shēng yī jí",
+    "arti_en": "Naik Satu Tingkat",
+    "arti_id": "Naik Satu Tingkat"
+  },
+  {
+    "hanzi": "减一千",
+    "pinyin": "(v.) jiǎn yīqiān",
+    "arti_en": "Kurang Seribu",
+    "arti_id": "Kurang Seribu"
+  },
+  {
+    "hanzi": "加一千",
+    "pinyin": "(v.) jiā yīqiān",
+    "arti_en": "Tambah Seribu",
+    "arti_id": "Tambah Seribu"
+  },
+  {
+    "hanzi": "电网pínlv",
+    "pinyin": "(n.) diànwǎng pínlǜ",
+    "arti_en": "Frekuensi Jaringan",
+    "arti_id": "Frekuensi Jaringan"
+  },
+  {
+    "hanzi": "降一ji",
+    "pinyin": "(v.) jiàng yī jí",
+    "arti_en": "Turun Satu Tingkat",
+    "arti_id": "Turun Satu Tingkat"
+  },
+  {
+    "hanzi": "下xiàn",
+    "pinyin": "(n.) xiàxiàn",
+    "arti_en": "Lower Limit",
+    "arti_id": "Lower Limit"
+  },
+  {
+    "hanzi": "上xiàn",
+    "pinyin": "(n.) shàngxiàn",
+    "arti_en": "Upper Limit",
+    "arti_id": "Upper Limit"
+  },
+  {
+    "hanzi": "干矿棚",
+    "pinyin": "(n.) gān kuàng péng",
+    "arti_en": "Dry Mineral Shed",
+    "arti_id": "Dry Mineral Shed"
+  },
+  {
+    "hanzi": "工作岗位",
+    "pinyin": "(n.) gōngzuò gǎngwèi",
+    "arti_en": "Posisi Kerja",
+    "arti_id": "Posisi Kerja"
+  },
+  {
+    "hanzi": "领导",
+    "pinyin": "(n.) língdǎo",
+    "arti_en": "Atasan",
+    "arti_id": "Atasan"
+  },
+  {
+    "hanzi": "文员",
+    "pinyin": "(n.) wényuán",
+    "arti_en": "Admin",
+    "arti_id": "Admin"
+  },
+  {
+    "hanzi": "工种",
+    "pinyin": "(n.) gōngzhǒng",
+    "arti_en": "Jenis Pekerjaan",
+    "arti_id": "Jenis Pekerjaan"
+  },
+  {
+    "hanzi": "禁止吸烟",
+    "pinyin": "(phr.) jìnzhǐ xīyān",
+    "arti_en": "Dilarang Merokok",
+    "arti_id": "Dilarang Merokok"
+  },
+  {
+    "hanzi": "电风扇",
+    "pinyin": "(n.) diàn fēngshàn",
+    "arti_en": "Kipas Angin",
+    "arti_id": "Kipas Angin"
+  },
+  {
+    "hanzi": "对讲机",
+    "pinyin": "(n.) duìjiǎngjī",
+    "arti_en": "HT",
+    "arti_id": "HT"
+  },
+  {
+    "hanzi": "漏油",
+    "pinyin": "(v.) lòu yóu",
+    "arti_en": "Oli Bocor",
+    "arti_id": "Oli Bocor"
+  },
+  {
+    "hanzi": "请假",
+    "pinyin": "(v.) qīngjià",
+    "arti_en": "Izin",
+    "arti_id": "Izin"
+  },
+  {
+    "hanzi": "储气罐",
+    "pinyin": "(n.) chúqì guǎn",
+    "arti_en": "Akumulator",
+    "arti_id": "Akumulator"
+  },
+  {
+    "hanzi": "布袋笼",
+    "pinyin": "(n.) bùdài dài lóng",
+    "arti_en": "Gantungan Kantong",
+    "arti_id": "Gantungan Kantong"
+  },
+  {
+    "hanzi": "收尘布袋",
+    "pinyin": "(n.) shōu chén bùdài",
+    "arti_en": "Kantong Debu",
+    "arti_id": "Kantong Debu"
+  },
+  {
+    "hanzi": "13米",
+    "pinyin": "(n.) 13 mǐ",
+    "arti_en": "13 Meter",
+    "arti_id": "13 Meter"
+  },
+  {
+    "hanzi": "9米",
+    "pinyin": "(n.) 9 mǐ",
+    "arti_en": "9 Meter",
+    "arti_id": "9 Meter"
+  },
+  {
+    "hanzi": "3米",
+    "pinyin": "(n.) 3 mǐ",
+    "arti_en": "3 Meter",
+    "arti_id": "3 Meter"
+  },
+  {
+    "hanzi": "24米",
+    "pinyin": "(n.) 24 mǐ",
+    "arti_en": "24 Meter",
+    "arti_id": "24 Meter"
+  },
+  {
+    "hanzi": "19米",
+    "pinyin": "(n.) 19 mǐ",
+    "arti_en": "19 Meter",
+    "arti_id": "19 Meter"
+  },
+  {
+    "hanzi": "插板阀",
+    "pinyin": "(n.) chābǎn fá",
+    "arti_en": "Kontak Listrik",
+    "arti_id": "Kontak Listrik"
+  },
+  {
+    "hanzi": "班后会",
+    "pinyin": "(n.) bān hòu huì",
+    "arti_en": "Briefing Pulang Kerja",
+    "arti_id": "Briefing Pulang Kerja"
+  },
+  {
+    "hanzi": "班前会",
+    "pinyin": "(n.) bān qián huì",
+    "arti_en": "Briefing Sebelum Kerja",
+    "arti_id": "Briefing Sebelum Kerja"
+  },
+  {
+    "hanzi": "袖标",
+    "pinyin": "(n.) xiūbiǎo",
+    "arti_en": "Label Tangan",
+    "arti_id": "Label Tangan"
+  },
+  {
+    "hanzi": "铜瓦",
+    "pinyin": "(n.) tóng wǎ",
+    "arti_en": "Copper Tile",
+    "arti_id": "Copper Tile"
+  },
+  {
+    "hanzi": "汇总",
+    "pinyin": "(n.) huìzǒng",
+    "arti_en": "Rekap",
+    "arti_id": "Rekap"
+  },
+  {
+    "hanzi": "核对",
+    "pinyin": "(v.) héduì",
+    "arti_en": "Mengecek",
+    "arti_id": "Mengecek"
+  },
+  {
+    "hanzi": "准确",
+    "pinyin": "(adj.) zhǔnquè",
+    "arti_en": "Akurat",
+    "arti_id": "Akurat"
+  },
+  {
+    "hanzi": "填写",
+    "pinyin": "(v.) tiánxiě",
+    "arti_en": "Mengisi",
+    "arti_id": "Mengisi"
+  },
+  {
+    "hanzi": "工艺",
+    "pinyin": "(n.) gōngyì",
+    "arti_en": "Proses",
+    "arti_id": "Proses"
+  },
+  {
+    "hanzi": "套",
+    "pinyin": "(m.) tào",
+    "arti_en": "Satuan set",
+    "arti_id": "Satuan set"
+  },
+  {
+    "hanzi": "复杂",
+    "pinyin": "(adj.) fúzá",
+    "arti_en": "Rumit",
+    "arti_id": "Rumit"
+  },
+  {
+    "hanzi": "优惠",
+    "pinyin": "(n.) yōuhuì",
+    "arti_en": "Diskon",
+    "arti_id": "Diskon"
+  },
+  {
+    "hanzi": "寿命",
+    "pinyin": "(n.) shòumìng",
+    "arti_en": "Daya tahan",
+    "arti_id": "Daya tahan"
+  },
+  {
+    "hanzi": "涨",
+    "pinyin": "(v.) zhǎng",
+    "arti_en": "Naik",
+    "arti_id": "Naik"
+  },
+  {
+    "hanzi": "关系",
+    "pinyin": "(n.) guānxi",
+    "arti_en": "Hubungan",
+    "arti_id": "Hubungan"
+  },
+  {
+    "hanzi": "售出",
+    "pinyin": "(v.) shòuchū",
+    "arti_en": "Menjual",
+    "arti_id": "Menjual"
+  },
+  {
+    "hanzi": "几乎",
+    "pinyin": "(adv.) jīhū",
+    "arti_en": "Hampir",
+    "arti_id": "Hampir"
+  },
+  {
+    "hanzi": "销售",
+    "pinyin": "(v.) xiāoshòu",
+    "arti_en": "Memasarkan",
+    "arti_id": "Memasarkan"
+  },
+  {
+    "hanzi": "不断",
+    "pinyin": "(adv.) bùduàn",
+    "arti_en": "Terus menerus",
+    "arti_id": "Terus menerus"
+  },
+  {
+    "hanzi": "会议",
+    "pinyin": "(n.) huìyì",
+    "arti_en": "Pertemuan",
+    "arti_id": "Pertemuan"
+  },
+  {
+    "hanzi": "烟气",
+    "pinyin": "(n.) yānqì",
+    "arti_en": "Asap",
+    "arti_id": "Asap"
+  },
+  {
+    "hanzi": "污染",
+    "pinyin": "(n.) wūrǎn",
+    "arti_en": "Kotoran",
+    "arti_id": "Kotoran"
+  },
+  {
+    "hanzi": "粉尘",
+    "pinyin": "(n.) fénchén",
+    "arti_en": "Debu",
+    "arti_id": "Debu"
+  },
+  {
+    "hanzi": "烧伤",
+    "pinyin": "(n.) shāoshāng",
+    "arti_en": "Luka Bakar",
+    "arti_id": "Luka Bakar"
+  },
+  {
+    "hanzi": "烫伤",
+    "pinyin": "(n.) tàngshāng",
+    "arti_en": "Luka Bakar",
+    "arti_id": "Luka Bakar"
+  },
+  {
+    "hanzi": "石棉绳",
+    "pinyin": "(n.) shīmiàn shéng",
+    "arti_en": "Tali Asbes",
+    "arti_id": "Tali Asbes"
+  },
+  {
+    "hanzi": "中毒",
+    "pinyin": "(v.) zhòngdú",
+    "arti_en": "Keracunan",
+    "arti_id": "Keracunan"
+  },
+  {
+    "hanzi": "一氧化碳",
+    "pinyin": "(n.) yīyǎnghuà tàn",
+    "arti_en": "Karbon Oksida",
+    "arti_id": "Karbon Oksida"
+  },
+  {
+    "hanzi": "钢包",
+    "pinyin": "(n.) gāngbāo",
+    "arti_en": "Ladle",
+    "arti_id": "Ladle"
+  },
+  {
+    "hanzi": "慢慢",
+    "pinyin": "(adv.) mànmàn",
+    "arti_en": "Pelan-Pelan",
+    "arti_id": "Pelan-Pelan"
+  },
+  {
+    "hanzi": "关闭",
+    "pinyin": "(v.) guānbì",
+    "arti_en": "matikan",
+    "arti_id": "matikan"
+  },
+  {
+    "hanzi": "打开",
+    "pinyin": "(v.) dǎkāi",
+    "arti_en": "hidupkan",
+    "arti_id": "hidupkan"
+  },
+  {
+    "hanzi": "吊斗",
+    "pinyin": "(n.) diàodǒu",
+    "arti_en": "Bucket",
+    "arti_id": "Bucket"
+  },
+  {
+    "hanzi": "楼层",
+    "pinyin": "(n.) lóucéng",
+    "arti_en": "Lantai",
+    "arti_id": "Lantai"
+  },
+  {
+    "hanzi": "布料机",
+    "pinyin": "(n.) bùliào jī",
+    "arti_en": "Placing boom",
+    "arti_id": "Placing boom"
+  },
+  {
+    "hanzi": "负层",
+    "pinyin": "(n.) fùcéng",
+    "arti_en": "Basement",
+    "arti_id": "Basement"
+  },
+  {
+    "hanzi": "门字架",
+    "pinyin": "(n.) ménzìjià",
+    "arti_en": "Scaffolding",
+    "arti_id": "Scaffolding"
+  },
+  {
+    "hanzi": "警示带",
+    "pinyin": "(n.) jīngshì dài",
+    "arti_en": "Pita pembatas",
+    "arti_id": "Pita pembatas"
+  },
+  {
+    "hanzi": "对讲机",
+    "pinyin": "(n.) duìjiǎngjī",
+    "arti_en": "HT",
+    "arti_id": "HT"
+  },
+  {
+    "hanzi": "故障",
+    "pinyin": "(n.) gùzhàng",
+    "arti_en": "kerusakan",
+    "arti_id": "kerusakan"
+  },
+  {
+    "hanzi": "短路",
+    "pinyin": "(n.) duǎnlù",
+    "arti_en": "hubung singkat",
+    "arti_id": "hubung singkat"
+  },
+  {
+    "hanzi": "过载",
+    "pinyin": "(n.) guòzài",
+    "arti_en": "overload",
+    "arti_id": "overload"
+  },
+  {
+    "hanzi": "指示灯",
+    "pinyin": "(n.) zhǐshì dēng",
+    "arti_en": "lampu indikator",
+    "arti_id": "lampu indikator"
+  },
+  {
+    "hanzi": "电压互感器",
+    "pinyin": "(n.) diànyā hùgǎnqì",
+    "arti_en": "PT",
+    "arti_id": "PT"
+  },
+  {
+    "hanzi": "电流互感器",
+    "pinyin": "(n.) diànliú hùgǎnqì",
+    "arti_en": "CT",
+    "arti_id": "CT"
+  },
+  {
+    "hanzi": "通道",
+    "pinyin": "(n.) tōngdào",
+    "arti_en": "Jalan",
+    "arti_id": "Jalan"
+  },
+  {
+    "hanzi": "门",
+    "pinyin": "(n.) mén",
+    "arti_en": "Pintu",
+    "arti_id": "Pintu"
+  },
+  {
+    "hanzi": "钥匙",
+    "pinyin": "(n.) yàoshi",
+    "arti_en": "Kunci",
+    "arti_id": "Kunci"
+  },
+  {
+    "hanzi": "烟灰缸",
+    "pinyin": "(n.) yánhuī gāng",
+    "arti_en": "Asbak",
+    "arti_id": "Asbak"
+  },
+  {
+    "hanzi": "凳子",
+    "pinyin": "(n.) dèngzi",
+    "arti_en": "Bangku",
+    "arti_id": "Bangku"
+  },
+  {
+    "hanzi": "椅子",
+    "pinyin": "(n.) yǐzi",
+    "arti_en": "Kursi",
+    "arti_id": "Kursi"
+  },
+  {
+    "hanzi": "饭盒",
+    "pinyin": "(n.) fànhé",
+    "arti_en": "Rantang",
+    "arti_id": "Rantang"
+  },
+  {
+    "hanzi": "空调",
+    "pinyin": "(n.) kòngtiáo",
+    "arti_en": "AC",
+    "arti_id": "AC"
+  },
+  {
+    "hanzi": "整洁",
+    "pinyin": "(adj.) zhěngjié",
+    "arti_en": "Kebersihan",
+    "arti_id": "Kebersihan"
+  },
+  {
+    "hanzi": "拿饭",
+    "pinyin": "(v.) ná fàn",
+    "arti_en": "Ambil nasi",
+    "arti_id": "Ambil nasi"
+  },
+  {
+    "hanzi": "扫把",
+    "pinyin": "(n.) sàobǎ",
+    "arti_en": "Sapu",
+    "arti_id": "Sapu"
+  },
+  {
+    "hanzi": "垃圾桶",
+    "pinyin": "(n.) lājītǒng",
+    "arti_en": "Tempat sampah",
+    "arti_id": "Tempat sampah"
+  },
+  {
+    "hanzi": "打扫",
+    "pinyin": "(v.) dǎsǎo",
+    "arti_en": "Membersihkan",
+    "arti_id": "Membersihkan"
+  },
+  {
+    "hanzi": "插排",
+    "pinyin": "(n.) chāpái",
+    "arti_en": "Terminal colokan",
+    "arti_id": "Terminal colokan"
+  },
+  {
+    "hanzi": "手机",
+    "pinyin": "(n.) shǒujī",
+    "arti_en": "HP",
+    "arti_id": "HP"
+  },
+  {
+    "hanzi": "冒黑烟",
+    "pinyin": "(v.) mào hēiyān",
+    "arti_en": "Mengeluarkan asap hitam",
+    "arti_id": "Mengeluarkan asap hitam"
+  },
+  {
+    "hanzi": "冒黄烟",
+    "pinyin": "(v.) mào huángyān",
+    "arti_en": "Mengeluarkan asap kuning",
+    "arti_id": "Mengeluarkan asap kuning"
+  },
+  {
+    "hanzi": "冒白烟",
+    "pinyin": "(v.) mào bái yān",
+    "arti_en": "Mengeluarkan asap putih",
+    "arti_id": "Mengeluarkan asap putih"
+  },
+  {
+    "hanzi": "阳极",
+    "pinyin": "(n.) yángjí",
+    "arti_en": "Anoda",
+    "arti_id": "Anoda"
+  },
+  {
+    "hanzi": "负极",
+    "pinyin": "(n.) fùjí",
+    "arti_en": "Kutub negatif",
+    "arti_id": "Kutub negatif"
+  },
+  {
+    "hanzi": "正极",
+    "pinyin": "(n.) zhèngjí",
+    "arti_en": "Kutub positif",
+    "arti_id": "Kutub positif"
+  },
+  {
+    "hanzi": "频率",
+    "pinyin": "(n.) pínlǜ",
+    "arti_en": "Frekuensi",
+    "arti_id": "Frekuensi"
+  },
+  {
+    "hanzi": "阴极",
+    "pinyin": "(n.) yīnjí",
+    "arti_en": "Katoda",
+    "arti_id": "Katoda"
+  },
+  {
+    "hanzi": "泊位",
+    "pinyin": "(n.) bówèi",
+    "arti_en": "Tempat berlabuh",
+    "arti_id": "Tempat berlabuh"
+  },
+  {
+    "hanzi": "电ji diàotóu",
+    "pinyin": "(n.) diànjí diàotóu",
+    "arti_en": "Pasta Jatuh",
+    "arti_id": "Pasta Jatuh"
+  },
+  {
+    "hanzi": "电ji hu",
+    "pinyin": "(n.) diànjí hú",
+    "arti_en": "Carbon Pasta",
+    "arti_id": "Carbon Pasta"
+  },
+  {
+    "hanzi": "二次电压",
+    "pinyin": "(n.) èrcì diànyā",
+    "arti_en": "Voltase Secondary",
+    "arti_id": "Voltase Secondary"
+  },
+  {
+    "hanzi": "一次电压",
+    "pinyin": "(n.) yīcì diànyā",
+    "arti_en": "Voltase Primary",
+    "arti_id": "Voltase Primary"
+  },
+  {
+    "hanzi": "手动tiáodǎng",
+    "pinyin": "(n.) shǒudòng tiáodǎng",
+    "arti_en": "Tap Changer Manual",
+    "arti_id": "Tap Changer Manual"
+  },
+  {
+    "hanzi": "电压等级",
+    "pinyin": "(n.) diànyā děngjí",
+    "arti_en": "Level Voltase",
+    "arti_id": "Level Voltase"
+  },
+  {
+    "hanzi": "仪表",
+    "pinyin": "(n.) yíbiǎo",
+    "arti_en": "alat ukur",
+    "arti_id": "alat ukur"
+  },
+  {
+    "hanzi": "过载保护",
+    "pinyin": "(n.) guòzài bǎohū",
+    "arti_en": "proteksi overload",
+    "arti_id": "proteksi overload"
+  },
+  {
+    "hanzi": "电极下放",
+    "pinyin": "(v.) diànjí yàfàng",
+    "arti_en": "Sliping",
+    "arti_id": "Sliping"
+  },
+  {
+    "hanzi": "执行",
+    "pinyin": "(v.) zhíxíng",
+    "arti_en": "Jalankan",
+    "arti_id": "Jalankan"
+  },
+  {
+    "hanzi": "程序",
+    "pinyin": "(n.) chéngxù",
+    "arti_en": "Prosedur",
+    "arti_id": "Prosedur"
+  },
+  {
+    "hanzi": "完成",
+    "pinyin": "(v.) wánchéng",
+    "arti_en": "Selesai",
+    "arti_id": "Selesai"
+  },
+  {
+    "hanzi": "开始",
+    "pinyin": "(v.) kāishǐ",
+    "arti_en": "Mulai",
+    "arti_id": "Mulai"
+  },
+  {
+    "hanzi": "禁止",
+    "pinyin": "(v.) jìnzhǐ",
+    "arti_en": "Dilarang",
+    "arti_id": "Dilarang"
+  },
+  {
+    "hanzi": "允许",
+    "pinyin": "(v.) yǔnxǔ",
+    "arti_en": "Diperbolehkan",
+    "arti_id": "Diperbolehkan"
+  },
+  {
+    "hanzi": "选择",
+    "pinyin": "(v.) xuǎnzé",
+    "arti_en": "Pilihan",
+    "arti_id": "Pilihan"
+  },
+  {
+    "hanzi": "手动",
+    "pinyin": "(adv.) shǒudòng",
+    "arti_en": "Manual",
+    "arti_id": "Manual"
+  },
+  {
+    "hanzi": "自动",
+    "pinyin": "(adv.) zìdòng",
+    "arti_en": "Auto",
+    "arti_id": "Auto"
+  },
+  {
+    "hanzi": "重瓦斯",
+    "pinyin": "(n.) zhòng wǎxī",
+    "arti_en": "Gas Berat",
+    "arti_id": "Gas Berat"
+  },
+  {
+    "hanzi": "轻瓦斯",
+    "pinyin": "(n.) qīng wǎxī",
+    "arti_en": "Gas Ringan",
+    "arti_id": "Gas Ringan"
+  },
+  {
+    "hanzi": "灵活",
+    "pinyin": "(adj.) línghuó",
+    "arti_en": "Fleksibel",
+    "arti_id": "Fleksibel"
+  },
+  {
+    "hanzi": "良好",
+    "pinyin": "(adj.) liánghǎo",
+    "arti_en": "Bagus",
+    "arti_id": "Bagus"
+  },
+  {
+    "hanzi": "代替",
+    "pinyin": "(v.) dàitì",
+    "arti_en": "Mewakili",
+    "arti_id": "Mewakili"
+  },
+  {
+    "hanzi": "保持",
+    "pinyin": "(v.) bǎochí",
+    "arti_en": "Menjaga",
+    "arti_id": "Menjaga"
+  },
+  {
+    "hanzi": "取消",
+    "pinyin": "(v.) qǔxiāo",
+    "arti_en": "Membatalkan",
+    "arti_id": "Membatalkan"
+  },
+  {
+    "hanzi": "交涉",
+    "pinyin": "(n.) jiàoshè",
+    "arti_en": "Perundingan",
+    "arti_id": "Perundingan"
+  },
+  {
+    "hanzi": "发生",
+    "pinyin": "(v.) fāshēng",
+    "arti_en": "Terjadi",
+    "arti_id": "Terjadi"
+  },
+  {
+    "hanzi": "赶",
+    "pinyin": "(v.) gǎn",
+    "arti_en": "Bergegas",
+    "arti_id": "Bergegas"
+  },
+  {
+    "hanzi": "出席",
+    "pinyin": "(v.) chūxí",
+    "arti_en": "Menghadiri",
+    "arti_id": "Menghadiri"
+  },
+  {
+    "hanzi": "内容",
+    "pinyin": "(n.) nèiróng",
+    "arti_en": "Isi",
+    "arti_id": "Isi"
+  },
+  {
+    "hanzi": "约会",
+    "pinyin": "(n.) yuèhuì",
+    "arti_en": "Janjian",
+    "arti_id": "Janjian"
+  },
+  {
+    "hanzi": "交换",
+    "pinyin": "(v.) jiāohuàn",
+    "arti_en": "Menukar",
+    "arti_id": "Menukar"
+  },
+  {
+    "hanzi": "靠",
+    "pinyin": "(v.) kào",
+    "arti_en": "Mendekat",
+    "arti_id": "Mendekat"
+  },
+  {
+    "hanzi": "螺丝刀",
+    "pinyin": "(n.) luósīdāo",
+    "arti_en": "Obeng",
+    "arti_id": "Obeng"
+  },
+  {
+    "hanzi": "钳子",
+    "pinyin": "(n.) qiánzi",
+    "arti_en": "Tang",
+    "arti_id": "Tang"
+  },
+  {
+    "hanzi": "刀子",
+    "pinyin": "(n.) dāozi",
+    "arti_en": "Pisau",
+    "arti_id": "Pisau"
+  },
+  {
+    "hanzi": "签到表",
+    "pinyin": "(n.) qiāndàobiǎo",
+    "arti_en": "Daftar hadir",
+    "arti_id": "Daftar hadir"
+  },
+  {
+    "hanzi": "内部通知",
+    "pinyin": "(n.) nèibù tōngzhī",
+    "arti_en": "Pemberitahuan internal",
+    "arti_id": "Pemberitahuan internal"
+  },
+  {
+    "hanzi": "请示",
+    "pinyin": "(n.) qǐngshì",
+    "arti_en": "Permintaan resmi",
+    "arti_id": "Permintaan resmi"
+  },
+  {
+    "hanzi": "联系人",
+    "pinyin": "(n.) liánxìrén",
+    "arti_en": "Kontak",
+    "arti_id": "Kontak"
+  },
+  {
+    "hanzi": "煤粉加减操作",
+    "pinyin": "(n.) méi fěn jiā jiǎn cāozuò",
+    "arti_en": "Tambah Kurangi Bubuk Batu Bara",
+    "arti_id": "Tambah Kurangi Bubuk Batu Bara"
+  },
+  {
+    "hanzi": "煤粉",
+    "pinyin": "(n.) méi fěn",
+    "arti_en": "Bubuk Batubara",
+    "arti_id": "Bubuk Batubara"
+  },
+  {
+    "hanzi": "火把",
+    "pinyin": "(n.) huǒbǎ",
+    "arti_en": "Obor",
+    "arti_id": "Obor"
+  },
+  {
+    "hanzi": "回火",
+    "pinyin": "(v.) huí huǒ",
+    "arti_en": "Tempering",
+    "arti_id": "Tempering"
+  },
+  {
+    "hanzi": "测温度",
+    "pinyin": "(v.) cè wēndù",
+    "arti_en": "Ukur Temperatur",
+    "arti_id": "Ukur Temperatur"
+  },
+  {
+    "hanzi": "拔除",
+    "pinyin": "(v.) bá chú",
+    "arti_en": "Cabut",
+    "arti_id": "Cabut"
+  },
+  {
+    "hanzi": "压力",
+    "pinyin": "(n.) yālì",
+    "arti_en": "Tekanan",
+    "arti_id": "Tekanan"
+  },
+  {
+    "hanzi": "负压",
+    "pinyin": "(n.) fù yā",
+    "arti_en": "Tekanan Negatif",
+    "arti_id": "Tekanan Negatif"
+  },
+  {
+    "hanzi": "破碎",
+    "pinyin": "(v.) pòsuì",
+    "arti_en": "Pecah",
+    "arti_id": "Pecah"
+  },
+  {
+    "hanzi": "缺勤",
+    "pinyin": "(v.) quēqín",
+    "arti_en": "Tidak hadir",
+    "arti_id": "Tidak hadir"
+  },
+  {
+    "hanzi": "处理",
+    "pinyin": "(v.) chǔlǐ",
+    "arti_en": "Menangani",
+    "arti_id": "Menangani"
+  },
+  {
+    "hanzi": "整理",
+    "pinyin": "(v.) zhěnglǐ",
+    "arti_en": "Menyusun",
+    "arti_id": "Menyusun"
+  },
+  {
+    "hanzi": "接受",
+    "pinyin": "(v.) jiēshòu",
+    "arti_en": "Menerima",
+    "arti_id": "Menerima"
+  },
+  {
+    "hanzi": "配合",
+    "pinyin": "(v.) pèihé",
+    "arti_en": "Bekerja sama",
+    "arti_id": "Bekerja sama"
+  },
+  {
+    "hanzi": "要求",
+    "pinyin": "(n.) yāoqiú",
+    "arti_en": "Permintaan",
+    "arti_id": "Permintaan"
+  },
+  {
+    "hanzi": "强调",
+    "pinyin": "(v.) qiángdiào",
+    "arti_en": "Menegaskan",
+    "arti_id": "Menegaskan"
+  },
+  {
+    "hanzi": "督促",
+    "pinyin": "(v.) dùcù",
+    "arti_en": "Mendorong",
+    "arti_id": "Mendorong"
+  },
+  {
+    "hanzi": "协商",
+    "pinyin": "(v.) xiéshāng",
+    "arti_en": "Musyawarah",
+    "arti_id": "Musyawarah"
+  },
+  {
+    "hanzi": "承认",
+    "pinyin": "(v.) chéngrèn",
+    "arti_en": "Mengakui",
+    "arti_id": "Mengakui"
+  },
+  {
+    "hanzi": "追责",
+    "pinyin": "(v.) zhuīzé",
+    "arti_en": "Menuntut",
+    "arti_id": "Menuntut"
+  },
+  {
+    "hanzi": "上报",
+    "pinyin": "(v.) shàngbào",
+    "arti_en": "Melaporkan",
+    "arti_id": "Melaporkan"
+  },
+  {
+    "hanzi": "下发",
+    "pinyin": "(v.) xiàfā",
+    "arti_en": "Menerbitkan",
+    "arti_id": "Menerbitkan"
+  },
+  {
+    "hanzi": "标注",
+    "pinyin": "(v.) biǎozhù",
+    "arti_en": "Memberi tanda",
+    "arti_id": "Memberi tanda"
+  },
+  {
+    "hanzi": "起草",
+    "pinyin": "(v.) qǐcǎo",
+    "arti_en": "Menyusun draf",
+    "arti_id": "Menyusun draf"
+  },
+  {
+    "hanzi": "修订",
+    "pinyin": "(v.) xiūdìng",
+    "arti_en": "Merevisi",
+    "arti_id": "Merevisi"
+  },
+  {
+    "hanzi": "审核",
+    "pinyin": "(v.) shěnhé",
+    "arti_en": "Meninjau",
+    "arti_id": "Meninjau"
+  },
+  {
+    "hanzi": "避开",
+    "pinyin": "(v.) bì kāi",
+    "arti_en": "Menghindar",
+    "arti_id": "Menghindar"
+  },
+  {
+    "hanzi": "手柄",
+    "pinyin": "(n.) shǒubìng",
+    "arti_en": "Pegangan",
+    "arti_id": "Pegangan"
+  },
+  {
+    "hanzi": "开眼机",
+    "pinyin": "(n.) kāi yǎn jī",
+    "arti_en": "Drill",
+    "arti_id": "Drill"
+  },
+  {
+    "hanzi": "旋转",
+    "pinyin": "(v.) xuánzhuǎn",
+    "arti_en": "Berputar",
+    "arti_id": "Berputar"
+  },
+  {
+    "hanzi": "橡皮水管",
+    "pinyin": "(n.) xiàngpí shuǐ guǎn",
+    "arti_en": "Slang",
+    "arti_id": "Slang"
+  },
+  {
+    "hanzi": "氧气",
+    "pinyin": "(n.) yǎngqì",
+    "arti_en": "Oksigen",
+    "arti_id": "Oksigen"
+  },
+  {
+    "hanzi": "故障",
+    "pinyin": "(n.) gùzhàng",
+    "arti_en": "Gangguan",
+    "arti_id": "Gangguan"
+  },
+  {
+    "hanzi": "提交",
+    "pinyin": "(v.) tíjiāo",
+    "arti_en": "Menyerahkan",
+    "arti_id": "Menyerahkan"
+  },
+  {
+    "hanzi": "行政",
+    "pinyin": "(n.) xíngzhèng",
+    "arti_en": "Administrasi",
+    "arti_id": "Administrasi"
+  },
+  {
+    "hanzi": "翻译",
+    "pinyin": "(v.) fānyì",
+    "arti_en": "Menerjemahkan",
+    "arti_id": "Menerjemahkan"
+  },
+  {
+    "hanzi": "协助",
+    "pinyin": "(v.) xiézhù",
+    "arti_en": "Membantu",
+    "arti_id": "Membantu"
+  },
+  {
+    "hanzi": "说明",
+    "pinyin": "(v.) shuōmíng",
+    "arti_en": "Menjelaskan",
+    "arti_id": "Menjelaskan"
+  },
+  {
+    "hanzi": "沟通",
+    "pinyin": "(v.) gōutōng",
+    "arti_en": "Berkomunikasi",
+    "arti_id": "Berkomunikasi"
+  },
+  {
+    "hanzi": "确认",
+    "pinyin": "(v.) quèrèn",
+    "arti_en": "Mengonfirmasi",
+    "arti_id": "Mengonfirmasi"
+  },
+  {
+    "hanzi": "增加",
+    "pinyin": "(v.) zēngjiā",
+    "arti_en": "Menambah",
+    "arti_id": "Menambah"
+  },
+  {
+    "hanzi": "请再说一遍",
+    "pinyin": "(phr.) qǐng zài shuō yī biàn",
+    "arti_en": "Tolong ulangi",
+    "arti_id": "Tolong ulangi"
+  },
+  {
+    "hanzi": "下料部分",
+    "pinyin": "(n.) xiàliào bùfen",
+    "arti_en": "Feeding",
+    "arti_id": "Feeding"
+  },
+  {
+    "hanzi": "停止",
+    "pinyin": "(v.) tíngzhǐ",
+    "arti_en": "Berhenti",
+    "arti_id": "Berhenti"
+  },
+  {
+    "hanzi": "料管",
+    "pinyin": "(n.) liàoguǎn",
+    "arti_en": "Feed Chute",
+    "arti_id": "Feed Chute"
+  },
+  {
+    "hanzi": "大面料管",
+    "pinyin": "(n.) dà miàn liàoguǎn",
+    "arti_en": "Permukaan Besar Furnish",
+    "arti_id": "Permukaan Besar Furnish"
+  },
+  {
+    "hanzi": "炉芯料管",
+    "pinyin": "(n.) lú xīn liàoguǎn",
+    "arti_en": "Area Pusat Furnish",
+    "arti_id": "Area Pusat Furnish"
+  },
+  {
+    "hanzi": "料管分布图",
+    "pinyin": "(n.) liàoguǎn fēnbù tú",
+    "arti_en": "Denah Feed Chute",
+    "arti_id": "Denah Feed Chute"
+  },
+  {
+    "hanzi": "南面料管",
+    "pinyin": "(n.) nán miàn liàoguǎn",
+    "arti_en": "Feed Chote Bagian Selatan",
+    "arti_id": "Feed Chote Bagian Selatan"
+  },
+  {
+    "hanzi": "外围料管",
+    "pinyin": "(n.) wàiwéi liàoguǎn",
+    "arti_en": "Area Luar Furnish",
+    "arti_id": "Area Luar Furnish"
+  },
+  {
+    "hanzi": "小面料管",
+    "pinyin": "(n.) xiǎo miàn liàoguǎn",
+    "arti_en": "Permukaan Kecil Furnish",
+    "arti_id": "Permukaan Kecil Furnish"
+  },
+  {
+    "hanzi": "北面料管",
+    "pinyin": "(n.) běi miàn liàoguǎn",
+    "arti_en": "Feed Chote Bagian Utara",
+    "arti_id": "Feed Chote Bagian Utara"
+  },
+  {
+    "hanzi": "常用联系人员",
+    "pinyin": "(n.) chángyòng liánxì rényuán",
+    "arti_en": "Orang yang Bersangkutan",
+    "arti_id": "Orang yang Bersangkutan"
+  },
+  {
+    "hanzi": "仪表工",
+    "pinyin": "(n.) yíbiǎo gōng",
+    "arti_en": "Instrumen Checker",
+    "arti_id": "Instrumen Checker"
+  },
+  {
+    "hanzi": "警戒线",
+    "pinyin": "(n.) jǐngjièxiàn",
+    "arti_en": "Police Line",
+    "arti_id": "Police Line"
+  },
+  {
+    "hanzi": "常用工具",
+    "pinyin": "(n.) chángyòng gōngjù",
+    "arti_en": "Perlengkapan",
+    "arti_id": "Perlengkapan"
+  },
+  {
+    "hanzi": "耳机",
+    "pinyin": "(n.) ěrjī",
+    "arti_en": "Headset",
+    "arti_id": "Headset"
+  },
+  {
+    "hanzi": "抹布",
+    "pinyin": "(n.) mǎbù",
+    "arti_en": "Kain lap",
+    "arti_id": "Kain lap"
+  },
+  {
+    "hanzi": "警戒线",
+    "pinyin": "(n.) jǐngjièxiàn",
+    "arti_en": "Police Line",
+    "arti_id": "Police Line"
+  },
+  {
+    "hanzi": "扳手",
+    "pinyin": "(n.) bānshǒu",
+    "arti_en": "Kunci inggris",
+    "arti_id": "Kunci inggris"
+  },
+  {
+    "hanzi": "䢖车",
+    "pinyin": "(n.) dàochē",
+    "arti_en": "Troli",
+    "arti_id": "Troli"
+  },
+  {
+    "hanzi": "拖把",
+    "pinyin": "(n.) tuōbǎ",
+    "arti_en": "Kain pel",
+    "arti_id": "Kain pel"
+  },
+  {
+    "hanzi": "镐",
+    "pinyin": "(n.) gǎo",
+    "arti_en": "Belencong",
+    "arti_id": "Belencong"
+  },
+  {
+    "hanzi": "铲子",
+    "pinyin": "(n.) chǎnzi",
+    "arti_en": "Sekop",
+    "arti_id": "Sekop"
+  },
+  {
+    "hanzi": "锤子",
+    "pinyin": "(n.) chuízi",
+    "arti_en": "Palu",
+    "arti_id": "Palu"
+  },
+  {
+    "hanzi": "工作服",
+    "pinyin": "(n.) gōngzuòfú",
+    "arti_en": "Seragam kerja",
+    "arti_id": "Seragam kerja"
+  },
+  {
+    "hanzi": "防光背心",
+    "pinyin": "(n.) fángguāng bèixīn",
+    "arti_en": "Rompi reflektor",
+    "arti_id": "Rompi reflektor"
+  },
+  {
+    "hanzi": "衣领",
+    "pinyin": "(n.) yīlǐng",
+    "arti_en": "Kerah",
+    "arti_id": "Kerah"
+  },
+  {
+    "hanzi": "扣子",
+    "pinyin": "(n.) kòuzi",
+    "arti_en": "Gesper",
+    "arti_id": "Gesper"
+  },
+  {
+    "hanzi": "阻燃服",
+    "pinyin": "(n.) zǔránfú",
+    "arti_en": "Seragam tahan api",
+    "arti_id": "Seragam tahan api"
+  },
+  {
+    "hanzi": "正常运行",
+    "pinyin": "(v.) zhèngcháng yùnxíng",
+    "arti_en": "operasi normal",
+    "arti_id": "operasi normal"
+  },
+  {
+    "hanzi": "故障",
+    "pinyin": "(n.) gùzhàng",
+    "arti_en": "kerusakan",
+    "arti_id": "kerusakan"
+  },
+  {
+    "hanzi": "异常",
+    "pinyin": "(adj.) yìcháng",
+    "arti_en": "abnormal",
+    "arti_id": "abnormal"
+  },
+  {
+    "hanzi": "操作规程",
+    "pinyin": "(n.) cāozuò guīchéng",
+    "arti_en": "prosedur operasi",
+    "arti_id": "prosedur operasi"
+  },
+  {
+    "hanzi": "巡检",
+    "pinyin": "(n.) xúnjiǎn",
+    "arti_en": "inspeksi rutin",
+    "arti_id": "inspeksi rutin"
+  },
+  {
+    "hanzi": "平均值",
+    "pinyin": "(n.) píngjūnzhí",
+    "arti_en": "Nilai rata-rata",
+    "arti_id": "Nilai rata-rata"
+  },
+  {
+    "hanzi": "差异",
+    "pinyin": "(n.) chāyì",
+    "arti_en": "Perbedaan",
+    "arti_id": "Perbedaan"
+  },
+  {
+    "hanzi": "对比",
+    "pinyin": "(v.) duǐbǐ",
+    "arti_en": "Membandingkan",
+    "arti_id": "Membandingkan"
+  },
+  {
+    "hanzi": "停工",
+    "pinyin": "(v.) tínggōng",
+    "arti_en": "Berhenti kerja",
+    "arti_id": "Berhenti kerja"
+  },
+  {
+    "hanzi": "减少",
+    "pinyin": "(v.) jiǎnshǎo",
+    "arti_en": "Mengurangi",
+    "arti_id": "Mengurangi"
+  },
+  {
+    "hanzi": "百分比",
+    "pinyin": "(n.) bǎifēnbǐ",
+    "arti_en": "Persentase",
+    "arti_id": "Persentase"
+  },
+  {
+    "hanzi": "记录",
+    "pinyin": "(v.) jìlù",
+    "arti_en": "Mencatat",
+    "arti_id": "Mencatat"
+  },
+  {
+    "hanzi": "合计",
+    "pinyin": "(n.) héjì",
+    "arti_en": "Total",
+    "arti_id": "Total"
+  },
+  {
+    "hanzi": "开工",
+    "pinyin": "(v.) kāigōng",
+    "arti_en": "Mulai kerja",
+    "arti_id": "Mulai kerja"
+  },
+  {
+    "hanzi": "检修",
+    "pinyin": "(n.) jiǎnxiū",
+    "arti_en": "Pemeriksaan",
+    "arti_id": "Pemeriksaan"
+  },
+  {
+    "hanzi": "异常",
+    "pinyin": "(adj.) yìcháng",
+    "arti_en": "Tidak normal",
+    "arti_id": "Tidak normal"
+  },
+  {
+    "hanzi": "延误",
+    "pinyin": "(v.) yánwù",
+    "arti_en": "Tertunda",
+    "arti_id": "Tertunda"
+  },
+  {
+    "hanzi": "运行",
+    "pinyin": "(v.) yùnxíng",
+    "arti_en": "Beroperasi",
+    "arti_id": "Beroperasi"
+  },
+  {
+    "hanzi": "钴",
+    "pinyin": "(n.) gǔ",
+    "arti_en": "Kobalt",
+    "arti_id": "Kobalt"
+  },
+  {
+    "hanzi": "正常",
+    "pinyin": "(adj.) zhèngcháng",
+    "arti_en": "Normal",
+    "arti_id": "Normal"
+  },
+  {
+    "hanzi": "酸",
+    "pinyin": "(n.) suān",
+    "arti_en": "Asam",
+    "arti_id": "Asam"
+  },
+  {
+    "hanzi": "浸出",
+    "pinyin": "(n.) jìnchū",
+    "arti_en": "Pelindian",
+    "arti_id": "Pelindian"
+  },
+  {
+    "hanzi": "炉底",
+    "pinyin": "(n.) lúdǐ",
+    "arti_en": "dasar",
+    "arti_id": "dasar"
+  },
+  {
+    "hanzi": "炉顶",
+    "pinyin": "(n.) lúdǐng",
+    "arti_en": "bagian atas",
+    "arti_id": "bagian atas"
+  },
+  {
+    "hanzi": "炉衬",
+    "pinyin": "(n.) lúchèn",
+    "arti_en": "lining",
+    "arti_id": "lining"
+  },
+  {
+    "hanzi": "熔剂",
+    "pinyin": "(n.) róngjì",
+    "arti_en": "flux",
+    "arti_id": "flux"
+  },
+  {
+    "hanzi": "鼓风",
+    "pinyin": "(n.) gǔfēng",
+    "arti_en": "hembusan udara",
+    "arti_id": "hembusan udara"
+  },
+  {
+    "hanzi": "风口",
+    "pinyin": "(n.) fēngkǒu",
+    "arti_en": "tuyeres",
+    "arti_id": "tuyeres"
+  },
+  {
+    "hanzi": "熔点",
+    "pinyin": "(n.) róngdiǎn",
+    "arti_en": "titik lebur",
+    "arti_id": "titik lebur"
+  },
+  {
+    "hanzi": "热风",
+    "pinyin": "(n.) rèfēng",
+    "arti_en": "udara panas",
+    "arti_id": "udara panas"
+  },
+  {
+    "hanzi": "出kou wēndù",
+    "pinyin": "(n.) chūkǒu wēndù",
+    "arti_en": "suhu keluaran",
+    "arti_id": "suhu keluaran"
+  },
+  {
+    "hanzi": "项目团队",
+    "pinyin": "(n.) xiàngmù tuánduì",
+    "arti_en": "Tim Proyek",
+    "arti_id": "Tim Proyek"
+  },
+  {
+    "hanzi": "项目监控",
+    "pinyin": "(n.) xiàngmù jiānkòng",
+    "arti_en": "Monitoring Proyek",
+    "arti_id": "Monitoring Proyek"
+  },
+  {
+    "hanzi": "项目范围",
+    "pinyin": "(n.) xiàngmù fànwéi",
+    "arti_en": "Scope Proyek",
+    "arti_id": "Scope Proyek"
+  },
+  {
+    "hanzi": "利益相关者",
+    "pinyin": "(n.) lìyì xiāngguān zhě",
+    "arti_en": "Stakeholder",
+    "arti_id": "Stakeholder"
+  },
+  {
+    "hanzi": "项目资源",
+    "pinyin": "(n.) xiàngmù zīyuán",
+    "arti_en": "Sumber Daya Proyek",
+    "arti_id": "Sumber Daya Proyek"
+  },
+  {
+    "hanzi": "项目评审",
+    "pinyin": "(n.) xiàngmù píngshēn",
+    "arti_en": "Review Proyek",
+    "arti_id": "Review Proyek"
+  },
+  {
+    "hanzi": "项目里程碑",
+    "pinyin": "(n.) xiàngmù líchéngbēi",
+    "arti_en": "Milestone Proyek",
+    "arti_id": "Milestone Proyek"
+  },
+  {
+    "hanzi": "项目整合",
+    "pinyin": "(n.) xiàngmù zhěnghé",
+    "arti_en": "Integrasi Proyek",
+    "arti_id": "Integrasi Proyek"
+  },
+  {
+    "hanzi": "项目沟通",
+    "pinyin": "(n.) xiàngmù gōutōng",
+    "arti_en": "Komunikasi Proyek",
+    "arti_id": "Komunikasi Proyek"
+  },
+  {
+    "hanzi": "购买",
+    "pinyin": "(n.) gòumǎi",
+    "arti_en": "Pembelian",
+    "arti_id": "Pembelian"
+  },
+  {
+    "hanzi": "合同",
+    "pinyin": "(n.) hétóng",
+    "arti_en": "Kontrak",
+    "arti_id": "Kontrak"
+  },
+  {
+    "hanzi": "供应商",
+    "pinyin": "(n.) gōngyìng shāng",
+    "arti_en": "Vendor",
+    "arti_id": "Vendor"
+  },
+  {
+    "hanzi": "库存",
+    "pinyin": "(n.) kùcún",
+    "arti_en": "Persediaan",
+    "arti_id": "Persediaan"
+  },
+  {
+    "hanzi": "退货",
+    "pinyin": "(n.) tuìhuò",
+    "arti_en": "Retur",
+    "arti_id": "Retur"
+  },
+  {
+    "hanzi": "库存管理",
+    "pinyin": "(n.) kùcún guǎnlǐ",
+    "arti_en": "Manajemen Persediaan",
+    "arti_id": "Manajemen Persediaan"
+  },
+  {
+    "hanzi": "谈判",
+    "pinyin": "(n.) tánpàn",
+    "arti_en": "Negosiasi",
+    "arti_id": "Negosiasi"
+  },
+  {
+    "hanzi": "采购 dingdān",
+    "pinyin": "(n.) cǎigòu dìngdān",
+    "arti_en": "Order Pembelian",
+    "arti_id": "Order Pembelian"
+  },
+  {
+    "hanzi": "采购 jìhuà",
+    "pinyin": "(n.) cǎigòu jìhuà",
+    "arti_en": "Perencanaan Pembelian",
+    "arti_id": "Perencanaan Pembelian"
+  },
+  {
+    "hanzi": "库存 xiàolǜ",
+    "pinyin": "(n.) kùcún xiàolǜ",
+    "arti_en": "Efisiensi Persediaan",
+    "arti_id": "Efisiensi Persediaan"
+  },
+  {
+    "hanzi": "库存 shěnjì",
+    "pinyin": "(n.) kùcún shěnjì",
+    "arti_en": "Audit Persediaan",
+    "arti_id": "Audit Persediaan"
+  },
+  {
+    "hanzi": "接地故障",
+    "pinyin": "(n.) jiēdì gùzhàng",
+    "arti_en": "ground fault",
+    "arti_id": "ground fault"
+  },
+  {
+    "hanzi": "避雷器",
+    "pinyin": "(n.) bìléiqì",
+    "arti_en": "arrester",
+    "arti_id": "arrester"
+  },
+  {
+    "hanzi": "控制按钮",
+    "pinyin": "(n.) kòngzhì ànniǔ",
+    "arti_en": "tombol kontrol",
+    "arti_id": "tombol kontrol"
+  },
+  {
+    "hanzi": "电钻",
+    "pinyin": "(n.) diànzuān",
+    "arti_en": "bor listrik",
+    "arti_id": "bor listrik"
+  },
+  {
+    "hanzi": "控制中心",
+    "pinyin": "(n.) kòngzhì zhōngxīn",
+    "arti_en": "control center",
+    "arti_id": "control center"
+  },
+  {
+    "hanzi": "万用刀",
+    "pinyin": "(n.) wànyòng dāo",
+    "arti_en": "cutter",
+    "arti_id": "cutter"
+  },
+  {
+    "hanzi": "电工刀",
+    "pinyin": "(n.) diàngōng dāo",
+    "arti_en": "pisau listrik",
+    "arti_id": "pisau listrik"
+  },
+  {
+    "hanzi": "推土机",
+    "pinyin": "(n.) tuǐtǔjī",
+    "arti_en": "Bulldozer",
+    "arti_id": "Bulldozer"
+  },
+  {
+    "hanzi": "综合管理部",
+    "pinyin": "(n.) zōnghé guǎnlǐ bù",
+    "arti_en": "General Affairs",
+    "arti_id": "General Affairs"
+  },
+  {
+    "hanzi": "工程部",
+    "pinyin": "(n.) gōngchéng bù",
+    "arti_en": "Engineering",
+    "arti_id": "Engineering"
+  },
+  {
+    "hanzi": "故障",
+    "pinyin": "(n.) gùzhàng",
+    "arti_en": "Masalah",
+    "arti_id": "Masalah"
+  },
+  {
+    "hanzi": "安装",
+    "pinyin": "(v.) ānzhuāng",
+    "arti_en": "Pasang",
+    "arti_id": "Pasang"
+  },
+  {
+    "hanzi": "气压",
+    "pinyin": "(n.) qìyā",
+    "arti_en": "Tekanan udara",
+    "arti_id": "Tekanan udara"
+  },
+  {
+    "hanzi": "充气",
+    "pinyin": "(v.) chōngqì",
+    "arti_en": "Isi angin",
+    "arti_id": "Isi angin"
+  },
+  {
+    "hanzi": "紧固",
+    "pinyin": "(v.) jǐngù",
+    "arti_en": "Ketatkan",
+    "arti_id": "Ketatkan"
+  },
+  {
+    "hanzi": "风机diànji",
+    "pinyin": "(n.) fēngjī diànjī",
+    "arti_en": "Fan Motor",
+    "arti_id": "Fan Motor"
+  },
+  {
+    "hanzi": "温度",
+    "pinyin": "(n.) wēndù",
+    "arti_en": "Suhu",
+    "arti_id": "Suhu"
+  },
+  {
+    "hanzi": "热风风mén",
+    "pinyin": "(n.) rè fēng fēng mén",
+    "arti_en": "Pintu Angin Panas",
+    "arti_id": "Pintu Angin Panas"
+  },
+  {
+    "hanzi": "冷风风门",
+    "pinyin": "(n.) lěng fēng fēng mén",
+    "arti_en": "Pintu Angin Dingin",
+    "arti_id": "Pintu Angin Dingin"
+  },
+  {
+    "hanzi": "分隔轮",
+    "pinyin": "(n.) fēn gé lún",
+    "arti_en": "Roda Sub-Grid",
+    "arti_id": "Roda Sub-Grid"
+  },
+  {
+    "hanzi": "总电度",
+    "pinyin": "(n.) zǒng diàndù",
+    "arti_en": "Total Pemakaian Listrik",
+    "arti_id": "Total Pemakaian Listrik"
+  },
+  {
+    "hanzi": "压力环压力",
+    "pinyin": "(n.) yālì huán yālì",
+    "arti_en": "Tekanan Pressure Ring",
+    "arti_id": "Tekanan Pressure Ring"
+  },
+  {
+    "hanzi": "风机",
+    "pinyin": "(n.) fēngjī",
+    "arti_en": "Blower Fan",
+    "arti_id": "Blower Fan"
+  },
+  {
+    "hanzi": "启动",
+    "pinyin": "(v.) qǐdòng",
+    "arti_en": "Start",
+    "arti_id": "Start"
+  },
+  {
+    "hanzi": "炉盖差压",
+    "pinyin": "(n.) lú gài chāyā",
+    "arti_en": "Tekanan Roof",
+    "arti_id": "Tekanan Roof"
+  },
+  {
+    "hanzi": "跳闸",
+    "pinyin": "(v.) tiàozhá",
+    "arti_en": "Trip",
+    "arti_id": "Trip"
+  },
+  {
+    "hanzi": "温度",
+    "pinyin": "(n.) wēndù",
+    "arti_en": "Suhu",
+    "arti_id": "Suhu"
+  },
+  {
+    "hanzi": "未达标",
+    "pinyin": "(v.) wèi dábiāo",
+    "arti_en": "Tidak memenuhi standar",
+    "arti_id": "Tidak memenuhi standar"
+  },
+  {
+    "hanzi": "流量",
+    "pinyin": "(n.) liúliàng",
+    "arti_en": "Laju aliran",
+    "arti_id": "Laju aliran"
+  },
+  {
+    "hanzi": "回收率",
+    "pinyin": "(n.) huíshōulǜ",
+    "arti_en": "Tingkat perolehan",
+    "arti_id": "Tingkat perolehan"
+  },
+  {
+    "hanzi": "压力",
+    "pinyin": "(n.) yālì",
+    "arti_en": "Tekanan",
+    "arti_id": "Tekanan"
+  },
+  {
+    "hanzi": "管理",
+    "pinyin": "(n.) guǎnlǐ",
+    "arti_en": "Manajemen",
+    "arti_id": "Manajemen"
+  },
+  {
+    "hanzi": "扫描",
+    "pinyin": "(v.) sǎomiáo",
+    "arti_en": "Pindai",
+    "arti_id": "Pindai"
+  },
+  {
+    "hanzi": "系统",
+    "pinyin": "(n.) xìtǒng",
+    "arti_en": "Sistem",
+    "arti_id": "Sistem"
+  },
+  {
+    "hanzi": "行政",
+    "pinyin": "(n.) xīngzhèng",
+    "arti_en": "Administrasi",
+    "arti_id": "Administrasi"
+  },
+  {
+    "hanzi": "保存",
+    "pinyin": "(v.) bǎocún",
+    "arti_en": "Simpan",
+    "arti_id": "Simpan"
+  },
+  {
+    "hanzi": "修改",
+    "pinyin": "(v.) xiūgǎi",
+    "arti_en": "Ubah",
+    "arti_id": "Ubah"
+  },
+  {
+    "hanzi": "请稍等",
+    "pinyin": "(phr.) qǐng shǎo děng",
+    "arti_en": "Mohon tunggu",
+    "arti_id": "Mohon tunggu"
+  },
+  {
+    "hanzi": "按时",
+    "pinyin": "(adv.) ànshí",
+    "arti_en": "Tepat waktu",
+    "arti_id": "Tepat waktu"
+  },
+  {
+    "hanzi": "结果",
+    "pinyin": "(n.) jiéguǒ",
+    "arti_en": "Hasil",
+    "arti_id": "Hasil"
+  },
+  {
+    "hanzi": "费用",
+    "pinyin": "(n.) fèiyòng",
+    "arti_en": "Biaya",
+    "arti_id": "Biaya"
+  },
+  {
+    "hanzi": "计划",
+    "pinyin": "(n.) jìhuà",
+    "arti_en": "Rencana",
+    "arti_id": "Rencana"
+  },
+  {
+    "hanzi": "未完成",
+    "pinyin": "(adj.) wèi wánchéng",
+    "arti_en": "Belum selesai",
+    "arti_id": "Belum selesai"
+  },
+  {
+    "hanzi": "金额",
+    "pinyin": "(n.) jīn'é",
+    "arti_en": "Jumlah uang",
+    "arti_id": "Jumlah uang"
+  },
+  {
+    "hanzi": "规定",
+    "pinyin": "(n.) guīdìng",
+    "arti_en": "Peraturan",
+    "arti_id": "Peraturan"
+  },
+  {
+    "hanzi": "报销",
+    "pinyin": "(v.) bàoxiāo",
+    "arti_en": "Reimburse",
+    "arti_id": "Reimburse"
+  },
+  {
+    "hanzi": "防护",
+    "pinyin": "(n.) fánghù",
+    "arti_en": "Perlindungan",
+    "arti_id": "Perlindungan"
+  },
+  {
+    "hanzi": "违反",
+    "pinyin": "(v.) wéifǎn",
+    "arti_en": "Melanggar",
+    "arti_id": "Melanggar"
+  },
+  {
+    "hanzi": "零",
+    "pinyin": "(num.) líng",
+    "arti_en": "Nol",
+    "arti_id": "Nol"
+  },
+  {
+    "hanzi": "百",
+    "pinyin": "(num.) bǎi",
+    "arti_en": "Seratus",
+    "arti_id": "Seratus"
+  },
+  {
+    "hanzi": "立磨",
+    "pinyin": "(n.) lìmó",
+    "arti_en": "Grinding",
+    "arti_id": "Grinding"
+  },
+  {
+    "hanzi": "岸上连接",
+    "pinyin": "(n.) ànshàng liánjiē",
+    "arti_en": "Koneksi darat",
+    "arti_id": "Koneksi darat"
+  },
+  {
+    "hanzi": "靠泊流程",
+    "pinyin": "(n.) kàobó liúchéng",
+    "arti_en": "Proses berlabuh",
+    "arti_id": "Proses berlabuh"
+  },
+  {
+    "hanzi": "吨位率",
+    "pinyin": "(n.) dùnwèi lú",
+    "arti_en": "Rasio tonase",
+    "arti_id": "Rasio tonase"
+  },
+  {
+    "hanzi": "天候预报",
+    "pinyin": "(n.) tiānhòu yùbào",
+    "arti_en": "Prakiraan cuaca",
+    "arti_id": "Prakiraan cuaca"
+  },
+  {
+    "hanzi": "海况",
+    "pinyin": "(n.) hǎikuàng",
+    "arti_en": "Kondisi laut",
+    "arti_id": "Kondisi laut"
+  },
+  {
+    "hanzi": "风速限制",
+    "pinyin": "(n.) fēngsù xiànzhì",
+    "arti_en": "Batas kecepatan angin",
+    "arti_id": "Batas kecepatan angin"
+  },
+  {
+    "hanzi": "作废",
+    "pinyin": "(v.) zuòfèi",
+    "arti_en": "Dibatalkan",
+    "arti_id": "Dibatalkan"
+  },
+  {
+    "hanzi": "显示器",
+    "pinyin": "(n.) xiǎnshìqì",
+    "arti_en": "Monitor",
+    "arti_id": "Monitor"
+  },
+  {
+    "hanzi": "鼠标",
+    "pinyin": "(n.) shǔbiāo",
+    "arti_en": "Mouse",
+    "arti_id": "Mouse"
+  },
+  {
+    "hanzi": "投影仪",
+    "pinyin": "(n.) tóuyǐngyí",
+    "arti_en": "Proyektor",
+    "arti_id": "Proyektor"
+  },
+  {
+    "hanzi": "袖口",
+    "pinyin": "(n.) xiùkòu",
+    "arti_en": "Manset",
+    "arti_id": "Manset"
+  },
+  {
+    "hanzi": "雨鞋",
+    "pinyin": "(n.) yǔxié",
+    "arti_en": "Sepatu boat",
+    "arti_id": "Sepatu boat"
+  },
+  {
+    "hanzi": "雨衣",
+    "pinyin": "(n.) yǔyī",
+    "arti_en": "Baju hujan",
+    "arti_id": "Baju hujan"
+  },
+  {
+    "hanzi": "防护眼镜",
+    "pinyin": "(n.) fánghù yǎnjīng",
+    "arti_en": "Kacamata pelindung",
+    "arti_id": "Kacamata pelindung"
+  },
+  {
+    "hanzi": "电场",
+    "pinyin": "(n.) diànchǎng",
+    "arti_en": "Medan listrik",
+    "arti_id": "Medan listrik"
+  },
+  {
+    "hanzi": "测量",
+    "pinyin": "(v.) cèliáng",
+    "arti_en": "Ukur",
+    "arti_id": "Ukur"
+  },
+  {
+    "hanzi": "掏灰",
+    "pinyin": "(v.) tāo huī",
+    "arti_en": "Korek Debu",
+    "arti_id": "Korek Debu"
+  },
+  {
+    "hanzi": "高温",
+    "pinyin": "(n.) gāo wēn",
+    "arti_en": "Suhu Tinggi",
+    "arti_id": "Suhu Tinggi"
+  },
+  {
+    "hanzi": "测温",
+    "pinyin": "(v.) cè wēn",
+    "arti_en": "Ukur Suhu",
+    "arti_id": "Ukur Suhu"
+  },
+  {
+    "hanzi": "敲打",
+    "pinyin": "(v.) qiáo dǎ",
+    "arti_en": "Dipukul",
+    "arti_id": "Dipukul"
+  },
+  {
+    "hanzi": "低温",
+    "pinyin": "(n.) dī wēn",
+    "arti_en": "Suhu Rendah",
+    "arti_id": "Suhu Rendah"
+  },
+  {
+    "hanzi": "操作规范",
+    "pinyin": "(n.) cāozuò guīfàn",
+    "arti_en": "Prosedur kerja",
+    "arti_id": "Prosedur kerja"
+  },
+  {
+    "hanzi": "滑道",
+    "pinyin": "(n.) huádào",
+    "arti_en": "Jalur miring",
+    "arti_id": "Jalur miring"
+  }
+]

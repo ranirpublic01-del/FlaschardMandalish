@@ -1,0 +1,140 @@
+[
+  {
+    "hanzi": "废气",
+    "pinyin": "(n.) fèi qì",
+    "arti_en": "Waste Gas",
+    "arti_id": "Limbah Gas"
+  },
+  {
+    "hanzi": "固体废物",
+    "pinyin": "(n.) gùtǐ fèiwù",
+    "arti_en": "Solid Waste",
+    "arti_id": "Limbah Padat"
+  },
+  {
+    "hanzi": "废水",
+    "pinyin": "(n.) fèishuǐ",
+    "arti_en": "Liquid Waste",
+    "arti_id": "Limbah Cair"
+  },
+  {
+    "hanzi": "环境",
+    "pinyin": "(n.) huánjìng",
+    "arti_en": "Environment",
+    "arti_id": "Lingkungan"
+  },
+  {
+    "hanzi": "污染",
+    "pinyin": "(n.) wūrǎn",
+    "arti_en": "Pollution",
+    "arti_id": "Pencemaran"
+  },
+  {
+    "hanzi": "环境认证",
+    "pinyin": "(n.) huánjìng rènzhèng",
+    "arti_en": "Environmental Certification",
+    "arti_id": "Sertifikasi Lingkungan"
+  },
+  {
+    "hanzi": "碳排放",
+    "pinyin": "(n.) tàn páifàng",
+    "arti_en": "Carbon Emission",
+    "arti_id": "Emisi Karbon"
+  },
+  {
+    "hanzi": "环境保护",
+    "pinyin": "(n.) huánjìng bǎohù",
+    "arti_en": "Environmental Protection",
+    "arti_id": "Lingkungan Hidup"
+  },
+  {
+    "hanzi": "环保",
+    "pinyin": "(n.) huánbǎo",
+    "arti_en": "Environmental Protection",
+    "arti_id": "perlindungan lingkungan"
+  },
+  {
+    "hanzi": "废水处理",
+    "pinyin": "(n.) fèishuǐ chǔlǐ",
+    "arti_en": "Wastewater Treatment",
+    "arti_id": "pengolahan limbah cair"
+  },
+  {
+    "hanzi": "废气处理",
+    "pinyin": "(n.) fèiqì chǔlǐ",
+    "arti_en": "Waste Gas Treatment",
+    "arti_id": "pengolahan gas buang"
+  },
+  {
+    "hanzi": "余热",
+    "pinyin": "(n.) yúrè",
+    "arti_en": "Waste Heat",
+    "arti_id": "panas sisa"
+  },
+  {
+    "hanzi": "环境",
+    "pinyin": "(n.) huánjìng",
+    "arti_en": "Environment",
+    "arti_id": "Lingkungan"
+  },
+  {
+    "hanzi": "污染",
+    "pinyin": "(n.) wūrǎn",
+    "arti_en": "Pollution",
+    "arti_id": "Pencemaran"
+  },
+  {
+    "hanzi": "废水",
+    "pinyin": "(n.) fèishuǐ",
+    "arti_en": "limbah cair",
+    "arti_id": "limbah cair"
+  },
+  {
+    "hanzi": "废渣",
+    "pinyin": "(n.) fèizhā",
+    "arti_en": "limbah terak",
+    "arti_id": "limbah terak"
+  },
+  {
+    "hanzi": "环保设施",
+    "pinyin": "(n.) huánbǎo shèshī",
+    "arti_en": "fasilitas lingkungan",
+    "arti_id": "fasilitas lingkungan"
+  },
+  {
+    "hanzi": "回收",
+    "pinyin": "(n.) huíshōu",
+    "arti_en": "Daur Ulang",
+    "arti_id": "Daur Ulang"
+  },
+  {
+    "hanzi": "废物管理",
+    "pinyin": "(n.) fèiwù guǎnlǐ",
+    "arti_en": "Pengelolaan Limbah",
+    "arti_id": "Pengelolaan Limbah"
+  },
+  {
+    "hanzi": "减少废物",
+    "pinyin": "(n.) jiǎnshǎo fèiwù",
+    "arti_en": "Pengurangan Limbah",
+    "arti_id": "Pengurangan Limbah"
+  },
+  {
+    "hanzi": "危险废物",
+    "pinyin": "(n.) wēixiǎn fèiwù",
+    "arti_en": "Limbah B3",
+    "arti_id": "Limbah B3"
+  },
+  {
+    "hanzi": "废物处理",
+    "pinyin": "(n.) fèiwù chǔlǐ",
+    "arti_en": "Pengolahan Limbah",
+    "arti_id": "Pengolahan Limbah"
+  },
+  {
+    "hanzi": "环境保护",
+    "pinyin": "(n.) huánjìng bǎohù",
+    "arti_en": "Perlindungan lingkungan",
+    "arti_id": "Perlindungan lingkungan"
+  }
+]
