@@ -25,6 +25,7 @@
   {
     "category": "Translator",
     "decks": [
+      "tr_semua.json",
       "tr_jabatan_dan_sdm.json",
       "tr_kelistrikan.json",
       "tr_kendaraan_dan_alat_berat.json",
