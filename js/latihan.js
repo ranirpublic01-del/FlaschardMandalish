@@ -66,7 +66,7 @@ function latPlayAudioOnce(qNum, text){
   const utter = new SpeechSynthesisUtterance(text);
   utter.lang = "zh-CN";
   if (latTtsVoice) utter.voice = latTtsVoice;
-  utter.rate = 0.50;
+  utter.rate = 1.00;
 
   const sisa = LAT_MAX_PLAYS - latAudioPlayCounts[qNum];
   utter.onend = () => {
