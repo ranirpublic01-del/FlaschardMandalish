@@ -60,6 +60,7 @@ kbd{border:1.5px solid var(--zm);border-radius:6px;padding:1px 7px;font-size:12p
       <select id="deck" aria-label="Pilih deck flashcard"><option>Memuat deck…</option></select>
       <p id="deckInfo"></p>
       <button class="zg-btn" id="start" disabled>Mulai 🚀</button>
+      <button class="zg-btn ghost" id="retry" hidden>Coba muat lagi</button>
     </div>
 
     <div id="zg-over" class="zg-panel hide">
@@ -113,62 +114,95 @@ function friendlyName(file){                            // sama dengan label di 
   const s=base.replace(/^(tr|ml|min|mining)[\s_-]*/i,'').replace(/[_-]+/g,' ').toUpperCase();
   return s||'Umum';
 }
-async function fetchJSON(u){
-  const r=await fetch(u,{cache:'no-store'});if(!r.ok)throw new Error('HTTP '+r.status+' '+u);
-  return JSON.parse((await r.text()).replace(/^\uFEFF/,''));
-}
 const dedupe=cards=>{const seen=new Set();return cards.filter(c=>{const k=c.z+'|'+c.t;if(seen.has(k))return false;seen.add(k);return true})};
+const note=(msg,warn)=>{const n=$('#deckInfo');n.textContent=msg;n.className=warn?'zg-warn':''};
 
-let groups=[];   // [{category, decks:[{name,cards}]}]
-async function loadDecks(){
-  const idx=await fetchJSON('data/index.json');
-  if(!Array.isArray(idx)||!idx.length)throw new Error('index.json kosong');
-  const out=[];
-  for(const g of idx){
-    const decks=(await Promise.all((g.decks||[]).map(async f=>{
-      try{
-        const j=await fetchJSON('data/'+encodeURIComponent(f.replace(/\.json$/i,''))+'.json');
-        const cards=dedupe((Array.isArray(j)?j:[]).map(toCard).filter(Boolean));
-        return cards.length?{name:friendlyName(f),cards}:null;
-      }catch(e){console.warn(e);return null}
-    }))).filter(Boolean);
-    if(decks.length)out.push({category:g.category||'Lainnya',decks});
+// Coba beberapa lokasi folder data supaya tetap jalan di berbagai pengaturan hosting.
+async function fetchJSON(file){
+  let last;
+  for(const base of['data/','./data/','/data/']){
+    const url=base+file;
+    try{
+      const r=await fetch(url,{cache:'no-store'});
+      if(!r.ok)throw new Error('HTTP '+r.status+' ('+url+')');
+      return JSON.parse((await r.text()).replace(/^\uFEFF/,''));
+    }catch(e){last=e}
   }
-  if(!out.length)throw new Error('tidak ada deck yang terbaca');
+  throw last;
+}
+
+let groups=[];   // [{category, decks:[{file,name,cards,err,p}]}]  — isi deck dimuat sesuai kebutuhan
+function normManifest(m){
+  if(m&&!Array.isArray(m)&&Array.isArray(m.categories))m=m.categories;
+  if(Array.isArray(m)&&m.length&&typeof m[0]==='string')m=[{category:'Deck',decks:m}];
+  if(!Array.isArray(m))throw new Error('format index.json tidak dikenali');
+  const out=m.map(g=>({category:g.category||'Lainnya',
+    decks:(g.decks||[]).map(d=>typeof d==='string'?d:(d.file||d.name)).filter(Boolean)
+      .map(f=>({file:f,name:friendlyName(f),cards:null,err:null,p:null}))})).filter(g=>g.decks.length);
+  if(!out.length)throw new Error('index.json kosong');
   return out;
 }
-
-// Pilihan di dropdown: satu deck, seluruh kategori, atau semua deck.
+function ensure(d){                                   // muat satu deck (di-cache; kalau gagal bisa dicoba lagi)
+  if(d.cards)return Promise.resolve(d);
+  if(!d.p)d.p=fetchJSON(d.file.replace(/\.json$/i,'')+'.json').then(j=>{
+    const cards=dedupe((Array.isArray(j)?j:[]).map(toCard).filter(Boolean));
+    if(!cards.length)throw new Error('tidak ada kartu yang bisa dimainkan di '+d.file);
+    d.cards=cards;d.err=null;return d;
+  }).catch(e=>{d.err=e.message||String(e);d.p=null;throw e});
+  return d.p;
+}
+function optLabel(v){
+  const cnt=ds=>ds.every(d=>d.cards)?' ('+dedupe(ds.flatMap(d=>d.cards)).length+' kata)':'';
+  if(v==='all'){const ds=groups.flatMap(g=>g.decks);return'Semua deck'+cnt(ds)}
+  const[k,a,b]=v.split(':'),g=groups[+a];
+  if(k==='c')return'Semua '+g.category+cnt(g.decks);
+  const d=g.decks[+b];return d.name+(d.cards?' ('+d.cards.length+' kata)':d.err?' ⚠':'');
+}
+const refreshLabels=()=>[...$('#deck').options].forEach(o=>{o.textContent=optLabel(o.value)});
 function buildSelect(){
-  const sel=$('#deck');let h='';
-  const total=dedupe(groups.flatMap(g=>g.decks.flatMap(d=>d.cards))).length;
-  if(groups.length>1)h+=`<option value="all">Semua deck (${total} kata)</option>`;
+  const sel=$('#deck');sel.innerHTML='';
+  const add=(parent,v)=>{const o=document.createElement('option');o.value=v;o.textContent=optLabel(v);parent.appendChild(o)};
+  if(groups.length>1)add(sel,'all');
   groups.forEach((g,gi)=>{
-    h+=`<optgroup label="${g.category}">`;
-    if(g.decks.length>1)h+=`<option value="c:${gi}">Semua ${g.category} (${dedupe(g.decks.flatMap(d=>d.cards)).length} kata)</option>`;
-    g.decks.forEach((d,di)=>{h+=`<option value="d:${gi}:${di}">${d.name} (${d.cards.length} kata)</option>`});
-    h+='</optgroup>';
+    const og=document.createElement('optgroup');og.label=g.category;sel.appendChild(og);
+    if(g.decks.length>1)add(og,'c:'+gi);
+    g.decks.forEach((d,di)=>add(og,'d:'+gi+':'+di));
   });
-  sel.innerHTML=h;
   const first=sel.querySelector('option[value^="d:"]');if(first)sel.value=first.value;
 }
-function pool(){
-  const v=$('#deck').value;
-  if(v==='all')return{name:'Semua deck',cards:dedupe(groups.flatMap(g=>g.decks.flatMap(d=>d.cards)))};
-  const[k,a,b]=v.split(':'),g=groups[+a];
-  if(k==='c')return{name:'Semua '+g.category,cards:dedupe(g.decks.flatMap(d=>d.cards))};
-  return{name:g.decks[+b].name,cards:g.decks[+b].cards};
+async function pool(){                                // kumpulkan kartu dari pilihan dropdown
+  const v=$('#deck').value;let ds,name;
+  if(v==='all'){ds=groups.flatMap(g=>g.decks);name='Semua deck'}
+  else{const[k,a,b]=v.split(':'),g=groups[+a];ds=k==='c'?g.decks:[g.decks[+b]];name=k==='c'?'Semua '+g.category:g.decks[+b].name}
+  await Promise.allSettled(ds.map(ensure));
+  const okd=ds.filter(d=>d.cards);
+  if(!okd.length)throw new Error(ds[0].file+' — '+(ds[0].err||'gagal dimuat'));
+  return{name,cards:dedupe(okd.flatMap(d=>d.cards)),failed:ds.length-okd.length};
 }
 
 const SAMPLE=[['你好','nǐ hǎo','halo'],['谢谢','xièxie','terima kasih'],['再见','zàijiàn','sampai jumpa'],['朋友','péngyou','teman'],['老师','lǎoshī','guru'],['学生','xuésheng','murid'],['中国','Zhōngguó','Tiongkok'],['水','shuǐ','air'],['茶','chá','teh'],['书','shū','buku'],['钱','qián','uang'],['吃','chī','makan'],['喝','hē','minum'],['看','kàn','melihat'],['爱','ài','cinta']]
   .map(([z,p,a])=>({z,p,a,t:typed(p)}));
 
-loadDecks().then(g=>{groups=g;buildSelect();$('#start').disabled=false})
-.catch(err=>{
-  console.warn(err);
-  groups=[{category:'Contoh',decks:[{name:'Kata contoh',cards:SAMPLE}]}];buildSelect();$('#start').disabled=false;
-  $('#deckInfo').innerHTML='<span class="zg-warn">data/index.json tidak terbaca</span> — memakai kata contoh. Buka lewat hosting atau server lokal (fetch tidak jalan kalau file dibuka langsung).';
-});
+async function init(){
+  $('#retry').hidden=true;$('#start').disabled=true;note('Memuat daftar deck…');
+  try{
+    groups=normManifest(await fetchJSON('index.json'));
+    buildSelect();$('#start').disabled=false;note('');
+    // muat semua deck di latar belakang supaya jumlah kata muncul; kegagalan satu deck tidak menghentikan yang lain
+    const all=groups.flatMap(g=>g.decks);
+    Promise.allSettled(all.map(d=>ensure(d).finally(refreshLabels))).then(()=>{
+      const bad=all.filter(d=>d.err);
+      if(bad.length)note(bad.length+' dari '+all.length+' deck gagal dimuat (contoh: '+bad[0].file+' — '+bad[0].err+'). Deck lain tetap bisa dimainkan.',true);
+    });
+  }catch(err){
+    console.warn(err);
+    groups=[{category:'Contoh',decks:[{file:'contoh',name:'Kata contoh',cards:SAMPLE,err:null,p:null}]}];
+    buildSelect();$('#start').disabled=false;$('#retry').hidden=false;
+    note('Gagal memuat data/index.json: '+(err.message||err)+(location.protocol==='file:'?' — halaman dibuka langsung dari file; jalankan lewat hosting/server lokal.':'')+' Sementara memakai kata contoh.',true);
+  }
+}
+$('#retry').onclick=init;
+init();
 
 /* ================= SUARA (WebAudio, tanpa file) ================= */
 let AC,mute=false;
@@ -206,13 +240,25 @@ const R=(a,b)=>a+Math.random()*(b-a);
 const cut=s=>s.length>30?s.slice(0,29)+'…':s;
 
 const preloadFont=cards=>document.fonts&&document.fonts.load('700 56px "Noto Sans SC"',[...new Set(cards.map(c=>c.z).join(''))].join('')).catch(()=>{});
-function start(){
-  kb.value='';kb.focus({preventScroll:true});             // fokus harus dalam sentuhan pengguna agar keyboard HP terbuka
-  const p=pool();preloadFont(p.cards);words=p.cards;deckName=p.name;
+function begin(p){
+  preloadFont(p.cards);words=p.cards;deckName=p.name;
   es=[];bs=[];ps=[];pops=[];tg=null;lives=3;score=0;level=1;kills=0;combo=0;best=0;ok=0;bad=0;time=0;spT=.5;
   st='play';paused=false;$('#zg-pause').textContent='‖';
   $('#zg-menu').classList.add('hide');$('#zg-over').classList.add('hide');
   music(true);
+}
+let starting=false;
+async function start(){
+  if(starting)return;starting=true;
+  kb.value='';kb.focus({preventScroll:true});             // fokus harus dalam sentuhan pengguna agar keyboard HP terbuka
+  const btn=$('#start');btn.disabled=true;btn.textContent='Memuat deck…';
+  try{
+    const p=await pool();begin(p);
+    if(p.failed)note(p.failed+' deck dalam pilihan ini gagal dimuat dan dilewati.',true);
+  }catch(e){
+    console.warn(e);kb.blur();toMenu();
+    note('Gagal memuat deck: '+(e.message||e)+'. Coba pilih deck lain atau tekan Mulai lagi.',true);
+  }finally{starting=false;btn.disabled=false;btn.textContent='Mulai 🚀'}
 }
 function toMenu(){
   kb.blur();st='menu';paused=false;music(false);
@@ -349,166 +395,6 @@ function draw(){
     ctx.globalAlpha=Math.min(1,q.l*1.2);ctx.textAlign='center';ctx.textBaseline='alphabetic';
     ctx.fillStyle=C.fg;ctx.font=`700 ${Math.max(14,18*K)}px Manrope,sans-serif`;ctx.fillText(q.p,q.x,y);
     if(q.a){ctx.fillStyle=C.cy;ctx.font=`600 ${Math.max(11,14*K)}px Manrope,sans-serif`;ctx.fillText(q.a,q.x,y+Math.max(15,20*K))}
-  }
-  ctx.globalAlpha=1;
-  drawShi============= */
-let AC,mute=false;
-function snd(f0,f1,d,v=.15,type='sine',nz=0){
-  if(mute)return;AC=AC||new(window.AudioContext||window.webkitAudioContext)();
-  const t=AC.currentTime,g=AC.createGain();
-  g.gain.setValueAtTime(v,t);g.gain.exponentialRampToValueAtTime(.001,t+d);g.connect(AC.destination);
-  if(nz){
-    const n=AC.sampleRate*d|0,b=AC.createBuffer(1,n,AC.sampleRate),a=b.getChannelData(0);
-    for(let i=0;i<n;i++)a[i]=Math.random()*2-1;
-    const s=AC.createBufferSource(),f=AC.createBiquadFilter();
-    s.buffer=b;f.type='lowpass';f.frequency.setValueAtTime(f0,t);f.frequency.exponentialRampToValueAtTime(Math.max(40,f1),t+d);
-    s.connect(f);f.connect(g);s.start(t);
-  }else{
-    const o=AC.createOscillator();o.type=type;o.frequency.setValueAtTime(f0,t);o.frequency.exponentialRampToValueAtTime(f1,t+d);
-    o.connect(g);o.start(t);o.stop(t+d);
-  }
-}
-const seq=(fs,gap,fn)=>fs.forEach((f,i)=>setTimeout(()=>fn(f),i*gap));
-const S={
-  shoot:()=>snd(900,300,.09,.1,'triangle'),hit:()=>snd(300,120,.08,.15),
-  boom:()=>snd(1500,60,.5,.5,'sine',1),err:()=>snd(160,100,.18,.1,'sawtooth'),
-  life:()=>snd(400,50,.6,.2,'sawtooth'),
-  up:()=>seq([523,659,784,1047],90,f=>snd(f,f,.1,.1,'square')),
-  over:()=>seq([392,330,262,196],200,f=>snd(f,f*.95,.22,.12,'sawtooth'))
-};
-const PENTA=[261.6,293.7,329.6,392,440,523.3];let musicT;
-const music=on=>{clearInterval(musicT);if(on)musicT=setInterval(()=>{if(st==='play'&&!paused)snd(PENTA[Math.random()*6|0],PENTA[Math.random()*6|0],1.6,.04)},1400)};
-$('#zg-sound').onclick=()=>{mute=!mute;$('#zg-sound').textContent=mute?'🔇':'🔊'};
-
-/* ================= STATE GAME ================= */
-let st='menu',paused=false,words=[],es=[],bs=[],ps=[],pops=[],tg=null,
-    lives,score,level,kills,combo,best,ok,bad,time,spT,deckName='',T=0;
-const R=(a,b)=>a+Math.random()*(b-a);
-const cut=s=>s.length>30?s.slice(0,29)+'…':s;
-
-const preloadFont=cards=>document.fonts&&document.fonts.load('700 56px "Noto Sans SC"',[...new Set(cards.map(c=>c.z).join(''))].join('')).catch(()=>{});
-function start(){
-  kb.value='';kb.focus({preventScroll:true});             // fokus harus dalam sentuhan pengguna agar keyboard HP terbuka
-  const p=pool();preloadFont(p.cards);words=p.cards;deckName=p.name;
-  es=[];bs=[];ps=[];pops=[];tg=null;lives=3;score=0;level=1;kills=0;combo=0;best=0;ok=0;bad=0;time=0;spT=.5;
-  st='play';paused=false;$('#zg-pause').textContent='‖';
-  $('#zg-menu').classList.add('hide');$('#zg-over').classList.add('hide');
-  music(true);
-}
-function toMenu(){
-  kb.blur();st='menu';paused=false;music(false);
-  $('#zg-over').classList.add('hide');$('#zg-menu').classList.remove('hide');
-}
-function spawn(){
-  const used=new Set(es.filter(e=>!e.dead).map(e=>e.t[0])),c=words.filter(w=>!used.has(w.t[0]));
-  if(!c.length)return;
-  const w=c[Math.random()*c.length|0],n=[...w.z].length,fs=Math.max(26,Math.min(56,W*.42/n));
-  ctx.font=`700 ${fs}px ${HZ}`;const hw=Math.max(ctx.measureText(w.z).width+36,84);
-  ctx.font='800 22px Manrope,sans-serif';const ew=Math.max(hw,ctx.measureText(w.t).width+20);   // lebar termasuk huruf pinyin di bawahnya
-  es.push({...w,fs,bw:hw,ew,bh:80,x:R(ew/2+20,Math.max(ew/2+21,W-ew/2-20)),y:-90,
-    sp:(26+level*5+R(0,12))*H/660,n:0,fin:false,dead:false,fl:0,ph:R(0,6.28)});
-}
-function key(ch){
-  if(!tg){
-    const c=es.filter(e=>!e.dead&&!e.fin&&e.t[0]===ch);
-    if(!c.length)return miss();
-    tg=c.reduce((a,b)=>b.y>a.y?b:a);
-  }
-  if(tg.t[tg.n]===ch){
-    tg.n++;ok++;combo++;best=Math.max(best,combo);score+=10*(1+(combo/10|0));
-    const last=tg.n===tg.t.length,p=tip();
-    bs.push({x:p[0],y:p[1],e:tg,last});S.shoot();
-    if(last){tg.fin=true;tg=null}
-  }else miss();
-}
-function miss(){bad++;combo=0;S.err()}
-function splat(x,y,n=22,col='#ffa028'){for(let i=0;i<n;i++){const a=R(0,6.28),v=R(40,260);ps.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:R(.35,.9),r:R(2,7),c:col})}}
-const shipXY=()=>[W/2,H-70];
-const ang=()=>{const[x,y]=shipXY();return tg&&!tg.dead?Math.atan2(tg.x-x,y-(tg.y+40)):0};
-const tip=()=>{const[x,y]=shipXY(),a=ang();return[x+Math.sin(a)*24,y-Math.cos(a)*24]};
-
-/* ================= UPDATE ================= */
-function update(dt){
-  for(const t of stars){t.y+=t.v*dt/H;if(t.y>1){t.y=0;t.x=Math.random()}}
-  if(st!=='play'||paused)return;
-  T+=dt;time+=dt;spT-=dt;
-  if(spT<=0){spawn();spT=Math.max(.8,2.8-level*.18)+R(0,.7)}
-  for(const e of es){
-    e.y+=e.sp*dt;e.fl=Math.max(0,e.fl-dt);
-    e.x+=Math.sin(T*1.4+e.ph)*14*dt;e.x=Math.max(e.ew/2+4,Math.min(W-e.ew/2-4,e.x));
-    if(!e.dead&&e.y+e.bh+22>H-100){
-      e.dead=true;if(tg===e)tg=null;lives--;combo=0;splat(e.x,e.y+40,40,'#ff3c3c');S.life();
-    }
-  }
-  for(let i=bs.length-1;i>=0;i--){
-    const b=bs[i];if(b.e.dead&&!b.last){bs.splice(i,1);continue}
-    const dx=b.e.x-b.x,dy=b.e.y+40-b.y,d=Math.hypot(dx,dy),s=1000*dt;
-    if(d<=s){
-      bs.splice(i,1);b.e.fl=.12;splat(b.e.x,b.e.y+40,6,'#ffdc78');S.hit();
-      if(b.last&&!b.e.dead){
-        b.e.dead=true;splat(b.e.x,b.e.y+40,34);S.boom();score+=50*b.e.t.length;
-        // setelah hancur, tampilkan pinyin bernada + arti supaya tetap belajar
-        pops.push({x:Math.max(110,Math.min(W-110,b.e.x)),y:b.e.y+40,l:1.8,p:b.e.p,a:cut(b.e.a)});
-        if(++kills%10===0){level++;S.up()}
-      }
-    }else{b.x+=dx/d*s;b.y+=dy/d*s}
-  }
-  es=es.filter(e=>!e.dead);
-  for(let i=ps.length-1;i>=0;i--){const p=ps[i];p.x+=p.vx*dt;p.y+=p.vy*dt;p.vx*=.96;p.vy*=.96;if((p.l-=dt)<=0)ps.splice(i,1)}
-  for(let i=pops.length-1;i>=0;i--)if((pops[i].l-=dt)<=0)pops.splice(i,1);
-  if(lives<=0)over();
-}
-function over(){
-  kb.blur();st='over';music(false);S.over();
-  const wpm=time>3?ok/5/(time/60):0,acc=ok+bad?100*ok/(ok+bad):100;
-  $('#overDeck').textContent='Deck: '+deckName;
-  $('#stats').innerHTML=[['Skor',score],['Level',level],['Kata',kills],['WPM',wpm.toFixed(0)],['Akurasi',acc.toFixed(0)+'%'],['Combo maks',best]]
-    .map(([k,v])=>`<div><span>${k}</span>${v}</div>`).join('');
-  $('#zg-over').classList.remove('hide');
-}
-
-/* ================= GAMBAR ================= */
-function rr(x,y,w,h,r){ctx.beginPath();ctx.roundRect?ctx.roundRect(x,y,w,h,r):ctx.rect(x,y,w,h)}
-const touch=matchMedia('(pointer:coarse)').matches;
-function drawShip(){
-  const[x,y]=shipXY(),pts=[[0,-22],[14,16],[0,8],[-14,16]];
-  ctx.save();ctx.translate(x,y);ctx.rotate(ang());ctx.strokeStyle=C.cy;ctx.lineWidth=2.5;ctx.lineJoin='round';
-  ctx.beginPath();pts.forEach(([px,py],i)=>i?ctx.lineTo(px,py):ctx.moveTo(px,py));ctx.closePath();ctx.stroke();
-  ctx.fillStyle=C.cy;ctx.beginPath();ctx.arc(0,0,3,0,6.3);ctx.fill();ctx.restore();
-}
-function draw(){
-  ctx.fillStyle=C.bg;ctx.fillRect(0,0,W,H);
-  ctx.strokeStyle=C.grid;ctx.lineWidth=1;ctx.beginPath();
-  for(let x=0;x<W;x+=24){ctx.moveTo(x+.5,0);ctx.lineTo(x+.5,H)}
-  for(let y=0;y<H;y+=24){ctx.moveTo(0,y+.5);ctx.lineTo(W,y+.5)}
-  ctx.stroke();
-  for(const t of stars){const c=Math.round(60+t.v*4);ctx.fillStyle=`rgb(${c},${c},${c+20})`;ctx.fillRect(t.x*W,t.y*H,1.6,1.6)}
-  if(st==='menu')return;
-
-  for(const e of es){
-    const lock=e===tg,l=e.x-e.bw/2,k=e.n/e.t.length;
-    rr(l,e.y,e.bw,e.bh,8);ctx.fillStyle=e.fl>0?'rgba(255,255,255,.28)':'rgba(0,0,0,.62)';ctx.fill();
-    ctx.strokeStyle=lock?C.yl:C.ac;ctx.lineWidth=lock?3:1.5;ctx.stroke();
-    // hanzi memudar putih → oranye seiring huruf yang benar
-    ctx.fillStyle=`rgb(255,${Math.round(255-105*k)},${Math.round(255-225*k)})`;
-    ctx.font=`700 ${e.fs}px ${HZ}`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(e.z,e.x,e.y+e.bh/2+2);
-    ctx.fillStyle=C.ac;ctx.font='800 22px Manrope,sans-serif';ctx.textBaseline='top';
-    ctx.fillText(e.t.slice(0,e.n),e.x,e.y+e.bh+6);                // huruf yang sudah benar
-    if(lock){
-      const[sx,sy]=shipXY();ctx.strokeStyle='rgba(40,230,230,.35)';ctx.lineWidth=1;
-      ctx.beginPath();ctx.moveTo(sx,sy-22);ctx.lineTo(e.x,e.y+e.bh);ctx.stroke();
-    }
-  }
-  for(const b of bs){ctx.fillStyle='#fff0a0';ctx.beginPath();ctx.arc(b.x,b.y,3.5,0,6.3);ctx.fill()}
-  for(const p of ps){ctx.globalAlpha=Math.min(1,p.l*2);ctx.fillStyle=p.c;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.3);ctx.fill()}
-  ctx.globalAlpha=1;
-
-  // pinyin + arti setelah kata hancur
-  for(const q of pops){
-    const y=q.y-(1.8-q.l)*30;
-    ctx.globalAlpha=Math.min(1,q.l*1.2);ctx.textAlign='center';ctx.textBaseline='alphabetic';
-    ctx.fillStyle=C.fg;ctx.font='700 18px Manrope,sans-serif';ctx.fillText(q.p,q.x,y);
-    if(q.a){ctx.fillStyle=C.cy;ctx.font='600 14px Manrope,sans-serif';ctx.fillText(q.a,q.x,y+20)}
   }
   ctx.globalAlpha=1;
   drawShip();
