@@ -1,43 +1,41 @@
 <!DOCTYPE html>
-<html lang="id" data-mode="night" data-accent="vermilion">
+<html lang="id">
 <head>
 <meta charset="UTF-8">
-<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, interactive-widget=resizes-content">
 <title>墨打 · Game Mengetik Hanzi</title>
 <link rel="preconnect" href="https://fonts.googleapis.com">
-<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&family=Ma+Shan+Zheng&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
-<!-- Tema sama dengan situs: warna siang/malam + aksen dibaca dari css/styles.css -->
-<link rel="stylesheet" href="css/styles.css">
+<link href="https://fonts.googleapis.com/css2?family=Noto+Sans+SC:wght@500;700;900&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
 <style>
-#zg{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;font-family:var(--font-ui,Manrope,system-ui,sans-serif);
-  --zb:var(--bg-0,#100f14);--zs:var(--surface,#1f1e29);--zf:var(--ink,#efe9da);--zm:var(--ink-soft,#a29c8c);--za:var(--accent,#b23a2e);
-  background:var(--zb);color:var(--zf)}
+html,body{margin:0;height:100%;overflow:hidden;background:#0e1c20}
+#zg{position:fixed;left:0;right:0;top:0;bottom:0;z-index:50;display:flex;flex-direction:column;font-family:Manrope,system-ui,sans-serif;
+  --zb:#0e1c20;--zs:#14292e;--zf:#e8f2f2;--zm:#7c929a;--za:#ff8c1e;--zc:#28e6e6;
+  background:var(--zb);color:var(--zf);touch-action:manipulation;-webkit-tap-highlight-color:transparent}
 #zg *{box-sizing:border-box}
-#zg-bar{display:flex;align-items:center;gap:10px;padding:10px 16px;border-bottom:2px solid var(--za);flex-wrap:wrap}
-#zg-bar a,#zg-bar button.zg-ic{color:var(--zf);text-decoration:none;font:700 14px var(--font-ui,Manrope,sans-serif);background:none;border:1.5px solid var(--zm);border-radius:999px;padding:6px 14px;cursor:pointer}
-#zg-bar b{flex:1;text-align:center;font:900 20px var(--font-display,'Noto Serif SC',serif);letter-spacing:.08em;white-space:nowrap}
-#zg-dots{display:flex;gap:8px}
-#zg-bar #zg-dots button{width:22px;height:22px;padding:0;border-radius:50%;border:2px solid transparent;cursor:pointer}
-#zg-bar #zg-dots button.on{border-color:var(--zf)}
+#zg-bar{display:flex;align-items:center;gap:8px;padding:8px 12px;border-bottom:2px solid var(--zc)}
+#zg-bar a,#zg-bar button{color:var(--zf);text-decoration:none;font:700 14px Manrope,sans-serif;background:none;border:1.5px solid var(--zm);border-radius:999px;padding:6px 14px;cursor:pointer;white-space:nowrap}
+#zg-bar button{padding:6px 11px;min-width:38px}
+#zg-bar b{flex:1;text-align:center;font:900 19px "Noto Sans SC",Manrope,sans-serif;letter-spacing:.06em;color:var(--zc);white-space:nowrap;overflow:hidden;text-overflow:ellipsis}
 #zg-stage{flex:1;position:relative;min-height:0}
 #cv{display:block;width:100%;height:100%}
 .zg-panel{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;
-  background:color-mix(in srgb,var(--zb) 88%,transparent);padding:20px;overflow:auto}
+  background:rgba(8,18,21,.82);padding:20px;overflow:auto}
 .zg-panel.hide{display:none}
-.zg-big{font:400 clamp(70px,14vw,150px)/1 var(--font-brush,'Ma Shan Zheng'),'Noto Serif SC',serif;color:var(--za)}
-.zg-panel h2{margin:0;font:900 26px var(--font-display,'Noto Serif SC',serif)}
+.zg-big{font:900 clamp(64px,13vw,130px)/1 "Noto Sans SC",sans-serif;color:var(--zc);text-shadow:0 0 36px rgba(40,230,230,.45)}
+.zg-panel h2{margin:0;font:800 24px Manrope,sans-serif}
 .zg-panel p{margin:0;color:var(--zm);font-size:14px;max-width:540px;line-height:1.6}
 .zg-panel p b{color:var(--zf)}
-.zg-panel select,.zg-btn{font:700 16px var(--font-ui,Manrope,sans-serif);padding:12px 22px;border-radius:12px;border:2px solid var(--zm);background:var(--zs);color:var(--zf);min-width:min(320px,88vw);max-width:92vw}
-.zg-btn{background:var(--za);border-color:var(--za);color:#fff;cursor:pointer;box-shadow:4px 4px 0 color-mix(in srgb,var(--za) 40%,#000)}
-.zg-btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 color-mix(in srgb,var(--za) 40%,#000)}
+.zg-panel select,.zg-btn{font:700 16px Manrope,sans-serif;padding:12px 22px;border-radius:12px;border:2px solid var(--zm);background:var(--zs);color:var(--zf);min-width:min(320px,88vw);max-width:92vw}
+.zg-btn{background:var(--za);border-color:var(--za);color:#1a1006;cursor:pointer;box-shadow:4px 4px 0 rgba(255,140,30,.35)}
+.zg-btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 rgba(255,140,30,.35)}
 .zg-btn.ghost{background:none;color:var(--zf);border-color:var(--zm);box-shadow:none}
-.zg-stats{display:grid;grid-template-columns:repeat(3,auto);gap:10px 28px;font:700 18px var(--font-ui,Manrope,sans-serif)}
+.zg-stats{display:grid;grid-template-columns:repeat(3,auto);gap:10px 28px;font:700 18px Manrope,sans-serif}
 .zg-stats span{display:block;color:var(--zm);font-size:12px;font-weight:600}
 .zg-warn{color:var(--za)}
 kbd{border:1.5px solid var(--zm);border-radius:6px;padding:1px 7px;font-size:12px}
-#zg :focus-visible{outline:2px solid var(--zf);outline-offset:2px}
-@media (max-width:640px){#zg-bar b{order:3;flex-basis:100%;font-size:17px}}
+#kb{position:fixed;left:0;bottom:0;width:1px;height:1px;opacity:0;border:0;padding:0;font-size:16px;pointer-events:none}
+#zg :focus-visible{outline:2px solid var(--zc);outline-offset:2px}
+@media (max-width:560px){#zg-bar b{display:none}#zg-bar a{flex:1;text-align:center}}
 </style>
 </head>
 <body>
@@ -45,61 +43,55 @@ kbd{border:1.5px solid var(--zm);border-radius:6px;padding:1px 7px;font-size:12p
   <div id="zg-bar">
     <a href="index.html">← Kembali belajar</a>
     <b>墨打 · Game Mengetik Hanzi</b>
-    <div id="zg-dots" aria-label="Warna aksen"></div>
-    <button class="zg-ic" id="zg-sound" title="Suara">🔊</button>
-    <button class="zg-ic" id="zg-mode" title="Siang/malam">☀️</button>
+    <button id="zg-free" title="Lepas kunci kata (Tab)" aria-label="Lepas kunci">🔓</button>
+    <button id="zg-pause" title="Pause (Enter)" aria-label="Pause">‖</button>
+    <button id="zg-menu-btn" title="Menu (Esc)" aria-label="Menu">⌂</button>
+    <button id="zg-sound" title="Suara" aria-label="Suara">🔊</button>
   </div>
   <div id="zg-stage">
     <canvas id="cv"></canvas>
 
     <div id="zg-menu" class="zg-panel">
       <div class="zg-big">墨打</div>
-      <h2>Ketik pinyin, hapus hanzinya</h2>
+      <h2>Ketik pinyin, hancurkan hanzinya</h2>
       <p>Hanzi jatuh dari atas. Ketik <b>pinyin tanpa nada</b> (ü = <kbd>v</kbd>), contoh 你好 → <kbd>nihao</kbd>.
-         <kbd>Tab</kbd> lepas kunci · <kbd>Enter</kbd> pause · <kbd>Esc</kbd> menu. Perlu keyboard.</p>
+         Di komputer: <kbd>Tab</kbd> lepas kunci · <kbd>Enter</kbd> pause · <kbd>Esc</kbd> menu.
+         Di HP: pakai keyboard layar dan tombol di atas.</p>
       <select id="deck" aria-label="Pilih deck flashcard"><option>Memuat deck…</option></select>
       <p id="deckInfo"></p>
-      <button class="zg-btn" id="start" disabled>Mulai 🖌️</button>
+      <button class="zg-btn" id="start" disabled>Mulai 🚀</button>
     </div>
 
     <div id="zg-over" class="zg-panel hide">
-      <h2 style="color:var(--za)">游戏结束 · Selesai</h2>
+      <h2 style="color:var(--za)">Game Over</h2>
       <p id="overDeck"></p>
       <div class="zg-stats" id="stats"></div>
       <button class="zg-btn" id="again">Main lagi</button>
       <button class="zg-btn ghost" id="toMenu">Ganti deck</button>
     </div>
   </div>
+  <!-- penerima ketikan dari keyboard HP (Android mengirim event "input", bukan keydown huruf) -->
+  <input id="kb" type="text" inputmode="text" autocomplete="off" autocorrect="off" autocapitalize="none" spellcheck="false" aria-label="Ketik pinyin di sini">
 </div>
 
 <script>
 (()=>{
 const $=s=>document.querySelector(s), cv=$('#cv'), ctx=cv.getContext('2d'), root=document.documentElement;
-let W=800,H=500,C={bg:'#100f14',fg:'#efe9da',mut:'#a29c8c',ac:'#b23a2e'};
+let W=800,H=500;
 
-/* ================= TEMA (ikut css/styles.css) ================= */
-const ACCENTS=['vermilion','jade','indigo','gold'];
-function theme(){
-  const s=getComputedStyle($('#zg')),g=n=>s.getPropertyValue(n).trim();
-  C={bg:g('--zb'),fg:g('--zf'),mut:g('--zm'),ac:g('--za')||'#b23a2e'};
-}
+/* ================= TEMA LUAR ANGKASA ================= */
+const C={bg:'#0e1c20',grid:'#142a2e',fg:'#ffffff',mut:'#7c929a',ac:'#ff8c1e',cy:'#28e6e6',yl:'#ffdc3c'};
+const HZ='"Noto Sans SC","PingFang SC","Microsoft YaHei","Noto Sans CJK SC",sans-serif';
+const zg=$('#zg'),kb=$('#kb');
 function resize(){
+  const vv=window.visualViewport;                       // saat keyboard HP muncul, area game ikut mengecil
+  if(vv){zg.style.height=vv.height+'px';zg.style.top=vv.offsetTop+'px';zg.style.bottom='auto'}
   const r=cv.parentElement.getBoundingClientRect(),d=window.devicePixelRatio||1;
-  W=r.width;H=r.height;cv.width=W*d;cv.height=H*d;ctx.setTransform(d,0,0,d,0,0);
+  W=Math.max(200,r.width);H=Math.max(200,r.height);cv.width=W*d;cv.height=H*d;ctx.setTransform(d,0,0,d,0,0);
 }
 addEventListener('resize',resize);
-
-ACCENTS.forEach((a,i)=>{
-  const b=document.createElement('button');
-  b.style.background=`var(--stamp-${i},#b23a2e)`;b.title=a;b.setAttribute('aria-label','Aksen '+a);
-  if(root.dataset.accent===a)b.classList.add('on');
-  b.onclick=()=>{root.dataset.accent=a;[...$('#zg-dots').children].forEach(x=>x.classList.toggle('on',x===b));theme()};
-  $('#zg-dots').appendChild(b);
-});
-$('#zg-mode').onclick=()=>{
-  root.dataset.mode=root.dataset.mode==='night'?'day':'night';
-  $('#zg-mode').textContent=root.dataset.mode==='night'?'☀️':'🌙';theme();
-};
+if(window.visualViewport){visualViewport.addEventListener('resize',resize);visualViewport.addEventListener('scroll',resize)}
+const stars=Array.from({length:150},()=>({x:Math.random(),y:Math.random(),v:8+Math.random()*32}));
 
 /* ================= DATA: data/index.json + data/<deck>.json ================= */
 // Pinyin di data berisi keterangan seperti "ài (verb)" atau "(n.) diànqì": bagian dalam kurung dibuang.
@@ -210,25 +202,27 @@ let st='menu',paused=false,words=[],es=[],bs=[],ps=[],pops=[],tg=null,
 const R=(a,b)=>a+Math.random()*(b-a);
 const cut=s=>s.length>30?s.slice(0,29)+'…':s;
 
+const preloadFont=cards=>document.fonts&&document.fonts.load('700 56px "Noto Sans SC"',[...new Set(cards.map(c=>c.z).join(''))].join('')).catch(()=>{});
 function start(){
-  const p=pool();words=p.cards;deckName=p.name;
+  kb.value='';kb.focus({preventScroll:true});             // fokus harus dalam sentuhan pengguna agar keyboard HP terbuka
+  const p=pool();preloadFont(p.cards);words=p.cards;deckName=p.name;
   es=[];bs=[];ps=[];pops=[];tg=null;lives=3;score=0;level=1;kills=0;combo=0;best=0;ok=0;bad=0;time=0;spT=.5;
-  st='play';paused=false;
+  st='play';paused=false;$('#zg-pause').textContent='‖';
   $('#zg-menu').classList.add('hide');$('#zg-over').classList.add('hide');
-  document.activeElement.blur();music(true);
+  music(true);
 }
 function toMenu(){
-  st='menu';paused=false;music(false);
+  kb.blur();st='menu';paused=false;music(false);
   $('#zg-over').classList.add('hide');$('#zg-menu').classList.remove('hide');
 }
 function spawn(){
   const used=new Set(es.filter(e=>!e.dead).map(e=>e.t[0])),c=words.filter(w=>!used.has(w.t[0]));
   if(!c.length)return;
   const w=c[Math.random()*c.length|0],n=[...w.z].length,fs=Math.max(26,Math.min(56,W*.42/n));
-  ctx.font=`900 ${fs}px "Noto Serif SC",serif`;const hw=Math.max(ctx.measureText(w.z).width+36,84);
+  ctx.font=`700 ${fs}px ${HZ}`;const hw=Math.max(ctx.measureText(w.z).width+36,84);
   ctx.font='800 22px Manrope,sans-serif';const ew=Math.max(hw,ctx.measureText(w.t).width+20);   // lebar termasuk huruf pinyin di bawahnya
   es.push({...w,fs,bw:hw,ew,bh:80,x:R(ew/2+20,Math.max(ew/2+21,W-ew/2-20)),y:-90,
-    sp:(30+level*5+R(0,12))*H/660,n:0,fin:false,dead:false,fl:0,ph:R(0,6.28)});
+    sp:(26+level*5+R(0,12))*H/660,n:0,fin:false,dead:false,fl:0,ph:R(0,6.28)});
 }
 function key(ch){
   if(!tg){
@@ -244,13 +238,14 @@ function key(ch){
   }else miss();
 }
 function miss(){bad++;combo=0;S.err()}
-function splat(x,y,n=22,col=C.ac){for(let i=0;i<n;i++){const a=R(0,6.28),v=R(40,260);ps.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:R(.35,.9),r:R(2,7),c:col})}}
+function splat(x,y,n=22,col='#ffa028'){for(let i=0;i<n;i++){const a=R(0,6.28),v=R(40,260);ps.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:R(.35,.9),r:R(2,7),c:col})}}
 const shipXY=()=>[W/2,H-70];
 const ang=()=>{const[x,y]=shipXY();return tg&&!tg.dead?Math.atan2(tg.x-x,y-(tg.y+40)):0};
-const tip=()=>{const[x,y]=shipXY(),a=ang();return[x+Math.sin(a)*52,y-Math.cos(a)*52]};
+const tip=()=>{const[x,y]=shipXY(),a=ang();return[x+Math.sin(a)*24,y-Math.cos(a)*24]};
 
 /* ================= UPDATE ================= */
 function update(dt){
+  for(const t of stars){t.y+=t.v*dt/H;if(t.y>1){t.y=0;t.x=Math.random()}}
   if(st!=='play'||paused)return;
   T+=dt;time+=dt;spT-=dt;
   if(spT<=0){spawn();spT=Math.max(.8,2.8-level*.18)+R(0,.7)}
@@ -258,14 +253,14 @@ function update(dt){
     e.y+=e.sp*dt;e.fl=Math.max(0,e.fl-dt);
     e.x+=Math.sin(T*1.4+e.ph)*14*dt;e.x=Math.max(e.ew/2+4,Math.min(W-e.ew/2-4,e.x));
     if(!e.dead&&e.y+e.bh+22>H-100){
-      e.dead=true;if(tg===e)tg=null;lives--;combo=0;splat(e.x,e.y+40,40,'#c0392b');S.life();
+      e.dead=true;if(tg===e)tg=null;lives--;combo=0;splat(e.x,e.y+40,40,'#ff3c3c');S.life();
     }
   }
   for(let i=bs.length-1;i>=0;i--){
     const b=bs[i];if(b.e.dead&&!b.last){bs.splice(i,1);continue}
     const dx=b.e.x-b.x,dy=b.e.y+40-b.y,d=Math.hypot(dx,dy),s=1000*dt;
     if(d<=s){
-      bs.splice(i,1);b.e.fl=.12;splat(b.e.x,b.e.y+40,6,C.fg);S.hit();
+      bs.splice(i,1);b.e.fl=.12;splat(b.e.x,b.e.y+40,6,'#ffdc78');S.hit();
       if(b.last&&!b.e.dead){
         b.e.dead=true;splat(b.e.x,b.e.y+40,34);S.boom();score+=50*b.e.t.length;
         // setelah hancur, tampilkan pinyin bernada + arti supaya tetap belajar
@@ -280,7 +275,7 @@ function update(dt){
   if(lives<=0)over();
 }
 function over(){
-  st='over';music(false);S.over();
+  kb.blur();st='over';music(false);S.over();
   const wpm=time>3?ok/5/(time/60):0,acc=ok+bad?100*ok/(ok+bad):100;
   $('#overDeck').textContent='Deck: '+deckName;
   $('#stats').innerHTML=[['Skor',score],['Level',level],['Kata',kills],['WPM',wpm.toFixed(0)],['Akurasi',acc.toFixed(0)+'%'],['Combo maks',best]]
@@ -290,82 +285,101 @@ function over(){
 
 /* ================= GAMBAR ================= */
 function rr(x,y,w,h,r){ctx.beginPath();ctx.roundRect?ctx.roundRect(x,y,w,h,r):ctx.rect(x,y,w,h)}
+const touch=matchMedia('(pointer:coarse)').matches;
+function drawShip(){
+  const[x,y]=shipXY(),pts=[[0,-22],[14,16],[0,8],[-14,16]];
+  ctx.save();ctx.translate(x,y);ctx.rotate(ang());ctx.strokeStyle=C.cy;ctx.lineWidth=2.5;ctx.lineJoin='round';
+  ctx.beginPath();pts.forEach(([px,py],i)=>i?ctx.lineTo(px,py):ctx.moveTo(px,py));ctx.closePath();ctx.stroke();
+  ctx.fillStyle=C.cy;ctx.beginPath();ctx.arc(0,0,3,0,6.3);ctx.fill();ctx.restore();
+}
 function draw(){
   ctx.fillStyle=C.bg;ctx.fillRect(0,0,W,H);
-  // noda tinta lembut + garis kolom tipis
-  for(const[fx,fy,r,a]of[[.2,.3,.45,.07],[.8,.65,.5,.06],[.5,.1,.35,.05]]){
-    const g=ctx.createRadialGradient(W*fx,H*fy,0,W*fx,H*fy,H*r);g.addColorStop(0,C.mut);g.addColorStop(1,'transparent');
-    ctx.globalAlpha=a;ctx.fillStyle=g;ctx.fillRect(0,0,W,H);
-  }
-  ctx.globalAlpha=.12;ctx.strokeStyle=C.mut;ctx.lineWidth=1;
-  for(let x=W/8;x<W;x+=W/8){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke()}
-  ctx.globalAlpha=1;
+  ctx.strokeStyle=C.grid;ctx.lineWidth=1;ctx.beginPath();
+  for(let x=0;x<W;x+=24){ctx.moveTo(x+.5,0);ctx.lineTo(x+.5,H)}
+  for(let y=0;y<H;y+=24){ctx.moveTo(0,y+.5);ctx.lineTo(W,y+.5)}
+  ctx.stroke();
+  for(const t of stars){const c=Math.round(60+t.v*4);ctx.fillStyle=`rgb(${c},${c},${c+20})`;ctx.fillRect(t.x*W,t.y*H,1.6,1.6)}
   if(st==='menu')return;
 
   for(const e of es){
-    const lock=e===tg,l=e.x-e.bw/2;
-    rr(l,e.y,e.bw,e.bh,10);ctx.fillStyle=C.ac;ctx.globalAlpha=e.fl>0?.45:.16;ctx.fill();ctx.globalAlpha=1;
-    ctx.strokeStyle=C.ac;ctx.lineWidth=lock?4:2;ctx.stroke();
-    ctx.fillStyle=C.fg;ctx.font=`900 ${e.fs}px "Noto Serif SC",serif`;ctx.textAlign='center';ctx.textBaseline='middle';
-    ctx.fillText(e.z,e.x,e.y+e.bh/2+3);
+    const lock=e===tg,l=e.x-e.bw/2,k=e.n/e.t.length;
+    rr(l,e.y,e.bw,e.bh,8);ctx.fillStyle=e.fl>0?'rgba(255,255,255,.28)':'rgba(0,0,0,.62)';ctx.fill();
+    ctx.strokeStyle=lock?C.yl:C.ac;ctx.lineWidth=lock?3:1.5;ctx.stroke();
+    // hanzi memudar putih → oranye seiring huruf yang benar
+    ctx.fillStyle=`rgb(255,${Math.round(255-105*k)},${Math.round(255-225*k)})`;
+    ctx.font=`700 ${e.fs}px ${HZ}`;ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(e.z,e.x,e.y+e.bh/2+2);
     ctx.fillStyle=C.ac;ctx.font='800 22px Manrope,sans-serif';ctx.textBaseline='top';
     ctx.fillText(e.t.slice(0,e.n),e.x,e.y+e.bh+6);                // huruf yang sudah benar
     if(lock){
-      const[sx,sy]=shipXY();ctx.setLineDash([6,8]);ctx.strokeStyle=C.mut;ctx.lineWidth=1.5;
-      ctx.beginPath();ctx.moveTo(sx,sy-50);ctx.lineTo(e.x,e.y+e.bh);ctx.stroke();ctx.setLineDash([]);
+      const[sx,sy]=shipXY();ctx.strokeStyle='rgba(40,230,230,.35)';ctx.lineWidth=1;
+      ctx.beginPath();ctx.moveTo(sx,sy-22);ctx.lineTo(e.x,e.y+e.bh);ctx.stroke();
     }
   }
-  for(const b of bs){ctx.fillStyle=C.ac;ctx.beginPath();ctx.arc(b.x,b.y,5,0,6.3);ctx.fill()}
+  for(const b of bs){ctx.fillStyle='#fff0a0';ctx.beginPath();ctx.arc(b.x,b.y,3.5,0,6.3);ctx.fill()}
   for(const p of ps){ctx.globalAlpha=Math.min(1,p.l*2);ctx.fillStyle=p.c;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.3);ctx.fill()}
   ctx.globalAlpha=1;
 
   // pinyin + arti setelah kata hancur
   for(const q of pops){
-    const k=1.8-q.l,y=q.y-k*30;
+    const y=q.y-(1.8-q.l)*30;
     ctx.globalAlpha=Math.min(1,q.l*1.2);ctx.textAlign='center';ctx.textBaseline='alphabetic';
     ctx.fillStyle=C.fg;ctx.font='700 18px Manrope,sans-serif';ctx.fillText(q.p,q.x,y);
-    if(q.a){ctx.fillStyle=C.mut;ctx.font='600 14px Manrope,sans-serif';ctx.fillText(q.a,q.x,y+20)}
+    if(q.a){ctx.fillStyle=C.cy;ctx.font='600 14px Manrope,sans-serif';ctx.fillText(q.a,q.x,y+20)}
   }
   ctx.globalAlpha=1;
-
-  // kuas (kapal)
-  const[x,y]=shipXY();ctx.save();ctx.translate(x,y);ctx.rotate(ang());
-  ctx.fillStyle=C.fg;ctx.fillRect(-4,-4,8,58);
-  ctx.fillStyle=C.ac;ctx.beginPath();ctx.moveTo(-10,-4);ctx.quadraticCurveTo(-12,-32,0,-54);ctx.quadraticCurveTo(12,-32,10,-4);ctx.closePath();ctx.fill();
-  ctx.restore();
+  drawShip();
 
   // HUD
   const wpm=time>3?ok/5/(time/60):0,acc=ok+bad?100*ok/(ok+bad):100;
-  ctx.textAlign='left';ctx.textBaseline='top';ctx.fillStyle=C.fg;ctx.font='700 16px Manrope,sans-serif';
-  ctx.fillText(`分 ${score}   Level ${level}   Combo ${combo}`,16,14);
-  ctx.fillStyle=C.mut;ctx.font='600 13px Manrope,sans-serif';
-  ctx.fillText(`WPM ${wpm.toFixed(0)} · Akurasi ${acc.toFixed(0)}% · ${deckName}`,16,38);
-  // nyawa = tiga stempel 命
-  for(let i=0;i<3;i++){
-    const sx=W-50-i*44,sy=H-56;rr(sx,sy,34,34,6);
-    if(i<lives){ctx.fillStyle=C.ac;ctx.fill();ctx.fillStyle='#fff'}else{ctx.strokeStyle=C.mut;ctx.lineWidth=2;ctx.stroke();ctx.fillStyle=C.mut}
-    ctx.font='900 22px "Noto Serif SC",serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('命',sx+17,sy+18);
+  ctx.textAlign='left';ctx.textBaseline='top';ctx.fillStyle=C.fg;ctx.font='700 15px Manrope,sans-serif';
+  ctx.fillText(`Skor ${score}   Level ${level}   Combo ${combo}`,12,10);
+  ctx.fillStyle=C.mut;ctx.font='600 12.5px Manrope,sans-serif';
+  ctx.fillText(`WPM ${wpm.toFixed(0)} · Akurasi ${acc.toFixed(0)}% · ${deckName}`,12,32);
+  // nyawa: heksagon kuning
+  const hx=W-30,hy=H-30;ctx.fillStyle='#fac814';ctx.beginPath();
+  for(let i=0;i<6;i++){const a=(60*i+30)*Math.PI/180;ctx.lineTo(hx+17*Math.cos(a),hy+17*Math.sin(a))}
+  ctx.closePath();ctx.fill();ctx.fillStyle='#141414';ctx.font='800 16px Manrope,sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(lives,hx,hy+1);
+
+  if(touch&&!paused&&document.activeElement!==kb){
+    ctx.fillStyle='rgba(8,18,21,.75)';ctx.fillRect(0,H/2-26,W,52);
+    ctx.fillStyle=C.yl;ctx.font='700 16px Manrope,sans-serif';ctx.textAlign='center';ctx.fillText('Ketuk layar untuk membuka keyboard',W/2,H/2);
   }
   if(paused){
-    ctx.fillStyle=C.bg;ctx.globalAlpha=.7;ctx.fillRect(0,0,W,H);ctx.globalAlpha=1;
-    ctx.fillStyle=C.ac;ctx.font='400 80px "Ma Shan Zheng",serif';ctx.textAlign='center';ctx.textBaseline='middle';
-    ctx.fillText('暂停 · PAUSE',W/2,H/2-20);
+    ctx.fillStyle='rgba(8,18,21,.72)';ctx.fillRect(0,0,W,H);
+    ctx.fillStyle=C.cy;ctx.font='900 56px "Noto Sans SC",Manrope,sans-serif';ctx.textAlign='center';ctx.textBaseline='middle';
+    ctx.fillText('PAUSE',W/2,H/2-10);
+    ctx.fillStyle=C.mut;ctx.font='600 14px Manrope,sans-serif';ctx.fillText(touch?'Ketuk ‖ untuk lanjut':'Tekan Enter untuk lanjut',W/2,H/2+34);
   }
 }
 
 /* ================= INPUT & LOOP ================= */
+const feed=str=>{if(st!=='play'||paused)return;for(const ch of str.toLowerCase())if(/^[a-z]$/.test(ch))key(ch)};
+const togglePause=()=>{if(st==='play')paused=!paused;$('#zg-pause').textContent=paused?'▶':'‖';if(!paused&&st==='play')kb.focus({preventScroll:true})};
+const release=()=>{tg=null};
+
+// Komputer: keydown. HP Android: keydown berisi kode palsu, jadi huruf dibaca dari event "input" di bawah.
 addEventListener('keydown',e=>{
   if(e.key==='Escape'&&st!=='menu'){toMenu();return}
   if(st==='menu'&&e.key==='Enter'&&document.activeElement.tagName!=='BUTTON'&&!$('#start').disabled){start();return}
   if(st!=='play')return;
-  if(e.key==='Enter'){paused=!paused;return}
-  if(e.key==='Tab'){e.preventDefault();tg=null;return}
-  if(!paused&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&/^[a-z]$/i.test(e.key)){e.preventDefault();key(e.key.toLowerCase())}
+  if(e.key==='Enter'){e.preventDefault();togglePause();return}
+  if(e.key==='Tab'){e.preventDefault();release();return}
+  if(!paused&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&/^[a-z]$/i.test(e.key)){e.preventDefault();feed(e.key)}   // preventDefault: event "input" tidak ikut terpicu, jadi tidak dobel
 });
-document.addEventListener('visibilitychange',()=>{if(document.hidden&&st==='play')paused=true});   // otomatis pause saat pindah tab
+let prev='';
+kb.addEventListener('input',e=>{
+  const v=kb.value;
+  if(v.length>prev.length)feed(v.slice(prev.length));            // hanya huruf baru (abaikan hapus/backspace)
+  prev=v;
+  if(!e.isComposing||v.length>24){kb.value='';prev=''}            // kosongkan terus supaya tidak menumpuk
+});
+kb.addEventListener('compositionend',()=>{kb.value='';prev=''});
+cv.addEventListener('pointerdown',()=>{if(st==='play'&&!paused)kb.focus({preventScroll:true})});   // ketuk layar = buka keyboard lagi
+$('#zg-pause').onclick=togglePause;$('#zg-free').onclick=release;$('#zg-menu-btn').onclick=()=>{if(st!=='menu')toMenu()};
+document.addEventListener('visibilitychange',()=>{if(document.hidden&&st==='play'){paused=true;$('#zg-pause').textContent='▶'}});
 $('#start').onclick=start;$('#again').onclick=start;$('#toMenu').onclick=toMenu;
 
-theme();resize();   // harus sebelum loop: draw() butuh warna tema
+resize();
 let last=performance.now();
 function loop(t){
   requestAnimationFrame(loop);          // jadwalkan dulu, supaya satu error tidak mematikan game
@@ -373,7 +387,7 @@ function loop(t){
   try{update(dt);draw()}catch(e){console.error(e)}
 }
 requestAnimationFrame(loop);
-if(document.fonts&&document.fonts.load){document.fonts.load('900 56px "Noto Serif SC"','你好');document.fonts.load('800 22px Manrope','abc')}
+if(document.fonts&&document.fonts.load){document.fonts.load('700 56px "Noto Sans SC"','你好');document.fonts.load('800 22px Manrope','abc')}
 })();
 </script>
 </body>
