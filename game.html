@@ -75,7 +75,7 @@ kbd{border:1.5px solid var(--zm);border-radius:6px;padding:1px 7px;font-size:12p
 <script>
 (()=>{
 const $=s=>document.querySelector(s), cv=$('#cv'), ctx=cv.getContext('2d'), root=document.documentElement;
-let W=800,H=500,C={};
+let W=800,H=500,C={bg:'#100f14',fg:'#efe9da',mut:'#a29c8c',ac:'#b23a2e'};
 
 /* ================= TEMA (ikut css/styles.css) ================= */
 const ACCENTS=['vermilion','jade','indigo','gold'];
@@ -365,9 +365,14 @@ addEventListener('keydown',e=>{
 document.addEventListener('visibilitychange',()=>{if(document.hidden&&st==='play')paused=true});   // otomatis pause saat pindah tab
 $('#start').onclick=start;$('#again').onclick=start;$('#toMenu').onclick=toMenu;
 
+theme();resize();   // harus sebelum loop: draw() butuh warna tema
 let last=performance.now();
-(function loop(t){const dt=Math.min(.05,(t-last)/1000);last=t;update(dt);draw();requestAnimationFrame(loop)})(last);
-theme();resize();
+function loop(t){
+  requestAnimationFrame(loop);          // jadwalkan dulu, supaya satu error tidak mematikan game
+  const dt=Math.min(.05,(t-last)/1000);last=t;
+  try{update(dt);draw()}catch(e){console.error(e)}
+}
+requestAnimationFrame(loop);
 if(document.fonts&&document.fonts.load){document.fonts.load('900 56px "Noto Serif SC"','你好');document.fonts.load('800 22px Manrope','abc')}
 })();
 </script>
