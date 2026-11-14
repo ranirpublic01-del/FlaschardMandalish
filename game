@@ -1,0 +1,197 @@
+<!DOCTYPE html>
+<html lang="id" data-mode="night" data-accent="vermilion">
+<head>
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>墨打 · Game Mengetik Hanzi</title>
+<link href="https://fonts.googleapis.com/css2?family=Noto+Serif+SC:wght@600;900&family=Ma+Shan+Zheng&family=Manrope:wght@500;700;800&display=swap" rel="stylesheet">
+<!-- tema situs (variabel warna/aksen). Aman kalau gagal dimuat: ada warna cadangan -->
+<link rel="stylesheet" href="css/styles.css">
+<style>
+#zg{position:fixed;inset:0;z-index:50;display:flex;flex-direction:column;font-family:Manrope,system-ui,sans-serif;
+  --zb:#15110f;--zf:#efe6d6;--zm:#8d8273;--za:var(--accent,#e0452b);background:var(--zb);color:var(--zf)}
+html[data-mode=day] #zg{--zb:#f3ead8;--zf:#2a211a;--zm:#7a6a58}
+#zg *{box-sizing:border-box}
+#zg-bar{display:flex;align-items:center;gap:14px;padding:10px 18px;border-bottom:2px solid var(--za)}
+#zg-bar a,#zg-bar button{color:var(--zf);text-decoration:none;font:700 14px Manrope,sans-serif;background:none;border:1.5px solid var(--zm);border-radius:999px;padding:6px 14px;cursor:pointer}
+#zg-bar b{flex:1;text-align:center;font:900 20px 'Noto Serif SC',serif;letter-spacing:.08em}
+#zg-stage{flex:1;position:relative;min-height:0}
+#cv{display:block;width:100%;height:100%}
+.zg-panel{position:absolute;inset:0;display:flex;flex-direction:column;align-items:center;justify-content:center;gap:14px;text-align:center;background:color-mix(in srgb,var(--zb) 86%,transparent);padding:20px}
+.zg-panel.hide{display:none}
+.zg-big{font:400 clamp(70px,14vw,150px)/1 'Ma Shan Zheng','Noto Serif SC',serif;color:var(--za);text-shadow:0 0 40px color-mix(in srgb,var(--za) 40%,transparent)}
+.zg-panel h2{margin:0;font:900 26px 'Noto Serif SC',serif}
+.zg-panel p{margin:0;color:var(--zm);font-size:14px;max-width:520px;line-height:1.6}
+.zg-panel select,.zg-btn{font:700 16px Manrope,sans-serif;padding:12px 22px;border-radius:12px;border:2px solid var(--zm);background:var(--zb);color:var(--zf);min-width:260px}
+.zg-btn{background:var(--za);border-color:var(--za);color:#fff;cursor:pointer;box-shadow:4px 4px 0 color-mix(in srgb,var(--za) 40%,#000)}
+.zg-btn:active{transform:translate(2px,2px);box-shadow:2px 2px 0 color-mix(in srgb,var(--za) 40%,#000)}
+.zg-stats{display:grid;grid-template-columns:repeat(3,auto);gap:6px 28px;font:700 18px Manrope}
+.zg-stats span{display:block;color:var(--zm);font-size:12px;font-weight:600}
+kbd{border:1.5px solid var(--zm);border-radius:6px;padding:1px 7px;font-size:12px}
+</style>
+</head>
+<body>
+<div id="zg">
+  <div id="zg-bar">
+    <a href="index.html">← Kembali belajar</a>
+    <b>墨打 · Game Mengetik Hanzi</b>
+    <button id="zg-sound" title="Suara">🔊</button>
+    <button id="zg-mode" title="Siang/malam">☀️</button>
+  </div>
+  <div id="zg-stage">
+    <canvas id="cv"></canvas>
+    <div id="zg-menu" class="zg-panel">
+      <div class="zg-big">墨打</div>
+      <h2>Ketik pinyin, hapus hanzinya</h2>
+      <p>Hanzi jatuh dari atas. Ketik <b>pinyin tanpa nada</b> (ü = <kbd>v</kbd>), contoh 你好 → <kbd>nihao</kbd>.
+         Huruf yang benar muncul di bawah hanzi. <kbd>Tab</kbd> lepas kunci · <kbd>Enter</kbd> pause · <kbd>Esc</kbd> menu.</p>
+      <select id="deck"><option>Memuat deck…</option></select>
+      <p id="deckInfo"></p>
+      <button class="zg-btn" id="start">Mulai 🖌️</button>
+    </div>
+    <div id="zg-over" class="zg-panel hide">
+      <h2 style="color:var(--za)">游戏结束 · Selesai</h2>
+      <div class="zg-stats" id="stats"></div>
+      <button class="zg-btn" id="again">Main lagi</button>
+      <button class="zg-btn" id="toMenu" style="background:none;color:var(--zf);border-color:var(--zm);box-shadow:none">Menu</button>
+    </div>
+  </div>
+</div>
+
+<script>
+(()=>{
+const $=s=>document.querySelector(s),cv=$('#cv'),ctx=cv.getContext('2d');
+const CJK=/[\u3400-\u9fff]/,TONE=/[āáǎàēéěèīíǐìōóǒòūúǔùǖǘǚǜ]/i;
+let W=800,H=500,C={};
+
+/* ---------- tema & ukuran ---------- */
+function theme(){const s=getComputedStyle($('#zg')),g=n=>s.getPropertyValue(n).trim();C={bg:g('--zb'),fg:g('--zf'),mut:g('--zm'),ac:g('--za')||'#e0452b'}}
+function resize(){const r=cv.parentElement.getBoundingClientRect(),d=window.devicePixelRatio||1;W=r.width;H=r.height;cv.width=W*d;cv.height=H*d;ctx.setTransform(d,0,0,d,0,0)}
+addEventListener('resize',resize);
+$('#zg-mode').onclick=()=>{const d=document.documentElement;d.dataset.mode=d.dataset.mode==='night'?'day':'night';$('#zg-mode').textContent=d.dataset.mode==='night'?'☀️':'🌙';theme()};
+
+/* ---------- data: index.json + file deck (format dideteksi otomatis) ---------- */
+const typed=p=>p.toLowerCase().replace(/[üǖǘǚǜ]/g,'v').normalize('NFD').replace(/[\u0300-\u036f]/g,'').replace(/[^a-z]/g,'');
+async function firstOK(list){for(const u of list){try{const r=await fetch(u);if(r.ok)return[u,await r.json()]}catch(e){}}return null}
+function norm(c){let h,p,a;
+  if(Array.isArray(c)){for(const v of c){if(typeof v!=='string')continue;if(!h&&CJK.test(v))h=v;else if(!p&&TONE.test(v))p=v;else if(!a)a=v}}
+  else if(c&&typeof c==='object'){const g=ks=>{for(const k of ks)if(c[k]!=null&&c[k]!=='')return String(c[k])};
+    h=g(['hanzi','han','simplified','char','word','zh','chinese','kata']);p=g(['pinyin','py','pron','reading']);a=g(['arti','meaning','id','indonesia','translation','definition','artinya']);
+    const vs=Object.values(c).filter(v=>typeof v==='string');
+    if(!h||!CJK.test(h))h=vs.find(v=>CJK.test(v));if(!p)p=vs.find(v=>TONE.test(v)&&!CJK.test(v))}
+  if(!h||!p||!typed(p))return null;return{h,t:typed(p),p,a:a||''}}
+function cardsOf(j){if(Array.isArray(j))return j;if(j&&typeof j==='object'){for(const k of['cards','words','items','vocab','data','list'])if(Array.isArray(j[k]))return j[k];
+  const a=Object.values(j);if(a.length&&a.every(v=>v&&typeof v==='object'))return a.flatMap(v=>Array.isArray(v)?v:[v])}return[]}
+async function loadDecks(){
+  const got=await firstOK(['index.json','data/index.json']);if(!got)return null;
+  const[url,j]=got,base=url.includes('/')?url.slice(0,url.lastIndexOf('/')+1):'';
+  const ent=Array.isArray(j)?j:(['decks','categories','files','list','items'].map(k=>j[k]).find(Array.isArray)||
+    Object.entries(j).map(([k,v])=>typeof v==='string'?{name:k,file:v}:Array.isArray(v)?{name:k,cards:v}:{name:k,...v}));
+  const decks=[];
+  for(const e of ent){const o=typeof e==='string'?{file:e}:e;let cards=o.cards||o.words;
+    if(!cards){const f=o.file||o.path||o.url||o.src||o.json||o.href;if(!f)continue;
+      const g=await firstOK([base+f,f,'data/'+f,base+f+'.json','data/'+f+'.json']);if(!g)continue;cards=cardsOf(g[1])}
+    const list=cards.map(norm).filter(Boolean);
+    if(list.length)decks.push({name:String(o.name||o.title||o.label||o.nama||o.id||o.file||'Deck'),cards:list})}
+  return decks}
+const SAMPLE=[['你好','nǐ hǎo'],['谢谢','xièxie'],['再见','zàijiàn'],['朋友','péngyou'],['老师','lǎoshī'],['学生','xuésheng'],['中国','Zhōngguó'],['水','shuǐ'],['茶','chá'],['书','shū'],['钱','qián'],['大','dà'],['小','xiǎo'],['吃','chī'],['喝','hē'],['看','kàn'],['听','tīng'],['说','shuō'],['爱','ài'],['家','jiā']].map(([h,p])=>({h,p,a:'',t:typed(p)}));
+let decks=[{name:'Contoh (index.json tidak terbaca)',cards:SAMPLE}];
+loadDecks().then(d=>{if(d&&d.length){decks=[...d,{name:'Semua deck (gabungan)',cards:d.flatMap(x=>x.cards)}]}else $('#deckInfo').textContent='index.json tidak terbaca / formatnya belum dikenali — memakai kata contoh.';
+  $('#deck').innerHTML=decks.map((x,i)=>`<option value="${i}">${x.name} (${x.cards.length} kata)</option>`).join('')});
+
+/* ---------- suara (WebAudio, tanpa file) ---------- */
+let AC,mute=false;
+function snd(f0,f1,d,v=.15,type='sine',nz=0){if(mute)return;AC=AC||new(window.AudioContext||window.webkitAudioContext)();const t=AC.currentTime,g=AC.createGain();
+  g.gain.setValueAtTime(v,t);g.gain.exponentialRampToValueAtTime(.001,t+d);g.connect(AC.destination);
+  if(nz){const n=AC.sampleRate*d|0,b=AC.createBuffer(1,n,AC.sampleRate),a=b.getChannelData(0);for(let i=0;i<n;i++)a[i]=Math.random()*2-1;
+    const s=AC.createBufferSource(),f=AC.createBiquadFilter();s.buffer=b;f.type='lowpass';f.frequency.setValueAtTime(f0,t);f.frequency.exponentialRampToValueAtTime(Math.max(40,f1),t+d);s.connect(f);f.connect(g);s.start(t)}
+  else{const o=AC.createOscillator();o.type=type;o.frequency.setValueAtTime(f0,t);o.frequency.exponentialRampToValueAtTime(f1,t+d);o.connect(g);o.start(t);o.stop(t+d)}}
+const seq=(fs,gap,fn)=>fs.forEach((f,i)=>setTimeout(()=>fn(f),i*gap));
+const S={shoot:()=>snd(900,300,.09,.1,'triangle'),hit:()=>snd(300,120,.08,.15),boom:()=>snd(1500,60,.5,.5,'sine',1),err:()=>snd(160,100,.18,.1,'sawtooth'),
+  life:()=>snd(400,50,.6,.2,'sawtooth'),up:()=>seq([523,659,784,1047],90,f=>snd(f,f,.1,.1,'square')),over:()=>seq([392,330,262,196],200,f=>snd(f,f*.95,.22,.12,'sawtooth'))};
+const PENTA=[261.6,293.7,329.6,392,440,523.3];let musicT;
+const music=on=>{clearInterval(musicT);if(on)musicT=setInterval(()=>{if(st==='play'&&!paused)snd(PENTA[Math.random()*6|0],PENTA[Math.random()*6|0],1.6,.04)},1400)};
+$('#zg-sound').onclick=()=>{mute=!mute;$('#zg-sound').textContent=mute?'🔇':'🔊'};
+
+/* ---------- state game ---------- */
+let st='menu',paused=false,words=[],es=[],bs=[],ps=[],tg=null,lives,score,level,kills,combo,best,ok,bad,time,spT,deckName='',T=0;
+const R=(a,b)=>a+Math.random()*(b-a);
+function start(){words=decks[+$('#deck').value||0].cards;deckName=decks[+$('#deck').value||0].name;es=[];bs=[];ps=[];tg=null;lives=3;score=0;level=1;kills=0;combo=0;best=0;ok=0;bad=0;time=0;spT=.5;
+  st='play';paused=false;$('#zg-menu').classList.add('hide');$('#zg-over').classList.add('hide');document.activeElement.blur();music(true)}
+function spawn(){const used=new Set(es.filter(e=>!e.dead).map(e=>e.t[0])),c=words.filter(w=>!used.has(w.t[0]));if(!c.length)return;
+  const w=c[Math.random()*c.length|0];ctx.font='900 56px "Noto Serif SC",serif';const bw=Math.max(ctx.measureText(w.h).width+36,84);
+  es.push({...w,w:bw,h:80,x:R(bw/2+20,Math.max(bw/2+21,W-bw/2-20)),y:-90,sp:(30+level*5+R(0,12))*H/660,n:0,fin:false,dead:false,fl:0,ph:R(0,6.28)})}
+function key(ch){if(!tg){const c=es.filter(e=>!e.dead&&!e.fin&&e.t[0]===ch);if(!c.length)return miss();tg=c.reduce((a,b)=>b.y>a.y?b:a)}
+  if(tg.t[tg.n]===ch){tg.n++;ok++;combo++;best=Math.max(best,combo);score+=10*(1+combo/10|0);const last=tg.n===tg.t.length,p=tip();
+    bs.push({x:p[0],y:p[1],e:tg,last});S.shoot();if(last){tg.fin=true;tg=null}}else miss()}
+function miss(){bad++;combo=0;S.err()}
+function splat(x,y,n=22,col=C.ac){for(let i=0;i<n;i++){const a=R(0,6.28),v=R(40,260);ps.push({x,y,vx:Math.cos(a)*v,vy:Math.sin(a)*v,l:R(.35,.9),r:R(2,7),c:col})}}
+const shipXY=()=>[W/2,H-70],tip=()=>{const[x,y]=shipXY(),a=ang();return[x+Math.sin(a)*52,y-Math.cos(a)*52]};
+const ang=()=>{const[x,y]=shipXY();return tg&&!tg.dead?Math.atan2(tg.x-x,y-(tg.y+40)):0};
+
+/* ---------- update ---------- */
+function update(dt){
+  if(st!=='play'||paused)return;T+=dt;time+=dt;spT-=dt;
+  if(spT<=0){spawn();spT=Math.max(.8,2.8-level*.18)+R(0,.7)}
+  for(const e of es){e.y+=e.sp*dt;e.fl=Math.max(0,e.fl-dt);e.x+=Math.sin(T*1.4+e.ph)*14*dt;e.x=Math.max(e.w/2+4,Math.min(W-e.w/2-4,e.x));
+    if(!e.dead&&e.y+e.h+22>H-100){e.dead=true;if(tg===e)tg=null;lives--;combo=0;splat(e.x,e.y+40,40,'#c0392b');S.life()}}
+  for(let i=bs.length-1;i>=0;i--){const b=bs[i];if(b.e.dead&&!b.last){bs.splice(i,1);continue}
+    const dx=b.e.x-b.x,dy=b.e.y+40-b.y,d=Math.hypot(dx,dy),s=1000*dt;
+    if(d<=s){bs.splice(i,1);b.e.fl=.12;splat(b.e.x,b.e.y+40,6,C.fg);S.hit();
+      if(b.last&&!b.e.dead){b.e.dead=true;splat(b.e.x,b.e.y+40,34);S.boom();score+=50*b.e.t.length;if(++kills%10===0){level++;S.up()}}}
+    else{b.x+=dx/d*s;b.y+=dy/d*s}}
+  es=es.filter(e=>!e.dead);
+  for(let i=ps.length-1;i>=0;i--){const p=ps[i];p.x+=p.vx*dt;p.y+=p.vy*dt;p.vx*=.96;p.vy*=.96;if((p.l-=dt)<=0)ps.splice(i,1)}
+  if(lives<=0)over()}
+function over(){st='over';music(false);S.over();const m=time/60,wpm=time>3?ok/5/m:0,acc=ok+bad?100*ok/(ok+bad):100;
+  $('#stats').innerHTML=[['Skor',score],['Level',level],['Kata',kills],['WPM',wpm.toFixed(0)],['Akurasi',acc.toFixed(0)+'%'],['Combo maks',best]].map(([k,v])=>`<div><span>${k}</span>${v}</div>`).join('');
+  $('#zg-over').classList.remove('hide')}
+
+/* ---------- gambar ---------- */
+function rr(x,y,w,h,r){ctx.beginPath();ctx.roundRect?ctx.roundRect(x,y,w,h,r):ctx.rect(x,y,w,h)}
+function draw(){
+  ctx.fillStyle=C.bg;ctx.fillRect(0,0,W,H);
+  // wash tinta: noda lembut
+  for(const[fx,fy,r,a]of[[.2,.3,.45,.07],[.8,.65,.5,.06],[.5,.1,.35,.05]]){const g=ctx.createRadialGradient(W*fx,H*fy,0,W*fx,H*fy,H*r);g.addColorStop(0,C.mut);g.addColorStop(1,'transparent');ctx.globalAlpha=a;ctx.fillStyle=g;ctx.fillRect(0,0,W,H)}
+  ctx.globalAlpha=.12;ctx.strokeStyle=C.mut;ctx.lineWidth=1;for(let x=W/8;x<W;x+=W/8){ctx.beginPath();ctx.moveTo(x,0);ctx.lineTo(x,H);ctx.stroke()}ctx.globalAlpha=1;
+  if(st==='menu')return;
+  for(const e of es){const lock=e===tg,l=e.x-e.w/2;
+    ctx.globalAlpha=1;rr(l,e.y,e.w,e.h,10);ctx.fillStyle=C.ac;ctx.globalAlpha=e.fl>0?.45:.16;ctx.fill();ctx.globalAlpha=1;
+    ctx.strokeStyle=C.ac;ctx.lineWidth=lock?4:2;ctx.stroke();
+    ctx.fillStyle=C.fg;ctx.font='900 56px "Noto Serif SC",serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText(e.h,e.x,e.y+e.h/2+3);
+    ctx.fillStyle=C.ac;ctx.font='800 22px Manrope,sans-serif';ctx.textBaseline='top';ctx.fillText(e.t.slice(0,e.n),e.x,e.y+e.h+6);
+    if(lock){const[sx,sy]=shipXY();ctx.setLineDash([6,8]);ctx.strokeStyle=C.mut;ctx.lineWidth=1.5;ctx.beginPath();ctx.moveTo(sx,sy-50);ctx.lineTo(e.x,e.y+e.h);ctx.stroke();ctx.setLineDash([])}}
+  for(const b of bs){ctx.fillStyle=C.ac;ctx.beginPath();ctx.arc(b.x,b.y,5,0,6.3);ctx.fill()}
+  for(const p of ps){ctx.globalAlpha=Math.min(1,p.l*2);ctx.fillStyle=p.c;ctx.beginPath();ctx.arc(p.x,p.y,p.r,0,6.3);ctx.fill()}ctx.globalAlpha=1;
+  // kuas (kapal)
+  const[x,y]=shipXY();ctx.save();ctx.translate(x,y);ctx.rotate(ang());
+  ctx.fillStyle=C.fg;ctx.fillRect(-4,-4,8,58);
+  ctx.fillStyle=C.ac;ctx.beginPath();ctx.moveTo(-10,-4);ctx.quadraticCurveTo(-12,-32,0,-54);ctx.quadraticCurveTo(12,-32,10,-4);ctx.closePath();ctx.fill();ctx.restore();
+  // HUD
+  ctx.textAlign='left';ctx.textBaseline='top';ctx.fillStyle=C.fg;ctx.font='700 16px Manrope,sans-serif';
+  const wpm=time>3?ok/5/(time/60):0,acc=ok+bad?100*ok/(ok+bad):100;
+  ctx.fillText(`分 ${score}   Level ${level}   Combo ${combo}`,16,14);ctx.fillStyle=C.mut;ctx.font='600 13px Manrope,sans-serif';
+  ctx.fillText(`WPM ${wpm.toFixed(0)} · Akurasi ${acc.toFixed(0)}% · ${deckName}`,16,38);
+  // nyawa = tiga stempel 命
+  for(let i=0;i<3;i++){const sx=W-50-i*44,sy=H-56;rr(sx,sy,34,34,6);if(i<lives){ctx.fillStyle=C.ac;ctx.fill();ctx.fillStyle='#fff'}else{ctx.strokeStyle=C.mut;ctx.lineWidth=2;ctx.stroke();ctx.fillStyle=C.mut}
+    ctx.font='900 22px "Noto Serif SC",serif';ctx.textAlign='center';ctx.textBaseline='middle';ctx.fillText('命',sx+17,sy+18)}
+  if(paused){ctx.fillStyle=C.bg;ctx.globalAlpha=.7;ctx.fillRect(0,0,W,H);ctx.globalAlpha=1;ctx.fillStyle=C.ac;ctx.font='400 90px "Ma Shan Zheng",serif';ctx.textAlign='center';ctx.fillText('暂停 · PAUSE',W/2,H/2-40)}
+}
+
+/* ---------- input & loop ---------- */
+addEventListener('keydown',e=>{
+  if(e.key==='Escape'&&st!=='menu'){st='menu';music(false);$('#zg-over').classList.add('hide');$('#zg-menu').classList.remove('hide');return}
+  if(st==='menu'&&e.key==='Enter'&&document.activeElement.tagName!=='BUTTON'){start();return}
+  if(st!=='play')return;
+  if(e.key==='Enter'){paused=!paused;return}
+  if(e.key==='Tab'){e.preventDefault();tg=null;return}
+  if(!paused&&!e.ctrlKey&&!e.metaKey&&!e.altKey&&/^[a-z]$/i.test(e.key)){e.preventDefault();key(e.key.toLowerCase())}});
+$('#start').onclick=start;$('#again').onclick=start;
+$('#toMenu').onclick=()=>{st='menu';$('#zg-over').classList.add('hide');$('#zg-menu').classList.remove('hide')};
+let last=performance.now();
+(function loop(t){const dt=Math.min(.05,(t-last)/1000);last=t;update(dt);draw();requestAnimationFrame(loop)})(last);
+theme();resize();
+})();
+</script>
+</body>
+</html>
